@@ -1,0 +1,16 @@
+GOMContent
+String
+LOCALNAME
+String
+LOCAL_NAME_RSS
+getSrc
+String
+setSrc
+aSrc
+String
+setAtomMediaType
+aMediaType
+AtomMediaType
+getAtomMediaType
+AtomMediaType
+GOMTextConstruct

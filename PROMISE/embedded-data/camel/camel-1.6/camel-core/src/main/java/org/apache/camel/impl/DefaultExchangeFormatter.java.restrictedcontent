@@ -1,0 +1,15 @@
+DefaultExchangeFormatter
+DefaultExchangeFormatter
+INSTANCE
+DefaultExchangeFormatter
+getInstance
+DefaultExchangeFormatter
+return
+INSTANCE
+format
+Object
+exchange
+Exchange
+return
+exchange
+ExchangeFormatter

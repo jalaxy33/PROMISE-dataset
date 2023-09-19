@@ -1,0 +1,12 @@
+NoNewLineTest
+NoNewLineTest
+name
+String
+name
+setUp
+configureProject
+tearDown
+executeTarget
+testNoAddNewLine
+executeTarget
+BuildFileTest

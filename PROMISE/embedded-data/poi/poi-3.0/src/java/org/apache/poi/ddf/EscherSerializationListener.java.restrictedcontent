@@ -1,0 +1,17 @@
+EscherSerializationListener
+beforeRecordSerialize
+offset
+int
+recordId
+short
+record
+EscherRecord
+afterRecordSerialize
+offset
+int
+recordId
+short
+size
+int
+record
+EscherRecord

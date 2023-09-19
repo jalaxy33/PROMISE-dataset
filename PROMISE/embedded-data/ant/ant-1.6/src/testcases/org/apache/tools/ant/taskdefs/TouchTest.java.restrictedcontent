@@ -1,0 +1,14 @@
+TouchTest
+TouchTest
+name
+String
+name
+setUp
+configureProject
+tearDown
+executeTarget
+testNoSeconds
+executeTarget
+testSeconds
+executeTarget
+BuildFileTest

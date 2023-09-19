@@ -1,0 +1,16 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+Import
+InterfaceDeclaration
+{'public'}MethodDeclaration
+set()FormalParameter
+ElementReferenceType
+{'public'}MethodDeclaration
+set()FormalParameter
+DocumentReferenceType
+{'public'}MethodDeclaration
+set()FormalParameter
+DocumentFragmentReferenceType

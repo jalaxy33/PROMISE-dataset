@@ -1,0 +1,14 @@
+LockStrategy
+getName
+String
+lockArtifact
+boolean
+artifact
+Artifact
+artifactFileToDownload
+File
+unlockArtifact
+artifact
+Artifact
+artifactFileToDownload
+File

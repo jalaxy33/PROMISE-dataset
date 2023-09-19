@@ -1,0 +1,51 @@
+CompilationUnit
+PackageDeclaration
+Import
+{'public', 'abstract'}ClassDeclaration
+FieldDeclaration
+ReflectManagerReferenceType
+VariableDeclarator
+{'public', 'static'}MethodDeclaration
+ReflectManagerReferenceType
+IfStatement
+BinaryOperation
+MemberReference
+Literal
+BlockStatement
+LocalVariableDeclaration
+ClassReferenceType
+VariableDeclarator
+TryStatement
+StatementExpression
+Assignment
+MemberReference
+MethodInvocation
+Literal
+StatementExpression
+Assignment
+MemberReference
+Cast
+ReflectManagerReferenceType
+MethodInvocation
+CatchClause
+['Exception']CatchClauseParameter
+ThrowStatement
+ClassCreator
+UnavailableReferenceType
+BinaryOperation
+Literal
+MemberReference
+ReturnStatement
+MemberReference
+{'public', 'static'}MethodDeclaration
+booleanBasicType
+set()FormalParameter
+ObjectReferenceType
+ReturnStatement
+MethodInvocation
+MethodInvocation
+MemberReference
+{'public', 'abstract'}MethodDeclaration
+booleanBasicType
+set()FormalParameter
+ObjectReferenceType

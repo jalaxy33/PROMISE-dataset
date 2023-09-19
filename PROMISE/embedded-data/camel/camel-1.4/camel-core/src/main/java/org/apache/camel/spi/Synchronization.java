@@ -1,0 +1,12 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+InterfaceDeclaration
+set()MethodDeclaration
+set()FormalParameter
+ExchangeReferenceType
+set()MethodDeclaration
+set()FormalParameter
+ExchangeReferenceType

@@ -1,0 +1,13 @@
+DefaultPublishingDRResolver
+resolve
+String
+published
+ModuleDescriptor
+publishedStatus
+String
+dependency
+ModuleDescriptor
+return
+getResolvedModuleRevisionId
+getRevision
+PublishingDependencyRevisionResolver

@@ -1,0 +1,26 @@
+<SPAN class=EUDORAHEADER>Delivered-To: cgu@qos.ch <BR></SPAN><SPAN 
+class=EUDORAHEADER>Date: Thu, 14 Jun 2001 17:32:45 +0200 <BR></SPAN><SPAN 
+class=EUDORAHEADER>From: Alex Fernández &lt;afm229@tid.es&gt; <BR></SPAN><SPAN 
+class=EUDORAHEADER>X-Mailer: Mozilla 4.75 [en] (Windows NT 5.0; U) 
+<BR></SPAN><SPAN class=EUDORAHEADER>X-Accept-Language: en <BR></SPAN><SPAN 
+class=EUDORAHEADER>To: java-logging-input@eng.sun.com <BR></SPAN><SPAN 
+class=EUDORAHEADER>Cc: cgu@qos.ch <BR></SPAN><SPAN class=EUDORAHEADER>Subject: 
+Hyerarchy in JSR47 <BR></SPAN><BR>
+<DIV>Hi folks!</DIV><BR>
+<DIV>Browsing over the logging mechanism in JDK 1.4, I found to my 
+surprise</DIV>
+<DIV>that logger hyerarchy is reversed: parents know about children, but</DIV>
+<DIV>children do not have access to their parents.</DIV><BR>
+<DIV>This is the exact reverse of what class hyerarchies have done since</DIV>
+<DIV>Modula-2. It seems illogical: children loggers must know what logger</DIV>
+<DIV>they come from, and parents do not need to access to children</DIV>
+<DIV>information.</DIV><BR>
+<DIV>This point is well done in log4j, and so it would seem practical to</DIV>
+<DIV>adopt it as a standard. log4j has worked like a charm for us in our</DIV>
+<DIV>project, and its license is very convenient. So I take the liberty to</DIV>
+<DIV>suggest using it as a standard logging mechanism; or at least specify 
+a</DIV>
+<DIV>set of interfaces based on it, so that 3rd parties (including log4j's</DIV>
+<DIV>creator) can build and ship their own implementation, a la J2EE.</DIV><BR>
+<DIV>Thanks for your attention,</DIV><BR>
+<DIV>Alex Fernández.</DIV>

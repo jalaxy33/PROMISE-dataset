@@ -1,0 +1,13 @@
+Spans
+next
+boolean
+skipTo
+boolean
+target
+int
+doc
+int
+start
+int
+end
+int

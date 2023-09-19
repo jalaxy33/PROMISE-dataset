@@ -1,0 +1,13 @@
+SFTPResolver
+SFTPResolver
+setRepository
+SFTPRepository
+getTypeName
+String
+return
+getSFTPRepository
+SFTPRepository
+return
+SFTPRepository
+getRepository
+AbstractSshBasedResolver

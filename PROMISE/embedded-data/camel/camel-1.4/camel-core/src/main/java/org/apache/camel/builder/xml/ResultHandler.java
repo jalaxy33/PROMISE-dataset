@@ -1,0 +1,10 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+InterfaceDeclaration
+set()MethodDeclaration
+ResultReferenceType
+set()MethodDeclaration
+set()FormalParameter
+MessageReferenceType

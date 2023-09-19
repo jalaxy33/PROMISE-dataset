@@ -1,0 +1,9 @@
+TestEscherBoolProperty
+testToString
+EscherBoolProperty
+p
+EscherBoolProperty
+short
+assertEquals
+toString
+TestCase

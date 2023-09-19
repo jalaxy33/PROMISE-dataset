@@ -1,0 +1,17 @@
+Cache
+isValid
+boolean
+delete
+load
+save
+get
+Object
+key
+Object
+put
+key
+Object
+value
+Object
+iterator
+Iterator

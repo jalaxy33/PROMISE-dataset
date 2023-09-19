@@ -1,0 +1,14 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+{'public'}ClassDeclaration
+{'protected'}MethodDeclaration
+Annotation
+CamelContextReferenceType
+ReturnStatement
+MethodInvocation
+This
+Literal
+FilterTestReferenceType

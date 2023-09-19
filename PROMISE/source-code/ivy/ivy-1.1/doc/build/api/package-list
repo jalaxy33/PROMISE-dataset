@@ -1,0 +1,12 @@
+fr.jayasoft.ivy
+fr.jayasoft.ivy.ant
+fr.jayasoft.ivy.conflict
+fr.jayasoft.ivy.latest
+fr.jayasoft.ivy.report
+fr.jayasoft.ivy.repository
+fr.jayasoft.ivy.repository.file
+fr.jayasoft.ivy.repository.url
+fr.jayasoft.ivy.resolver
+fr.jayasoft.ivy.url
+fr.jayasoft.ivy.util
+fr.jayasoft.ivy.xml

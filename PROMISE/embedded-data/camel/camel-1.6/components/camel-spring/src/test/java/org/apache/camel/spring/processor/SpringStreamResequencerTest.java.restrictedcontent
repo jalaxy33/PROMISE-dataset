@@ -1,0 +1,6 @@
+SpringStreamResequencerTest
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+StreamResequencerTest

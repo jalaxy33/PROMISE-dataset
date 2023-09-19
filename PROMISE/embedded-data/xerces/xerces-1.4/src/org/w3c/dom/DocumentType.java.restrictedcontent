@@ -1,0 +1,14 @@
+DocumentType
+getName
+String
+getEntities
+NamedNodeMap
+getNotations
+NamedNodeMap
+getPublicId
+String
+getSystemId
+String
+getInternalSubset
+String
+Node

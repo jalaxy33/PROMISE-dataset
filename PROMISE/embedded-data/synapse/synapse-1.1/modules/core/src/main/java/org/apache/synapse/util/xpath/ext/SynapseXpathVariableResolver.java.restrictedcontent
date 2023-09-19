@@ -1,0 +1,7 @@
+SynapseXpathVariableResolver
+resolve
+Object
+msgCtxt
+MessageContext
+getResolvingQName
+QName

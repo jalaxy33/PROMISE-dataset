@@ -1,0 +1,15 @@
+XMLBeansDataFormat
+FIELD
+Boolean
+prettyPrint
+XMLBeansDataFormat
+getPrettyPrint
+Boolean
+return
+prettyPrint
+setPrettyPrint
+prettyPrint
+Boolean
+prettyPrint
+prettyPrint
+DataFormatType

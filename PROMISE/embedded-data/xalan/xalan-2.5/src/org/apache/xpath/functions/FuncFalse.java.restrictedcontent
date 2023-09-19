@@ -1,0 +1,15 @@
+FuncFalse
+execute
+XObject
+xctxt
+XPathContext
+return
+S_FALSE
+fixupVariables
+vars
+java
+util
+Vector
+globalsSize
+int
+Function

@@ -1,0 +1,12 @@
+TermsHashConsumerPerThread
+startDocument
+finishDocument
+DocumentsWriter
+DocWriter
+addField
+TermsHashConsumerPerField
+termsHashPerField
+TermsHashPerField
+fieldInfo
+FieldInfo
+abort

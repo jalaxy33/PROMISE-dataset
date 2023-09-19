@@ -1,0 +1,8 @@
+Configurator
+String
+INHERITED
+doConfigure
+url
+URL
+repository
+LoggerRepository

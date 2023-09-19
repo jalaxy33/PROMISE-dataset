@@ -1,0 +1,6 @@
+SpringResequencerTest
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+ResequencerTest

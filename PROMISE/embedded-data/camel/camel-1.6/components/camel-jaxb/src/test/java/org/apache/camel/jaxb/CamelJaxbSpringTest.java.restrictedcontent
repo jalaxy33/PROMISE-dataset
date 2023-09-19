@@ -1,0 +1,9 @@
+CamelJaxbSpringTest
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+setUp
+setUseRouteBuilder
+setUp
+CamelJaxbTest

@@ -1,0 +1,112 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+Import
+Import
+Import
+Import
+Import
+Import
+Import
+Import
+{'final', 'public'}ClassDeclaration
+Annotation
+{'private'}ConstructorDeclaration
+{'static', 'public'}MethodDeclaration
+Annotation
+ObjectReferenceType
+set()FormalParameter
+CollectionReferenceType
+IfStatement
+BinaryOperation
+MemberReference
+Literal
+BlockStatement
+ReturnStatement
+Literal
+ReturnStatement
+MethodInvocation
+{'static', 'public'}MethodDeclaration
+Annotation
+ListReferenceType
+set()FormalParameter
+ObjectReferenceType
+ReturnStatement
+MethodInvocation
+MemberReference
+{'static', 'public'}MethodDeclaration
+Annotation
+ListReferenceType
+set()FormalParameter
+CollectionReferenceType
+ReturnStatement
+ClassCreator
+ArrayListReferenceType
+MemberReference
+{'static', 'public'}MethodDeclaration
+Annotation
+SetReferenceType
+set()FormalParameter
+ObjectReferenceType
+LocalVariableDeclaration
+SetReferenceType
+VariableDeclarator
+ClassCreator
+HashSetReferenceType
+StatementExpression
+MethodInvocation
+MethodInvocation
+MemberReference
+ReturnStatement
+MemberReference
+{'static', 'public'}MethodDeclaration
+Annotation
+SetReferenceType
+set()FormalParameter
+CollectionReferenceType
+ReturnStatement
+ClassCreator
+HashSetReferenceType
+MemberReference
+{'static', 'public'}MethodDeclaration
+Annotation
+SetReferenceType
+set()FormalParameter
+MapReferenceType
+ReturnStatement
+MethodInvocation
+{'static', 'public'}MethodDeclaration
+Annotation
+PropertiesReferenceType
+set()FormalParameter
+MapReferenceType
+LocalVariableDeclaration
+PropertiesReferenceType
+VariableDeclarator
+ClassCreator
+PropertiesReferenceType
+StatementExpression
+MethodInvocation
+MemberReference
+ReturnStatement
+MemberReference
+{'static', 'public'}MethodDeclaration
+Annotation
+HashtableReferenceType
+set()FormalParameter
+MapReferenceType
+ReturnStatement
+ClassCreator
+HashtableReferenceType
+MemberReference
+{'static', 'public'}MethodDeclaration
+Annotation
+HashMapReferenceType
+set()FormalParameter
+MapReferenceType
+ReturnStatement
+ClassCreator
+HashMapReferenceType
+MemberReference

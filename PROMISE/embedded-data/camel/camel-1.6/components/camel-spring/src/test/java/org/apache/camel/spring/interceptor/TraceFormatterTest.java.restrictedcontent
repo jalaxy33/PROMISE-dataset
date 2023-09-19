@@ -1,0 +1,13 @@
+TraceFormatterTest
+createApplicationContext
+AbstractXmlApplicationContext
+return
+ClassPathXmlApplicationContext
+testTraceFormatter
+MockEndpoint
+mock
+getMockEndpoint
+expectedMessageCount
+sendBody
+assertMockEndpointsSatisfied
+SpringTestSupport

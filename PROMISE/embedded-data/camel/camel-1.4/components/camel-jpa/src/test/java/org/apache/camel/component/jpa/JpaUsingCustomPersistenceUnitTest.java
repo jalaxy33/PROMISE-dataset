@@ -1,0 +1,15 @@
+CompilationUnit
+PackageDeclaration
+Import
+{'public'}ClassDeclaration
+{'protected'}MethodDeclaration
+StringReferenceType
+ReturnStatement
+BinaryOperation
+BinaryOperation
+Literal
+ClassReference
+MethodInvocation
+SendEmailReferenceType
+Literal
+JpaTestReferenceType

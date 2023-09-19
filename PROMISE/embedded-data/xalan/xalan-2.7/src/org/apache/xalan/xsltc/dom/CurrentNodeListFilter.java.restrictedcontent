@@ -1,0 +1,15 @@
+CurrentNodeListFilter
+test
+boolean
+node
+int
+position
+int
+last
+int
+current
+int
+translet
+AbstractTranslet
+iter
+DTMAxisIterator

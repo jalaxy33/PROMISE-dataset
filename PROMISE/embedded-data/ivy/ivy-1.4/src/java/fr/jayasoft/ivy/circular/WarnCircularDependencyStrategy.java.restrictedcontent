@@ -1,0 +1,16 @@
+WarnCircularDependencyStrategy
+CircularDependencyStrategy
+INSTANCE
+WarnCircularDependencyStrategy
+getInstance
+CircularDependencyStrategy
+return
+INSTANCE
+WarnCircularDependencyStrategy
+handleCircularDependency
+mrids
+ModuleRevisionId
+warn
+formatMessage
+mrids
+AbstractCircularDependencyStrategy

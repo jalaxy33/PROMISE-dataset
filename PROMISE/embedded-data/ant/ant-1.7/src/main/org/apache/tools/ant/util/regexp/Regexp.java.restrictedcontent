@@ -1,0 +1,14 @@
+Regexp
+int
+REPLACE_FIRST
+int
+REPLACE_ALL
+substitute
+String
+input
+String
+argument
+String
+options
+int
+RegexpMatcher

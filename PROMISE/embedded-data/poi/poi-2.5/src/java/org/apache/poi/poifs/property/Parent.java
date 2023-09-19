@@ -1,0 +1,17 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+InterfaceDeclaration
+{'public'}MethodDeclaration
+IteratorReferenceType
+{'public'}MethodDeclaration
+{'final'}FormalParameter
+PropertyReferenceType
+{'public'}MethodDeclaration
+{'final'}FormalParameter
+ChildReferenceType
+{'public'}MethodDeclaration
+{'final'}FormalParameter
+ChildReferenceType
+ChildReferenceType

@@ -1,0 +1,13 @@
+CompilationUnit
+PackageDeclaration
+InterfaceDeclaration
+set()MethodDeclaration
+booleanBasicType
+set()FormalParameter
+EReferenceType
+set()MethodDeclaration
+set()FormalParameter
+StringReferenceType
+set()FormalParameter
+EReferenceType
+TypeParameter

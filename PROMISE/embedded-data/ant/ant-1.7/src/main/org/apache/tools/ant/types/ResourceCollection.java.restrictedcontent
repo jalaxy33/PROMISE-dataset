@@ -1,0 +1,7 @@
+ResourceCollection
+iterator
+Iterator
+size
+int
+isFilesystemOnly
+boolean

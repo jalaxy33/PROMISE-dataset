@@ -1,0 +1,17 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+InterfaceDeclaration
+{'public'}MethodDeclaration
+QueryReferenceType
+set()FormalParameter
+intBasicType
+{'public'}MethodDeclaration
+QueryReferenceType
+{'public'}MethodDeclaration
+set()FormalParameter
+ConfigReferenceType
+{'public'}MethodDeclaration
+{'public'}MethodDeclaration
+StringReferenceType

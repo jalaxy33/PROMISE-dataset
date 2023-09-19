@@ -1,0 +1,6 @@
+JmsRouteUsingSpringJMSTemplateTest
+createApplicationContext
+ClassPathXmlApplicationContext
+return
+ClassPathXmlApplicationContext
+JmsRouteUsingSpringAndJmsNameTest

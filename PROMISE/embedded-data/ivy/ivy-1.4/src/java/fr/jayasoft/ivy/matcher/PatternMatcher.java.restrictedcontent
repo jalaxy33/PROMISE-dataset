@@ -1,0 +1,17 @@
+PatternMatcher
+String
+EXACT
+String
+REGEXP
+String
+GLOB
+String
+EXACT_OR_REGEXP
+String
+ANY_EXPRESSION
+getMatcher
+Matcher
+exp
+String
+getName
+String

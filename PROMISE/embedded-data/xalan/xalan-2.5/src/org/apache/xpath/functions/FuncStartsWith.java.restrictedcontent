@@ -1,0 +1,16 @@
+FuncStartsWith
+execute
+XObject
+xctxt
+XPathContext
+return
+execute
+xstr
+startsWith
+execute
+xstr
+xctxt
+xctxt
+S_TRUE
+S_FALSE
+Function2Args

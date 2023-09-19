@@ -1,0 +1,16 @@
+ActiveMQHelper
+getDefaultEndpointUri
+String
+return
+DEFAULT_DESTINATION_PREFIX
+configureActiveMQComponent
+camelContext
+CamelContext
+brokerUrl
+String
+ActiveMQComponent
+activemqComponent
+getComponent
+ActiveMQComponent
+setBrokerURL
+brokerUrl

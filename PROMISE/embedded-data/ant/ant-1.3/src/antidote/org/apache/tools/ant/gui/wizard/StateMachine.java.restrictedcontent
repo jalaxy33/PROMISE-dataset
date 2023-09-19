@@ -1,0 +1,13 @@
+StateMachine
+getNext
+String
+curr
+WizardStep
+data
+WizardData
+getPrevious
+String
+curr
+WizardStep
+data
+WizardData

@@ -1,0 +1,30 @@
+CompilationUnit
+PackageDeclaration
+Import
+{'final', 'public'}ClassDeclaration
+{'private'}ConstructorDeclaration
+{'static', 'public'}MethodDeclaration
+IOExceptionReferenceType
+set()FormalParameter
+ThrowableReferenceType
+ReturnStatement
+MethodInvocation
+MethodInvocation
+MemberReference
+{'static', 'public'}MethodDeclaration
+IOExceptionReferenceType
+set()FormalParameter
+StringReferenceType
+set()FormalParameter
+ThrowableReferenceType
+LocalVariableDeclaration
+IOExceptionReferenceType
+VariableDeclarator
+ClassCreator
+IOExceptionReferenceType
+MemberReference
+StatementExpression
+MethodInvocation
+MemberReference
+ReturnStatement
+MemberReference

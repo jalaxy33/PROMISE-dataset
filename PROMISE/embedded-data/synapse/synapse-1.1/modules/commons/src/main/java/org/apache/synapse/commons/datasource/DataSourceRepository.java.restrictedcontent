@@ -1,0 +1,17 @@
+DataSourceRepository
+init
+properties
+Properties
+isInitialized
+boolean
+register
+information
+DataSourceInformation
+unRegister
+name
+String
+lookUp
+DataSource
+name
+String
+clear

@@ -1,0 +1,10 @@
+IsFailureTest
+IsFailureTest
+name
+String
+name
+setUp
+configureProject
+testIsFailure
+executeTarget
+BuildFileTest

@@ -1,0 +1,10 @@
+BeanShellScriptTest
+BeanShellScriptTest
+name
+String
+name
+setUp
+configureProject
+testCanLoad
+expectLog
+BuildFileTest

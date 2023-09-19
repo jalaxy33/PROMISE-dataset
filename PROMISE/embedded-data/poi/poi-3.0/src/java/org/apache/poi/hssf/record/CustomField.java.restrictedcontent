@@ -1,0 +1,17 @@
+CustomField
+getSize
+int
+fillField
+int
+in
+RecordInputStream
+toString
+str
+StringBuffer
+serializeField
+int
+offset
+int
+data
+byte
+Cloneable

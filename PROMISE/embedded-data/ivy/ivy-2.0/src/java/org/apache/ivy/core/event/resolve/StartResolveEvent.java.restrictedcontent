@@ -1,0 +1,12 @@
+StartResolveEvent
+String
+NAME
+StartResolveEvent
+md
+ModuleDescriptor
+confs
+String
+NAME
+md
+confs
+ResolveEvent

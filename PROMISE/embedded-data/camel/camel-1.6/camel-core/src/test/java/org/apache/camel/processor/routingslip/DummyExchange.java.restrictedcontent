@@ -1,0 +1,17 @@
+DummyExchange
+DummyExchange
+context
+CamelContext
+pattern
+ExchangePattern
+context
+pattern
+DummyExchange
+dummyExchange
+DummyExchange
+dummyExchange
+newInstance
+Exchange
+return
+DummyExchange
+DefaultExchange

@@ -1,0 +1,8 @@
+CompilationUnit
+PackageDeclaration
+Import
+InterfaceDeclaration
+{'public'}MethodDeclaration
+EventReferenceType
+set()FormalParameter
+StringReferenceType

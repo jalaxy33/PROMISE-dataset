@@ -1,0 +1,11 @@
+ConfigurationFactory
+getTagQName
+QName
+getConfiguration
+SynapseConfiguration
+element
+OMElement
+properties
+Properties
+getSerializerClass
+Class

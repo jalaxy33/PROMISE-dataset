@@ -1,0 +1,13 @@
+SpringIntegrationProducerTest
+createApplicationContext
+ClassPathXmlApplicationContext
+return
+ClassPathXmlApplicationContext
+testSendingTwoWayMessage
+String
+result
+String
+sendBody
+assertEquals
+result
+SpringTestSupport

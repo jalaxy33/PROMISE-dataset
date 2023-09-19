@@ -1,0 +1,14 @@
+ConflictManager
+resolveConflicts
+Collection
+parent
+IvyNode
+conflicts
+Collection
+getName
+String
+handleAllBlacklistedRevisions
+dd
+DependencyDescriptor
+foundBlacklisted
+Collection

@@ -1,0 +1,13 @@
+ResolvedModuleRevision
+getResolver
+DependencyResolver
+getId
+ModuleRevisionId
+getPublicationDate
+Date
+getDescriptor
+ModuleDescriptor
+isDownloaded
+boolean
+isSearched
+boolean

@@ -1,0 +1,11 @@
+RawPostingList
+int
+BYTES_SIZE
+OBJECT_HEADER_BYTES
+INT_NUM_BYTE
+int
+textStart
+int
+intStart
+int
+byteStart

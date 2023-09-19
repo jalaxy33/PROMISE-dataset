@@ -1,0 +1,15 @@
+IdentityMapper
+setFrom
+from
+String
+setTo
+to
+String
+mapFileName
+String
+sourceFileName
+String
+return
+String
+sourceFileName
+FileNameMapper

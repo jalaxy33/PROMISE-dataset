@@ -1,0 +1,15 @@
+BankWS
+getBankName
+String
+getQuote
+BankQuote
+ssn
+String
+loanAmount
+double
+loanDuration
+int
+creditHistory
+int
+creditScore
+int

@@ -1,0 +1,19 @@
+CompilationUnit
+PackageDeclaration
+Import
+{'public', 'abstract'}ClassDeclaration
+FieldDeclaration
+TokenStreamReferenceType
+VariableDeclarator
+{'protected'}ConstructorDeclaration
+set()FormalParameter
+TokenStreamReferenceType
+StatementExpression
+Assignment
+This
+MemberReference
+MemberReference
+{'public'}MethodDeclaration
+StatementExpression
+MethodInvocation
+TokenStreamReferenceType

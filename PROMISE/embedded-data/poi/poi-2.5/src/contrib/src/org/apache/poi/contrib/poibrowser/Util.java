@@ -1,0 +1,22 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+{'public'}ClassDeclaration
+{'public', 'static'}MethodDeclaration
+{'final'}FormalParameter
+JComponentReferenceType
+LocalVariableDeclaration
+ColorReferenceType
+VariableDeclarator
+MethodInvocation
+LocalVariableDeclaration
+ColorReferenceType
+VariableDeclarator
+MethodInvocation
+StatementExpression
+MethodInvocation
+MemberReference
+StatementExpression
+MethodInvocation
+MemberReference

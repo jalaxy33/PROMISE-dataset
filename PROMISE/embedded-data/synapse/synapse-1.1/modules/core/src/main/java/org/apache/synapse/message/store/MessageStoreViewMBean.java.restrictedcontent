@@ -1,0 +1,14 @@
+MessageStoreViewMBean
+deleteAll
+getMessageIds
+List
+String
+delete
+messageID
+String
+getEnvelope
+String
+messageID
+String
+getSize
+int

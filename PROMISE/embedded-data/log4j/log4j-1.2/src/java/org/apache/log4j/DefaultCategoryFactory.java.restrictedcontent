@@ -1,0 +1,10 @@
+DefaultCategoryFactory
+DefaultCategoryFactory
+makeNewLoggerInstance
+Logger
+name
+String
+return
+Logger
+name
+LoggerFactory

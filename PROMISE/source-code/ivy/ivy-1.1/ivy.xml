@@ -1,0 +1,13 @@
+<ivy-module version="1.0"> 
+	<info organisation="jayasoft"
+	       module="ivy"
+	       status="release"
+	/>
+	<publications>
+		<artifact name="ivy" type="jar"/>
+	</publications>
+	<dependencies>
+		<dependency org="apache" name="commons-httpclient" rev="2.0.2"/>
+		<dependency org="apache" name="commons-cli" rev="1.0"/>
+	</dependencies>
+</ivy-module>

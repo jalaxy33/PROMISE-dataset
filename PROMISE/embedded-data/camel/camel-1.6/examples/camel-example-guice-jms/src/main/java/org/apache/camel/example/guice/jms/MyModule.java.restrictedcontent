@@ -1,0 +1,14 @@
+MyModule
+configure
+configure
+bind
+MyRouteBuilder
+jms
+JmsComponent
+brokerUrl
+String
+return
+jmsComponent
+ActiveMQConnectionFactory
+brokerUrl
+CamelModuleWithMatchingRoutes

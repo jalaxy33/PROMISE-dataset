@@ -1,0 +1,17 @@
+InsertableElementsInfo
+boolean
+canHoldPCData
+int
+childCount
+QName
+curChildren
+boolean
+isValidEOC
+int
+insertAt
+QName
+possibleChildren
+int
+resultsCount
+boolean
+results

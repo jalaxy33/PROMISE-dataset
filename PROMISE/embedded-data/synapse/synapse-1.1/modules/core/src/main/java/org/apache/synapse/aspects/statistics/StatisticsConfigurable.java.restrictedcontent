@@ -1,0 +1,5 @@
+StatisticsConfigurable
+isStatisticsEnable
+boolean
+disableStatistics
+enableStatistics

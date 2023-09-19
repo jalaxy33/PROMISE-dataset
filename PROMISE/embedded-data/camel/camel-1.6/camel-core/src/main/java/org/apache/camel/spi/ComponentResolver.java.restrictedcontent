@@ -1,0 +1,9 @@
+ComponentResolver
+resolveComponent
+Component
+E
+name
+String
+context
+CamelContext
+Exchange

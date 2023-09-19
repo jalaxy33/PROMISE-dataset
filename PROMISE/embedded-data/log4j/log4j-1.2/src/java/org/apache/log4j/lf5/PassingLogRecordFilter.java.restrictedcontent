@@ -1,0 +1,8 @@
+PassingLogRecordFilter
+passes
+boolean
+record
+LogRecord
+return
+reset
+LogRecordFilter

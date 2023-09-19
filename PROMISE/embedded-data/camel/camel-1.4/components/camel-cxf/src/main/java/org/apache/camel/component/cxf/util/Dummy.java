@@ -1,0 +1,3 @@
+CompilationUnit
+PackageDeclaration
+{'public'}ClassDeclaration

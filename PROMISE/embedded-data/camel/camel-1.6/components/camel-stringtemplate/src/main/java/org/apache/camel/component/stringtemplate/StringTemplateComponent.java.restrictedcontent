@@ -1,0 +1,15 @@
+StringTemplateComponent
+createEndpoint
+Endpoint
+uri
+String
+remaining
+String
+parameters
+Map
+return
+StringTemplateEndpoint
+uri
+remaining
+parameters
+DefaultComponent

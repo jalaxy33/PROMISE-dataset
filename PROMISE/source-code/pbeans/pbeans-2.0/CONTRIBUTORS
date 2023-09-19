@@ -1,0 +1,18 @@
+
+- Jose Solorzano (jhsolorz|at|users.sourceforge.net)
+  Founder and lead developer.
+
+- Marius Siegas
+  Implemented Criteria map which allows SQL conditions
+  to be built based on key-value-operator tuples.
+
+- Philipp Walther @ REDMOON.ch
+  Implemented MultiValueContainer.
+
+- Unknown contributor # 1
+  Did HSQLDB Database implementation.
+  
+- Unknown contributor # 2
+  Added build.xml (Ant) file.
+
+(Please correct entries if there's an omission or error)

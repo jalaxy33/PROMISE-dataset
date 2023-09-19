@@ -1,0 +1,15 @@
+OperationPtg
+int
+TYPE_UNARY
+int
+TYPE_BINARY
+int
+TYPE_FUNCTION
+getType
+int
+getNumberOfOperands
+int
+toFormulaString
+String
+operands
+Ptg

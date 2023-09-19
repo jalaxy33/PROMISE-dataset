@@ -1,0 +1,28 @@
+CompilationUnit
+PackageDeclaration
+Import
+{'final', 'public'}ClassDeclaration
+{'private'}ConstructorDeclaration
+{'static', 'public'}MethodDeclaration
+InvokingContextReferenceType
+set()FormalParameter
+DataFormatReferenceType
+IfStatement
+BinaryOperation
+MemberReference
+MemberReference
+BlockStatement
+ReturnStatement
+ClassCreator
+RawMessageInvokingContextReferenceType
+IfStatement
+BinaryOperation
+MemberReference
+MemberReference
+BlockStatement
+ReturnStatement
+ClassCreator
+PayloadInvokingContextReferenceType
+ReturnStatement
+ClassCreator
+RawMessageInvokingContextReferenceType

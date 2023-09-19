@@ -1,0 +1,13 @@
+CompilationUnit
+PackageDeclaration
+{'public'}ClassDeclaration
+FieldDeclaration
+intBasicType
+VariableDeclarator
+FieldDeclaration
+intBasicType
+VariableDeclarator
+FieldDeclaration
+LFOLVLReferenceType
+VariableDeclarator
+{'public'}ConstructorDeclaration

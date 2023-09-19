@@ -1,0 +1,17 @@
+Sample101
+SampleClientResult
+result
+Sample101
+testWSRM
+String
+addUrl
+info
+StockQuoteSampleClient
+client
+getStockQuoteClient
+result
+requestStandardQuote
+addUrl
+assertTrue
+responseReceived
+SynapseTestCase

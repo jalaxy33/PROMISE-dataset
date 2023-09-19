@@ -1,0 +1,12 @@
+HTMLBaseElement
+getHref
+String
+setHref
+href
+String
+getTarget
+String
+setTarget
+target
+String
+HTMLElement

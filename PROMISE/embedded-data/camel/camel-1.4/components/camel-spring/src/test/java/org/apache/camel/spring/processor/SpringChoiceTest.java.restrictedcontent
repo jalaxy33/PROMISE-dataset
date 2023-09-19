@@ -1,0 +1,6 @@
+SpringChoiceTest
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+ChoiceTest

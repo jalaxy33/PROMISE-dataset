@@ -1,0 +1,21 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+{'public', 'abstract'}ClassDeclaration
+FieldDeclaration
+ReaderReferenceType
+VariableDeclarator
+{'protected'}ConstructorDeclaration
+{'protected'}ConstructorDeclaration
+set()FormalParameter
+ReaderReferenceType
+StatementExpression
+Assignment
+This
+MemberReference
+MemberReference
+{'public'}MethodDeclaration
+StatementExpression
+MethodInvocation
+TokenStreamReferenceType

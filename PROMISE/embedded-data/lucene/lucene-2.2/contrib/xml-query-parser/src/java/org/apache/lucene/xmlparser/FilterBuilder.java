@@ -1,0 +1,9 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+InterfaceDeclaration
+{'public'}MethodDeclaration
+FilterReferenceType
+set()FormalParameter
+ElementReferenceType

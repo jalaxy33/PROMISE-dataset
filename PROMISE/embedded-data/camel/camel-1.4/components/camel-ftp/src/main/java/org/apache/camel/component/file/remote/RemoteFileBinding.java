@@ -1,0 +1,12 @@
+CompilationUnit
+PackageDeclaration
+Import
+{'public'}ClassDeclaration
+{'public'}MethodDeclaration
+ObjectReferenceType
+set()FormalParameter
+RemoteFileExchangeReferenceType
+set()FormalParameter
+OutputStreamReferenceType
+ReturnStatement
+MemberReference

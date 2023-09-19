@@ -1,0 +1,16 @@
+CompilationUnit
+Import
+{'public'}ClassDeclaration
+{'public'}ConstructorDeclaration
+StatementExpression
+SuperConstructorInvocation
+StatementExpression
+MethodInvocation
+Literal
+StatementExpression
+MethodInvocation
+Literal
+StatementExpression
+MethodInvocation
+Literal
+JTextAreaReferenceType

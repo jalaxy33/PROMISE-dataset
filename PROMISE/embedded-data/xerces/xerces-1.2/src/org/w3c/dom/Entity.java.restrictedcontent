@@ -1,0 +1,8 @@
+Entity
+getPublicId
+String
+getSystemId
+String
+getNotationName
+String
+Node

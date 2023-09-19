@@ -1,0 +1,16 @@
+RenameTest
+RenameTest
+name
+String
+name
+setUp
+configureProject
+test1
+expectBuildException
+test2
+expectBuildException
+test3
+expectBuildException
+test6
+executeTarget
+BuildFileTest

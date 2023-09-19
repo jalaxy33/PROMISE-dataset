@@ -1,0 +1,12 @@
+MBeanCamelServerConnection
+addNotificationListener
+listenerId
+String
+name
+ObjectName
+replyToEndpoint
+Endpoint
+removeNotificationListener
+listenerId
+String
+MBeanServerConnection

@@ -1,0 +1,9 @@
+POIFSConstants
+int
+BIG_BLOCK_SIZE
+int
+END_OF_CHAIN
+int
+PROPERTY_SIZE
+int
+UNUSED_BLOCK

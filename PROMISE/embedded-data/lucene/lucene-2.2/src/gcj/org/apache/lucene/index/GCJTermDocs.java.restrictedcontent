@@ -1,0 +1,12 @@
+GCJTermDocs
+GCJTermDocs
+parent
+SegmentReader
+parent
+read
+int
+docs
+int
+freqs
+int
+SegmentTermDocs

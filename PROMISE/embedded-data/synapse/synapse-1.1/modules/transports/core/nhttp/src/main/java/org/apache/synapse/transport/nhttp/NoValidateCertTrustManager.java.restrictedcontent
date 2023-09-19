@@ -1,0 +1,16 @@
+NoValidateCertTrustManager
+checkClientTrusted
+chain
+X509Certificate
+authType
+String
+checkServerTrusted
+chain
+X509Certificate
+authType
+String
+getAcceptedIssuers
+X509Certificate
+return
+X509Certificate
+X509TrustManager

@@ -1,0 +1,30 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+Import
+{'final', 'public'}ClassDeclaration
+{'private'}ConstructorDeclaration
+{'static', 'public'}MethodDeclaration
+set()FormalParameter
+IoSessionReferenceType
+set()FormalParameter
+ObjectReferenceType
+set()FormalParameter
+ExchangeReferenceType
+LocalVariableDeclaration
+WriteFutureReferenceType
+VariableDeclarator
+MethodInvocation
+MemberReference
+StatementExpression
+MethodInvocation
+IfStatement
+MethodInvocation
+BlockStatement
+ThrowStatement
+ClassCreator
+CamelExchangeExceptionReferenceType
+Literal
+MemberReference

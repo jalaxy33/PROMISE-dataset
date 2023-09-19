@@ -1,0 +1,17 @@
+AppenderAttachable
+addAppender
+newAppender
+Appender
+getAllAppenders
+Enumeration
+getAppender
+Appender
+name
+String
+removeAllAppenders
+removeAppender
+appender
+Appender
+removeAppender
+name
+String

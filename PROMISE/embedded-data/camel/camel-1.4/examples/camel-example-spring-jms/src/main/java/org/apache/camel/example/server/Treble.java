@@ -1,0 +1,16 @@
+CompilationUnit
+PackageDeclaration
+Import
+{'public'}ClassDeclaration
+Annotation
+ElementValuePair
+Literal
+{'public'}MethodDeclaration
+intBasicType
+{'final'}FormalParameter
+intBasicType
+ReturnStatement
+BinaryOperation
+MemberReference
+Literal
+MultiplierReferenceType

@@ -1,0 +1,16 @@
+ConcurrentStorageLock
+setLock
+boolean
+key
+String
+releaseLock
+boolean
+key
+String
+releaseThreadLocks
+boolean
+isKeyLocked
+boolean
+key
+String
+close

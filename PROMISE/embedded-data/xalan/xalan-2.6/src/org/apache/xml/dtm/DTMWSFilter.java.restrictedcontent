@@ -1,0 +1,13 @@
+DTMWSFilter
+short
+NOTSTRIP
+short
+STRIP
+short
+INHERIT
+getShouldStripSpace
+short
+elementHandle
+int
+dtm
+DTM

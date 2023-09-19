@@ -1,0 +1,10 @@
+MyCategoryFactory
+MyCategoryFactory
+makeNewCategoryInstance
+Category
+name
+String
+return
+MyCategory
+name
+CategoryFactory

@@ -1,0 +1,12 @@
+CompilationUnit
+PackageDeclaration
+Import
+InterfaceDeclaration
+ConstantDeclaration
+StringReferenceType
+VariableDeclarator
+Literal
+set()MethodDeclaration
+StringReferenceType
+set()MethodDeclaration
+ComponentReferenceType

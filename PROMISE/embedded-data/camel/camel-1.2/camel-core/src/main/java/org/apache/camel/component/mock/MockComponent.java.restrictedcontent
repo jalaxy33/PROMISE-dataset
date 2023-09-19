@@ -1,0 +1,15 @@
+MockComponent
+createEndpoint
+Endpoint
+Exchange
+uri
+String
+remaining
+String
+parameters
+Map
+return
+MockEndpoint
+uri
+DefaultComponent
+Exchange

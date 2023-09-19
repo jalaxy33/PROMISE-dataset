@@ -1,0 +1,16 @@
+CompilationUnit
+PackageDeclaration
+Import
+{'public'}ClassDeclaration
+{'public'}ConstructorDeclaration
+{'final'}FormalParameter
+ListReferenceType
+StatementExpression
+MethodInvocation
+Cast
+SmallDocumentBlockReferenceType
+MethodInvocation
+ArrayCreator
+SmallDocumentBlockReferenceType
+Literal
+BlockListImplReferenceType

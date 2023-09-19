@@ -1,0 +1,17 @@
+MyAssertions
+MockEndpoint
+matched
+MockEndpoint
+notMatched
+afterPropertiesSet
+expectedMessageCount
+expectedMessageCount
+assertEndpointsValid
+assertNotNull
+matched
+assertNotNull
+notMatched
+assertIsSatisfied
+matched
+notMatched
+InitializingBean

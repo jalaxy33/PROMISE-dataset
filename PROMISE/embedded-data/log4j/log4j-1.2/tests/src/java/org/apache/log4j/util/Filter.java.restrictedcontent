@@ -1,0 +1,15 @@
+Filter
+String
+BASIC_PAT
+String
+ISO8601_PAT
+String
+ABSOLUTE_DATE_AND_TIME_PAT
+String
+ABSOLUTE_TIME_PAT
+String
+RELATIVE_TIME_PAT
+filter
+String
+in
+String

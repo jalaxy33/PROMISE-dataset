@@ -1,0 +1,16 @@
+WizardNavigator
+addNavigatorListener
+l
+NavigatorListener
+removeNavigatorListener
+l
+NavigatorListener
+setBackEnabled
+state
+boolean
+setNextEnabled
+state
+boolean
+setFinishEnabled
+state
+boolean

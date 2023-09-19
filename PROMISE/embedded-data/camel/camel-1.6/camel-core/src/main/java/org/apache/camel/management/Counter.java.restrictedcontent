@@ -1,0 +1,14 @@
+Counter
+AtomicLong
+numExchanges
+AtomicLong
+reset
+set
+getNumExchanges
+long
+return
+get
+increment
+long
+return
+incrementAndGet

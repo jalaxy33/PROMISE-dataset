@@ -1,0 +1,14 @@
+GOMFactory
+GOMFactory
+createInstance
+GOMFactory
+return
+GOMFactory
+createFeed
+GOMFeed
+return
+GOMFeedImpl
+createEntry
+GOMEntry
+return
+GOMEntryImpl

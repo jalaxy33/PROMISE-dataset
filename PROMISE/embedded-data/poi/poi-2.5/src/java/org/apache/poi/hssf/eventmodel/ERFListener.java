@@ -1,0 +1,8 @@
+CompilationUnit
+PackageDeclaration
+Import
+InterfaceDeclaration
+{'public'}MethodDeclaration
+booleanBasicType
+set()FormalParameter
+RecordReferenceType

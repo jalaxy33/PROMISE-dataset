@@ -1,0 +1,12 @@
+TestSimpleExplanationsOfNonMatches
+qtest
+q
+Query
+expDocNrs
+int
+checkNoMatchExplanations
+q
+FIELD
+searcher
+expDocNrs
+TestSimpleExplanations

@@ -1,0 +1,7 @@
+NamespaceHandler
+init
+registerBeanDefinitionParser
+CamelConduitDefinitionParser
+registerBeanDefinitionParser
+CamelDestinationDefinitionParser
+NamespaceHandlerSupport

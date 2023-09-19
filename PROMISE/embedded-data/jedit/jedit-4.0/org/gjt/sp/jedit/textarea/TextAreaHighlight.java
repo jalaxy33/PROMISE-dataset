@@ -1,0 +1,16 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+InterfaceDeclaration
+set()MethodDeclaration
+set()FormalParameter
+GraphicsReferenceType
+set()FormalParameter
+intBasicType
+set()FormalParameter
+intBasicType
+set()MethodDeclaration
+StringReferenceType
+set()FormalParameter
+MouseEventReferenceType

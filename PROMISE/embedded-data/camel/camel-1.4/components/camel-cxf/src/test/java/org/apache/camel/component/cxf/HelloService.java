@@ -1,0 +1,16 @@
+CompilationUnit
+PackageDeclaration
+InterfaceDeclaration
+set()MethodDeclaration
+StringReferenceType
+set()MethodDeclaration
+set()MethodDeclaration
+intBasicType
+set()MethodDeclaration
+StringReferenceType
+set()FormalParameter
+StringReferenceType
+set()MethodDeclaration
+BooleanReferenceType
+set()FormalParameter
+BooleanReferenceType

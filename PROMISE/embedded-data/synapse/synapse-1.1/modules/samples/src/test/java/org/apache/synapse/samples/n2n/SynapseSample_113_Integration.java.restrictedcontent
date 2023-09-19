@@ -1,0 +1,10 @@
+SynapseSample_113_Integration
+setUp
+setProperty
+SYNAPSE_XML
+SAMPLE_CONFIG_ROOT_PATH
+setProperty
+SYNAPSE_BASE_URL
+setUp
+testSample
+AbstractAutomationTestCase

@@ -1,0 +1,16 @@
+ChpxNode
+ChpxNode
+fcStart
+int
+fcEnd
+int
+chpx
+byte
+fcStart
+fcEnd
+chpx
+getChpx
+byte
+return
+getGrpprl
+PropertyNode

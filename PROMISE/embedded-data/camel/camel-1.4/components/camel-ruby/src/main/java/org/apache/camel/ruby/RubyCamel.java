@@ -1,0 +1,53 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+Import
+Import
+{'public'}ClassDeclaration
+FieldDeclaration
+CamelContextReferenceType
+VariableDeclarator
+FieldDeclaration
+ListReferenceType
+TypeArgument
+RouteBuilderReferenceType
+VariableDeclarator
+ClassCreator
+ArrayListReferenceType
+TypeArgument
+RouteBuilderReferenceType
+{'static', 'public'}MethodDeclaration
+ListReferenceType
+TypeArgument
+RouteBuilderReferenceType
+ReturnStatement
+MemberReference
+{'static', 'public'}MethodDeclaration
+set()FormalParameter
+RouteBuilderReferenceType
+StatementExpression
+MethodInvocation
+MemberReference
+{'static', 'public'}MethodDeclaration
+CamelContextReferenceType
+IfStatement
+BinaryOperation
+MemberReference
+Literal
+BlockStatement
+StatementExpression
+Assignment
+MemberReference
+ClassCreator
+DefaultCamelContextReferenceType
+ReturnStatement
+MemberReference
+{'static', 'public'}MethodDeclaration
+set()FormalParameter
+CamelContextReferenceType
+StatementExpression
+Assignment
+MemberReference
+MemberReference

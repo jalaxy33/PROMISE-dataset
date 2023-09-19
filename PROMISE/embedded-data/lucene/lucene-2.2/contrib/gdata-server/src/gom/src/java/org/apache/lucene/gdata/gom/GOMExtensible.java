@@ -1,0 +1,12 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+InterfaceDeclaration
+{'public'}MethodDeclaration
+ListReferenceType
+TypeArgument
+GOMExtensionReferenceType
+{'public'}MethodDeclaration
+set()FormalParameter
+GOMExtensionFactoryReferenceType

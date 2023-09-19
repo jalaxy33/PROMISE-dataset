@@ -1,0 +1,5 @@
+NamespaceHandler
+init
+registerBeanDefinitionParser
+CxfEndpointBeanDefinitionParser
+NamespaceHandlerSupport

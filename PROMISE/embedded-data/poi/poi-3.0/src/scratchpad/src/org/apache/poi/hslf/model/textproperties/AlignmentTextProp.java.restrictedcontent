@@ -1,0 +1,15 @@
+AlignmentTextProp
+int
+LEFT
+int
+CENTER
+int
+RIGHT
+int
+JUSTIFY
+int
+THAIDISTRIBUTED
+int
+JUSTIFYLOW
+AlignmentTextProp
+TextProp

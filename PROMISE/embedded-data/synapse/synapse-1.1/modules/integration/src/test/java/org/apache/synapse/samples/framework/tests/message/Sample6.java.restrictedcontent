@@ -1,0 +1,16 @@
+Sample6
+Sample6
+testManipulatingHeadersAndFiltering
+String
+trpUrl
+StockQuoteSampleClient
+client
+getStockQuoteClient
+info
+SampleClientResult
+result
+requestStandardQuote
+trpUrl
+assertResponseReceived
+result
+SynapseTestCase

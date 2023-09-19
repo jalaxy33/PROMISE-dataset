@@ -1,0 +1,13 @@
+CxfGreeterPayLoadRouterTest
+createRouteBuilder
+RouteBuilder
+return
+RouteBuilder
+configure
+from
+to
+createApplicationContext
+ClassPathXmlApplicationContext
+return
+ClassPathXmlApplicationContext
+CXFGreeterRouterTest

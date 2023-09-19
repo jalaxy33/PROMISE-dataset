@@ -1,0 +1,13 @@
+UUEncodeTask
+doit
+is
+InputStream
+os
+OutputStream
+encode
+is
+os
+UUEncoder
+getInFile
+getName
+BaseTask

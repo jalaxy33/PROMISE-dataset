@@ -1,0 +1,16 @@
+HotDeploymentTool
+String
+ACTION_DELETE
+String
+ACTION_DEPLOY
+String
+ACTION_LIST
+String
+ACTION_UNDEPLOY
+String
+ACTION_UPDATE
+validateAttributes
+deploy
+setTask
+task
+ServerDeploy

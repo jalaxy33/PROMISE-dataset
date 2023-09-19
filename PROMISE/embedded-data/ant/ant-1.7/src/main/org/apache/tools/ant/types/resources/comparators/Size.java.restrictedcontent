@@ -1,0 +1,12 @@
+Size
+resourceCompare
+int
+foo
+Resource
+bar
+Resource
+return
+int
+getSize
+getSize
+ResourceComparator

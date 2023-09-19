@@ -1,0 +1,12 @@
+HTMLLIElement
+getType
+String
+setType
+type
+String
+getValue
+int
+setValue
+value
+int
+HTMLElement

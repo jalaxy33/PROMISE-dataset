@@ -1,0 +1,11 @@
+JDBCConnectionHandler
+getConnection
+Connection
+getConnection
+Connection
+_url
+String
+_username
+String
+_password
+String

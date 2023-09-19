@@ -1,0 +1,15 @@
+UnPackageNameMapper
+extractVariablePart
+String
+name
+String
+String
+var
+substring
+prefixLength
+length
+postfixLength
+return
+replace
+separatorChar
+GlobPatternMapper

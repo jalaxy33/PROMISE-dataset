@@ -1,0 +1,13 @@
+TestParallelMultiSearcher
+TestParallelMultiSearcher
+name
+String
+name
+getMultiSearcherInstance
+MultiSearcher
+searchers
+Searcher
+return
+ParallelMultiSearcher
+searchers
+TestMultiSearcher

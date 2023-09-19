@@ -1,0 +1,14 @@
+Util
+invert
+c
+JComponent
+Color
+invBackground
+getForeground
+Color
+invForeground
+getBackground
+setBackground
+invBackground
+setForeground
+invForeground

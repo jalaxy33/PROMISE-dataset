@@ -1,0 +1,16 @@
+DTMDOMException
+DTMDOMException
+code
+short
+message
+String
+code
+message
+DTMDOMException
+code
+short
+code
+org
+w3c
+dom
+DOMException

@@ -1,0 +1,17 @@
+Sample434
+SampleClientResult
+result
+Sample434
+testCallOutInlineEndpoint
+info
+String
+trpUrl
+StockQuoteSampleClient
+client
+getStockQuoteClient
+result
+requestStandardQuote
+trpUrl
+assertTrue
+responseReceived
+SynapseTestCase

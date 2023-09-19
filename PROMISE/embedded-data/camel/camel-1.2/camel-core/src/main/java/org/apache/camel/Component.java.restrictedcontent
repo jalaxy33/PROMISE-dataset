@@ -1,0 +1,12 @@
+Component
+getCamelContext
+CamelContext
+setCamelContext
+context
+CamelContext
+createEndpoint
+Endpoint
+E
+uri
+String
+Exchange

@@ -1,0 +1,11 @@
+ConciseGuiceRouteTest
+testGuice
+Injector
+injector
+createInjector
+CamelModuleWithRouteTypes
+MyRouteInstaller
+MyHardcodeRoute
+assertCamelContextRunningThenCloseInjector
+injector
+TestCase

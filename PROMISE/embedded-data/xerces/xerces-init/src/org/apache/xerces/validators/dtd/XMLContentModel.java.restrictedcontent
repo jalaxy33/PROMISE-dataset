@@ -1,0 +1,13 @@
+XMLContentModel
+validateContent
+int
+childCount
+int
+children
+int
+whatCanGoHere
+int
+fullyValid
+boolean
+info
+InsertableElementsInfo

@@ -1,0 +1,10 @@
+UseLatestAggregationStrategy
+aggregate
+Exchange
+oldExchange
+Exchange
+newExchange
+Exchange
+return
+newExchange
+AggregationStrategy

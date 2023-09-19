@@ -1,0 +1,8 @@
+IncludeRule
+getId
+ArtifactId
+getConfigurations
+String
+getMatcher
+PatternMatcher
+ExtendableItem

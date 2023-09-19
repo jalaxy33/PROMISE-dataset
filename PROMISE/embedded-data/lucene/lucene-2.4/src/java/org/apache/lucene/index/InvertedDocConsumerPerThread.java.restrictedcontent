@@ -1,0 +1,12 @@
+InvertedDocConsumerPerThread
+startDocument
+addField
+InvertedDocConsumerPerField
+docInverterPerField
+DocInverterPerField
+fieldInfo
+FieldInfo
+finishDocument
+DocumentsWriter
+DocWriter
+abort

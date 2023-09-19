@@ -1,0 +1,16 @@
+DenyAllFilter
+getOptionStrings
+String
+return
+setOption
+key
+String
+value
+String
+decide
+int
+event
+LoggingEvent
+return
+DENY
+Filter

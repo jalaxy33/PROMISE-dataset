@@ -1,0 +1,13 @@
+SpringJXPathFilterTest
+ProducerTemplate
+template
+MockEndpoint
+endpoint
+setUp
+reset
+testFilterWithJXPath
+expectedMessageCount
+sendBody
+PersonBean
+assertIsSatisfied
+AbstractJUnit38SpringContextTests

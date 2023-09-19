@@ -1,0 +1,14 @@
+MBeanRepository
+addMBean
+name
+String
+MBean
+Object
+getMBean
+Object
+name
+String
+removeMBean
+name
+String
+clear

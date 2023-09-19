@@ -1,0 +1,12 @@
+RestletConstants
+String
+LOGIN
+String
+PASSWORD
+String
+MEDIA_TYPE
+String
+RESPONSE_CODE
+String
+QUERY_STRING
+RestletConstants

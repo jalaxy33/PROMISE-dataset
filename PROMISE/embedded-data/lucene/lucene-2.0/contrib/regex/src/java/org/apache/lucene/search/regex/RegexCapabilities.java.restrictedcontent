@@ -1,0 +1,10 @@
+RegexCapabilities
+compile
+pattern
+String
+match
+boolean
+string
+String
+prefix
+String

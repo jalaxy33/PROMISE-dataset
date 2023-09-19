@@ -1,0 +1,7 @@
+MessageStoreObserver
+messageAdded
+messageId
+String
+messageRemoved
+messageId
+String

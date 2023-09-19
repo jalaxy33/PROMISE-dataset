@@ -1,0 +1,12 @@
+TestMediator
+mediate
+boolean
+synCtx
+MessageContext
+return
+getType
+String
+return
+getName
+TestMediator
+AbstractMediator

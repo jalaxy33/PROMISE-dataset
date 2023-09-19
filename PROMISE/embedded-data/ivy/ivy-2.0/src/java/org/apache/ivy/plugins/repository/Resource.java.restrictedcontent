@@ -1,0 +1,17 @@
+Resource
+getName
+String
+getLastModified
+long
+getContentLength
+long
+exists
+boolean
+isLocal
+boolean
+clone
+Resource
+cloneName
+String
+openStream
+InputStream

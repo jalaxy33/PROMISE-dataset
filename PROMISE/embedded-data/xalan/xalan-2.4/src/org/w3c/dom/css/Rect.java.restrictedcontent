@@ -1,0 +1,9 @@
+Rect
+getTop
+CSSPrimitiveValue
+getRight
+CSSPrimitiveValue
+getBottom
+CSSPrimitiveValue
+getLeft
+CSSPrimitiveValue

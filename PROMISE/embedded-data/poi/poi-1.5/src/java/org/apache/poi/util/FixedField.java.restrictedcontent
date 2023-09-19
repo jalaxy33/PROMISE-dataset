@@ -1,0 +1,12 @@
+FixedField
+readFromBytes
+data
+byte
+readFromStream
+stream
+InputStream
+writeToBytes
+data
+byte
+toString
+String

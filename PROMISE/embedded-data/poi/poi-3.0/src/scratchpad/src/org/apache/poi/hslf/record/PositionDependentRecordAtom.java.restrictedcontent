@@ -1,0 +1,17 @@
+PositionDependentRecordAtom
+int
+myLastOnDiskOffset
+getLastOnDiskOffset
+int
+return
+myLastOnDiskOffset
+setLastOnDiskOffset
+offset
+int
+myLastOnDiskOffset
+offset
+updateOtherRecordReferences
+oldToNewReferencesLookup
+Hashtable
+RecordAtom
+PositionDependentRecord

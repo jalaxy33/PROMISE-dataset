@@ -1,0 +1,10 @@
+CompilationUnit
+PackageDeclaration
+{'public'}ClassDeclaration
+{'public'}ConstructorDeclaration
+set()FormalParameter
+StringReferenceType
+StatementExpression
+SuperConstructorInvocation
+MemberReference
+IllegalStateExceptionReferenceType

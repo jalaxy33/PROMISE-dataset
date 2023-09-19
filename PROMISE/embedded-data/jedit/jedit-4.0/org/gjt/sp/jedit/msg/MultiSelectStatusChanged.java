@@ -1,0 +1,13 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+{'public'}ClassDeclaration
+{'public'}ConstructorDeclaration
+set()FormalParameter
+EBComponentReferenceType
+StatementExpression
+SuperConstructorInvocation
+MemberReference
+EBMessageReferenceType
+NonVetoableReferenceType

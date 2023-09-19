@@ -1,0 +1,15 @@
+SetExchangePatternProcessor
+process
+exchange
+Exchange
+setPattern
+InOnly
+String
+result
+getIn
+getBody
+String
+getIn
+setBody
+result
+Processor

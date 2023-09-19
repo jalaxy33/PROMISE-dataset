@@ -1,0 +1,14 @@
+EventException
+EventException
+code
+short
+message
+String
+message
+code
+code
+short
+code
+short
+UNSPECIFIED_EVENT_TYPE_ERR
+RuntimeException

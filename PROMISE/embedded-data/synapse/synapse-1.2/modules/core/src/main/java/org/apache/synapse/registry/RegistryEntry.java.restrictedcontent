@@ -1,0 +1,17 @@
+RegistryEntry
+getKey
+String
+getName
+String
+getVersion
+long
+getType
+URI
+getDescription
+String
+getCreated
+long
+getLastModified
+long
+getCachableDuration
+long

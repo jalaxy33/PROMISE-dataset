@@ -1,0 +1,14 @@
+{
+    "ant": "src.main",
+    "camel": "camel-core.src.main.java",
+    "ivy": "src.java",
+    "jedit": "",
+    "log4j": "src.java",
+    "lucene": "src.java",
+    "pbeans": "src",
+    "poi": "src.java",
+    "synapse": "modules.core.src.main.java",
+    "velocity": "src.java",
+    "xalan": "src",
+    "xerces": "src"
+}

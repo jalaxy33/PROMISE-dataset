@@ -1,0 +1,8 @@
+CompilationUnit
+PackageDeclaration
+InterfaceDeclaration
+{'public'}MethodDeclaration
+TextReferenceType
+set()FormalParameter
+intBasicType
+CharacterDataReferenceType

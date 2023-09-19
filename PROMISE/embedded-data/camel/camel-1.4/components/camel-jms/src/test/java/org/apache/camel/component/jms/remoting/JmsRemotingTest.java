@@ -1,0 +1,12 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+{'public'}ClassDeclaration
+{'protected'}MethodDeclaration
+ClassPathXmlApplicationContextReferenceType
+ReturnStatement
+ClassCreator
+ClassPathXmlApplicationContextReferenceType
+Literal
+SpringRemotingRouteTestReferenceType

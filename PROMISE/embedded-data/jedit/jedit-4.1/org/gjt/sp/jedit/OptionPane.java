@@ -1,0 +1,10 @@
+CompilationUnit
+PackageDeclaration
+Import
+InterfaceDeclaration
+set()MethodDeclaration
+StringReferenceType
+set()MethodDeclaration
+ComponentReferenceType
+set()MethodDeclaration
+set()MethodDeclaration

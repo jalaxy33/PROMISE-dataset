@@ -1,0 +1,17 @@
+DependencyArtifactDescriptor
+getDependency
+DependencyDescriptor
+getId
+ArtifactId
+getName
+String
+getType
+String
+getExt
+String
+getUrl
+URL
+getConfigurations
+String
+getMatcher
+PatternMatcher

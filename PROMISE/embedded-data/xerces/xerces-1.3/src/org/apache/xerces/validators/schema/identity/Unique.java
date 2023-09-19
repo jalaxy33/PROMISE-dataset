@@ -1,0 +1,14 @@
+CompilationUnit
+PackageDeclaration
+{'public'}ClassDeclaration
+{'public'}ConstructorDeclaration
+set()FormalParameter
+StringReferenceType
+StatementExpression
+SuperConstructorInvocation
+MemberReference
+{'public'}MethodDeclaration
+shortBasicType
+ReturnStatement
+MemberReference
+IdentityConstraintReferenceType

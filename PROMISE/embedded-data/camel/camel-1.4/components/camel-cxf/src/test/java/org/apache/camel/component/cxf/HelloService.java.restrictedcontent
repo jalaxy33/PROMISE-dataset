@@ -1,0 +1,14 @@
+HelloService
+sayHello
+String
+ping
+getInvocationCount
+int
+echo
+String
+text
+String
+echoBoolean
+Boolean
+bool
+Boolean

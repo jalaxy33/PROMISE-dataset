@@ -1,0 +1,28 @@
+
+pBeans is an open source Java Persistence Layer. For additional 
+information please visit 
+
+       http://pbeans.sourceforge.net
+
+Subdirectories
+--------------
+
+lib      - Contains pbeans.jar which you must add to your CLASSPATH.
+doc      - API documentation (Start with class net.sourceforge.pbeans.Store.)
+examples - Examples and regression tests.
+src      - pBeans Java source code.
+ext      - Redistribution of some popular JDBC drivers.
+
+Building
+--------
+
+To build, you just need to install ant and run it in the
+main directory of the pBeans distribution.
+
+http://ant.apache.org
+
+An Eclipse project file is also distributed. In Eclipse,
+create a workspace and right-click Import, then General,
+Existing Projects into Workspace.
+
+http://eclipse.org

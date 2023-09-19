@@ -1,0 +1,13 @@
+FuncStringLength
+long
+serialVersionUID
+execute
+XObject
+xctxt
+XPathContext
+return
+XNumber
+getArg0AsString
+length
+xctxt
+FunctionDef1Arg

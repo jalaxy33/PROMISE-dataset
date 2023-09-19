@@ -1,0 +1,9 @@
+CompilationUnit
+PackageDeclaration
+Import
+InterfaceDeclaration
+ConstantDeclaration
+StringReferenceType
+VariableDeclarator
+Literal
+GOMElementReferenceType

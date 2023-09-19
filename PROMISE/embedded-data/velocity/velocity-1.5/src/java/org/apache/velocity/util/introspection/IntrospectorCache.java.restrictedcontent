@@ -1,0 +1,16 @@
+IntrospectorCache
+clear
+get
+ClassMap
+c
+Class
+put
+ClassMap
+c
+Class
+addListener
+listener
+IntrospectorCacheListener
+removeListener
+listener
+IntrospectorCacheListener

@@ -1,0 +1,17 @@
+SpanQuery
+getSpans
+Spans
+reader
+IndexReader
+getField
+String
+getTerms
+Collection
+createWeight
+Weight
+searcher
+Searcher
+return
+SpanWeight
+searcher
+Query

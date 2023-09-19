@@ -1,0 +1,14 @@
+JEditEmbeddedTextArea
+JEditEmbeddedTextArea
+getPropertyManager
+initInputHandler
+initPainter
+getPainter
+JEditBuffer
+buffer
+JEditBuffer
+setMode
+getMode
+setBuffer
+buffer
+TextArea

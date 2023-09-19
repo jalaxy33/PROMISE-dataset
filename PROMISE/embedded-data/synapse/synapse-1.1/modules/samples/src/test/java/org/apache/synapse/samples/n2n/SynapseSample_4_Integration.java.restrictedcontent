@@ -1,0 +1,17 @@
+SynapseSample_4_Integration
+setUp
+setProperty
+SYNAPSE_XML
+SAMPLE_CONFIG_ROOT_PATH
+setProperty
+setProperty
+SYNAPSE_BASE_URL
+setUp
+testSample
+setProperty
+try
+getStringResultOfTest
+executeTestClient
+catchClause
+e
+AbstractAutomationTestCase

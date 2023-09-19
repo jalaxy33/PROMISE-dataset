@@ -1,0 +1,15 @@
+PropertySelectionEvent
+PropertySelectionEvent
+context
+AppContext
+selected
+ACSElement
+context
+selected
+getSelectedProperties
+ACSPropertyElement
+return
+ACSPropertyElement
+getFiltered
+ACSPropertyElement
+ElementSelectionEvent

@@ -1,0 +1,14 @@
+InstanceMethodWithExchangeTestConverter
+fromArray
+MyBean
+values
+String
+exchange
+Exchange
+return
+MyBean
+parseInt
+values
+getProperty
+String
+values

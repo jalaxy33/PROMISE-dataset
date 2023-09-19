@@ -1,0 +1,14 @@
+CompilationUnit
+PackageDeclaration
+{'public'}ClassDeclaration
+FieldDeclaration
+NoRouteBuilderReferenceType
+VariableDeclarator
+ClassCreator
+NoRouteBuilderReferenceType
+{'static', 'public'}MethodDeclaration
+NoRouteBuilderReferenceType
+ReturnStatement
+MemberReference
+{'public'}MethodDeclaration
+RouteBuilderReferenceType

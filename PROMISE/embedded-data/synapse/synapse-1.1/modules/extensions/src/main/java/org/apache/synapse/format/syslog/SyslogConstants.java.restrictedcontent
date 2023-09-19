@@ -1,0 +1,16 @@
+SyslogConstants
+SyslogConstants
+String
+NAMESPACE_URI
+QName
+MESSAGE
+QName
+NAMESPACE_URI
+String
+FACILITY
+String
+SEVERITY
+String
+TAG
+String
+PID

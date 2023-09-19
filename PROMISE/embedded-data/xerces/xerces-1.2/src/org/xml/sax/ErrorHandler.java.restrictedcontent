@@ -1,0 +1,10 @@
+ErrorHandler
+warning
+exception
+SAXParseException
+error
+exception
+SAXParseException
+fatalError
+exception
+SAXParseException

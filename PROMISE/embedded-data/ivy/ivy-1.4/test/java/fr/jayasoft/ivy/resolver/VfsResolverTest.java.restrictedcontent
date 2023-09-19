@@ -1,0 +1,16 @@
+VfsResolverTest
+VfsResolver
+resolver
+setUp
+resolver
+VfsResolver
+tearDown
+resolver
+testInit
+assertEquals
+getClass
+VfsResolver
+testTypeName
+assertEquals
+getTypeName
+TestCase

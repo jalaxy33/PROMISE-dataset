@@ -1,0 +1,14 @@
+PatternConsumer
+addClass
+chargroup
+String
+addException
+word
+String
+hyphenatedword
+ArrayList
+addPattern
+pattern
+String
+values
+String

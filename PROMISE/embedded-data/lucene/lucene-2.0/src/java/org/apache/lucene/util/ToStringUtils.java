@@ -1,0 +1,19 @@
+CompilationUnit
+PackageDeclaration
+{'public'}ClassDeclaration
+{'public', 'static'}MethodDeclaration
+StringReferenceType
+set()FormalParameter
+floatBasicType
+IfStatement
+BinaryOperation
+MemberReference
+Literal
+BlockStatement
+ReturnStatement
+BinaryOperation
+Literal
+MethodInvocation
+MemberReference
+ReturnStatement
+Literal

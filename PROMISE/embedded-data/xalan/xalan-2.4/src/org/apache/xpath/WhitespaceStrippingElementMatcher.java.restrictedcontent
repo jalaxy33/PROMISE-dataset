@@ -1,0 +1,9 @@
+WhitespaceStrippingElementMatcher
+shouldStripWhiteSpace
+boolean
+support
+XPathContext
+targetElement
+Element
+canStripWhiteSpace
+boolean

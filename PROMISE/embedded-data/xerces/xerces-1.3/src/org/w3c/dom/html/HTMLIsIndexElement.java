@@ -1,0 +1,11 @@
+CompilationUnit
+PackageDeclaration
+InterfaceDeclaration
+{'public'}MethodDeclaration
+HTMLFormElementReferenceType
+{'public'}MethodDeclaration
+StringReferenceType
+{'public'}MethodDeclaration
+set()FormalParameter
+StringReferenceType
+HTMLElementReferenceType

@@ -1,0 +1,16 @@
+Sample156
+Sample156
+testServiceIntegration
+String
+addUrl
+info
+StockQuoteSampleClient
+client
+getStockQuoteClient
+SampleClientResult
+result
+requestStandardQuote
+addUrl
+assertTrue
+responseReceived
+SynapseTestCase

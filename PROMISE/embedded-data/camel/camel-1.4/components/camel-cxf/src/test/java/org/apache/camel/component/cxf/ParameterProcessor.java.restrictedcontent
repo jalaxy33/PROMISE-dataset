@@ -1,0 +1,15 @@
+ParameterProcessor
+process
+exchange
+Exchange
+SOAPMessage
+soapMessage
+SOAPMessage
+getIn
+getBody
+List
+get
+getIn
+setBody
+soapMessage
+Processor

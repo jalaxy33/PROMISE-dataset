@@ -1,0 +1,9 @@
+ToolTipLabel
+getToolTipLocation
+Point
+event
+MouseEvent
+return
+Point
+getX
+JLabel

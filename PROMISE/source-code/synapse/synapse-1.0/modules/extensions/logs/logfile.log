@@ -1,0 +1,15 @@
+     0 [main]  INFO XMLConfigurationBuilder (XMLConfigurationBuilder.java:54) - Generating the Synapse configuration model by parsing the XML configuration
+  1516 [main]  INFO SimpleURLRegistry (SimpleURLRegistry.java:52) - ==> Repository fetch of resource with key : main
+  1516 [main]  INFO SimpleURLRegistry (SimpleURLRegistry.java:52) - ==> Repository fetch of resource with key : fault
+  1531 [main]  INFO SynapseConfigurationBuilder (SynapseConfigurationBuilder.java:66) - Loaded Synapse configuration from : ./../../repository/conf/sample/resources/spring/synapse_spring_unittest.xml
+  1953 [main]  INFO SimpleURLRegistry (SimpleURLRegistry.java:52) - ==> Repository fetch of resource with key : conf/sample/resources/spring/springsample.xml
+     0 [main]  INFO XMLConfigurationBuilder (XMLConfigurationBuilder.java:54) - Generating the Synapse configuration model by parsing the XML configuration
+  1391 [main]  INFO SimpleURLRegistry (SimpleURLRegistry.java:52) - ==> Repository fetch of resource with key : main
+  1391 [main]  INFO SimpleURLRegistry (SimpleURLRegistry.java:52) - ==> Repository fetch of resource with key : fault
+  1391 [main]  INFO SynapseConfigurationBuilder (SynapseConfigurationBuilder.java:66) - Loaded Synapse configuration from : ./../../repository/conf/sample/resources/spring/synapse_spring_unittest.xml
+  1500 [main]  INFO SimpleURLRegistry (SimpleURLRegistry.java:52) - ==> Repository fetch of resource with key : conf/sample/resources/spring/springsample.xml
+     0 [main]  INFO XMLConfigurationBuilder (XMLConfigurationBuilder.java:54) - Generating the Synapse configuration model by parsing the XML configuration
+  1234 [main]  INFO SimpleURLRegistry (SimpleURLRegistry.java:52) - ==> Repository fetch of resource with key : main
+  1234 [main]  INFO SimpleURLRegistry (SimpleURLRegistry.java:52) - ==> Repository fetch of resource with key : fault
+  1250 [main]  INFO SynapseConfigurationBuilder (SynapseConfigurationBuilder.java:66) - Loaded Synapse configuration from : ./../../repository/conf/sample/resources/spring/synapse_spring_unittest.xml
+  1344 [main]  INFO SimpleURLRegistry (SimpleURLRegistry.java:52) - ==> Repository fetch of resource with key : conf/sample/resources/spring/springsample.xml

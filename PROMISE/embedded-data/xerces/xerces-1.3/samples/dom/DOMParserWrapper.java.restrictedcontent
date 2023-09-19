@@ -1,0 +1,10 @@
+DOMParserWrapper
+parse
+Document
+uri
+String
+setFeature
+featureId
+String
+state
+boolean

@@ -1,0 +1,11 @@
+MethodInvocation
+getMethod
+Method
+getArguments
+Object
+proceed
+Object
+getThis
+Object
+getStaticPart
+AccessibleObject

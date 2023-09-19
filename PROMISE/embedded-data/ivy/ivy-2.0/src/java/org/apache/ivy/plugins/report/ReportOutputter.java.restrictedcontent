@@ -1,0 +1,14 @@
+ReportOutputter
+String
+CONSOLE
+String
+XML
+output
+report
+ResolveReport
+cacheMgr
+ResolutionCacheManager
+options
+ResolveOptions
+getName
+String

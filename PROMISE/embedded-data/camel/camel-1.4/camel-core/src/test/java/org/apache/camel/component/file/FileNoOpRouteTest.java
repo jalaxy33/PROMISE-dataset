@@ -1,0 +1,15 @@
+CompilationUnit
+PackageDeclaration
+{'public'}ClassDeclaration
+{'protected'}MethodDeclaration
+Annotation
+StatementExpression
+Assignment
+MemberReference
+Literal
+StatementExpression
+MethodInvocation
+Literal
+StatementExpression
+SuperMethodInvocation
+FileRouteTestReferenceType

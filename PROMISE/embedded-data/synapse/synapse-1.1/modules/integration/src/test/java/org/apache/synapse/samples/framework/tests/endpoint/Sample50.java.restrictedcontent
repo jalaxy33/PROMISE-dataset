@@ -1,0 +1,16 @@
+Sample50
+Sample50
+testRestToPox
+String
+trpUrl
+info
+StockQuoteSampleClient
+client
+getStockQuoteClient
+SampleClientResult
+result
+requestRestQuote
+trpUrl
+assertResponseReceived
+result
+SynapseTestCase

@@ -1,0 +1,14 @@
+CompilationUnit
+PackageDeclaration
+Import
+{'public'}ClassDeclaration
+{'public'}MethodDeclaration
+set()FormalParameter
+StringReferenceType
+{'public'}MethodDeclaration
+booleanBasicType
+set()FormalParameter
+TokenReferenceType
+ReturnStatement
+Literal
+FragmenterReferenceType

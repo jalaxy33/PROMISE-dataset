@@ -1,0 +1,12 @@
+NoConflictManager
+NoConflictManager
+setName
+resolveConflicts
+Collection
+parent
+IvyNode
+conflicts
+Collection
+return
+conflicts
+AbstractConflictManager

@@ -1,0 +1,10 @@
+QueueBrowseStrategy
+browse
+List
+Exchange
+template
+JmsOperations
+queue
+String
+endpoint
+JmsQueueEndpoint

@@ -1,0 +1,46 @@
+<SPAN class=EUDORAHEADER>Delivered-To: cgu@qos.ch <BR></SPAN><SPAN 
+class=EUDORAHEADER>Date: Tue, 19 Jun 2001 14:21:17 +0200 <BR></SPAN><SPAN 
+class=EUDORAHEADER>From: Axel Boness &lt;Axel.Boness@Akazi.com&gt; 
+<BR></SPAN><SPAN class=EUDORAHEADER>Reply-To: Axel.Boness@Akazi.com 
+<BR></SPAN><SPAN class=EUDORAHEADER>Organization: Akazi Technologies S.A. 
+<BR></SPAN><SPAN class=EUDORAHEADER>X-Mailer: Mozilla 4.75 [en] (Windows NT 5.0; 
+U) <BR></SPAN><SPAN class=EUDORAHEADER>X-Accept-Language: en <BR></SPAN><SPAN 
+class=EUDORAHEADER>To: java-logging-input@eng.sun.com <BR></SPAN><SPAN 
+class=EUDORAHEADER>Subject: JSR47 <BR></SPAN><BR>
+<DIV>As a java software developer I'm deeply concerned in the process of</DIV>
+<DIV>logging. That is from my point of view one of the only way to 
+diagnose</DIV>
+<DIV>an on-site running application.</DIV><BR>
+<DIV>I had a deep look on <A 
+href="http://jakarta.apache.org/log4j/docs/critique.html" 
+EUDORA="AUTOURL">http://jakarta.apache.org/log4j/docs/critique.html</A></DIV><BR>
+<DIV>Even, if not using Log4j for reasons far enough from this mail, I do</DIV>
+<DIV>agree on most of the arguments shown on this page.</DIV><BR>
+<DIV>I urge you not to use levels as FINE, FINER, FINEST. Even if it seems 
+a</DIV>
+<DIV>good idea, it becomes a nightmare for someone to decide what the 
+level</DIV>
+<DIV>of a log should be.</DIV><BR>
+<DIV>The proposition FATAL, ERROR, WARN, INFO and DEBUG is enough. We do 
+use</DIV>
+<DIV>those levels, and only those levels.</DIV><BR>
+<DIV>Logging to only one logger at a time has announced in this page, is 
+not</DIV>
+<DIV>enough. We do use several loggers at a time, for different purpose.</DIV>
+<DIV>These feature is a must have.</DIV><BR>
+<DIV>The error handling feature of log4j is consistent : a logger must me</DIV>
+<DIV>silent !</DIV><BR>
+<DIV>Logging is one of the toughest algorithmic subject with error 
+handling</DIV>
+<DIV>and software configuration in nowadays software.</DIV><BR>
+<DIV>I feel that trying to get THE API for logging is some kind of 
+nonsense.</DIV>
+<DIV>Just look what you may find, each has a distinct standard way</DIV>
+<DIV>WindowsXXX, Unix, VMS, ...</DIV><BR>
+<DIV>Good tools are more important that bad API. So I do say : "leave 
+logging</DIV>
+<DIV>in the wild, focus on other important subjects that are not to bring</DIV>
+<DIV>religious war".</DIV><BR>
+<DIV>Axel Boness</DIV>
+<DIV>System Archictect</DIV>
+<DIV>Akazi Technologies</DIV>

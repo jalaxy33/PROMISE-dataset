@@ -1,0 +1,17 @@
+Filter
+bits
+BitSet
+reader
+IndexReader
+return
+getDocIdSet
+DocIdSet
+reader
+IndexReader
+return
+DocIdBitSet
+bits
+reader
+java
+io
+Serializable

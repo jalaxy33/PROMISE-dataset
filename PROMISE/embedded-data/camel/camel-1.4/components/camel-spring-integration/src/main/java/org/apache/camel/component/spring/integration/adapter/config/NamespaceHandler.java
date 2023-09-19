@@ -1,0 +1,16 @@
+CompilationUnit
+PackageDeclaration
+Import
+{'public'}ClassDeclaration
+{'public'}MethodDeclaration
+StatementExpression
+MethodInvocation
+Literal
+ClassCreator
+CamelSourceAdpaterParserReferenceType
+StatementExpression
+MethodInvocation
+Literal
+ClassCreator
+CamelTargetAdapterParserReferenceType
+NamespaceHandlerSupportReferenceType

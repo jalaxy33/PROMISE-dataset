@@ -1,0 +1,17 @@
+ScoreDoc
+float
+score
+int
+doc
+ScoreDoc
+doc
+int
+score
+float
+doc
+doc
+score
+score
+java
+io
+Serializable

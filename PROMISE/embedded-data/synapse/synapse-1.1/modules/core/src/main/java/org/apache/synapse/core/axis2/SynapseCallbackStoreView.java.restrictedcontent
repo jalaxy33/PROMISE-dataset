@@ -1,0 +1,17 @@
+SynapseCallbackStoreView
+SynapseCallbackReceiver
+receiver
+SynapseCallbackStoreView
+receiver
+SynapseCallbackReceiver
+receiver
+receiver
+getCallbackCount
+int
+return
+getCallbackCount
+getPendingCallbacks
+String
+return
+getPendingCallbacks
+SynapseCallbackStoreViewMBean

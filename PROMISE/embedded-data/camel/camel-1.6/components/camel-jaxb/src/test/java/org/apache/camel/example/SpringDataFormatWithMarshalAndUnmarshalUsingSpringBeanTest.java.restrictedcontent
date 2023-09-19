@@ -1,0 +1,6 @@
+SpringDataFormatWithMarshalAndUnmarshalUsingSpringBeanTest
+createApplicationContext
+ClassPathXmlApplicationContext
+return
+ClassPathXmlApplicationContext
+SpringDataFormatTest

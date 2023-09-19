@@ -1,0 +1,11 @@
+CompilationUnit
+PackageDeclaration
+Import
+{'public'}ClassDeclaration
+{'public'}MethodDeclaration
+StatementExpression
+MethodInvocation
+Literal
+ClassCreator
+CxfEndpointBeanDefinitionParserReferenceType
+NamespaceHandlerSupportReferenceType

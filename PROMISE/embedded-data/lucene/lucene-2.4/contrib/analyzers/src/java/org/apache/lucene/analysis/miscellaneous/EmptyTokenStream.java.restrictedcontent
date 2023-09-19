@@ -1,0 +1,9 @@
+EmptyTokenStream
+next
+Token
+reusableToken
+Token
+assert
+reusableToken
+return
+TokenStream

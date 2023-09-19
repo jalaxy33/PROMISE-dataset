@@ -1,0 +1,12 @@
+CaseTest
+CaseTest
+name
+String
+name
+setUp
+configureProject
+testCaseSensitivity
+executeTarget
+testTaskCase
+expectBuildExceptionContaining
+BuildFileTest

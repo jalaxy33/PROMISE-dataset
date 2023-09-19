@@ -1,0 +1,13 @@
+UserDefinedWSDLLocator
+init
+baseInputSource
+InputSource
+baseURI
+String
+resourceMap
+ResourceMap
+synCfg
+SynapseConfiguration
+wsdlKey
+String
+WSDLLocator

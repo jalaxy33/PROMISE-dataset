@@ -1,0 +1,14 @@
+SignedSelectorTest
+SignedSelectorTest
+name
+String
+name
+setUp
+configureProject
+testSelectSigned
+executeTarget
+testNotSelected
+executeTarget
+testName
+executeTarget
+BuildFileTest

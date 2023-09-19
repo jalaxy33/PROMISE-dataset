@@ -1,0 +1,11 @@
+MyProcessor
+process
+exchange
+Exchange
+Message
+in
+getIn
+setBody
+getBody
+String
+Processor

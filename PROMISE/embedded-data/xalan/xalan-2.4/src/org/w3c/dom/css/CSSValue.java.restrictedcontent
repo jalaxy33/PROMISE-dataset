@@ -1,0 +1,16 @@
+CSSValue
+short
+CSS_INHERIT
+short
+CSS_PRIMITIVE_VALUE
+short
+CSS_VALUE_LIST
+short
+CSS_CUSTOM
+getCssText
+String
+setCssText
+cssText
+String
+getCssValueType
+short

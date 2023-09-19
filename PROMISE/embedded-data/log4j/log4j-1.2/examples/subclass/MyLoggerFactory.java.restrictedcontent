@@ -1,0 +1,10 @@
+MyLoggerFactory
+MyLoggerFactory
+makeNewLoggerInstance
+Logger
+name
+String
+return
+MyLogger
+name
+LoggerFactory

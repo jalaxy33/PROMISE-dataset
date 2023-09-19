@@ -1,0 +1,16 @@
+MutableByteArrayOutputStream
+getBytesWritten
+int
+return
+write
+b
+byte
+write
+b
+int
+overwrite
+b
+byte
+startPos
+int
+ByteArrayOutputStream

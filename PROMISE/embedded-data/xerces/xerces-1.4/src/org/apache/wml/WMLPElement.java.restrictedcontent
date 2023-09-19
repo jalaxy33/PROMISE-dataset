@@ -1,0 +1,17 @@
+WMLPElement
+setMode
+newValue
+String
+getMode
+String
+setAlign
+newValue
+String
+getAlign
+String
+setXmlLang
+newValue
+String
+getXmlLang
+String
+WMLElement

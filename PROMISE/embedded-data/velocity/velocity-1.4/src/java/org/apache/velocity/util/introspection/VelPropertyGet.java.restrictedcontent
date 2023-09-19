@@ -1,0 +1,9 @@
+VelPropertyGet
+invoke
+Object
+o
+Object
+isCacheable
+boolean
+getMethodName
+String

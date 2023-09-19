@@ -1,0 +1,11 @@
+# Microsoft Developer Studio Generated Dependency File, included by unlaunch.mak
+
+.\unlaunch.c : \
+	"h:\program files\microsoft platform sdk\include\basetsd.h"\
+	"h:\program files\microsoft platform sdk\include\tvout.h"\
+	{$(INCLUDE)}"guiddef.h"\
+	
+
+.\unlaunch.rc : \
+	".\unlaunch.ico"\
+	

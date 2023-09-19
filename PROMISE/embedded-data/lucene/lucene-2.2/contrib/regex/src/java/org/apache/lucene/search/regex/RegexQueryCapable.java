@@ -1,0 +1,8 @@
+CompilationUnit
+PackageDeclaration
+InterfaceDeclaration
+set()MethodDeclaration
+set()FormalParameter
+RegexCapabilitiesReferenceType
+set()MethodDeclaration
+RegexCapabilitiesReferenceType

@@ -1,0 +1,5 @@
+CompilationUnit
+PackageDeclaration
+InterfaceDeclaration
+GOMXmlEntityReferenceType
+GOMElementReferenceType

@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Body>
+<ns6216:issue xmlns:ns6216="http://hostname/rfid_1_0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<nu4900:token xmlns:nu4900="http://hostname/rfid_1_0/" xsi:type="xsd:string">00000000-00</nu4900:token>
+<nu4712:rfid xmlns:nu4712="http://hostname/rfid_1_0/" xsi:type="xsd:string">4C46688D</nu4712:rfid>
+<nu9698:eventId xmlns:nu9698="http://hostname/rfid_1_0/" xsi:type="xsd:string">0</nu9698:eventId>
+<nu5118:locationId xmlns:nu5118="http://hostname/rfid_1_0/" xsi:type="xsd:long">534</nu5118:locationId>
+<nu4242:accessStart xmlns:nu4242="http://hostname/rfid_1_0/" xsi:type="xsd:string">test0.8</nu4242:accessStart>
+</ns6216:issue>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

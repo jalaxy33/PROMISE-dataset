@@ -1,0 +1,10 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+InterfaceDeclaration
+set()MethodDeclaration
+DestinationReferenceType
+set()FormalParameter
+SessionReferenceType

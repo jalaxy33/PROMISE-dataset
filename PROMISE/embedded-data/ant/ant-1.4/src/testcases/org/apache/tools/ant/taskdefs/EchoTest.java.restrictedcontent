@@ -1,0 +1,14 @@
+EchoTest
+EchoTest
+name
+String
+name
+setUp
+configureProject
+test1
+expectLog
+test2
+expectLog
+test3
+expectLog
+TaskdefsTest

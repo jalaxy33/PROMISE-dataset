@@ -1,0 +1,8 @@
+WeightedRoundRobinViewMBean
+changeWeight
+pos
+int
+weight
+int
+getCurrentWeights
+int

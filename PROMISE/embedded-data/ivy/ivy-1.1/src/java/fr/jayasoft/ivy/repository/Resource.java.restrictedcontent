@@ -1,0 +1,9 @@
+Resource
+getName
+String
+getLastModified
+long
+getContentLength
+long
+exists
+boolean

@@ -1,0 +1,10 @@
+CompilationUnit
+PackageDeclaration
+{'public'}ClassDeclaration
+{'public'}MethodDeclaration
+FieldSelectorResultReferenceType
+set()FormalParameter
+StringReferenceType
+ReturnStatement
+MemberReference
+FieldSelectorReferenceType

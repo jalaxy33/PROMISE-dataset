@@ -1,0 +1,17 @@
+DropMediatorTest
+testDropMediator
+DropMediator
+drop
+DropMediator
+MessageContext
+synCtx
+getTestContext
+boolean
+returnValue
+mediate
+synCtx
+assertTrue
+returnValue
+assertTrue
+getTo
+TestCase

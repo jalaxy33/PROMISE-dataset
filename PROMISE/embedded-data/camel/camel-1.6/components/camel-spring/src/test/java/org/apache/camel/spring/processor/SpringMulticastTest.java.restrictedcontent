@@ -1,0 +1,6 @@
+SpringMulticastTest
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+MulticastTest

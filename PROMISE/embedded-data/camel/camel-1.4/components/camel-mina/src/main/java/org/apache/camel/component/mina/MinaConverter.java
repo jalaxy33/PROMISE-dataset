@@ -1,0 +1,72 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+Import
+Import
+Import
+{'final', 'public'}ClassDeclaration
+Annotation
+{'private'}ConstructorDeclaration
+{'static', 'public'}MethodDeclaration
+Annotation
+byteBasicType
+set()FormalParameter
+ByteBufferReferenceType
+LocalVariableDeclaration
+byteBasicType
+VariableDeclarator
+ArrayCreator
+byteBasicType
+MethodInvocation
+TryStatement
+StatementExpression
+MethodInvocation
+CatchClause
+['IllegalStateException']CatchClauseParameter
+StatementExpression
+MethodInvocation
+MemberReference
+ReturnStatement
+MemberReference
+{'static', 'public'}MethodDeclaration
+Annotation
+StringReferenceType
+set()FormalParameter
+ByteBufferReferenceType
+ReturnStatement
+MethodInvocation
+MethodInvocation
+MemberReference
+{'static', 'public'}MethodDeclaration
+Annotation
+InputStreamReferenceType
+set()FormalParameter
+ByteBufferReferenceType
+ReturnStatement
+MethodInvocation
+{'static', 'public'}MethodDeclaration
+Annotation
+ObjectInputReferenceType
+set()FormalParameter
+ByteBufferReferenceType
+ReturnStatement
+MethodInvocation
+MethodInvocation
+MemberReference
+{'static', 'public'}MethodDeclaration
+Annotation
+ByteBufferReferenceType
+set()FormalParameter
+byteBasicType
+LocalVariableDeclaration
+ByteBufferReferenceType
+VariableDeclarator
+MethodInvocation
+MemberReference
+StatementExpression
+MethodInvocation
+MemberReference
+ReturnStatement
+MemberReference

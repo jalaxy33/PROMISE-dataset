@@ -1,0 +1,16 @@
+Sample52
+Sample52
+testSessionLessLB
+String
+addUrl
+StockQuoteSampleClient
+client
+getStockQuoteClient
+info
+SampleClientResult
+result
+sessionlessClient
+addUrl
+assertResponseReceived
+result
+SynapseTestCase

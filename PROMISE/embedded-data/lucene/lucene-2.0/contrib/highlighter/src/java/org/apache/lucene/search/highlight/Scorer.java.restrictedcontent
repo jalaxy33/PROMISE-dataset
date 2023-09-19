@@ -1,0 +1,10 @@
+Scorer
+startFragment
+newFragment
+TextFragment
+getTokenScore
+float
+token
+Token
+getFragmentScore
+float

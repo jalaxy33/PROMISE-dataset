@@ -1,0 +1,16 @@
+ConsoleInterface
+getIn
+Reader
+getOut
+PrintStream
+getErr
+PrintStream
+println
+o
+Object
+print
+o
+Object
+error
+o
+Object

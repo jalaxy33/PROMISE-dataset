@@ -1,0 +1,87 @@
+<SPAN class=EUDORAHEADER>Delivered-To: cgu@qos.ch <BR></SPAN><SPAN 
+class=EUDORAHEADER>From: "Payam Mirrashidi" &lt;payam_mir NOSPAM yahoo.com&gt; 
+<BR></SPAN><SPAN class=EUDORAHEADER>To: &lt;java-logging-input@eng.sun.com&gt; 
+<BR></SPAN><SPAN class=EUDORAHEADER>Cc: &lt;cgu@qos.ch&gt; <BR></SPAN><SPAN 
+class=EUDORAHEADER>Subject: Comment on JSR 47 <BR></SPAN><SPAN 
+class=EUDORAHEADER>Date: Wed, 13 Jun 2001 19:11:21 -0700 <BR></SPAN><SPAN 
+class=EUDORAHEADER>Organization: Ruby Networks, Inc. <BR></SPAN><SPAN 
+
+<BR></SPAN><BR>
+<DIV>JSR-00047 Expert Group:</DIV><BR>
+<DIV>I am writing in response to a mail by Ceki Gulcu asking for support for 
+the</DIV>
+<DIV>log4j API. While I don't expect the expert group to radically change 
+the</DIV>
+<DIV>path that they have chosen so far, I think there are a couple log4j 
+features</DIV>
+<DIV>that ought to included to the current spec. I will comment on 
+one.</DIV><BR>
+<DIV>I have been using the log4j API for about 6 months on an almost daily 
+basis.</DIV>
+<DIV>Previous to that, I had used the ATG Dynamo logging APIs extensively for 
+a</DIV>
+<DIV>year. Before that I had survived with selective printlns. I have to 
+admit</DIV>
+<DIV>that I was sold on log4j almost immediately.</DIV><BR>
+<DIV>Most notably, as I read the current configuration spec, it seems that</DIV>
+<DIV>runtime file logging is configured on a global instance. That is, it 
+is</DIV>
+<DIV>possible, via a .properties file, to configure the</DIV>
+<DIV>java.util.logging.FileHandler class to log to a single file. I do not see 
+a</DIV>
+<DIV>way to configure multiple file handlers each with a different output file 
+at</DIV>
+<DIV>runtime without having to write new classes. This is too severe a 
+design</DIV>
+<DIV>limitation. I understand that this feature could be added 
+programmatically</DIV>
+<DIV>by using the logging APIs with a propietary configuration format. But 
+I</DIV>
+<DIV>think a standard mechanism for runtime configuration should be part of 
+the</DIV>
+<DIV>spec.</DIV><BR>
+<DIV>One thing this design inhibits is a seperation in logging 
+responsibilities</DIV>
+<DIV>between programmers and system administrators. Quite often, with 
+server</DIV>
+<DIV>deployments, the logging configuration is set up to log to multiple 
+files</DIV>
+<DIV>each for a different target audience. For example, error logs are 
+typically</DIV>
+<DIV>tailed by processes that send pages/email when new errors are logged.(yes, 
+I</DIV>
+<DIV>could write a new log handler but sysadmins with perl skills can't do 
+that).</DIV>
+<DIV>Another case for multiple file logging is the case when problems arise 
+with</DIV>
+<DIV>a deployment. The runtime logging configuration can be changed easily 
+with</DIV>
+<DIV>new logfiles being generated with the appropriate logging information 
+for</DIV>
+<DIV>the person who is interested in it. This allows all the previous 
+deployment</DIV>
+<DIV>infrastructure to remain unchanged.</DIV><BR>
+<DIV>In one large Dynamo deployment I worked on, there was a large, fast 
+disk</DIV>
+<DIV>that was wiped on a hourly basis that was solely for the use of 
+developer</DIV>
+<DIV>debug logs. The errors and warning logs, however, were logged to 
+slower,</DIV>
+<DIV>smaller RAID disks that were backed up on a daily basis. The flexibility 
+to</DIV>
+<DIV>do all of this through runtime configuration file changes was a key 
+aspect</DIV>
+<DIV>of the setup.</DIV><BR>
+<DIV>log4j defines two different but powerful configuration file formats. 
+The</DIV>
+<DIV>ease of use and the expressiveness of these formats should not be</DIV>
+<DIV>discounted. My biggest complaint about Dynamo logging is that it is</DIV>
+<DIV>exceedingly difficult to configure at runtime. It is important for 
+the</DIV>
+<DIV>expert group to define configuration formats as expressive as the 
+log4j</DIV>
+<DIV>format otherwise there will necessarily arise several competing formats 
+that</DIV>
+<DIV>allow better, more expressive, runtime configuration.</DIV><BR>
+<DIV>----</DIV>
+<DIV>Payam Mirrashidi</DIV>

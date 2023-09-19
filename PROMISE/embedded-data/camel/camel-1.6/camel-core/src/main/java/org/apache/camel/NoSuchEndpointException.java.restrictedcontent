@@ -1,0 +1,16 @@
+NoSuchEndpointException
+long
+serialVersionUID
+String
+uri
+NoSuchEndpointException
+uri
+String
+uri
+uri
+uri
+getUri
+String
+return
+uri
+RuntimeCamelException

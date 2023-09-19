@@ -1,0 +1,14 @@
+CompilationUnit
+PackageDeclaration
+InterfaceDeclaration
+{'public'}MethodDeclaration
+StringReferenceType
+{'public'}MethodDeclaration
+set()FormalParameter
+StringReferenceType
+{'public'}MethodDeclaration
+intBasicType
+{'public'}MethodDeclaration
+set()FormalParameter
+intBasicType
+HTMLElementReferenceType

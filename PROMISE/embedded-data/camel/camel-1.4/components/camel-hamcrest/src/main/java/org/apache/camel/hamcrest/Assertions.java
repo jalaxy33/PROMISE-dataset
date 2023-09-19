@@ -1,0 +1,43 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+{'final', 'public'}ClassDeclaration
+{'private'}ConstructorDeclaration
+{'static', 'public'}MethodDeclaration
+TypeParameter
+TReferenceType
+set()FormalParameter
+ObjectReferenceType
+set()FormalParameter
+ClassReferenceType
+TypeArgument
+TReferenceType
+StatementExpression
+MethodInvocation
+MemberReference
+MethodInvocation
+MemberReference
+ReturnStatement
+MethodInvocation
+MemberReference
+{'static', 'public'}MethodDeclaration
+TypeParameter
+TReferenceType
+set()FormalParameter
+StringReferenceType
+set()FormalParameter
+ObjectReferenceType
+set()FormalParameter
+ClassReferenceType
+TypeArgument
+TReferenceType
+StatementExpression
+MethodInvocation
+MemberReference
+MemberReference
+MethodInvocation
+MemberReference
+ReturnStatement
+MethodInvocation
+MemberReference

@@ -1,0 +1,9 @@
+RemoteFileBinding
+extractBodyFromOutputStream
+Object
+exchange
+RemoteFileExchange
+outputStream
+OutputStream
+return
+outputStream

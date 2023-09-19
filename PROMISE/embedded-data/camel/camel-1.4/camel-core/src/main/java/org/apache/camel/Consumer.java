@@ -1,0 +1,6 @@
+CompilationUnit
+PackageDeclaration
+InterfaceDeclaration
+TypeParameter
+ExchangeReferenceType
+ServiceReferenceType

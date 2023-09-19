@@ -1,0 +1,14 @@
+FuncNot
+long
+serialVersionUID
+execute
+XObject
+xctxt
+XPathContext
+return
+execute
+bool
+xctxt
+S_FALSE
+S_TRUE
+FunctionOneArg

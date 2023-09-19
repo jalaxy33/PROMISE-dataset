@@ -1,0 +1,17 @@
+Sample432
+SampleClientResult
+result
+Sample432
+testCallOutSecurityWithDifferentPoliciesForInboundAndOutbound
+info
+String
+trpUrl
+StockQuoteSampleClient
+client
+getStockQuoteClient
+result
+requestStandardQuote
+trpUrl
+assertTrue
+responseReceived
+SynapseTestCase

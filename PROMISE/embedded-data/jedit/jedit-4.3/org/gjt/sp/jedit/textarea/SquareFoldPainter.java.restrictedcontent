@@ -1,0 +1,13 @@
+SquareFoldPainter
+paintFoldShape
+gfx
+Graphics2D
+top
+int
+bottom
+int
+drawRect
+top
+bottom
+top
+ShapedFoldPainter

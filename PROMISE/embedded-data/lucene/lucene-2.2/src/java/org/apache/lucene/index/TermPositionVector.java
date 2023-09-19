@@ -1,0 +1,12 @@
+CompilationUnit
+PackageDeclaration
+InterfaceDeclaration
+{'public'}MethodDeclaration
+intBasicType
+set()FormalParameter
+intBasicType
+{'public'}MethodDeclaration
+TermVectorOffsetInfoReferenceType
+set()FormalParameter
+intBasicType
+TermFreqVectorReferenceType

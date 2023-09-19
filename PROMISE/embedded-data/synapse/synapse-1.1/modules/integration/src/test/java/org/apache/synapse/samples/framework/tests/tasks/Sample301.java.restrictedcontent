@@ -1,0 +1,14 @@
+Sample301
+Sample301
+testScheduledTaskInjectToSequence
+info
+sleep
+int
+messageCount
+getAxis2Server
+getMessageCount
+info
+messageCount
+assertTrue
+messageCount
+SynapseTestCase

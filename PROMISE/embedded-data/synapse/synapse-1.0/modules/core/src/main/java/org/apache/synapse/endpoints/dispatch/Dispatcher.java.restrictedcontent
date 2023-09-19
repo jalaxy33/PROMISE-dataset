@@ -1,0 +1,15 @@
+Dispatcher
+getEndpoint
+Endpoint
+synCtx
+MessageContext
+updateSession
+synCtx
+MessageContext
+endpoint
+Endpoint
+unbind
+synCtx
+MessageContext
+isServerInitiatedSession
+boolean

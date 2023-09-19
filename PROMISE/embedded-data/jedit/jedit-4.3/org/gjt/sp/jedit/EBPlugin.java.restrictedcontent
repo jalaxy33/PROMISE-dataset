@@ -1,0 +1,17 @@
+EBPlugin
+handleMessage
+message
+EBMessage
+removeFromBus
+if
+seenWarning
+return
+seenWarning
+log
+WARNING
+getClassName
+EBPlugin
+boolean
+seenWarning
+EditPlugin
+EBComponent

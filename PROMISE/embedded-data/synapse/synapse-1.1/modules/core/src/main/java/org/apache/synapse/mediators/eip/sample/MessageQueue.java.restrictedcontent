@@ -1,0 +1,13 @@
+MessageQueue
+add
+synCtx
+MessageContext
+get
+MessageContext
+isEmpty
+boolean
+isPersistent
+boolean
+persist
+boolean
+load

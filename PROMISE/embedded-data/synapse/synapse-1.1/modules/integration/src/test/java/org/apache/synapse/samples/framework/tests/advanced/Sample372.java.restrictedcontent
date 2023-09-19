@@ -1,0 +1,17 @@
+Sample372
+SampleClientResult
+result
+Sample372
+testConcurrencyAndRateThrottling
+String
+addUrl
+StockQuoteSampleClient
+client
+getStockQuoteClient
+info
+result
+requestStandardQuote
+addUrl
+assertTrue
+responseReceived
+SynapseTestCase

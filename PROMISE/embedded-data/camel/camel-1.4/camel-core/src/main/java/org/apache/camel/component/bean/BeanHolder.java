@@ -1,0 +1,10 @@
+CompilationUnit
+PackageDeclaration
+Import
+InterfaceDeclaration
+set()MethodDeclaration
+ObjectReferenceType
+set()MethodDeclaration
+ProcessorReferenceType
+set()MethodDeclaration
+BeanInfoReferenceType

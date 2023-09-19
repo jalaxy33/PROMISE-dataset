@@ -1,0 +1,63 @@
+<!--
+  * To build lib/pbeans.jar, just run 'ant'.
+  * To build a zip distribution, run 'ant distro'.
+  -->
+<project default="jar">
+	<loadfile property="pbeans-version" srcfile="VERSION">
+		<filterchain>
+			<striplinebreaks/>
+		</filterchain>
+	</loadfile>
+    <property name="pbeans-name" value="pbeans-${pbeans-version}"/>	
+	
+	<target name="jar" depends="compile">
+		<mkdir dir="lib"/>
+		<jar destfile="lib/pbeans.jar">
+			<fileset dir="bin" />
+			<metainf file="VERSION" />
+			<manifest>
+				<attribute name="Version" value="${pbeans-version}" />
+			</manifest>
+		</jar>
+	</target>
+
+        <target name="rebuild">
+                <delete file="lib/pbeans.jar"/>
+                <delete dir="bin"/>
+                <antcall target="jar"/>
+        </target>
+ 	
+	<target name="distro" depends="apidocs">
+		<mkdir dir="lib"/>
+		<zip destfile="/tmp/${pbeans-name}.zip">
+			<zipfileset dir="lib" prefix="${pbeans-name}/lib" excludes="**/CVS"/>
+			<zipfileset dir="src" prefix="${pbeans-name}/src" includes="**/*.java" excludes="**/CVS" />
+			<zipfileset dir="ext" prefix="${pbeans-name}/ext" excludes="**/CVS" />
+			<zipfileset dir="docs" prefix="${pbeans-name}/docs" excludes="**/CVS" />
+			<zipfileset dir="examples" prefix="${pbeans-name}/examples" includes="**/*.java,**/*.properties,**/*.sh,**/*.bat" />
+			<zipfileset dir="." prefix="${pbeans-name}" includes="build.xml,README,CONTRIBUTORS,CHANGELOG,LICENSE,VERSION" />			
+		</zip>
+	</target>
+
+	<target name="compile">
+		<mkdir dir="bin" />
+		<javac debug="true" debuglevel="source,lines" srcdir="src" destdir="bin" extdirs="ext" />
+	</target>
+
+	  <target name="apidocs" description="pBeans ${pbeans-version} API documentation" depends="compile">
+	    <delete file="docs/api/*.html"/>
+	    <mkdir dir="docs/api"/>
+	    <javadoc
+	    	doctitle="pBeans ${pbeans-version} API Documentation"
+                footer="&lt;center&gt;&lt;big&gt;[&lt;a href=&quot;http://pbeans.sourceforge.net&quot; target=&quot;_blank&quot;&gt;Home&lt;/a&gt; | &lt;a href=&quot;http://sourceforge.net/projects/pbeans&quot; target=&quot;_blank&quot;&gt;SF Page&lt;/a&gt;]&amp;nbsp;&amp;nbsp;&lt;A href=&quot;http://sourceforge.net&quot;&gt;&lt;IMG src=&quot;http://sourceforge.net/sflogo.php?group_id=104506&amp;type=5&quot; width=&quot;105&quot; height=&quot;31&quot; border=&quot;0&quot; alt=&quot;SourceForge.net Logo&quot; align=&quot;absmiddle&quot;/&gt;&lt;/A&gt;&lt;/big&gt;&lt;/center&gt;"  
+	        sourcepath="src"
+	        classpath="ext/servlet.jar"
+	        packagenames="net.sourceforge.pbeans,net.sourceforge.pbeans.annotations,net.sourceforge.pbeans.servlet,net.sourceforge.pbeans.data"
+	        destdir="docs/api"
+	    />
+	  	<copy todir="/opt/websites/pbeans/api">
+	  		<fileset dir="docs/api"/>
+	  	</copy>	  		
+	  </target>
+
+</project>

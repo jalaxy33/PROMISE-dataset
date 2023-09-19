@@ -1,0 +1,6 @@
+SynapseArtifact
+setDescription
+description
+String
+getDescription
+String

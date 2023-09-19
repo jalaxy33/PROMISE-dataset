@@ -1,0 +1,13 @@
+RuntimeLogger
+warn
+message
+Object
+info
+message
+Object
+error
+message
+Object
+debug
+message
+Object

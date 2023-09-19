@@ -1,0 +1,14 @@
+BuildLogger
+setMessageOutputLevel
+level
+int
+setOutputPrintStream
+output
+PrintStream
+setEmacsMode
+emacsMode
+boolean
+setErrorPrintStream
+err
+PrintStream
+BuildListener

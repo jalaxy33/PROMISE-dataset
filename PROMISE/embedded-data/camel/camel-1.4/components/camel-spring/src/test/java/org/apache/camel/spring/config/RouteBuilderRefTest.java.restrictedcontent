@@ -1,0 +1,12 @@
+RouteBuilderRefTest
+testUsingRouteBuilderRefInCamelXml
+ApplicationContext
+applicationContext
+ClassPathXmlApplicationContext
+CamelContext
+context
+CamelContext
+getBean
+assertValidContext
+context
+XmlConfigTestSupport

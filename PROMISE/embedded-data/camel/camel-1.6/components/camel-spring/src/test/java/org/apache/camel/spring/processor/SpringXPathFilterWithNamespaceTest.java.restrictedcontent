@@ -1,0 +1,9 @@
+SpringXPathFilterWithNamespaceTest
+setUp
+matchingBody
+setUp
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+XPathFilterTest

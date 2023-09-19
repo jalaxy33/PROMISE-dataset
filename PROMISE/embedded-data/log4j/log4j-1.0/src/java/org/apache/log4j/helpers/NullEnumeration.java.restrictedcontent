@@ -1,0 +1,17 @@
+NullEnumeration
+NullEnumeration
+instance
+NullEnumeration
+NullEnumeration
+getInstance
+NullEnumeration
+return
+instance
+hasMoreElements
+boolean
+return
+nextElement
+Object
+throw
+NoSuchElementException
+Enumeration

@@ -1,0 +1,9 @@
+PositionDependentRecord
+getLastOnDiskOffset
+int
+setLastOnDiskOffset
+offset
+int
+updateOtherRecordReferences
+oldToNewReferencesLookup
+Hashtable

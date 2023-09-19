@@ -1,0 +1,11 @@
+CompilationUnit
+PackageDeclaration
+Import
+InterfaceDeclaration
+{'public'}MethodDeclaration
+set()FormalParameter
+StringReferenceType
+{'public'}MethodDeclaration
+booleanBasicType
+set()FormalParameter
+TokenReferenceType

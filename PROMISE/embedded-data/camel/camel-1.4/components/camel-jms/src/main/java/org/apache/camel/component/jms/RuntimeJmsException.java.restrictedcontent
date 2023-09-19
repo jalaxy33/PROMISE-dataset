@@ -1,0 +1,11 @@
+RuntimeJmsException
+long
+serialVersionUID
+RuntimeJmsException
+message
+String
+cause
+JMSException
+message
+cause
+RuntimeException

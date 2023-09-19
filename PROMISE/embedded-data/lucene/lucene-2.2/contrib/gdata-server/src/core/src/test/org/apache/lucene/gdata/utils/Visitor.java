@@ -1,0 +1,6 @@
+CompilationUnit
+PackageDeclaration
+InterfaceDeclaration
+{'public'}MethodDeclaration
+set()FormalParameter
+ObjectReferenceType

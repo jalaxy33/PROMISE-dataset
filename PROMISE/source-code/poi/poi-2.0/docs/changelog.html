@@ -1,0 +1,534 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<TITLE>POI Change Log</TITLE>
+</HEAD>
+<BODY text="#000000" vlink="#000000" alink="#000000" link="#000000">
+<style type="text/css">
+          body, p {
+          font-family: verdana,arial,helvetica;
+          font-size: 100%;
+          color:#000000;
+          }
+	  .dateAndAuthor {
+          font-family: verdana,arial,helvetica;
+          font-size: 100%;
+          font-weight: bold;
+          text-align:left;
+          background:#a6caf0;
+	  }
+          tr, td{
+          font-family: verdana,arial,helvetica;
+          font-size: 120%;
+          background:#eeeee0;
+          }	  
+	  </style>
+<h1>
+<a name="top">POI Change Log</a>
+</h1>
+<hr size="2">
+<TABLE CELLSPACING="1" CELLPADDING="3" WIDTH="100%" BORDER="0">
+<TR>
+<TD class="dateAndAuthor" colspan="2">2004-01-25 05:32 glens</TD>
+</TR>
+<TR>
+<TD width="20">    </TD><TD>
+<pre>
+<b>Public key file for signing releases.</b>
+</pre>
+<ul>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/KEYS?rev=1.1.2.1&content-type=text/x-cvsweb-markup">KEYS (1.1.2.1)
+      </a>
+</li>
+</ul>
+</TD>
+</TR>
+<TR>
+<TD class="dateAndAuthor" colspan="2">2004-01-25 05:32 glens</TD>
+</TR>
+<TR>
+<TD width="20">    </TD><TD>
+<pre>
+<b>branches:  1.1.2;
+file KEYS was initially added on branch REL_2_BRANCH.</b>
+</pre>
+<ul>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/KEYS?r1=1.1&r2=1.1.2.1">KEYS (1.1)
+      </a>
+</li>
+</ul>
+</TD>
+</TR>
+<TR>
+<TD class="dateAndAuthor" colspan="2">2004-01-17 19:29 avik</TD>
+</TR>
+<TR>
+<TD width="20">    </TD><TD>
+<pre>
+<b>getting forrest to build on HEAD. Sorry Glen :)</b>
+</pre>
+<ul>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/book.xml?r1=1.12&r2=1.11">src/documentation/content/xdocs/trans/es/book.xml (1.12)
+      </a>
+</li>
+</ul>
+</TD>
+</TR>
+<TR>
+<TD class="dateAndAuthor" colspan="2">2004-01-08 14:25 klute</TD>
+</TR>
+<TR>
+<TD width="20">    </TD><TD>
+<pre>
+<b>Buf fix plus testcasde: Reading property values failed with a StringIndexOutOfBoundsException on empty strings.</b>
+</pre>
+<ul>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/java/org/apache/poi/hpsf/Property.java?rev=1.17&content-type=text/x-cvsweb-markup">src/java/org/apache/poi/hpsf/Property.java (1.17)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/testcases/org/apache/poi/hpsf/data/TestSolidWorks.sldprt?rev=1.1&content-type=text/x-cvsweb-markup">src/testcases/org/apache/poi/hpsf/data/TestSolidWorks.sldprt (1.1)
+      </a>
+</li>
+</ul>
+</TD>
+</TR>
+<TR>
+<TD class="dateAndAuthor" colspan="2">2004-01-01 19:24 avik</TD>
+</TR>
+<TR>
+<TD width="20">    </TD><TD>
+<pre>
+<b>make forrest happy</b>
+</pre>
+<ul>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/book.xml?r1=1.2.2.4&r2=1.2.2.3">src/documentation/content/xdocs/trans/es/book.xml (1.2.2.4)
+      </a>
+</li>
+</ul>
+</TD>
+</TR>
+<TR>
+<TD class="dateAndAuthor" colspan="2">2004-01-01 19:12 avik</TD>
+</TR>
+<TR>
+<TD width="20">    </TD><TD>
+<pre>
+<b>On HEAD, checking in testcase for 25695. But it doesnt work for reason's unknown. And its not this particular issue thats the culprit. getStringValue returns blank..:(</b>
+</pre>
+<ul>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/testcases/org/apache/poi/hssf/data/25695.xls?r1=1.2&r2=1.1">src/testcases/org/apache/poi/hssf/data/25695.xls (1.2)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/testcases/org/apache/poi/hssf/usermodel/TestBugs.java?r1=1.14&r2=1.1.2.16">src/testcases/org/apache/poi/hssf/usermodel/TestBugs.java (1.14)
+      </a>
+</li>
+</ul>
+</TD>
+</TR>
+<TR>
+<TD class="dateAndAuthor" colspan="2">2004-01-01 19:11 avik</TD>
+</TR>
+<TR>
+<TD width="20">    </TD><TD>
+<pre>
+<b>on head, missed the testcase for the formula parser changes</b>
+</pre>
+<ul>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/testcases/org/apache/poi/hssf/model/TestFormulaParser.java?r1=1.11&r2=1.7.2.4">src/testcases/org/apache/poi/hssf/model/TestFormulaParser.java (1.11)
+      </a>
+</li>
+</ul>
+</TD>
+</TR>
+<TR>
+<TD class="dateAndAuthor" colspan="2">2004-01-01 19:08 avik</TD>
+</TR>
+<TR>
+<TD width="20">    </TD><TD>
+<pre>
+<b>branches:  1.1.2;
+file 25695.xls was initially added on branch REL_2_BRANCH.</b>
+</pre>
+<ul>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/testcases/org/apache/poi/hssf/data/25695.xls?r1=1.1&r2=1.1.2.1">src/testcases/org/apache/poi/hssf/data/25695.xls (1.1)
+      </a>
+</li>
+</ul>
+</TD>
+</TR>
+<TR>
+<TD class="dateAndAuthor" colspan="2">2004-01-01 19:08 avik</TD>
+</TR>
+<TR>
+<TD width="20">    </TD><TD>
+<pre>
+<b>fix for bug 25695</b>
+</pre>
+<ul>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/java/org/apache/poi/hssf/record/StringRecord.java?rev=1.5.2.2&content-type=text/x-cvsweb-markup">src/java/org/apache/poi/hssf/record/StringRecord.java (1.5.2.2)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/testcases/org/apache/poi/hssf/data/25695.xls?rev=1.1.2.1&content-type=text/x-cvsweb-markup">src/testcases/org/apache/poi/hssf/data/25695.xls (1.1.2.1)
+      </a>
+</li>
+</ul>
+</TD>
+</TR>
+<TR>
+<TD class="dateAndAuthor" colspan="2">2004-01-01 19:08 avik</TD>
+</TR>
+<TR>
+<TD width="20">    </TD><TD>
+<pre>
+<b>fix for bug 25695</b>
+</pre>
+<ul>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/testcases/org/apache/poi/hssf/usermodel/TestBugs.java?rev=1.1.2.16&content-type=text/x-cvsweb-markup">src/testcases/org/apache/poi/hssf/usermodel/TestBugs.java (1.1.2.16)
+      </a>
+</li>
+</ul>
+</TD>
+</TR>
+<TR>
+<TD class="dateAndAuthor" colspan="2">2004-01-01 19:06 avik</TD>
+</TR>
+<TR>
+<TD width="20">    </TD><TD>
+<pre>
+<b>make docs reflect reality</b>
+</pre>
+<ul>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/book.xml?rev=1.4.2.2&content-type=text/x-cvsweb-markup">src/documentation/content/xdocs/book.xml (1.4.2.2)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/index.xml?r1=1.3.2.3&r2=1.3.2.2">src/documentation/content/xdocs/index.xml (1.3.2.3)
+      </a>
+</li>
+</ul>
+</TD>
+</TR>
+<TR>
+<TD class="dateAndAuthor" colspan="2">2004-01-01 18:50 avik</TD>
+</TR>
+<TR>
+<TD width="20">    </TD><TD>
+<pre>
+<b>testcases for formula parser changes, missed in prev commit</b>
+</pre>
+<ul>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/testcases/org/apache/poi/hssf/model/TestFormulaParser.java?rev=1.7.2.4&content-type=text/x-cvsweb-markup">src/testcases/org/apache/poi/hssf/model/TestFormulaParser.java (1.7.2.4)
+      </a>
+</li>
+</ul>
+</TD>
+</TR>
+<TR>
+<TD class="dateAndAuthor" colspan="2">2004-01-01 09:03 avik</TD>
+</TR>
+<TR>
+<TD width="20">    </TD><TD>
+<pre>
+<b>bug 24125 - date formats. sync to head.</b>
+</pre>
+<ul>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/java/org/apache/poi/hssf/usermodel/HSSFDateUtil.java?r1=1.7&r2=1.6.2.1">src/java/org/apache/poi/hssf/usermodel/HSSFDateUtil.java (1.7)
+      </a>
+</li>
+</ul>
+</TD>
+</TR>
+<TR>
+<TD class="dateAndAuthor" colspan="2">2004-01-01 07:51 avik</TD>
+</TR>
+<TR>
+<TD width="20">    </TD><TD>
+<pre>
+<b>bug 25457, formula parser fixes by Peter M Murray
+sync to head</b>
+</pre>
+<ul>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/java/org/apache/poi/hssf/model/FormulaParser.java?r1=1.15&r2=1.13.2.2">src/java/org/apache/poi/hssf/model/FormulaParser.java (1.15)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/java/org/apache/poi/hssf/record/formula/AbstractFunctionPtg.java?r1=1.12&r2=1.10.2.2">src/java/org/apache/poi/hssf/record/formula/AbstractFunctionPtg.java (1.12)
+      </a>
+</li>
+</ul>
+</TD>
+</TR>
+<TR>
+<TD class="dateAndAuthor" colspan="2">2004-01-01 07:49 avik</TD>
+</TR>
+<TR>
+<TD width="20">    </TD><TD>
+<pre>
+<b>Formula Parser fixes with tests, by Peter M Murray
+Bug 25457.
+PR:
+Obtained from:
+Submitted by:
+Reviewed by:</b>
+</pre>
+<ul>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/java/org/apache/poi/hssf/model/FormulaParser.java?rev=1.13.2.2&content-type=text/x-cvsweb-markup">src/java/org/apache/poi/hssf/model/FormulaParser.java (1.13.2.2)
+      </a>
+</li>
+</ul>
+</TD>
+</TR>
+<TR>
+<TD class="dateAndAuthor" colspan="2">2004-01-01 07:49 avik</TD>
+</TR>
+<TR>
+<TD width="20">    </TD><TD>
+<pre>
+<b>Formula Parser fixes with tests, by Peter M Murray
+Bug 25457.
+PR:
+Obtained from:
+Submitted by:
+Reviewed by:</b>
+</pre>
+<ul>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/java/org/apache/poi/hssf/record/formula/AbstractFunctionPtg.java?rev=1.10.2.2&content-type=text/x-cvsweb-markup">src/java/org/apache/poi/hssf/record/formula/AbstractFunctionPtg.java (1.10.2.2)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/java/org/apache/poi/hssf/usermodel/HSSFDateUtil.java?rev=1.6.2.1&content-type=text/x-cvsweb-markup">src/java/org/apache/poi/hssf/usermodel/HSSFDateUtil.java (1.6.2.1)
+      </a>
+</li>
+</ul>
+</TD>
+</TR>
+<TR>
+<TD class="dateAndAuthor" colspan="2">2004-01-01 06:58 avik</TD>
+</TR>
+<TR>
+<TD width="20">    </TD><TD>
+<pre>
+<b>I messed up, sorry! (the trouble with patch conflicts)</b>
+</pre>
+<ul>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/book.xml?r1=1.2.2.3&r2=1.2.2.2">src/documentation/content/xdocs/trans/es/book.xml (1.2.2.3)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/casestudies.xml?r1=1.2.2.2&r2=1.2.2.1">src/documentation/content/xdocs/trans/es/casestudies.xml (1.2.2.2)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/historyandfuture.xml?r1=1.2.2.2&r2=1.2.2.1">src/documentation/content/xdocs/trans/es/historyandfuture.xml (1.2.2.2)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/index.xml?r1=1.2.2.2&r2=1.2.2.1">src/documentation/content/xdocs/trans/es/index.xml (1.2.2.2)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/news.xml?r1=1.2.2.2&r2=1.2.2.1">src/documentation/content/xdocs/trans/es/news.xml (1.2.2.2)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/overview.xml?r1=1.2.2.2&r2=1.2.2.1">src/documentation/content/xdocs/trans/es/overview.xml (1.2.2.2)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/todo.xml?r1=1.2.2.2&r2=1.2.2.1">src/documentation/content/xdocs/trans/es/todo.xml (1.2.2.2)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/who.xml?r1=1.2.2.2&r2=1.2.2.1">src/documentation/content/xdocs/trans/es/who.xml (1.2.2.2)
+      </a>
+</li>
+</ul>
+</TD>
+</TR>
+<TR>
+<TD class="dateAndAuthor" colspan="2">2003-12-31 17:02 slaubach</TD>
+</TR>
+<TR>
+<TD width="20">    </TD><TD>
+<pre>
+<b>Set constants to be static.</b>
+</pre>
+<ul>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/java/org/apache/poi/hssf/usermodel/HSSFPrintSetup.java?r1=1.7&r2=1.5.2.1">src/java/org/apache/poi/hssf/usermodel/HSSFPrintSetup.java (1.7)
+      </a>
+</li>
+</ul>
+</TD>
+</TR>
+<TR>
+<TD class="dateAndAuthor" colspan="2">2003-12-31 15:33 slaubach</TD>
+</TR>
+<TR>
+<TD width="20">    </TD><TD>
+<pre>
+<b>Added static to the constants.  Also, file had lost all newlines and fixed this along the way (which is why it looks like a big commit).</b>
+</pre>
+<ul>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/java/org/apache/poi/hssf/usermodel/HSSFPrintSetup.java?rev=1.5.2.1&content-type=text/x-cvsweb-markup">src/java/org/apache/poi/hssf/usermodel/HSSFPrintSetup.java (1.5.2.1)
+      </a>
+</li>
+</ul>
+</TD>
+</TR>
+<TR>
+<TD class="dateAndAuthor" colspan="2">2003-12-30 18:16 avik</TD>
+</TR>
+<TR>
+<TD width="20">    </TD><TD>
+<pre>
+<b>updating translations on the branch</b>
+</pre>
+<ul>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/book.xml?rev=1.2.2.2&content-type=text/x-cvsweb-markup">src/documentation/content/xdocs/trans/es/book.xml (1.2.2.2)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/casestudies.xml?rev=1.2.2.1&content-type=text/x-cvsweb-markup">src/documentation/content/xdocs/trans/es/casestudies.xml (1.2.2.1)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/historyandfuture.xml?rev=1.2.2.1&content-type=text/x-cvsweb-markup">src/documentation/content/xdocs/trans/es/historyandfuture.xml (1.2.2.1)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/index.xml?rev=1.2.2.1&content-type=text/x-cvsweb-markup">src/documentation/content/xdocs/trans/es/index.xml (1.2.2.1)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/news.xml?rev=1.2.2.1&content-type=text/x-cvsweb-markup">src/documentation/content/xdocs/trans/es/news.xml (1.2.2.1)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/overview.xml?rev=1.2.2.1&content-type=text/x-cvsweb-markup">src/documentation/content/xdocs/trans/es/overview.xml (1.2.2.1)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/todo.xml?rev=1.2.2.1&content-type=text/x-cvsweb-markup">src/documentation/content/xdocs/trans/es/todo.xml (1.2.2.1)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/who.xml?rev=1.2.2.1&content-type=text/x-cvsweb-markup">src/documentation/content/xdocs/trans/es/who.xml (1.2.2.1)
+      </a>
+</li>
+</ul>
+</TD>
+</TR>
+<TR>
+<TD class="dateAndAuthor" colspan="2">2003-12-30 17:47 avik</TD>
+</TR>
+<TR>
+<TD width="20">    </TD><TD>
+<pre>
+<b>Auguste's Spanish Transaltions. Thanks</b>
+</pre>
+<ul>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/book.xml?r1=1.11&r2=1.2.2.4">src/documentation/content/xdocs/trans/es/book.xml (1.11)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/casestudies.xml?r1=1.6&r2=1.2.2.2">src/documentation/content/xdocs/trans/es/casestudies.xml (1.6)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/changes.xml?rev=1.9&content-type=text/x-cvsweb-markup">src/documentation/content/xdocs/trans/es/changes.xml (1.9)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/historyandfuture.xml?r1=1.6&r2=1.2.2.2">src/documentation/content/xdocs/trans/es/historyandfuture.xml (1.6)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/index.xml?r1=1.8&r2=1.2.2.2">src/documentation/content/xdocs/trans/es/index.xml (1.8)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/news.xml?r1=1.6&r2=1.2.2.2">src/documentation/content/xdocs/trans/es/news.xml (1.6)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/overview.xml?r1=1.6&r2=1.2.2.2">src/documentation/content/xdocs/trans/es/overview.xml (1.6)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/todo.xml?r1=1.7&r2=1.2.2.2">src/documentation/content/xdocs/trans/es/todo.xml (1.7)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/trans/es/who.xml?r1=1.6&r2=1.2.2.2">src/documentation/content/xdocs/trans/es/who.xml (1.6)
+      </a>
+</li>
+</ul>
+</TD>
+</TR>
+<TR>
+<TD class="dateAndAuthor" colspan="2">2003-12-30 03:27 avik</TD>
+</TR>
+<TR>
+<TD width="20">    </TD><TD>
+<pre>
+<b>commiting my doc changes to BRANCH</b>
+</pre>
+<ul>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/index.xml?rev=1.3.2.2&content-type=text/x-cvsweb-markup">src/documentation/content/xdocs/index.xml (1.3.2.2)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/todo.xml?rev=1.2.2.1&content-type=text/x-cvsweb-markup">src/documentation/content/xdocs/todo.xml (1.2.2.1)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/hssf/alternatives.xml?rev=1.2.2.1&content-type=text/x-cvsweb-markup">src/documentation/content/xdocs/hssf/alternatives.xml (1.2.2.1)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/hssf/formula.xml?rev=1.2.2.1&content-type=text/x-cvsweb-markup">src/documentation/content/xdocs/hssf/formula.xml (1.2.2.1)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/hssf/how-to.xml?rev=1.2.2.1&content-type=text/x-cvsweb-markup">src/documentation/content/xdocs/hssf/how-to.xml (1.2.2.1)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/hssf/index.xml?rev=1.2.2.1&content-type=text/x-cvsweb-markup">src/documentation/content/xdocs/hssf/index.xml (1.2.2.1)
+      </a>
+</li>
+<li>
+<a href="http://cvs.apache.org/viewcvs/jakarta-poi/src/documentation/content/xdocs/hssf/limitations.xml?rev=1.2.2.1&content-type=text/x-cvsweb-markup">src/documentation/content/xdocs/hssf/limitations.xml (1.2.2.1)
+      </a>
+</li>
+</ul>
+</TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,16 @@
+NoCacheStorage
+get
+Object
+key
+Object
+return
+put
+key
+Object
+value
+Object
+remove
+key
+Object
+clear
+CacheStorage

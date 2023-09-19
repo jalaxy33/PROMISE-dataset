@@ -1,0 +1,10 @@
+FuncNumber
+execute
+XObject
+xctxt
+XPathContext
+return
+XNumber
+getArg0AsNumber
+xctxt
+FunctionDef1Arg

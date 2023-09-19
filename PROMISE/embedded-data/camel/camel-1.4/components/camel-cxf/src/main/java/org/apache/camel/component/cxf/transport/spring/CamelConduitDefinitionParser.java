@@ -1,0 +1,12 @@
+CompilationUnit
+PackageDeclaration
+Import
+{'public'}ClassDeclaration
+{'public'}ConstructorDeclaration
+StatementExpression
+SuperConstructorInvocation
+StatementExpression
+MethodInvocation
+ClassReference
+CamelConduitReferenceType
+AbstractCamelContextBeanDefinitionParserReferenceType

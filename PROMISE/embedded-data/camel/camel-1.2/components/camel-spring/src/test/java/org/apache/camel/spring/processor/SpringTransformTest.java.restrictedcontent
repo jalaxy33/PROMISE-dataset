@@ -1,0 +1,13 @@
+SpringTransformTest
+testSendAMessageWhichIsTransformed
+MockEndpoint
+resultEndpoint
+getMockEndpoint
+expectedBodiesReceived
+sendBody
+assertIsSatisfied
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+ContextTestSupport

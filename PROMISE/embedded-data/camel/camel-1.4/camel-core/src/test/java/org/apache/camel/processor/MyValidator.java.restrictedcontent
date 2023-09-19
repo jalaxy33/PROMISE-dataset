@@ -1,0 +1,17 @@
+MyValidator
+process
+exchange
+Exchange
+Object
+value
+getIn
+getHeader
+if
+value
+equals
+block
+throw
+ValidationException
+exchange
+value
+Processor

@@ -1,0 +1,6 @@
+SpringAggregatorTest
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+AggregatorTest

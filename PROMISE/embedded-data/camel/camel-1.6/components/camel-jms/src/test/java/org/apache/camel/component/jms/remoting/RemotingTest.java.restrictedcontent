@@ -1,0 +1,10 @@
+RemotingTest
+ISay
+sayProxy
+testInvokeRemoteClient
+String
+rc
+say
+assertEquals
+rc
+AbstractJUnit38SpringContextTests

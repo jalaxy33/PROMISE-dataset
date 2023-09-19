@@ -1,0 +1,12 @@
+HTMLOptGroupElement
+getDisabled
+boolean
+setDisabled
+disabled
+boolean
+getLabel
+String
+setLabel
+label
+String
+HTMLElement

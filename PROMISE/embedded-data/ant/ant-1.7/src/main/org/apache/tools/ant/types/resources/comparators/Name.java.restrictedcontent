@@ -1,0 +1,12 @@
+Name
+resourceCompare
+int
+foo
+Resource
+bar
+Resource
+return
+getName
+compareTo
+getName
+ResourceComparator

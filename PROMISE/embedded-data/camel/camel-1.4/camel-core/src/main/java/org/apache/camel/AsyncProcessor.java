@@ -1,0 +1,10 @@
+CompilationUnit
+PackageDeclaration
+InterfaceDeclaration
+set()MethodDeclaration
+booleanBasicType
+set()FormalParameter
+ExchangeReferenceType
+set()FormalParameter
+AsyncCallbackReferenceType
+ProcessorReferenceType

@@ -1,0 +1,16 @@
+IsSignedTest
+IsSignedTest
+name
+String
+name
+setUp
+configureProject
+testPass
+executeTarget
+testPassword
+executeTarget
+testAPassword
+executeTarget
+testAllSigned
+executeTarget
+BuildFileTest

@@ -1,0 +1,10 @@
+CompilationUnit
+PackageDeclaration
+InterfaceDeclaration
+{'public'}MethodDeclaration
+StringReferenceType
+{'public'}MethodDeclaration
+StringReferenceType
+{'public'}MethodDeclaration
+StringReferenceType
+NodeReferenceType

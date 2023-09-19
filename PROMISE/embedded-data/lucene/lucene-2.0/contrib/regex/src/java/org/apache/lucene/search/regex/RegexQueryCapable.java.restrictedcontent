@@ -1,0 +1,6 @@
+RegexQueryCapable
+setRegexImplementation
+impl
+RegexCapabilities
+getRegexImplementation
+RegexCapabilities

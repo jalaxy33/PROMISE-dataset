@@ -1,0 +1,5 @@
+SamplingProcessorViewMBean
+activate
+deactivate
+isActive
+boolean

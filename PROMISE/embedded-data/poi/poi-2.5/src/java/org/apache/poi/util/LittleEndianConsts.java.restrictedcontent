@@ -1,0 +1,11 @@
+LittleEndianConsts
+int
+BYTE_SIZE
+int
+SHORT_SIZE
+int
+INT_SIZE
+int
+LONG_SIZE
+int
+DOUBLE_SIZE

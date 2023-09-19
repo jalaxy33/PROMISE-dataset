@@ -1,0 +1,14 @@
+ProvidedService
+getFeedType
+Class
+getExtensionProfile
+ExtensionProfile
+getEntryType
+Class
+getName
+String
+destroy
+getIndexSchema
+IndexSchema
+getTransformTemplate
+Templates

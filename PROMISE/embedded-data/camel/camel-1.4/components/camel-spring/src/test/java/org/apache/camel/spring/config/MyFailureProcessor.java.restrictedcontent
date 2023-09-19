@@ -1,0 +1,7 @@
+MyFailureProcessor
+process
+exchange
+Exchange
+throw
+IllegalArgumentException
+Processor

@@ -1,0 +1,62 @@
+<SPAN class=EUDORAHEADER>Delivered-To: cgu@qos.ch <BR></SPAN><SPAN 
+class=EUDORAHEADER>From: Stacy Curl &lt;stacy.curl@xtempus.com&gt; 
+<BR></SPAN><SPAN class=EUDORAHEADER>To: "'java-logging-input@eng.sun.com'" 
+&lt;java-logging-input@eng.sun.com&gt; <BR></SPAN><SPAN class=EUDORAHEADER>Cc: 
+"'cgu@qos.ch'" &lt;cgu@qos.ch&gt; <BR></SPAN><SPAN class=EUDORAHEADER>Subject: 
+Preference for Log4J over JSR47 <BR></SPAN><SPAN class=EUDORAHEADER>Date: Wed, 
+13 Jun 2001 13:33:13 +0100 <BR></SPAN><SPAN class=EUDORAHEADER>X-Mailer: 
+Internet Mail Service (5.5.2653.19) <BR></SPAN><BR><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<META content="MSHTML 5.00.2920.0" name=GENERATOR>
+<DIV><FONT face=Arial size=2><SPAN class=324163011-13062001>I would like to say 
+that I find that the Log4J project to be superior to JSR47 on many grounds, most 
+of which are succintly set forth in <FONT face=Arial size=2><SPAN 
+class=324163011-13062001><A 
+href="http://jakarta.apache.org/log4j/docs/critique.html">Ceki 
+Gülcü's</A>&nbsp;</SPAN></FONT></SPAN></FONT><FONT face=Arial size=2><SPAN 
+class=324163011-13062001>critique of JSR47.</SPAN></FONT></DIV>
+<DIV><FONT face=Arial size=2><SPAN 
+class=324163011-13062001></SPAN></FONT>&nbsp;</DIV>
+<DIV><FONT face=Arial size=2><SPAN class=324163011-13062001>I found the 
+presences of logging levels like FINE, FINEST to be quite meaningless across an 
+entire API; but possibly meaningful withing a single company (a small company), 
+however a much better alternative is to just have that company define their own 
+logging levels. I was hoping that JSR47 would draw a line in the Java sands, and 
+say: From now on you can integrate logging of 3rd party products into your own 
+logging systems, but if 3rdparty products actually use FINE / FINEST, etc, they 
+are highly likely to view the meaning as being different; so how can I now 
+integrate ?</SPAN></FONT></DIV>
+<DIV><FONT face=Arial size=2><SPAN 
+class=324163011-13062001></SPAN></FONT>&nbsp;</DIV>
+<DIV><FONT face=Arial size=2><SPAN class=324163011-13062001>I'm also somewhat 
+disturbed by the way in which JSR47 lacks an SPI. I've quite liked the way in 
+which other areas of software have been commoditized by Javasoft; I felt that 
+was very statesmans-like, it's also generates so-called best-of-breed 
+implementations. JSR47 however does not commoditize the market, but actually 
+punishes the best logging product for Java there is: log4j, this is, in my 
+opinion, a foolish step to make. You may find that not everyone will appreciate 
+the reduced functionality that JSR47 offers and stick with log4j. Had you 
+provided JSR47 with an SPI then it would not have been long before log4j would 
+have implemented the SPI; and bingo! JSR47 would have gathered support 
+immediately (much like JAXP has). It's a pity that the main factor in creating 
+JSR47 has been the Not Invented Here syndrome.</SPAN></FONT></DIV>
+<DIV><FONT face=Arial size=2><SPAN 
+class=324163011-13062001></SPAN></FONT>&nbsp;</DIV>
+<DIV><FONT face=Arial size=2><SPAN class=324163011-13062001>In summary: I think 
+that Log4J should be made the standard logging API for Java, and not 
+JSR47.</SPAN></FONT></DIV>
+<P><B><FONT face=Arial>Stacy Curl</FONT></B> </P>
+<P><FONT face="Courier New" size=2><A 
+href="mailto:Stacy.Curl@xtempus.com">Stacy.Curl@xtempus.com</A><BR><A 
+href="http://www.xtempus.com/">www.xtempus.com</A> | wap.xtempus.com<BR>Tel +44 
+(0)20 7665 5999<BR>Fax +44 (0)20&nbsp;7665 5998</FONT></P>
+<P><FONT face="Courier New" size=2>Xtempus Ltd<BR>New London House<BR>172 Drury 
+Lane<BR>London WC2B 5QR </FONT></P>
+<P><FONT face=Arial size=1><B>This message is for the named person's use only. 
+It may contain confidential, proprietary or legally privileged 
+information.&nbsp; No confidentiality or privilege is waived or lost by any 
+mistransmission. If you receive this message in error, please immediately delete 
+it and all copies of it from your system, destroy any hard copies of it and 
+notify the sender. You must not, directly or indirectly, use, disclose, 
+distribute, print, or copy any part of this message if you are not the intended 
+recipient. </B></FONT></P>
+<DIV>&nbsp;</DIV>

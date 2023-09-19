@@ -1,0 +1,6 @@
+CxfWsdlFirstProcessorTest
+createApplicationContext
+ClassPathXmlApplicationContext
+return
+ClassPathXmlApplicationContext
+CxfWsdlFirstTest

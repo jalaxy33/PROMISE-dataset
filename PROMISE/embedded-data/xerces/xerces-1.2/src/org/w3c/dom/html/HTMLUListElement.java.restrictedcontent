@@ -1,0 +1,12 @@
+HTMLUListElement
+getCompact
+boolean
+setCompact
+compact
+boolean
+getType
+String
+setType
+type
+String
+HTMLElement

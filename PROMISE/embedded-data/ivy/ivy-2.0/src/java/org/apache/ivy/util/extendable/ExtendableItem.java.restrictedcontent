@@ -1,0 +1,15 @@
+ExtendableItem
+getAttribute
+String
+attName
+String
+getExtraAttribute
+String
+attName
+String
+getAttributes
+Map
+getExtraAttributes
+Map
+getQualifiedExtraAttributes
+Map

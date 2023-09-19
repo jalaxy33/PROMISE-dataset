@@ -1,0 +1,14 @@
+TermPositions
+nextPosition
+int
+getPayloadLength
+int
+getPayload
+byte
+data
+byte
+offset
+int
+isPayloadAvailable
+boolean
+TermDocs

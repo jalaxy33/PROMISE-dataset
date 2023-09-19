@@ -1,0 +1,15 @@
+CamelTemplate
+CamelTemplate
+context
+CamelContext
+context
+CamelTemplate
+context
+CamelContext
+defaultEndpoint
+Endpoint
+context
+defaultEndpoint
+Exchange
+DefaultProducerTemplate
+E

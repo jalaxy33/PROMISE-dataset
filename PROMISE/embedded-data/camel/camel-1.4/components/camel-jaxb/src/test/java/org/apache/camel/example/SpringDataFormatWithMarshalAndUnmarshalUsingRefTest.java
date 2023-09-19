@@ -1,0 +1,14 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+Import
+{'public'}ClassDeclaration
+{'protected'}MethodDeclaration
+ClassPathXmlApplicationContextReferenceType
+ReturnStatement
+ClassCreator
+ClassPathXmlApplicationContextReferenceType
+Literal
+SpringDataFormatTestReferenceType

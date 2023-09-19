@@ -1,0 +1,17 @@
+HTMLBaseFontElement
+getColor
+String
+setColor
+color
+String
+getFace
+String
+setFace
+face
+String
+getSize
+String
+setSize
+size
+String
+HTMLElement

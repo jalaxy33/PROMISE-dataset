@@ -1,0 +1,8 @@
+JmxActiveMQRemoteTest
+setUp
+brokerUrl
+clientServiceUrl
+serverServiceUrl
+clientServiceUrl
+setUp
+JmxRemoteTest

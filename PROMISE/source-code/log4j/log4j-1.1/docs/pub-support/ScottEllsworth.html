@@ -1,0 +1,52 @@
+<SPAN class=EUDORAHEADER>Delivered-To: cgu@qos.ch <BR></SPAN><SPAN 
+class=EUDORAHEADER>X-Sender: scottalodar@24.1.141.11 <BR></SPAN><SPAN 
+class=EUDORAHEADER>X-Mailer: QUALCOMM Windows Eudora Version 4.3.2 
+<BR></SPAN><SPAN class=EUDORAHEADER>Date: Mon, 18 Jun 2001 19:35:42 -0700 
+<BR></SPAN><SPAN class=EUDORAHEADER>To: java-logging-input@eng.sun.com 
+<BR></SPAN><SPAN class=EUDORAHEADER>From: Scott Ellsworth 
+&lt;scott@alodar.com&gt; <BR></SPAN><SPAN class=EUDORAHEADER>Subject: Please 
+reconsider adopting order independence for jsr-47, a la <BR>&nbsp; log4j 
+<BR></SPAN><SPAN class=EUDORAHEADER>Cc: cgu@qos.ch <BR></SPAN><BR>
+<DIV>Hello.</DIV><BR>
+<DIV>I am quite excited that Java will be getting a logging facility in the near 
+future.&nbsp; Such facilities have saved us countless hours of debug 
+time.</DIV><BR>
+<DIV>Our development team started using log4j roughly six months ago, and we 
+have become quite enamored with it.</DIV><BR>
+<DIV>At <A href="http://jakarta.apache.org/log4j/docs/critique.html" 
+EUDORA="AUTOURL">http://jakarta.apache.org/log4j/docs/critique.html</A>, you 
+will find a detailed summary of what one of the authors felt should change about 
+jsr-47.&nbsp; I found his arguments compelling, but of those arguments, three 
+are paramount.</DIV><BR>
+<DIV>1.&nbsp; The ability to declare my hierarchies in any order.</DIV><BR>
+<DIV>Very often, I will want to turn logging on at a verbose level in 
+org.metagraph.persistence.jdbc, off at org.metagraph.persistence, and on at info 
+for org.metagraph.&nbsp; With log4j, I can do this in any order, as when I set a 
+given level, it can walk up the tree.</DIV><BR>
+<DIV>This is a wonderful feature, as it means that I can edit my config files 
+without a lot of extra effort to make sure the order is right.</DIV><BR>
+<DIV>2.&nbsp; The logging in log4j is faster if the statements are not 
+evaluated.</DIV><BR>
+<DIV>According to the analysis at the above web site, we will suffer a far 
+larger penalty when not logging than we have to.&nbsp; As best my own perusal 
+can tell, this is true.&nbsp; While this makes the penalty when logging a bit 
+smaller, this is less important for my applications.&nbsp; Consider, a log 
+message is likely to go to disk or network, thus there will already be 
+substantial overhead.&nbsp; Adding the small amount for a runtime check is a 
+minor matter.</DIV><BR>
+<DIV>Adding overhead when not logging is very, very bad.&nbsp; It means that 
+more of our code will have logging removed at the source level.</DIV><BR>
+<DIV>3.&nbsp; Make very, very sure that under NO circumstances will a runtime 
+error or exception get propagated to the user.&nbsp; If my program behaves 
+differently depending on what log level is active, I have just had my testing 
+tasks increased immeasurably.&nbsp; The effect will be the removal of log 
+statements by developers, and it is hard enough to get them to use 
+them.</DIV><BR>
+<DIV>On a separate note, we will not be able to move full time to jdk 1.4 for 
+quite some time.&nbsp; By putting the logging kit in java.util, we cannot 
+install a 1.3 version.</DIV><BR>
+<DIV>Were you to put it in javax, I could write 1.2 or 1.3 code that works 
+happily without security exceptions.&nbsp; Please consider this move.</DIV><BR>
+<DIV>Scott</DIV>
+<DIV>Scott Ellsworth</DIV>
+<DIV>scott@alodar.com</DIV><BR><BR>

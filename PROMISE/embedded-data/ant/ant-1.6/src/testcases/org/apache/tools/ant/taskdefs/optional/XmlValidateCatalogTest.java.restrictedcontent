@@ -1,0 +1,16 @@
+XmlValidateCatalogTest
+String
+TASKDEFS_DIR
+XmlValidateCatalogTest
+name
+String
+name
+setUp
+configureProject
+TASKDEFS_DIR
+tearDown
+testXmlCatalogFiles
+executeTarget
+testXmlCatalogPath
+executeTarget
+BuildFileTest

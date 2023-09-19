@@ -1,0 +1,16 @@
+#Generated file - don't edit (please)
+#Wed Jun 27 12:36:42 EDT 2007
+ftpserver.user.admin.userpassword=21232F297A57A5A743894A0E4A801FC3
+ftpserver.user.admin.idletime=0
+ftpserver.user.anonymous.enableflag=true
+ftpserver.user.anonymous.uploadrate=4800
+ftpserver.user.admin.writepermission=true
+ftpserver.user.anonymous.userpassword=D41D8CD98F00B204E9800998ECF8427E
+ftpserver.user.anonymous.maxloginperip=2
+ftpserver.user.anonymous.idletime=300
+ftpserver.user.anonymous.homedirectory=./res/home
+ftpserver.user.admin.enableflag=true
+ftpserver.user.anonymous.downloadrate=4800
+ftpserver.user.anonymous.maxloginnumber=20
+ftpserver.user.admin.homedirectory=./res/home
+ftpserver.user.anonymous.writepermission=false

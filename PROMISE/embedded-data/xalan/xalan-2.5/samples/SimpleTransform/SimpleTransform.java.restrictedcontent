@@ -1,0 +1,16 @@
+SimpleTransform
+main
+args
+String
+TransformerFactory
+tFactory
+newInstance
+Transformer
+transformer
+newTransformer
+StreamSource
+transform
+StreamSource
+StreamResult
+FileOutputStream
+println

@@ -1,0 +1,12 @@
+ClientProvider
+newJMXConnector
+JMXConnector
+url
+JMXServiceURL
+environment
+Map
+return
+CamelJmxConnector
+environment
+url
+JMXConnectorProvider

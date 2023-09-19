@@ -1,0 +1,11 @@
+CompilationUnit
+PackageDeclaration
+{'public'}ClassDeclaration
+{'public'}ConstructorDeclaration
+{'public'}MethodDeclaration
+StringReferenceType
+set()FormalParameter
+StringReferenceType
+ReturnStatement
+MemberReference
+EncoderReferenceType

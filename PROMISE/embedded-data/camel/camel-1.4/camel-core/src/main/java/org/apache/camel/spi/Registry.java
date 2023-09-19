@@ -1,0 +1,16 @@
+CompilationUnit
+PackageDeclaration
+InterfaceDeclaration
+set()MethodDeclaration
+TypeParameter
+TReferenceType
+set()FormalParameter
+StringReferenceType
+set()FormalParameter
+ClassReferenceType
+TypeArgument
+TReferenceType
+set()MethodDeclaration
+ObjectReferenceType
+set()FormalParameter
+StringReferenceType

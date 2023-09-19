@@ -1,0 +1,16 @@
+FileProcessStrategy
+begin
+boolean
+endpoint
+FileEndpoint
+exchange
+FileExchange
+file
+File
+commit
+endpoint
+FileEndpoint
+exchange
+FileExchange
+file
+File

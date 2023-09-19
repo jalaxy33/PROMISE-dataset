@@ -1,0 +1,16 @@
+Sample10
+Sample10
+testDynamicEndPoints
+String
+trpUrl
+StockQuoteSampleClient
+client
+getStockQuoteClient
+info
+SampleClientResult
+result
+requestStandardQuote
+trpUrl
+assertResponseReceived
+result
+SynapseTestCase

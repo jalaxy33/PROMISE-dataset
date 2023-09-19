@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="2">
+  <component name="ProjectRootManager" version="2">
+    <jdk name="java version &quot;1.3.1_02&quot;" />
+    <projectPath>
+      <root type="composite">
+        <root type="simple" url="file://$PROJECT_DIR$" />
+      </root>
+    </projectPath>
+    <sourcePath>
+      <root type="composite">
+        <root name="java version &quot;1.3.1_02&quot;" rootType="sourcePath" type="jdk" />
+        <root type="simple" url="file://$PROJECT_DIR$/src/contrib/src" />
+        <root type="simple" url="file://$PROJECT_DIR$/src/examples/src" />
+        <root type="simple" url="file://$PROJECT_DIR$/src/java" />
+        <root type="simple" url="file://$PROJECT_DIR$/src/scratchpad/src" />
+        <root type="simple" url="file://$PROJECT_DIR$/src/testcases" />
+        <root type="simple" url="file://$PROJECT_DIR$/tools/centipede/src/java" />
+      </root>
+    </sourcePath>
+    <classPath>
+      <root type="composite">
+        <root name="java version &quot;1.3.1_02&quot;" rootType="classPath" type="jdk" />
+        <root type="simple" url="jar://$PROJECT_DIR$/lib/core/commons-logging-1.0.jar!/" />
+        <root type="simple" url="jar://$PROJECT_DIR$/lib/endorsed/xalan-2.2.0.jar!/" />
+        <root type="simple" url="jar://$PROJECT_DIR$/lib/endorsed/xerces-2.0.0.jar!/" />
+        <root type="simple" url="jar://$PROJECT_DIR$/lib/endorsed/xml-apis.jar!/" />
+        <root type="simple" url="jar://$PROJECT_DIR$/lib/optional/log4j-core.jar!/" />
+        <root type="simple" url="jar://$PROJECT_DIR$/tools/centipede/lib/IzPress.jar!/" />
+        <root type="output" />
+        <root type="simple" url="jar://$PROJECT_DIR$/tools/cents/junit.cent/lib/junit-3.7.jar!/" />
+        <root type="simple" url="jar://$PROJECT_DIR$/tools/antipede/lib/ant-1.5-dev-20020402.jar!/" />
+        <root type="simple" url="jar://$PROJECT_DIR$/tools/antipede/lib/ant-optional-1.5-dev-20020402.jar!/" />
+        <root type="simple" url="jar://$PROJECT_DIR$/tools/antipede/lib/ant-taskdefs-dev-20020402.jar!/" />
+        <root type="simple" url="jar://$PROJECT_DIR$/tools/antipede/lib/ant-contrib-0.1.jar!/" />
+      </root>
+    </classPath>
+    <javadocPath>
+      <root type="composite">
+        <root name="java version &quot;1.3.1_02&quot;" rootType="javadocPath" type="jdk" />
+      </root>
+    </javadocPath>
+    <assert_keyword enabled="no" />
+  </component>
+  <component name="ProjectWorkspace" />
+  <component name="DebuggerManager" />
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="Javac" />
+    <option name="COMPILE_IN_BACKGROUND" value="true" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="HIDE_WARNINGS" value="true" />
+    <option name="SYNCHRONIZE_OUTPUT_DIRECTORY" value="true" />
+    <option name="DEFAULT_OUTPUT_PATH" value="C:/temp/classes" />
+    <option name="OUTPUT_MODE" value="single" />
+    <resourceExtensions>
+      <entry name="properties" />
+      <entry name="gif" />
+      <entry name="png" />
+      <entry name="jpeg" />
+    </resourceExtensions>
+  </component>
+  <component name="JavacSettings">
+    <option name="DEBUGGING_INFO" value="true" />
+    <option name="GENERATE_NO_WARNINGS" value="false" />
+    <option name="DEPRECATION" value="true" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="" />
+    <option name="MAXIMUM_HEAP_SIZE" value="128" />
+  </component>
+  <component name="JikesSettings">
+    <option name="DEBUGGING_INFO" value="true" />
+    <option name="DEPRECATION" value="true" />
+    <option name="GENERATE_NO_WARNINGS" value="false" />
+    <option name="GENERATE_MAKE_FILE_DEPENDENCIES" value="false" />
+    <option name="DO_FULL_DEPENDENCE_CHECK" value="false" />
+    <option name="IS_INCREMENTAL_MODE" value="false" />
+    <option name="IS_EMACS_ERRORS_MODE" value="true" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="" />
+    <option name="MAXIMUM_HEAP_SIZE" value="128" />
+  </component>
+  <component name="AntConfiguration">
+    <buildFile url="file://$PROJECT_DIR$/build.xml">
+      <runInBackground value="true" />
+      <useEmacsModeOutput value="true" />
+      <useCustomJdk value="false" />
+      <treeView value="true" />
+      <useJavaw value="false" />
+      <includeProjectClasspath value="false" />
+      <includeParser value="true" />
+      <maximumHeapSize value="128" />
+      <additionalClassPath>
+        <entry path="file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://$PROJECT_DIR$/tools/lib/ant-1.4.1-optional.jar" />
+        <entry path="file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://$PROJECT_DIR$/tools/lib/ant-1.4.1.jar" />
+        <entry path="file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://$PROJECT_DIR$/tools/lib/jtidy-04aug2000r7-dev.jar" />
+        <entry path="file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://$PROJECT_DIR$/tools/lib/junit.jar" />
+        <entry path="file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://$PROJECT_DIR$/tools/lib/xalan-2.2.0.jar" />
+        <entry path="file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://$PROJECT_DIR$/lib/optional/avalon-excalibur-20020114.jar" />
+        <entry path="file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://$PROJECT_DIR$/lib/optional/avalon-framework-20020114.jar" />
+        <entry path="file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://$PROJECT_DIR$/lib/optional/cocoon-dev-20020129-nooptional.jar" />
+        <entry path="file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://$PROJECT_DIR$/lib/optional/commons-collections-1.0.jar" />
+        <entry path="file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://$PROJECT_DIR$/lib/optional/commons-httpclient-20011012.jar" />
+        <entry path="file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://$PROJECT_DIR$/lib/optional/jakarta-regexp-1.2.jar" />
+        <entry path="file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://$PROJECT_DIR$/lib/optional/jtidy-04aug2000r7-dev.jar" />
+        <entry path="file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://$PROJECT_DIR$/lib/optional/logkit-20011212.jar" />
+        <entry path="file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://$PROJECT_DIR$/lib/optional/resolver.jar" />
+        <entry path="file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://$PROJECT_DIR$/lib/optional/xalan-2.2.0.jar" />
+        <entry path="file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://$PROJECT_DIR$/lib/optional/xerces-1.4.4.jar" />
+        <entry path="file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://file://$PROJECT_DIR$/lib/optional/xml-apis.jar" />
+      </additionalClassPath>
+    </buildFile>
+  </component>
+  <component name="AntManager">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="true" />
+  </component>
+  <component name="CvsConfiguration">
+    <Checkout>
+      <option name="DATE_TAG" value="" />
+      <option name="REVISION_TAG" value="" />
+      <option name="PRUNE_EMPTY_DIRS" value="true" />
+      <option name="RESET_STICKY_TAGS" value="false" />
+      <option name="NON_RECURSIVE" value="false" />
+      <option name="CREATE_WORKING_DIR" value="" />
+      <option name="ADDITIONAL_OPTIONS" value="" />
+    </Checkout>
+    <Update>
+      <option name="DATE_TAG" value="" />
+      <option name="REVISION_TAG" value="" />
+      <option name="PRUNE_EMPTY_DIRS" value="true" />
+      <option name="RESET_STICKY_TAGS" value="false" />
+      <option name="NON_RECURSIVE" value="false" />
+      <option name="CREATE_MISSING_DIRECTORIES" value="true" />
+      <option name="DONT_CHANGE_FILES" value="false" />
+      <option name="QUIET_MODE" value="true" />
+      <option name="ADDITIONAL_OPTIONS" value="" />
+    </Update>
+    <Commit>
+      <option name="NON_RECURSIVE" value="false" />
+      <option name="REVISION_TAG" value="" />
+      <option name="LOG_MESSAGE" value="Fixed biff viewer." />
+      <option name="ADDITIONAL_OPTIONS" value="" />
+    </Commit>
+    <Diff>
+      <option name="REVISION_TAG" value="HEAD" />
+      <option name="DATE_TAG" value="" />
+      <option name="IGNORE_WHITESPACE" value="false" />
+    </Diff>
+    <Add>
+      <option name="ADD_AS_BINARY" value="false" />
+      <option name="LOG_MESSAGE" value="" />
+    </Add>
+    <Status>
+      <option name="NON_RECURSIVE" value="false" />
+      <option name="INCLUDE_TAGS" value="false" />
+    </Status>
+    <Edit>
+      <option name="NON_RECURSIVE" value="false" />
+      <option name="FORCE_RECURSIVE" value="false" />
+      <option name="EDIT" value="false" />
+      <option name="UNEDIT" value="false" />
+      <option name="COMMIT" value="false" />
+      <option name="ALL" value="true" />
+      <option name="NONE" value="false" />
+    </Edit>
+    <Remove>
+      <option name="NON_RECURSIVE" value="false" />
+      <option name="FORCE_RECURSIVE" value="false" />
+      <option name="DELETE_FILE" value="true" />
+    </Remove>
+    <Log>
+      <option name="DEFAULT_BRANCH" value="false" />
+      <option name="NON_RECURSIVE" value="false" />
+      <option name="QUIET_MODE" value="true" />
+      <option name="ADDITIONAL_OPTIONS" value="" />
+    </Log>
+    <Editors>
+      <option name="NON_RECURSIVE" value="false" />
+      <option name="FORCE_RECURSIVE" value="false" />
+    </Editors>
+    <option name="CLIENT_PATH" value="C:/Program Files/GNU/WinCvs 1.3/cvs.exe" />
+    <option name="EXTERNAL_DIFF_PATH" value="" />
+    <option name="CVS_ENABLED" value="true" />
+    <option name="USE_EXTERNAL_DIFF" value="false" />
+    <option name="WORKING_FILES_READONLY" value="false" />
+    <option name="COMPRESSION_LEVEL" value="6" />
+    <option name="ADDITIONAL_OPTIONS" value="" />
+    <option name="BINARY_FILES_EXTENSIONS" value="" />
+    <option name="REUSE_LAST_LOG_MESSAGE" value="true" />
+    <option name="PUT_FOCUS_INTO_LOG_MESSAGE" value="true" />
+    <option name="SHOW_PROJECT_ROOTS" value="true" />
+    <option name="SHOW_UPDATE_OPTIONS" value="true" />
+    <option name="SHOW_COMMIT_OPTIONS" value="true" />
+    <option name="SHOW_DIFF_OPTIONS" value="true" />
+    <option name="SHOW_ADD_OPTIONS" value="false" />
+    <option name="SHOW_STATUS_OPTIONS" value="true" />
+    <option name="SHOW_EDIT_OPTIONS" value="false" />
+    <option name="SHOW_UNEDIT_OPTIONS" value="false" />
+    <option name="SHOW_REMOVE_OPTIONS" value="false" />
+    <option name="SHOW_LOG_OPTIONS" value="true" />
+    <option name="SHOW_EDITORS_OPTIONS" value="false" />
+    <option name="HIDE_UNKNOWN_FILES" value="false" />
+    <option name="HIDE_MISSING_FILES" value="false" />
+    <option name="HIDE_UP_TO_DATE_FILES" value="false" />
+  </component>
+  <component name="CvsManager">
+    <expanded_paths>
+      <path value="$PROJECT_DIR$/src/documentation/images" />
+      <path value="$PROJECT_DIR$/src/java/org/apache/poi/hssf/record" />
+      <path value="$PROJECT_DIR$/src/documentation/xdocs" />
+      <path value="$PROJECT_DIR$/src/testcases/org/apache/poi/hssf/usermodel" />
+      <path value="$PROJECT_DIR$/src/java/org/apache/poi/dev" />
+    </expanded_paths>
+  </component>
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" />
+    <option name="OPTION_SCOPE" value="protected" />
+    <option name="OPTION_HIERARCHY" value="false" />
+    <option name="OPTION_NAVIGATOR" value="false" />
+    <option name="OPTION_INDEX" value="false" />
+    <option name="OPTION_SEPARATE_INDEX" value="false" />
+    <option name="OPTION_USE_1_1" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_USE" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_AUTHOR" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_VERSION" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_DEPRECATED" value="false" />
+    <option name="OPTION_DEPRECATED_LIST" value="false" />
+    <option name="OTHER_OPTIONS" />
+    <option name="HEAP_SIZE" />
+    <option name="OPEN_IN_BROWSER" value="false" />
+  </component>
+  <component name="VssConfiguration">
+    <CheckoutOptions>
+      <option name="COMMENT" value="" />
+      <option name="DO_NOT_GET_LATEST_VERSION" value="false" />
+      <option name="REPLACE_WRITABLE" value="false" />
+      <option name="RECURSIVE" value="false" />
+    </CheckoutOptions>
+    <CheckinOptions>
+      <option name="COMMENT" value="" />
+      <option name="KEEP_CHECKED_OUT" value="false" />
+      <option name="RECURSIVE" value="false" />
+    </CheckinOptions>
+    <AddOptions>
+      <option name="COMMENT" value="" />
+      <option name="STORE_ONLY_LATEST_VERSION" value="false" />
+      <option name="CHECK_OUT_IMMEDIATELY" value="false" />
+      <option name="FILE_TYPE" value="0" />
+    </AddOptions>
+    <UndocheckoutOptions>
+      <option name="MAKE_WRITABLE" value="false" />
+      <option name="REPLACE_LOCAL_COPY" value="0" />
+      <option name="RECURSIVE" value="false" />
+    </UndocheckoutOptions>
+    <DiffOptions>
+      <option name="IGNORE_WHITE_SPACE" value="false" />
+      <option name="IGNORE_CASE" value="false" />
+    </DiffOptions>
+    <GetOptions>
+      <option name="REPLACE_WRITABLE" value="0" />
+      <option name="MAKE_WRITABLE" value="false" />
+      <option name="RECURSIVE" value="false" />
+    </GetOptions>
+    <option name="ENABLED" value="false" />
+    <option name="CLIENT_PATH" value="" />
+    <option name="SRCSAFEINI_PATH" value="" />
+    <option name="USER_NAME" value="" />
+    <option name="PWD" value="" />
+    <option name="SHOW_CHECKOUT_OPTIONS" value="true" />
+    <option name="SHOW_CHECKIN_OPTIONS" value="true" />
+    <option name="SHOW_ADD_OPTIONS" value="true" />
+    <option name="SHOW_UNDOCHECKOUT_OPTIONS" value="true" />
+    <option name="SHOW_DIFF_OPTIONS" value="true" />
+    <option name="SHOW_GET_OPTIONS" value="true" />
+    <option name="USE_EXTERNAL_DIFF" value="false" />
+    <option name="EXTERNAL_DIFF_PATH" value="" />
+    <option name="REUSE_LAST_COMMENT" value="false" />
+    <option name="PUT_FOCUS_INTO_COMMENT" value="false" />
+  </component>
+  <component name="WebManager">
+    <OPTION enabled="false" />
+  </component>
+  <component name="WebRootContainer" />
+  <component enabled="false" name="EjbManager" />
+  <component name="ProjectColorSchemeSettings">
+    <option name="FORCE_COLOR_SCHEME_NAME" value="Blue" />
+  </component>
+  <component name="JUnitProjectSettings">
+    <option name="TEST_RUNNER" value="Text" />
+  </component>
+  <component name="InspectionManager">
+    <option name="AUTOSCROLL_TO_SOURCE" value="true" />
+    <option name="LEFT_SPLITTER_PROPORTION" value="0.5" />
+    <option name="RIGHT_SPLITTER_PROPORTION" value="0.5" />
+    <inspection_tool class="class com.intellij.codeInspection.k.c" enabled="false" />
+    <inspection_tool class="class com.intellij.codeInspection.c.b" enabled="false" />
+    <inspection_tool class="class com.intellij.codeInspection.h.d" enabled="false">
+      <option name="SUGGEST_PACKAGE_LOCAL" value="false" />
+      <option name="SUGGEST_PRIVATE_FOR_INNERS" value="false" />
+    </inspection_tool>
+    <inspection_tool class="class com.intellij.codeInspection.e.a" enabled="false">
+      <option name="ADD_MAINS_TO_ENTRIES" value="false" />
+      <option name="ADD_JUNIT_TO_ENTRIES" value="false" />
+      <option name="ADD_EJB_TO_ENTRIES" value="false" />
+      <entry_points />
+    </inspection_tool>
+    <inspection_tool class="class com.intellij.codeInspection.j.b" enabled="false" />
+    <inspection_tool class="class com.intellij.codeInspection.a.e" enabled="false" />
+    <inspection_tool class="class com.intellij.codeInspection.d.a" enabled="false" />
+    <group name="Code Cleanup" />
+    <group name="Declaration Analysis" />
+    <group name="Local Code Analysis" />
+  </component>
+  <component name="EjbActionsConfiguration">
+    <option name="NEW_MESSAGE_BEAN_LAST_PACKAGE" value="" />
+    <option name="NEW_ENTITY_BEAN_LAST_PACKAGE" value="" />
+    <option name="NEW_SESSION_BEAN_LAST_PACKAGE" value="" />
+  </component>
+</project>
+

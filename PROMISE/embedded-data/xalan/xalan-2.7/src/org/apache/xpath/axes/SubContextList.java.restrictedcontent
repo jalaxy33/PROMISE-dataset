@@ -1,0 +1,9 @@
+SubContextList
+getLastPos
+int
+xctxt
+XPathContext
+getProximityPosition
+int
+xctxt
+XPathContext

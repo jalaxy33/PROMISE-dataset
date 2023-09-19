@@ -1,0 +1,15 @@
+CMException
+CMException
+errCode
+int
+fErrorCode
+errCode
+getErrorCode
+int
+return
+fErrorCode
+int
+fUnused
+int
+fErrorCode
+Exception

@@ -1,0 +1,12 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+InterfaceDeclaration
+{'public', 'abstract'}MethodDeclaration
+GDataSearcherReferenceType
+TypeArgument
+StringReferenceType
+set()FormalParameter
+ProvidedServiceReferenceType
+ServerComponentReferenceType

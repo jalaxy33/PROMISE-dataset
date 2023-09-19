@@ -1,0 +1,37 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+Import
+Import
+{'final', 'public'}ClassDeclaration
+{'private'}ConstructorDeclaration
+{'static', 'public'}MethodDeclaration
+CamelContextReferenceType
+set()FormalParameter
+ContextTestSupportReferenceType
+set()FormalParameter
+StringReferenceType
+StatementExpression
+MethodInvocation
+Literal
+LocalVariableDeclaration
+ClassPathXmlApplicationContextReferenceType
+VariableDeclarator
+ClassCreator
+ClassPathXmlApplicationContextReferenceType
+MemberReference
+StatementExpression
+MethodInvocation
+ClassCreator
+ServiceReferenceType
+{'public'}MethodDeclaration
+StatementExpression
+MethodInvocation
+{'public'}MethodDeclaration
+StatementExpression
+MethodInvocation
+ReturnStatement
+MethodInvocation
+MemberReference

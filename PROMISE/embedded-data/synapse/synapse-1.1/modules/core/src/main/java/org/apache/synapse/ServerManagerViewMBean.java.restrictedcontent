@@ -1,0 +1,12 @@
+ServerManagerViewMBean
+getServerState
+String
+start
+stop
+restart
+shutdown
+stopGracefully
+waitSeconds
+long
+startMaintenance
+endMaintenance

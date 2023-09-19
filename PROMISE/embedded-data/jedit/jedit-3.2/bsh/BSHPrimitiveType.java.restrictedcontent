@@ -1,0 +1,12 @@
+BSHPrimitiveType
+Class
+type
+BSHPrimitiveType
+id
+int
+id
+getType
+Class
+return
+type
+SimpleNode

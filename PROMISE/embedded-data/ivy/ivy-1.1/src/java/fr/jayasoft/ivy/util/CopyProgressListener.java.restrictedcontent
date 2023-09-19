@@ -1,0 +1,10 @@
+CopyProgressListener
+start
+evt
+CopyProgressEvent
+progress
+evt
+CopyProgressEvent
+end
+evt
+CopyProgressEvent

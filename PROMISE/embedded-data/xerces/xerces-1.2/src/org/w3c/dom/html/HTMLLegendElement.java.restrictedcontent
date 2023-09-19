@@ -1,0 +1,14 @@
+HTMLLegendElement
+getForm
+HTMLFormElement
+getAccessKey
+String
+setAccessKey
+accessKey
+String
+getAlign
+String
+setAlign
+align
+String
+HTMLElement

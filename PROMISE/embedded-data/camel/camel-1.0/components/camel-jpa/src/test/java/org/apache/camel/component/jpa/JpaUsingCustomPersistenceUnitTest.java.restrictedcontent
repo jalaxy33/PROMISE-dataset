@@ -1,0 +1,7 @@
+JpaUsingCustomPersistenceUnitTest
+getEndpointUri
+String
+return
+getName
+SendEmail
+JpaTest

@@ -1,0 +1,11 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+InterfaceDeclaration
+{'public'}MethodDeclaration
+set()FormalParameter
+ListReferenceType
+{'public'}MethodDeclaration
+set()FormalParameter
+ListReferenceType

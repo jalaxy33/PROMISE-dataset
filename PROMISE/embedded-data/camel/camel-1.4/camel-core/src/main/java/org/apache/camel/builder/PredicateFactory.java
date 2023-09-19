@@ -1,0 +1,11 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+InterfaceDeclaration
+set()MethodDeclaration
+PredicateReferenceType
+TypeArgument
+EReferenceType
+TypeParameter
+ExchangeReferenceType

@@ -1,0 +1,2836 @@
+<html><head><title>Ivy Documentation</title><base href="http://www.jayasoft.org/" /><style type="text/css">
+@import url(misc/print.css);
+</style></head><body><h1 id="24" name="24" class="book-h1">Ivy Documentation</h1><p>Welcome to the official Ivy documentation.</p>
+<h1>About this doc</h1>
+<p>If you browse this documentation from your installation of ivy, you can also check the <a href="./ivy/doc">online version</a> for latest updates.</p>
+<p>The online version of this documentation is updated periodically, especially when new features are added during development. So if you find something documented here not avaiable in your version of ivy, it may be because it is available only with the latest <a href="./ivy/download">download</a>.</p>
+<h1>Overview</h1>
+<p>This documentation is decomposed in 3 main parts:</p>
+<ul>
+<li><a href="./ivy/doc/tutorial">Tutorials</a></li>
+ The tutorials is the best way to begin to play with ivy. You will easily and quickly learn the basics of Ivy.</p>
+<li><a href="./ivy/doc/reference">Reference</a></li>
+ The reference documentation gives you all the details of Ivy. <br/>The introduction part is particularly useful: it defines some vocabulary, explains main concepts such as dependency resolvers and patterns, and give an overview on how ivy works internally. <br/>It's also in the reference doc that you will find all you always dreamed to know about ivy configuration, ivy files, and ivy use (especially with ant).</p>
+<li><a href="./ivy/doc/appendix">Appendix</a></li>
+ The appendix section contains a bunch of Ivy related information which is not part of Ivy reference doc.
+</ul>
+<h1 id="27" name="27" class="book-h1">Tutorials</h1><ul><p>The best way to learn is to practice ! That's what the ivy tutorials will help you to do to discover some of the great ivy <a href="./ivy/features">features</a>.</p>
+<p>But before starting the tutorials, make sure you have properly <a href="./ivy/doc/install">installed</a> ivy.</p>
+<p>The following tutorials are available:</p>
+<p><a href="./ivy/doc/tutorial/start">Quick Start</a> will guide you through your very first steps with ivy.<br />
+<a href="./ivy/doc/tutorial/ivyrep">Using IvyRep</a> will show you the out of the box power of ivy + ivyrep.<br />
+<a href="./ivy/doc/tutorial/multiple">Multiple Resolvers</a> will teach you how to configure Ivy to find its dependencies in multiple places.<br />
+<a href="./ivy/doc/tutorial/dual">Dual Resolver</a> will help you configure ivy to find ivy files in one place and artifacts in another.<br />
+<a href="./ivy/doc/tutorial/multi-project">Project Dependencies</a> will finally makes you touch the interest of using ivy in multi project environment.</p>
+</ul><h1 id="28" name="28" class="book-h2">Quick Start</h1><ul>In this example, we will see the easiest way to use ivy. No configuration or other complicated files to write, only the list of libraries the project will use.
+
+<h1>The ivy.xml file</h1>
+This file is used to describe, the dependencies of the project on other libraries.
+Here is the sample : 
+<div class="ivy-file">
+<!-- converted by xmlverbatim.xsl 1.1, (c) O. Becker -->
+<div class="xmlverb-default">&lt;<span class="xmlverb-element-name">ivy-module</span> <span class="xmlverb-attr-name">version</span>="<span class="xmlverb-attr-content">1.0</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">info</span> <span class="xmlverb-attr-name">organisation</span>="<span class="xmlverb-attr-content">jayasoft</span>" <span class="xmlverb-attr-name">module</span>="<span class="xmlverb-attr-content">hello-ivy</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">dependencies</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">dependency</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">commons-lang</span>" <span class="xmlverb-attr-name">rev</span>="<span class="xmlverb-attr-content">2.0</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">dependencies</span>&gt;<span class="xmlverb-text"><br>
+</span>&lt;/<span class="xmlverb-element-name">ivy-module</span>&gt;<br></div>
+</div>
+The build file corresponding to use it, contains only :
+<div class="build-file">
+<!-- converted by xmlverbatim.xsl 1.1, (c) O. Becker -->
+<div class="xmlverb-default">&lt;<span class="xmlverb-element-name">project</span><span class="xmlverb-ns-name"> xmlns:ivy</span>="<span class="xmlverb-ns-uri">antlib:fr.jayasoft.ivy.ant</span>" <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">hello-ivy</span>" <span class="xmlverb-attr-name">default</span>="<span class="xmlverb-attr-content">run</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;!--<span class="xmlverb-comment">&nbsp;=================================&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;target:&nbsp;resolve&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=================================&nbsp;</span>--&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">target</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">resolve</span>" <span class="xmlverb-attr-name">description</span>="<span class="xmlverb-attr-content">--&gt; retreive dependencies with ivy</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-nsprefix">ivy</span>:<span class="xmlverb-element-name">retrieve</span> /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">target</span>&gt;<span class="xmlverb-text"><br>
+</span>&lt;/<span class="xmlverb-element-name">project</span>&gt;<br>
+</div></div>
+<h1>Running the project</h1>
+To run the sample, open a dos (or shell) window, and go under the hello-ivy example directory.
+Then, on the command prompt, just run ant :
+<div class="shell"><pre>
+I:\hello-ivy>ant
+Buildfile: build.xml
+
+resolve:
+:: Ivy 1.0-rc3 - 20050421161206 :: http://ivy.jayasoft.org/ ::
+no configuration file found, using default...
+:: resolving dependencies :: jayasoft/hello-ivy-working@xmen
+        confs: [default]
+downloading http://www.ibiblio.org/maven/commons-lang/jars/commons-lang-2.0.jar(2.0) ...
+..................................... (165kB)
+        [SUCCESSFUL ] apache/commons-lang-2.0/commons-lang.jar[jar] (4688ms)
+:: resolution report ::
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   1   |   1   |   0   |   0   ||   1   |   1   |
+        ---------------------------------------------------------------------
+:: retrieving :: jayasoft/hello-ivy
+        confs: [default]
+        1 artifacts copied, 0 already retrieved
+
+run:
+    [mkdir] Created dir: I:\hello-ivy\build
+    [javac] Compiling 1 source file to I:\hello-ivy\build
+     [java] standard message : hello ivy !
+     [java] capitalized by org.apache.commons.lang.WordUtils : Hello Ivy !
+
+BUILD SUCCESSFUL
+Total time: 8 seconds</pre></div>
+<h1>What happened ?</h1>
+Without any configuration, other than it's default configuration, ivy retreive files from the maven ibiblio libraries repository. That's what happened here. 
+The resolve task has downloaded the commons-lang.jar file from ibiblio, then copied it to the ivy cache and then dispatch it in the default library directory of the project : the lib dir.<br>
+Some will say that the task was long to achieve. Yeah, it's true it was, but it has downloaded from the internet the needed file. Let's try to run it again :
+<div class="shell"><pre>I:\hello-ivy>ant
+Buildfile: build.xml
+
+resolve:
+:: resolving dependencies :: jayasoft/hello-ivy-null :: [default]
+:: resolution report ::
+        [default] jayasoft/hello-ivy-working@rahan: 1 artifacts (0 downloaded)
+:: retrieving :: jayasoft/hello-ivy :: [default]
+
+run:
+     [java] standard message : hello ivy !
+     [java] capitalized by org.apache.commons.lang.WordUtils : Hello Ivy !
+
+BUILD SUCCESSFUL
+Total time: 1 second</pre></div>
+Great ! the cache was used, no download was needed and the build was instantaneous.<br/><br/>
+If you want to check the content of the cache, by default it is put in your user home 
+in a .ivy-cache directory. <br/><br/>
+
+And now, if you want to generate a report detailing all the dependencies of your module, you can call the 
+report target, and check the generated file in the build directory. You should obtain something looking like 
+<a href="samples/jayasoft-ivyrep-example-default.html">this</a>.<br/><br/>
+
+You are now ready to go to the next tutorials to go one step beyond using ivy transitive dependencies
+management.<br/></ul><h1 id="36" name="36" class="book-h2">Using IvyRep</h1><ul>In this example, we will see the easiest way to use ivy and benefit from its transitive dependencies feature. 
+No configuration or other complicated files to write, only the list of libraries the project will use.
+
+<h1>The ivy.xml file</h1>
+This file is used to describe, the dependencies of the project on other libraries.
+Here is the sample : 
+<div class="ivy-file">
+
+<!-- converted by xmlverbatim.xsl 1.1, (c) O. Becker -->
+<div class="xmlverb-default">&lt;<span class="xmlverb-element-name">ivy-module</span> <span class="xmlverb-attr-name">version</span>="<span class="xmlverb-attr-content">1.0</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">info</span> <span class="xmlverb-attr-name">organisation</span>="<span class="xmlverb-attr-content">jayasoft</span>" <span class="xmlverb-attr-name">module</span>="<span class="xmlverb-attr-content">hello-ivy</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">dependencies</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">dependency</span> <span class="xmlverb-attr-name">org</span>="<span class="xmlverb-attr-content">apache</span>" <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">commons-lang</span>" <span class="xmlverb-attr-name">rev</span>="<span class="xmlverb-attr-content">2.0</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">dependency</span> <span class="xmlverb-attr-name">org</span>="<span class="xmlverb-attr-content">apache</span>" <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">commons-cli</span>" <span class="xmlverb-attr-name">rev</span>="<span class="xmlverb-attr-content">1.0</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">dependencies</span>&gt;<span class="xmlverb-text"><br>
+</span>&lt;/<span class="xmlverb-element-name">ivy-module</span>&gt;<br></div>
+</div>
+The build file corresponding to use it, contains only :
+<div class="build-file">
+<!-- converted by xmlverbatim.xsl 1.1, (c) O. Becker -->
+<div class="xmlverb-default">&lt;<span class="xmlverb-element-name">project</span><span class="xmlverb-ns-name"> xmlns:ivy</span>="<span class="xmlverb-ns-uri">antlib:fr.jayasoft.ivy.ant</span>" <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">hello-ivy</span>" <span class="xmlverb-attr-name">default</span>="<span class="xmlverb-attr-content">run</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;!--<span class="xmlverb-comment">&nbsp;=================================&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;target:&nbsp;resolve&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=================================&nbsp;</span>--&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">target</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">resolve</span>" <span class="xmlverb-attr-name">description</span>="<span class="xmlverb-attr-content">--&gt; retreive dependencies with ivy</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-nsprefix">ivy</span>:<span class="xmlverb-element-name">retrieve</span> /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">target</span>&gt;<span class="xmlverb-text"><br>
+</span>&lt;/<span class="xmlverb-element-name">project</span>&gt;<br>
+</div></div>
+<h1>Running the project</h1>
+To run the sample, open a shell window, and go under the ivyrep example directory.
+Then, on the command prompt, just run ant :
+<div class="shell"><pre>
+I:\ivyrep>ant
+Buildfile: build.xml
+
+resolve:
+:: Ivy 1.0-rc3 - 20050421161206 :: http://ivy.jayasoft.org/ ::
+no configuration file found, using default...
+:: resolving dependencies :: jayasoft/ivyrep-example-working@xmen
+        confs: [default]
+downloading http://www.ibiblio.org/maven/commons-cli/jars/commons-cli-1.0.jar(1.0) ...
+...... (31kB)
+        [SUCCESSFUL ] apache/commons-cli-1.0/commons-cli.jar[jar] (1437ms)
+downloading http://www.ibiblio.org/maven/commons-lang/jars/commons-lang-2.0.jar(2.0) ...
+..................................... (165kB)
+        [SUCCESSFUL ] apache/commons-lang-2.0/commons-lang.jar[jar] (5640ms)
+downloading http://www.ibiblio.org/maven/commons-logging/jars/commons-logging-1.0.jar(1.0) ...
+..... (21kB)
+        [SUCCESSFUL ] apache/commons-logging-1.0/commons-logging.jar[jar] (1250ms)
+:: resolution report ::
+        :: evicted modules:
+        apache/commons-lang-1.0 by [apache/commons-lang-2.0] in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   4   |   3   |   2   |   1   ||   3   |   3   |
+        ---------------------------------------------------------------------
+:: retrieving :: jayasoft/ivyrep-example
+        confs: [default]
+        3 artifacts copied, 0 already retrieved
+
+run:
+    [mkdir] Created dir: I:\ivyrep\build
+    [javac] Compiling 1 source file to I:\ivyrep\build
+     [java] standard message : hello ivy !
+     [java] capitalized by org.apache.commons.lang.WordUtils : Hello Ivy !
+
+BUILD SUCCESSFUL
+Total time: 16 seconds</pre></div>
+<h1>What happened ?</h1>
+Without any configuration, other than it's default configuration, ivy uses the ivyrep resolver. This resolver looks for ivy files on <a href="./ivy/ivyrep">ivyrep</a>,
+and for artifacts on ibiblio. That's what happened here. <br/><br/>
+The resolve task has found an <a href="http://ivyrep.jayasoft.org/apache/commons-cli/ivy-1.0.xml">ivy file on ivyrep for commons-cli 1.0</a>.
+This ivy file indicates that commons-cli 1.0 depends on commons-lang 1.0 and commons-logging 1.0.<br/><br/>
+The resolve task detects the conflict between the revision 2.0 of commons-lang that is asked in the ivy above, and
+the revision 1.0 required in commons-cli. With no particular conflict manager, the 2.0 is selected, and the 1.0 is evicted.
+The 1.0 being evicted, it is not downloaded at all.<br/><br/>
+The resolve task has then downloaded the commons-cli 1.0, commons-logging 1.0 and commons-lang.jar 2.0 files from ibiblioand put them to the ivy cache. <br/>
+Then the retrieve task has copied them in the default library directory of the project : the lib dir.<br>
+Some will say that the task was long to achieve. Yes, it's true it was, but it has downloaded from the internet the needed files. Let's try to run it again :
+<div class="shell"><pre>
+I:\ivyrep>ant
+Buildfile: build.xml
+
+resolve:
+:: Ivy 1.0-rc3 - 20050421161206 :: http://ivy.jayasoft.org/ ::
+no configuration file found, using default...
+:: resolving dependencies :: jayasoft/ivyrep-example-working@xmen
+        confs: [default]
+:: resolution report ::
+        :: evicted modules:
+        apache/commons-lang-1.0 by [apache/commons-lang-2.0] in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   4   |   0   |   0   |   1   ||   3   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: jayasoft/ivyrep-example
+        confs: [default]
+        0 artifacts copied, 3 already retrieved
+
+run:
+     [java] standard message : hello ivy !
+     [java] capitalized by org.apache.commons.lang.WordUtils : Hello Ivy !
+
+BUILD SUCCESSFUL
+Total time: 2 seconds</pre></div>
+Great ! the cache was used, no download was needed and the build was almost instantaneous.<br/><br/>
+If you want to check the content of the cache, by default it is put in your user home 
+in a .ivy-cache directory. Check the next tutorials to see how to configure this.<br/>
+</ul><h1 id="37" name="37" class="book-h2">Multiple Resolvers</h1><ul>This example is an illustration of how artefacts can be retreived by multiple resolvers.
+Using multiple resolvers is very important when using continous integration. 
+Indeed, in such environements, you can use multiple repositories and so multiple resolvers to retreive both released versions of projects than continous integrated versions produced for example with cruise-control.
+In our example, we will just show how to use two resolvers, one on a local repository and one using ibiblio repository.
+
+<h1>project description</h1>
+<h2>the project : chained-resolvers</h2>
+The project is very simple and contains only one test class : example.Hello<br/>
+It depends on two libraries apache commons-lang and a little test library (sources are included in jar file). 
+The test library is used by the project to uppercase a string, and commons-lang is used to capitalize the same string.
+
+Here is the content of the project :
+<ul>
+  <li>build.xml : the ant build file for the project</li>
+  <li>ivy.xml : the ivy project file</li>
+  <li>src\example\Hello.java : the only class of the project</li>
+</ul>
+Take a look at it's <b>ivy.xml</b> file :
+<!-- converted by xmlverbatim.xsl 1.1, (c) O. Becker -->
+<div class="ivy-file"><!-- converted by xmlverbatim.xsl 1.1, (c) O. Becker -->
+<div class="xmlverb-default">&lt;<span class="xmlverb-element-name">ivy-module</span> <span class="xmlverb-attr-name">version</span>="<span class="xmlverb-attr-content">1.0</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">info</span> <span class="xmlverb-attr-name">organisation</span>="<span class="xmlverb-attr-content">jayasoft</span>" <span class="xmlverb-attr-name">module</span>="<span class="xmlverb-attr-content">chained-resolvers</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">dependencies</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">dependency</span> <span class="xmlverb-attr-name">org</span>="<span class="xmlverb-attr-content">apache</span>" <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">commons-lang</span>" <span class="xmlverb-attr-name">rev</span>="<span class="xmlverb-attr-content">2.0</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">dependency</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">test</span>" <span class="xmlverb-attr-name">rev</span>="<span class="xmlverb-attr-content">1.0</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">dependencies</span>&gt;<span class="xmlverb-text"><br>
+</span>&lt;/<span class="xmlverb-element-name">ivy-module</span>&gt;<br>
+</div></div>
+As we expect, the ivy file declares to be dependent on the two libraries that the project use : apache commons-lang.jar and test.jar.
+
+<h2>the <b>ivy</b> configuration</h2>
+The ivy configuration is made in the config directory it contains only one file : ivyconf.xml.
+
+Let's analyse it.
+<!-- converted by xmlverbatim.xsl 1.1, (c) O. Becker -->
+<div class="xmlverb-default">&lt;<span class="xmlverb-element-name">ivyconf</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">conf</span> <span class="xmlverb-attr-name">defaultResolver</span>="<span class="xmlverb-attr-content">chain-example</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">resolvers</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">chain</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">chain-example</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">filesystem</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">libraries</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">artifact</span> <span class="xmlverb-attr-name">pattern</span>="<span class="xmlverb-attr-content">${ivy.conf.dir}/repository/[artifact]-[revision].[type]</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">filesystem</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">ibiblio</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">ibiblio</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">chain</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">resolvers</span>&gt;<span class="xmlverb-text"><br>
+</span>&lt;/<span class="xmlverb-element-name">ivyconf</span>&gt;<br></div>
+<h2>the <b>conf</b> tag</h2>
+This tag initializes ivy with some parameters. Here only one is used, the name of the resolver to use by default.
+
+<h2>the <b>resolvers</b> tag</h2>
+Under this tag, we can find the description of the resolvers that ivy will use.
+In our example, we have only one resolver, called "chain-example", which is quite special as it defines a list (a chain) of resolvers.
+The resolvers put in the chain are : 
+<ul>
+  <li>libraries : it is a file resolver. This one is configured to look for artefacts in the "repository" sub directory of the directory that contains the ivyconf.xml file.</li>
+  <li>ibiblio : this resolver is a special one. It looks in the ibiblio maven repository to retreive the libraries.</li>
+</ul>
+
+<h1>walkthrough</h1>
+<div class="step">
+<h2>step 1 : preparation</h2>
+Open a DOS or shell window, and go to the "chained-resolvers" directory.
+</div>
+<div class="step">
+<h2>step 2 : clean directory tree</h2>
+On the prompt type : ant<br>
+This will clean up the entire project directory tree and ivy cache. You can do it each time you want to clean up this example.
+</div>
+<div class="step">
+<h2>step 3 : run the project</h2>
+Goto chainedresolvers-project directory. And simply run <b>ant</b>.
+<div class="shell"><pre>I:\chained-resolvers\chainedresolvers-project>ant
+Buildfile: build.xml
+
+configure:
+:: Ivy 1.0-rc3 - 20050421161206 :: http://ivy.jayasoft.org/ ::
+
+resolve:
+:: resolving dependencies :: jayasoft/chained-resolvers-working@xmen
+        confs: [default]
+downloading http://www.ibiblio.org/maven/commons-lang/jars/commons-lang-2.0.jar(2.0) ...
+.................................... (165kB)
+        [SUCCESSFUL ] apache/commons-lang-2.0/commons-lang.jar[jar] (5390ms)
+downloading file:/I:/chained-resolvers/config/repository/test-1.0.jar(1.0) ...
+. (1kB)
+        [SUCCESSFUL ] jayasoft/test-1.0/test.jar[jar] (16ms)
+:: resolution report ::
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   2   |   2   |   0   |   0   ||   2   |   2   |
+        ---------------------------------------------------------------------
+:: retrieving :: jayasoft/chained-resolvers
+        confs: [default]
+        2 artifacts copied, 0 already retrieved
+
+run:
+    [mkdir] Created dir: I:\chained-resolvers\chainedresolvers-project\build
+    [javac] Compiling 1 source file to I:\chained-resolvers\chainedresolvers-project\build
+     [java] standard message :example world !
+     [java] capitalized by org.apache.commons.lang.WordUtils : Example World !
+     [java] upperCased by test.StringUtils : EXAMPLE WORLD !
+
+BUILD SUCCESSFUL
+Total time: 9 seconds</pre></div></div>
+We can see in the log of the resolve task, that the two dependencies have been retrieved (2 artifacts) and copied to the ivy cache directory (2 downloaded).
+The run target succeed in using both commons-lang.jar comming from ibiblio repository and test.jar comming from the local repository.
+</ul><h1 id="38" name="38" class="book-h2">Dual Resolver</h1><ul>This tutorial presents the use of the DualResolver, a feature introduced in the version 0.6 of Ivy.<br/><br/>
+
+Dual Resolver is used when ivy files can be found in a repository while artifacts are in another. It is 
+especially useful to use full power of ivy (including transitive dependencies) with the 
+ibiblio repository for artifacts. The problem with the maven ibiblio repository is that it does not 
+contain ivy files. Since transitive dependencies are based upon ivy files, using the ibiblio resolver does 
+not permit to use transitive dependencies.<br/><br/>
+
+The solution to this problem is to store your own repository only for ivy files, and use ibiblio
+for artifacts. That's what is done in this tutorial.<br/><br/>
+
+<h1>project description</h1>
+Let's have a look at the src/example/dual directory in your ivy distribution.<br/>
+It contains a build file and 3 directories:
+<ul>
+<li>config: contains the ivy configuration file</li>
+<li>repository: a sample repository of ivy files</li>
+<li>project: the project making use of ivy with dual resolver</li>
+</ul>
+<br/>
+
+<h2>the dual project</h2>
+The project is very simple and contains only one test class : example.Hello<br/>
+It depends on two libraries: apache commons-lang and apache commons-httpclient.
+
+Here is the content of the project :
+<ul>
+  <li>build.xml : the ant build file for the project</li>
+  <li>ivy.xml : the ivy project file</li>
+  <li>src\example\Hello.java : the only class of the project</li>
+</ul>
+Take a look at it's <b>ivy.xml</b> file :
+<!-- converted by xmlverbatim.xsl 1.1, (c) O. Becker -->
+<div class="xmlverb-default">&lt;<span class="xmlverb-element-name">ivy-module</span> <span class="xmlverb-attr-name">version</span>="<span class="xmlverb-attr-content">1.0</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">info</span> <span class="xmlverb-attr-name">organisation</span>="<span class="xmlverb-attr-content">jayasoft</span>" <span class="xmlverb-attr-name">module</span>="<span class="xmlverb-attr-content">hello-ivy</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">dependencies</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">dependency</span> <span class="xmlverb-attr-name">org</span>="<span class="xmlverb-attr-content">apache</span>" <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">commons-httpclient</span>" <span class="xmlverb-attr-name">rev</span>="<span class="xmlverb-attr-content">2.0.2</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">dependency</span> <span class="xmlverb-attr-name">org</span>="<span class="xmlverb-attr-content">apache</span>" <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">commons-lang</span>" <span class="xmlverb-attr-name">rev</span>="<span class="xmlverb-attr-content">2.0</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">dependencies</span>&gt;<span class="xmlverb-text"><br>
+</span>&lt;/<span class="xmlverb-element-name">ivy-module</span>&gt;<br>
+</div>
+<br/>
+As you can see, nothing special here... Indeed, it's the philosophy of ivy to keep ivy files
+independent of the way dependencies are retrieved.
+
+<h2>the <b>ivy</b> configuration</h2>
+The ivy configuration is made in the config directory it contains only one file : ivyconf.xml.
+
+Let's analyse it.
+<!-- converted by xmlverbatim.xsl 1.1, (c) O. Becker -->
+<div class="xmlverb-default">&lt;<span class="xmlverb-element-name">ivyconf</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">conf</span> <span class="xmlverb-attr-name">defaultResolver</span>="<span class="xmlverb-attr-content">dual-example</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">resolvers</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">dual</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">dual-example</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">filesystem</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">ivys</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">ivy</span> <span class="xmlverb-attr-name">pattern</span>="<span class="xmlverb-attr-content">${ivy.conf.dir}/../repository/[module]-ivy-[revision].xml</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">filesystem</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">ibiblio</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">ibiblio</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">dual</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">resolvers</span>&gt;<span class="xmlverb-text"><br>
+</span>&lt;/<span class="xmlverb-element-name">ivyconf</span>&gt;<br>
+</div>
+<br/>
+Here we configure one resolver, the default one, which is a dual resolver. This dual resolver
+has two sub resolvers : the first is what is called the "ivy" resolver of the dual resolver, and
+the second one is what is called the "artifact" resolver. It is important that the dual resolver exactly
+has two sub resolvers in this given order.<br/>
+The ivy resolver, here a filesystem one, is used only to find ivy files. The configuration given in this resolver
+says that all ivy files are in the same directory, named like that: [module]-ivy-[revision].xml. If
+we check the repository directory, we can confirm that it contains a file named commons-httpclient-ivy-2.0.2.xml.
+It fulfills the given pattern and will thus be find by this resolver.<br/>
+The artifact resolver is simply an ibiblio one, and will thus try to find required artifacts
+in the maven ibiblio repository.<br/>
+
+<h1>walkthrough</h1>
+<div class="step">
+<h2>step 1 : preparation</h2>
+Open a DOS or shell window, and go to the "dual" directory.
+</div>
+<div class="step">
+<h2>step 2 : clean up</h2>
+On the prompt type : ant<br>
+This will clean up the entire project directory tree (compiled classes and retrieved libs) and ivy cache. 
+You can do it each time you want to clean up this example.
+</div>
+<div class="step">
+<h2>step 3 : run the project</h2>
+Goto project directory. And simply run <b>ant</b>.
+<div class="shell"><pre>
+I:\dual\project>ant
+Buildfile: build.xml
+
+configure:
+:: Ivy 1.0-rc3 - 20050421161206 :: http://ivy.jayasoft.org/ ::
+
+resolve:
+:: resolving dependencies :: jayasoft/hello-ivy-working@xmen
+        confs: [default]
+downloading http://www.ibiblio.org/maven/commons-lang/jars/commons-lang-2.0.jar(2.0) ...
+.....
+.........
+..........
+...........
+. (165kB)
+        [SUCCESSFUL ] apache/commons-lang-2.0/commons-lang.jar[jar] (8032ms)
+downloading http://www.ibiblio.org/maven/commons-httpclient/jars/commons-httpclient-2.0.2.jar(2.0.2) ...
+...........
+......
+....
+..........
+............
+........ (220kB)
+        [SUCCESSFUL ] apache/commons-httpclient-2.0.2/commons-httpclient.jar[jar] (10031ms)
+downloading http://www.ibiblio.org/maven/commons-logging/jars/commons-logging-1.0.4.jar(1.0.4) ...
+......... (37kB)
+        [SUCCESSFUL ] apache/commons-logging-1.0.4/commons-logging.jar[jar] (1469ms)
+:: resolution report ::
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   3   |   3   |   1   |   0   ||   3   |   3   |
+        ---------------------------------------------------------------------
+:: retrieving :: jayasoft/hello-ivy
+        confs: [default]
+        3 artifacts copied, 0 already retrieved
+
+run:
+    [mkdir] Created dir: I:\dual\project\build
+    [javac] Compiling 1 source file to I:\dual\project\build
+     [java] standard message : hello ivy !
+     [java] capitalized by org.apache.commons.lang.WordUtils : Hello Ivy !
+     [java] head status code with httpclient: 200
+     [java] now check if httpclient dependency on commons-logging has been realized
+     [java] found logging class in classpath: interface org.apache.commons.logging.Log
+
+BUILD SUCCESSFUL
+Total time: 24 seconds
+</pre></div></div>
+<br/>
+As you can see, ivy not only downloaded commons-lang and commons-httpclient, but also
+commons-logging. Indeed, commons-logging is a dependency of httpclient, as we can see
+in the httpclient ivy file found in the repository directory:
+<!-- converted by xmlverbatim.xsl 1.1, (c) O. Becker -->
+<div class="xmlverb-default">&lt;<span class="xmlverb-element-name">ivy-module</span> <span class="xmlverb-attr-name">version</span>="<span class="xmlverb-attr-content">1.0</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">info</span> <span class="xmlverb-attr-name">organisation</span>="<span class="xmlverb-attr-content">apache</span>" <span class="xmlverb-attr-name">module</span>="<span class="xmlverb-attr-content">commons-httpclient</span>" <span class="xmlverb-attr-name">revision</span>="<span class="xmlverb-attr-content">2.0.2</span>" <span class="xmlverb-attr-name">status</span>="<span class="xmlverb-attr-content">release</span>" <span class="xmlverb-attr-name">publication</span>="<span class="xmlverb-attr-content">20041010174300</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">dependencies</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">dependency</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">commons-logging</span>" <span class="xmlverb-attr-name">rev</span>="<span class="xmlverb-attr-content">1.0.4</span>" <span class="xmlverb-attr-name">conf</span>="<span class="xmlverb-attr-content">default</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">dependencies</span>&gt;<span class="xmlverb-text"><br>
+</span>&lt;/<span class="xmlverb-element-name">ivy-module</span>&gt;<br>
+</div>
+<br/>
+So everything worked well, ivy file has been found in the repository directory and 
+artifacts have been downloaded from ibiblio. You now just have to write ivy files for the module
+you often use, and they will be much easier to use... And imagine a world in which each module
+delivers also an ivy file. Since it is independent of the way to retrieve dependencies, it
+would made all dependencies handling much easier, wouldn't it ?
+
+</ul><h1 id="39" name="39" class="book-h2">Project dependencies</h1><ul>This example is an illustration of dependency between two project.
+
+The dependant project declares that it uses the standalone one.
+We will illustrate two things : 
+<ul>
+  <li>public libraries declared by standalone project will automatically be recovered by the dependant project</li>
+  <li>the dependant project will retrieve the "latest" version of the standalone project</li>
+</ul>
+<h1>the projects used</h1>
+<h2>the project : standalone</h2>
+The standalone project is very simple.
+It depends on the apache library commons-lang and contains only one class : standalone.Main which provides two services :
+<ul>
+  <li>return the version of the project</li>
+  <li>capitalize a string using org.apache.commons.lang.WordUtils.capitalizeFully</li>
+</ul>
+Here is the content of the project :
+<ul>
+  <li>build.xml : the ant build file for the project</li>
+  <li>ivy.xml : the ivy project file</li>
+  <li>src\standalone\Main.java : the only class of the project</li>
+</ul>
+Take a look at it's <b>ivy.xml</b> file :
+<!-- converted by xmlverbatim.xsl 1.1, (c) O. Becker -->
+<div class="ivy-file"><div class="xmlverb-default">&lt;<span class="xmlverb-element-name">ivy-module</span> <span class="xmlverb-attr-name">version</span>="<span class="xmlverb-attr-content">1.0</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">info</span> <span class="xmlverb-attr-name">organisation</span>="<span class="xmlverb-attr-content">jayasoft</span>" <span class="xmlverb-attr-name">module</span>="<span class="xmlverb-attr-content">standalone</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">dependencies</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">dependency</span> <span class="xmlverb-attr-name">org</span>="<span class="xmlverb-attr-content">apache</span>" <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">commons-lang</span>" <span class="xmlverb-attr-name">rev</span>="<span class="xmlverb-attr-content">2.0</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">dependencies</span>&gt;<span class="xmlverb-text"><br>
+</span>&lt;/<span class="xmlverb-element-name">ivy-module</span>&gt;<br>
+</div></div>
+
+The ivy dependency file declares only one dependency on apache commons-lang library which by default is a public dependency (see <a href="ivy/doc/ivyfile">ivy file definition</a>).
+<h2>the project : depending</h2>
+The project depending is very simple too. It declares only one dependency on the latest version of the standalone project and it contains only one class depending.Main which make 2 things :
+<ul>
+  <li>getting the version of the standalone project throw a call to standalone.Main.getVersion()</li>
+  <li>transform a string throw a call to standalone.Main.capitalizeWords(str)</li>
+</ul>
+Take a look at it's <b>ivy.xml</b> file :
+<div class="ivy-file"><!-- converted by xmlverbatim.xsl 1.1, (c) O. Becker -->
+<div class="xmlverb-default">&lt;<span class="xmlverb-element-name">ivy-module</span> <span class="xmlverb-attr-name">version</span>="<span class="xmlverb-attr-content">1.0</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">info</span> <span class="xmlverb-attr-name">organisation</span>="<span class="xmlverb-attr-content">jayasoft</span>" <span class="xmlverb-attr-name">module</span>="<span class="xmlverb-attr-content">depending</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">dependencies</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">dependency</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">standalone</span>" <span class="xmlverb-attr-name">rev</span>="<span class="xmlverb-attr-content">latest.integration</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">dependencies</span>&gt;<span class="xmlverb-text"><br>
+</span>&lt;/<span class="xmlverb-element-name">ivy-module</span>&gt;<br>
+</div>
+</div>
+
+<h2>the <b>ivy</b> configuration</h2>
+The ivy configuration is made in the config directory wich contains 2 files :
+<ul>
+  <li>ivyconf.properties : a property file</li>
+  <li>ivyconf.xml : the file containing the ivy configuration</li>
+</ul>
+
+Let's analyse the ivyconf.xml file.
+<!-- converted by xmlverbatim.xsl 1.1, (c) O. Becker -->
+<div class="xmlverb-default">&lt;<span class="xmlverb-element-name">ivyconf</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">properties</span> <span class="xmlverb-attr-name">file</span>="<span class="xmlverb-attr-content">${ivy.conf.dir}/ivyconf.properties</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">conf</span> <span class="xmlverb-attr-name">defaultCache</span>="<span class="xmlverb-attr-content">${ivy.conf.dir}/ivy-cache</span>" <span class="xmlverb-attr-name">defaultResolver</span>="<span class="xmlverb-attr-content">libraries</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">resolvers</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">filesystem</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">projects</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">artifact</span> <span class="xmlverb-attr-name">pattern</span>="<span class="xmlverb-attr-content">${repository.dir}/[artifact]-[revision].[ext]</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">ivy</span> <span class="xmlverb-attr-name">pattern</span>="<span class="xmlverb-attr-content">${repository.dir}/[module]-[revision].xml</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">filesystem</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">ivyrep</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">libraries</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">resolvers</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">modules</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">module</span> <span class="xmlverb-attr-name">organisation</span>="<span class="xmlverb-attr-content">jayasoft</span>" <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">.*</span>" <span class="xmlverb-attr-name">resolver</span>="<span class="xmlverb-attr-content">projects</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">modules</span>&gt;<span class="xmlverb-text"><br>
+</span>&lt;/<span class="xmlverb-element-name">ivyconf</span>&gt;<br>
+</div>
+The file contains four main tags : properties, conf, resolvers and modules.
+<h2>the <b>properties</b> tag</h2>
+This tag only load some properties for the ivy process in the same manner as ant will do it.
+<h2>the <b>conf</b> tag</h2>
+This tag is in charge to initialize some parameters for ivy process.
+The directory that ivy will use to cache (to store) artifacts found will be in a sub directory called ivy-cache of the directory containing the ivyconf.xml file itself.
+The second parameter, tells ivy to use a resolver called "libraries" as its default resolver. As a recall, a resolver is in charge to resolve an artifact from some information like : the organisation that provides the artifact, the name of the library and the version of the library. More information can be found in the <a href="ivy/doc/configuration">configuration documentation</a>.
+<h2>the <b>resolvers</b> tag</h2>
+This tag defines the resolvers to use. Here we have two resolvers defined: "projects" and "libraries".<br/>
+The filesystem resolver called "projects" is able to resolve the internal dependencies wanted. <br/>
+The ivyrep resolver called "libraries" is able to find dependencies on <a href="./ivy/ivyrep">ivyrep</a>.<br/>
+<h2>the <b>modules</b> tag</h2>
+The modules tag allows to configure which resolver should be use for which module. Here the configuration only tells to use the "projects"
+resolver for all modules having for organisation "jayasoft" and any module name (.* regexp matches any module name).<br/>
+For other modules (i.e. all modules not from jayasoft), since there is no special configuration, the default resolver will be used: "libraries".
+<h1>walkthrough</h1>
+<div class="step">
+<h2>step 1 : preparation</h2>
+Open a DOS or shell window, and go to the "dependance" directory.
+</div>
+<div class="step">
+<h2>step 2 : clean directory tree</h2>
+On the prompt type : ant<br>
+This will clean up the entire project directory tree. You can do it each time you want to clean up this example.
+</div>
+<div class="step">
+<h2>step 3 : publication of standalone project</h2>
+Goto standalone directory  and publish the project
+<div class="shell"><pre>I:\standalone>ant publish
+Buildfile: build.xml
+
+configure:
+:: Ivy 1.0-rc3 - 20050421161206 :: http://ivy.jayasoft.org/ ::
+
+resolve:
+:: resolving dependencies :: jayasoft/standalone-working@xmen
+        confs: [default]
+downloading http://www.ibiblio.org/maven/commons-lang/jars/commons-lang-2.0.jar(2.0) ...
+.................................... (165kB)
+        [SUCCESSFUL ] apache/commons-lang-2.0/commons-lang.jar[jar] (6672ms)
+:: resolution report ::
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   1   |   1   |   0   |   0   ||   1   |   1   |
+        ---------------------------------------------------------------------
+:: retrieving :: jayasoft/standalone
+        confs: [default]
+        1 artifacts copied, 0 already retrieved
+
+compile:
+    [mkdir] Created dir: I:\standalone\build\classes
+    [javac] Compiling 1 source file to I:\standalone\build\classes
+
+jar:
+[propertyfile] Creating new property file: I:\standalone\build\classes\version.properties
+      [jar] Building jar: I:\standalone\build\standalone.jar
+
+publish:
+:: delivering :: jayasoft/standalone-working@xmen :: 1 :: release :: Wed Apr 27 08:41:47 CEST 2005
+        delivering ivy file to I:\standalone/build/ivy.xml
+:: publishing :: jayasoft/standalone-working@xmen
+        published standalone to I:\config\repository\standalone-1.jar
+        published ivy to I:\config\repository\standalone-1.xml
+     [echo] project standalone released with version 1
+
+BUILD SUCCESSFUL
+Total time: 10 seconds</pre></div>
+What we see here :
+<ul>
+</ul>
+  <li>the project depends on 1 library (1 artifact)</li>
+  <li>the library was not in the ivy cahe and so was downloaded (1 downloaded)</li>
+  <li>the project has been released under version number 1</li>
+</div>
+To give more details on the publish, as you can see the call to the publish task has resulted in two main things:<br/>
+- the delivery of a resolved ivy file to build/ivy.xml. This has been done because by default the publish task not only publishes
+artifacts but also ivy file. So it has looked to the path where the ivy file to publish should be, using the artifactspattern: ${build.dir}/[artifact].[ext].
+For an ivy file, this resolves to build/ivy.xml. Because this file does not exist, it automatically make a call to the deliver task which delivers a resolved ivy file
+to this destination.<br/>
+- the publication of artifact standalone and resolved ivy file to the repository. Both are mere copy of files found in the current project, more precisely in the build dir. This is
+because the artifactspattern has been set to ${build.dir}/[artifact].[ext], so standalone artifact is found in build/standalone.jar and ivy file in build/ivy.xml. And because we have
+asked the publish task to publish them using the "projects" resolver, these files are copied to repository\standalone-1.jar and to repository\standalone-1.xml, respecting
+the artifact and ivy patterns of our configuration (see above).
+
+<div class="step">
+<h2>step 4 : running the depending project</h2>
+Goto to directory depending and run ant
+<div class="shell"><pre>I:\depending>ant
+Buildfile: build.xml
+
+clean:
+
+configure:
+:: Ivy 1.0-rc3 - 20050421161206 :: http://ivy.jayasoft.org/ ::
+
+resolve:
+:: resolving dependencies :: jayasoft/depending-working@xmen
+        confs: [default]
+        [1] jayasoft/standalone
+downloading file:/I:/config/repository/standalone-1.jar(1) ...
+. (1kB)
+        [SUCCESSFUL ] jayasoft/standalone-1/standalone.jar[jar] (15ms)
+:: resolution report ::
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   2   |   2   |   2   |   0   ||   2   |   1   |
+        ---------------------------------------------------------------------
+:: retrieving :: jayasoft/depending
+        confs: [default]
+        2 artifacts copied, 0 already retrieved
+
+compile:
+    [mkdir] Created dir: I:\depending\build\classes
+    [javac] Compiling 1 source file to I:\depending\build\classes
+
+run:
+     [java] you are using version 1 of class standalone.Main
+     [java] standard message : i am depending.Main and standalone.Main will do the job for me
+     [java]     [standalone.Main] capitalizing string "i am depending.Main and standalone.Main will do the job for me" 
+				     using org.apache.commons.lang.WordUtils
+     [java] capitalized message : I Am Depending.main And Standalone.main Will Do The Job For Me
+
+BUILD SUCCESSFUL
+Total time: 3 seconds</pre></div>
+What we see here :
+<ul>
+  <li>the project depends on 2 libraries (2 artifacts)</li>
+  <li>one of the libraries was in the cache because there was only 1 download (1 downloaded)</li>
+  <li>ivy retreived the version 1 of the project standalone. The call to standalone.Main.getVersion() has returned 1. If you look in the depending/lib directory, you should see standalone-1.jar which is the artifact version 1 of the project standalone</li>
+  <li>the call to standalone.Main.capitalizeWords(str) succeed, what significate that the required library were in the classpath. If you look at the lib directory, you will see that the library commons-lang-2.0.jar was retreived. This library was declared to be used by the project "standalone", so ivy get it too for the dependant project.</li>
+</ul>
+</div>
+<div class="step">
+<h2>step 5 : new version of standalone project</h2>
+Like we did before in step 3, publish again the standalone project. 
+This will result as a new version of the project.
+<div class="shell"><pre>I:\standalone>ant publish
+Buildfile: build.xml
+
+configure:
+:: Ivy 1.0-rc3 - 20050421161206 :: http://ivy.jayasoft.org/ ::
+
+resolve:
+:: resolving dependencies :: jayasoft/standalone-working@xmen
+        confs: [default]
+:: resolution report ::
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   1   |   0   |   0   |   0   ||   1   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: jayasoft/standalone
+        confs: [default]
+        0 artifacts copied, 1 already retrieved
+
+compile:
+
+jar:
+[propertyfile] Updating property file: I:\standalone\build\classes\version.properties
+      [jar] Building jar: I:\standalone\build\standalone.jar
+
+publish:
+   [delete] Deleting: I:\standalone\build\ivy.xml
+:: delivering :: jayasoft/standalone-working@xmen :: 2 :: release :: Wed Apr 27 09:17:13 CEST 2005
+        delivering ivy file to I:\standalone/build/ivy.xml
+:: publishing :: jayasoft/standalone-working@xmen
+        published standalone to I:\config\repository\standalone-2.jar
+        published ivy to I:\config\repository\standalone-2.xml
+     [echo] project standalone released with version 2
+
+BUILD SUCCESSFUL
+Total time: 2 seconds</pre></div>
+Now if you look in your repository folder, you must find 2 version published of the standalone project.<br>
+Let's look at it :
+<div class="shell"><pre>I:\dependence\standalone>dir ..\config\repository /w
+ Le volume dans le lecteur I s'appelle DATA
+ Le numéro de série du volume est 30E5-91BA
+
+ Répertoire de I:\dependence\config\repository
+
+[.]                [..]               standalone-1.jar   standalone-1.xml   standalone-2.jar   standalone-2.xml
+               4 fichier(s)            3 936 octets
+               2 Rép(s)   9 874 350 080 octets libres
+
+I:\dependence\standalone></pre></div>
+</div>
+Ok now our repository contains two versions of the project <b>standalone</b>, other projects can refer to both versions.
+<div class="step">
+<h2>step 6 : depending got the new version</h2>
+What do we expect about running again the depending project ? Two major things are expected : 
+<ul>
+  <li>retrieve the version 2 as the latest.integration version of the standalone project</li>
+  <li>running the test must display version 2 of standalone project</li>
+</ul>
+Let's go !!!
+<div class="shell"><pre>I:\depending>ant
+Buildfile: build.xml
+
+clean:
+   [delete] Deleting 3 files from I:\depending
+   [delete] Deleted 4 directories from I:\depending
+
+configure:
+:: Ivy 1.0-rc3 - 20050421161206 :: http://ivy.jayasoft.org/ ::
+
+resolve:
+:: resolving dependencies :: jayasoft/depending-working@xmen
+        confs: [default]
+        [2] jayasoft/standalone
+downloading file:/I:/config/repository/standalone-2.jar(2) ...
+. (1kB)
+        [SUCCESSFUL ] jayasoft/standalone-2/standalone.jar[jar] (0ms)
+:: resolution report ::
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   2   |   2   |   2   |   0   ||   2   |   1   |
+        ---------------------------------------------------------------------
+:: retrieving :: jayasoft/depending
+        confs: [default]
+        2 artifacts copied, 0 already retrieved
+
+compile:
+    [mkdir] Created dir: I:\depending\build\classes
+    [javac] Compiling 1 source file to I:\depending\build\classes
+
+run:
+     [java] you are using version 2 of class standalone.Main
+     [java] standard message : i am depending.Main and standalone.Main will do the job for me
+     [java]     [standalone.Main] capitalizing string "i am depending.Main and standalone.Main will do the job for me" 
+			     using org.apache.commons.lang.WordUtils
+     [java] capitalized message : I Am Depending.main And Standalone.main Will Do The Job For Me
+
+BUILD SUCCESSFUL
+Total time: 3 seconds</pre></div>
+Ok we have the result expected as the run target shows that we are using the version 2 of the main class of standalone project. 
+If we take a look at the resolve target results, we can see that one artifact has been downloaded to the ivy cache. 
+In fact this file is the version 2 of the standalone project that was taken from the repository, you can now retrieve it in the ivy-cache directory.
+</div>
+</ul><h1 id="40" name="40" class="book-h1">Reference</h1><ul><p>Welcome to Ivy reference documentation. </p>
+<p>If you don't know Ivy at all, give a glance at its <a href="./ivy/features">features</a>, the <a href="./ivy/faq">FAQ</a> and the <a href="./ivy/doc/tutorial">tutorials</a> before digging into this reference documentation.</p>
+<h1>Reference Overview</h1>
+<p>This documentation is decomposed in several parts:</p>
+<ul>
+<li><a href="./ivy/doc/terminology">Terminology</a></li>
+<p>This part gives you the meaning of some words used all over ivy doc, such as organisation, module, configurations, ...</p>
+<li><a href="./ivy/doc/concept">Main Concepts</a></li>
+<p>This part introduces the main concepts used in Ivy: dependency resolvers, variables, patterns, and also a good introduction to a central ivy concept: module configurations.</p>
+<li><a href="./ivy/doc/principle">How does it work ?</a></li>
+<p>As the title suggest, here you will have some explanations on how does ivy work internally, which can help to better understand and customize its use.</p>
+<li><a href="./ivy/doc/install"/>Installation</a></li>
+<p>This part describe how to install Ivy</p>
+<li><a href="./ivy/doc/configuration"/>Configuration</a></li>
+<p>This part is dedicated to the specification of the configuration file of Ivy (usually called ivyconf.xml). It also gives the list of built-in dependency resolvers available in ivy.</p>
+<li><a href="./ivy/doc/ivyfile"/>Ivy files</a></li>
+<p>This part is the reference of the specification of the ivy files, the files in which you describe your dependencies. If you have any question of what can be done or not in an ivy file, you will have the answer here.</p>
+<li><a href="./ivy/doc/use"/>Use</a></li>
+<p>This part describes how to use ivy: it briefly explains how to call ivy from command line, and deeply explains how to use it from ant, which is the main way to use ivy. It's in this section that all ant tasks brought by ivy are specified.</p>
+<li><a href="./ivy/doc/extend"/>Extend</a></li>
+<p>This part describes how to extend ivy, by writing your own dependency resolver, latest strategy, etc.
+</ul>
+</ul><h1 id="106" name="106" class="book-h2">Terminology</h1><ul>Here are some terms used in Ivy, with their definitions in Ivy:<br/>
+<h2>Ivy file</h2>
+An ivy file is an xml file which is used to describe dependencies of a module (see below). It is usually named ivy.xml.
+<h2>Configuration file</h2>
+Ivy configuration files are xml files used to configure ivy to indicate where the dependencies can be found. This should not be confused with a module configuration (see below).
+<h2>Organisation</h2>
+An organisation is either a company or a simple group of person
+which produce software. Ivy handle only one level of organisation, so you cannot
+describe a company hierarchy with this concept. But it is used to group sofware
+produced by a same team, just to help find and classify them.<br/>
+<i>Examples: apache, ibm, jayasoft</i>
+<h2>Module</h2>
+A module in ivy is a piece of software that is reusable, and that 
+follow a unique cycle of revision. <br/>
+<i>Examples: hibernate, ant, ...</i>
+<h2>Artifact</h2>
+An artifact is a single file produced by a company when releasing a module. In 
+the java world, common artifacts are jars. In many cases, each revision of a 
+module publish only one artifact (like log4j, for instance), but some of them
+publish many artifacts dependending on the use of the module (like ant, for instance).
+<h2>Revision</h2>
+A revision corresponds to one delivery of a module. It can either be a delivery
+of a release, a milestone, a beta version, a nightly build, or even a continuous
+build. All of them are considered revisions in ivy.
+<h2>Configuration</h2>
+A module configuration is a way to use or construct a module. Some modules may be 
+used in different ways (think about hibernate which can be used inside or outside
+an application server), and this way may alter the artifacts you need (in the case
+of hibernate, jta.jar is needed only if it is used outside an application server).
+Moreover, a module may need some other modules and artifacts only at build time,
+and some others at runtime. All those differents ways to use or build a module
+are called in ivy configurations. <br/><br/>
+
+For more details on configurations and how they are used in ivy, please refer to the <a href="./ivy/doc/concept">main concepts page</a>.
+<h2>Status</h2>
+A module status indicates how stable a module revision can be considered. It can 
+be used to consolidate the status of all the dependencies of a module, to prevent
+the use of an integration revision of a dependency in the release of your module.
+Currently, three status are used in ivy:
+<ul>
+<li>integration: revisions builded by a continuous build, a nightly build, and so on, fall in this category</li>
+<li>milestone: revisions delivered to the public but not actually finished fall in this category</li>
+<li>release: revision fully tested and labelled fall in this category</li>
+</ul>
+
+</ul><h1 id="107" name="107" class="book-h2">Main Concepts</h1><ul><h1>Dependency Resolver</h1>
+A dependency resolver is a pluggable class in ivy which is used to:<br/>
+<ul>
+<li>find dependencies ivy files</li>
+<li>download dependencies artifacts</li>
+</ul>
+The notion of artifact "downloading" is large: artifact can be on a web site, or
+on the local file system of your machine. The download is thus the fact to bring
+a file from a repository to ivy cache.<br/> 
+<br/>
+Moreover, the fact that it is the 
+responsibility of the resolver to find ivy files and download artifacts help
+to implement various resolving strategies.<br/>
+<br/>
+As you see, a dependency resolver can be thought as a class responsible of
+describing a repository.<br/><br/>
+If you want to see which resolvers are available in ivy, you can go to the corresponding <a href="./ivy/doc/configuration/resolvers">configuration section</a>
+
+<h1>Module configurations explained</h1>
+Module configurations are described in the terminology page as <em>a way to use or construct a module</em>. Configurations being a central part of Ivy, they need more explanations as a concept.<br/>
+<br/>
+When you define a way to use or construct a module, you are able to define which artifacts are published by this module in this configuration, and you are also able to define which dependencies are needed in this configuration.<br/><br/>
+
+Moreover, because dependencies in ivy are expressed on modules and not on artifacts, it is important to be able to define which configurations of the dependency are required in the configuration you define of your module. That's what is called <strong>configuration mapping</strong>.<br/><br/>
+
+If you use only simple modules and do not want to worry about configurations, you don't have to worry about them. They're still there under the hood, cause ivy can't work without configuration. But most of the time if you declare nothing, ivy assumes that the artifacts of your module are published in all configurations, and that all the dependencies configurations are required in all configurations. And it works in simple cases. But whenever you want to separate things within a module, or get more control over things published and got through dependencies resolution, configuration may answer most of your needs.<br/><br/>
+
+For details on how to declare your module configurations, how declare in which configuration your artifacts are published, and how to declare configuration mapping, please refer to <a href="./ivy/doc/ivyfile">ivy file documentation</a>.
+
+<h1>Variables</h1>
+During configuration, ivy allows to define what are called ivy variables. Ivy variables can be seen as ant properties,
+and are used in a very similar way. In particular, you use a properties tag in the configuration file to load
+a properties file containing ivy variables and their values.<br/><br/>
+
+But the main differences between ant properties and ivy variables are that ivy variables can be overriden, whereas ant 
+properties can't, and that they are defined in separate environment.<br/><br/>
+
+In fact all ant properties are imported into ivy variables when the configuration is done (if you call ivy from ant). 
+This means that if you define an ant property after the call to configure, it will not be available
+as an ivy variable.<br/>
+On the other hand, ivy variables are NOT exported to ant, thus if you define ivy variables in ivy, do not try to use
+them as ant properties.<br/><br/>
+
+To use ivy variables, you just have to follow that same syntax as for ant properties:<br/>
+${<i>variablename</i>}<br/>
+where <i>variablename</i> is the name of the variable.<br/><br/>
+
+Moreover, it's also important to understand the difference between ivy variables and ivy pattern tokens. 
+See Patterns chapter below to see what pattern tokens are.
+<h1>Patterns</h1>
+
+Ivy patterns are used in many dependency resolvers and ivy tasks, and are a simple way to structure the way ivy works.<br/><br/>
+
+First let's give an example. You can for instance configure the file system dependency resolver by giving it
+a pattern to find artifacts. This pattern can be like this:<br/>
+myrepository/[organisation]/[module]/[type]s/[artifact]-[revision].[ext]<br/>
+This pattern indicates that the repository we use is in a directory called myrepository. 
+In this directory we have directories having for name the name of the organisation of the module we look for. 
+Then we have a directory per module, each having for name the name of the module.
+Then in module directories we find a directory per artifact type (jars, wars, ivys, ...), in which we find
+artifacts named by the artifact id, followed by an hyphen, then the revision, a dot, and the artifact extension.
+Not too difficult to understand, isn't it ? That's it, you have understood the pattern concept !<br/><br/>
+
+To give a bit more explanation, a pattern is composed of tokens, which are replaced by true values when
+evaluated for a particular artifact or module. Those tokens are different from variables because they are
+replaced differently for each artifact, whereas variables are usually given the same value.<br/><br/>
+
+You can mix variables and tokens in a pattern:<br/>
+${repository.dir}/[organisation]/[module]/[type]s/[artifact]-[revision].[ext]<br/><br/>
+
+Before 0.9, the syntax was the same for variables and tokens (${variable} and ${token}). Since 0.9, token use 
+brackets as delimiters ([token]), which makes them easier to distinguish.<br/><br/>
+
+The tokens available depends on where the pattern is used (will it be evaluated with artifacts or modules, for instance).
+But here are all the tokens currently available:<br/>
+<b>[organisation]</b> the organisation name<br/>
+<b>[module]</b> the module name<br/>
+<b>[revision]</b> the revision name<br/>
+<b>[artifact]</b> the artifact name (or id)<br/>
+<b>[type]</b> the artifact type<br/>
+<b>[ext]</b> the artifact file extension<br/>
+<b>[conf]</b> the configuration name<br/><br/>
+
+Difference between type and extension are explained in ivy file documentation.
+
+<h1>Latest Strategy</h1>
+Ivy often needs to know which revision between two has to be considered the "latest". For knowing that,
+it uses the concept of latest strategy. Indeed, there are several way to consider a revision to be the latest.
+You can choose an existing one or plug your own.<br/><br/>
+But before knowing which revision is the latest, ivy needs to be able to consider several revision of a module. Thus ivy has to get a list of files in a directory, and it uses the dependency resolver for that. So check if the dependency resolver you use is compatible with latest revisions before wondering why ivy do not manage to get your latest revision.<br/><br/>
+Finally, In order to get several revisions of a module, most of the time you need to use the [revision] token in your pattern, so that ivy gets all the files which match the pattern whatever the revision is. It's only then that the latest strategy is used to determine which of this revisions is the latest one.<br/><br/>
+
+Ivy has three built-in latest strategies:<br/>
+<ul>
+<li>latest-time</li> it compares the revisions date to know which is the latest. While this is often a good 
+strategy in terms of pertinence, it has the drawback to be costful to compute with distant repositories. If you use ivyrep, 
+for example, ivy has to ask the http server what is the date of each ivy file before knowing which is the latest.<br/>
+<li>latest-revision</li> it compares the revisions as string, using an algorithm close to the one used in the php version_compare function.
+This algorithm takes into account special meaning of some text. For instance, with this strategy, 1.0-dev1 is considered
+before 1.0-alpha1, which in turn is before 1.0-rc1, which is before 1.0, which is before 1.0.1.<br/>
+<li>latest-lexico</li>: it compares the revisions as string, using lexicographic order (the one used by java string comparison).
+</ul>
+
+<h1>Conflict Manager</h1>
+A conflict manager is able
+to select, among a list of module revisions in conflict, a list of revisions to keep.
+Yes, it can selects a list of revision, even if most conflicts manager select only one revision.
+But in some cases you will need to keep several revisions, and load in separate class loaders,
+for example.<br/><br/>
+
+A list of revisions is said to be in conflict if they correspond to the same module, i.e. the same
+organisation/module name couple.<br/><br/>
+
+Ivy comes with 4 built-in conflicts manager, but you can also plug your own:<br/>
+- all: this conflicts manager resolve conflicts by selecting all revisions. Also 
+called NoConflictManager, it does evict any module.<br/>
+- fixed: this conflict manager always select the same revision<br/>
+- latest-time: this conflict manager selects only the 'latest' revision, 
+latest being defined as the latest in time. Note that latest in time
+is costly to compute, so prefer latest-revision if you can.<br/>
+- latest-revision: this conflict manager selects only the 'latest' revision, 
+latest being defined by a string comparison of revisions as defined by the latest-revision strategy.<br/><br/>
+
+To have more details on how to setup your conflict managers and on how they work, see <a href="./ivy/doc/ivyfile">ivy file</a> reference.
+</ul><h1 id="109" name="109" class="book-h2">How does it work ?</h1><ul><p>Now that you have been introduced to main ivy terminology and concepts, it is time to give some explanations about how ivy works.</p>
+<p>Here are the steps followed by ivy to resolve your dependencies:</p>
+<h1>Configure</h1>
+<p>Ivy needs to be configured to be able to resolve your dependencies. This configuration is usually done with a configuration file, which defines a set of dependency resolvers. Each resolver is able to find ivy files and / or artifacts, given simple information such as organition, module, revision, artifact name, artifact type and artifact extension. </p>
+<p>The configuration is also responsible for indicating which resolver should be used to resolve which module. This configuration is dependent only on your environment, i.e. where the modules and artifacts can be found. </p>
+<p>A default configuration is used by ivy when none is given. This configuration uses ivyrep to resolve all modules.</p>
+<h1>Resolve</h1>
+<p>The resolve time is the moment when ivy actually resolve the dependencies of one module. It first needs to access the ivy file of the module for which it resolves the dependencies. </p>
+<p>Then, for each dependency declared in this file, it asks the appropriate resolver (according to configuration) to find the module (i.e. either an ivy file for it, or its artifacts if no ivy file can be found). It also uses a filesystem based cache to avoid asking for a dependency if it is already in cache (at least if possible, which is not the case with latest revisions).</p>
+<p>If the resolver is a composite one (i.e. a chain or a dual resolver), several resolvers may actually be called to find the module.</p>
+<p>When the dependency module has been found, its ivy file is downloaded to ivy cache. Then ivy checks if it has itself dependencies, in which case it recursilvely traverse the graph of dependencies. </p>
+<p>All over this traversal, conflict management are done to prevent the access to a module as soon as possible.</p>
+<p>When ivy has traversed the whole graph, it asks to the resolvers to download the artifacts corresponding to each dependencies which are not already in cache and which have not been evicted by conflict managers. All downloads are made to ivy cache.</p>
+<p>Finally, an xml report is generated in cache, which allows ivy to easily know what are all the dependencies of the module, without traversing the graph again.</p>
+<p>After this resolve step, two main steps are possible: either build a path with artifacts in cache, or copy them to another directory structure.</p>
+<h1>Retrieve</h1>
+<p>What is called retrieve in ivy is the fact to copy artifacts from the cache to another directory structure. This is done using a pattern, which indicates to ivy where the files should be copied.</p>
+<p>For this, ivy uses the xml report in cache corresponding to the module it should retrieve to know which artifacts should be copied.</p>
+<p>It also checks if the files are not already copied to maximize performances.</p>
+<h1>Building a path from cache</h1>
+<p>In some cases, it is preferable to use artifacts directly from the cache. Ivy is able to use the xml report generated at resolve time to build a path of all artifacts required.</p>
+<p>This can be particularly useful especially when building plug-ins for IDE.</p>
+<h1>Reports</h1>
+<p>Finally, ivy is able to generate readable reports describing the dependencies resolution.</p>
+<p>This is done with a simple xsl transformation of the xml report generated at resolve time.</p>
+</ul><h1 id="41" name="41" class="book-h2">Installation</h1><ul>Download the latest version <a href="./ivy/download"/>here</a>, unpack the downloaded zip
+file wherever you want, and copy the ivy jar file in your ant lib directory
+(ANT_HOME/lib).<br/>
+<br/>
+If you use ant 1.6.0 or superior, you can then simply go to the src/example/hello-ivy dir and run ant: if the build
+is successful, you have successfully installed Ivy !<br />
+<br />
+If you use ant 1.5.1 or superior, you have to modify the build files in the examples:
+- remove the namespace section at their head: xmlns:ivy="antlib:fr.jayasoft.ivy.ant" <br/>
+- add taskdefs for ivy tasks:<br />
+<pre>
+  &lt;taskdef name="ivy-configure" classname="fr.jayasoft.ivy.ant.IvyConfigure"/&gt;
+  &lt;taskdef name="ivy-resolve" classname="fr.jayasoft.ivy.ant.IvyResolve"/&gt;
+  &lt;taskdef name="ivy-retrieve" classname="fr.jayasoft.ivy.ant.IvyRetrieve"/&gt;
+  &lt;taskdef name="ivy-publish" classname="fr.jayasoft.ivy.ant.IvyPublish"/&gt; 
+</pre>
+- replace ivy:xxx tasks by ivy-xxx<br />
+You can now run the build, if it is successful, you have successfully installed Ivy !
+<br />
+If the build is not successful, check the <a href="./ivy/faq">FAQ</a> to see what can be the problem
+with the ivyrep resolver.
+</ul><h1 id="42" name="42" class="book-h2">Configuration</h1><ul>In order to work as you want, ivy need some configuration. Actually,
+ivy can work with no configuration at all, in this case it uses
+the <a href="./ivy/ivyrep">ivyrep</a> repository (check what the default configuration file is <a href="./misc/ivy/samples/ivyconf-default.xml">here</a>). But ivy is able 
+to work in very different contexts. You just have to configure it properly.<br/>
+<br/>
+Configuration is done through an xml file, usually called ivyconf.xml. To 
+configure ivy from ant, you just have to call the configure task and pass it the path to your configuration file (see <a href="./ivy/doc/use/configure">configure</a> 
+task documentation for details).<br/>
+<br/>
+Here is an example of configuration file :<br/>
+<!-- converted by xmlverbatim.xsl 1.1, (c) O. Becker -->
+<div class="xmlverb-default">&lt;<span class="xmlverb-element-name">ivyconf</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">properties</span> <span class="xmlverb-attr-name">file</span>="<span class="xmlverb-attr-content">${ivy.conf.dir}/ivyconf-file.properties</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">conf</span> <span class="xmlverb-attr-name">defaultCache</span>="<span class="xmlverb-attr-content">${cache.dir}</span>" <span class="xmlverb-attr-name">defaultResolver</span>="<span class="xmlverb-attr-content">ibiblio</span>" <span class="xmlverb-attr-name">checkUpToDate</span>="<span class="xmlverb-attr-content">false</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">resolvers</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">ibiblio</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">ibiblio</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">filesystem</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">internal</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">ivy</span> <span class="xmlverb-attr-name">pattern</span>="<span class="xmlverb-attr-content">${repository.dir}/[module]/ivy-[revision].xml</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">artifact</span> <span class="xmlverb-attr-name">pattern</span>="<span class="xmlverb-attr-content">${repository.dir}/[module]/[artifact]-[revision].[type]</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">filesystem</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">resolvers</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">modules</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">module</span> <span class="xmlverb-attr-name">organisation</span>="<span class="xmlverb-attr-content">jayasoft</span>" <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">.*</span>" <span class="xmlverb-attr-name">resolver</span>="<span class="xmlverb-attr-content">internal</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">modules</span>&gt;<span class="xmlverb-text"><br>
+</span>&lt;/<span class="xmlverb-element-name">ivyconf</span>&gt;<br>
+</div>
+<br/>
+Mainly, the configuration enables to configure the default cache directory used 
+by ivy and the dependency resolvers that it will use to resolve dependencies.
+
+<h1>Configuration file structure</h1>
+
+The configuration file is structured in some parts and left other open. Indeed each resolver has its own 
+structure, thus it's not the configuration file itself which define the structure for the resolvers.<br/>
+
+<pre>
+ivyconf
+    <a href="./ivy/doc/configuration/properties">properties</a>
+    <a href="./ivy/doc/configuration/conf">conf</a>
+    <a href="./ivy/doc/configuration/typedef">typedef</a>
+    <a href="./ivy/doc/configuration/latest-strategies">latest-strategies</a>
+    <a href="./ivy/doc/configuration/resolvers">resolvers</a>
+    <a href="./ivy/doc/configuration/conflict-managers">conflict-managers</a>
+    <a href="./ivy/doc/configuration/modules">modules</a>
+        <a href="./ivy/doc/configuration/module">module</a>
+</pre>
+
+<h1>ivyconf</h1>
+<b>Tag:</b> ivyconf<br/>
+<br/>
+Root tag of any ivyconf file.
+<h2>Child elements</h2>
+<table class="ivy-children">
+<thead>
+    <tr><th class="ivy-chld">Element</th><th class="ivy-chld-desc">Description</th><th class="ivy-chld-card">Cardinality</th></tr>
+</thead>
+<tbody>
+    <tr><td><a href="./ivy/doc/configuration/properties">properties</a></td><td>loads properties file as ivy variables</td>
+        <td>0..n</td></tr>
+    <tr><td><a href="./ivy/doc/configuration/conf">conf</a></td><td>configures ivy with some defaults</td>
+        <td>0..1</td></tr>
+    <tr><td><a href="./ivy/doc/configuration/typedef">typedef</a></td><td>defines new types in ivy</td>
+        <td>0..n</td></tr>
+    <tr><td><a href="./ivy/doc/configuration/latest-strategies">latest-strategies</a></td><td>defines latest strategies</td>
+        <td>0..n</td></tr>
+    <tr><td><a href="./ivy/doc/configuration/resolvers">resolvers</a></td><td>defines dependency resolvers</td>
+        <td>1..n</td></tr>
+    <tr><td><a href="./ivy/doc/configuration/conflict-managers">conflict-managers</a></td><td>defines conflicts managers</td>
+        <td>0..n</td></tr>
+    <tr><td><a href="./ivy/doc/configuration/modules">modules</a></td><td>defines rules between modules and dependency resolvers</td>
+        <td>0..n</td></tr>
+</tbody>
+</table>
+</ul><h1 id="51" name="51" class="book-h3">properties</h1><ul><b>Tag:</b> properties<br/>
+<br/>
+Loads a properties file into ivy variables. See variables chapter above for details about ivy variables.
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>file</td><td>a path to a properties file to load</td>
+        <td>Yes</td></tr>
+</tbody>
+</table>
+
+</ul><h1 id="52" name="52" class="book-h3">conf</h1><ul><b>Tag:</b> conf<br/>
+<br/>
+Configures some important ivy info: default cache, default resolver, ...<br/><br/>
+Default cache is used whenever a cache is not provided. It usually points to a directory in your filesystem.<br/><br/>
+
+Default resolver is used whenever nothing elese is configured in the modules section of the configuration file. It should
+give the name of a dependency resolver defined in the resolvers section of the configuration file.<br/><br/>
+
+Default latest strategy and conflict manager can also be configured here.<br/><br/>
+
+validate indicates if ivy files should generally be validate against xsd or not. This setting is only a default value,
+and can be overriden :<br/>
+1) in ant tasks<br/>
+2) in resolvers<br/>
+So if there is a setting in the resolver, it always win against all other settings.<br/><br/>
+
+checkUpToDate indicates to ivy if it must check date of artifacts before retrieving them (i.e. copying them from
+cache to another place in your filesystem). Usually it is a good thing to check date to avoid unnecessary copy, even if it's 
+most of the time a local copy.<br/><br/>
+cacheIvyPattern and cacheArtifactPattern are used to configure the way ivy stores ivy files and artifacts
+in the cache. Usually you do not have to change this, unless you want to use the cache directly from another tool,
+which is not recommended.
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>defaultCache</td><td>a path to a directory to use as default cache</td>
+        <td>No, defaults to .ivy-cache in user home</td></tr>
+    <tr><td>defaultResolver</td><td>the name of the default resolver to use</td>
+        <td>No, but all modules should be configured in the modules section if not provided</td></tr>
+    <tr><td>defaultLatestStrategy</td><td>the name of the default latest strategy to use</td>
+        <td>No, defaults to latest-revision</td></tr>
+    <tr><td>defaultConflictManager</td><td>the name of the default conflict manager to use</td>
+        <td>No, defaults to latest-revision</td></tr>
+    <tr><td>validate</td><td>Indicates if ivy files should be validated against ivy.xsd or not.</td>
+        <td>No, defaults to true</td></tr>
+    <tr><td>checkUpToDate</td><td>Indicates if date should be checked before retrieving artifacts from cache</td>
+        <td>No, defaults to true</td></tr>
+    <tr><td>cacheIvyPattern</td><td>a pattern to indicate where ivy files should be put in cache</td>
+        <td>No, defaults to [organisation]/[module]/ivy-[revision].xml</td></tr>
+    <tr><td>cacheArtifactPattern</td><td>a pattern to indicate where artifact files should be put in cache</td>
+        <td>No, defaults to [organisation]/[module]/[type]s/[artifact]-[revision].[ext]</td></tr>
+</tbody>
+</table>
+</ul><h1 id="53" name="53" class="book-h3">typedef</h1><ul><b>Tag:</b> typedef<br/>
+<br/>
+Defines a new type in ivy. Useful to define new dependency resolvers, in particular, but also latest strategies.
+See <a href="./ivy/doc/extend">how to write and plug your own dependency resolver</a> for details.
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>name</td><td>the name of the type to define. This name is then used as an xml tag.</td>
+        <td>Yes</td></tr>
+    <tr><td>classname</td><td>the fully qualified class name of the type to define.</td>
+        <td>Yes</td></tr>
+</tbody>
+</table>
+</ul><h1 id="54" name="54" class="book-h3">latest-strategies</h1><ul><b>Tag:</b> latest-strategies<br/>
+<br/>
+Defines a list of latest strategies usable in ivy. Each latest strategy is identified by its name, given as an attribute.
+The child tag used for the latest strategy must be equal to a name of a latest strategy type (usually added with the typedef tag). <br/><br/>
+
+The latest strategies which are always included in ivy (and do not require anything in the configuration file) are:<br/>
+- <b>latest-time</b>: compares the revisions date to know which is the latest. While this is often a good 
+strategy in terms of pertinence, it has the drawback to be costful to compute with distant repositories. If you use ivyrep, 
+for example, ivy has to ask the http server what is the date of each ivy file before knowing which is the latest.<br/>
+- <b>latest-revision</b>: compares the revisions as string, using an algorithm close to the one used in the php version_compare function.
+This algorithm takes into account special meaning of some text. For instance, with this strategy, 1.0-dev1 is considered
+before 1.0-alpha1, which in turn is before 1.0-rc1, which is before 1.0, which is before 1.0.1.<br/>
+- <b>latest-lexico</b>: compares the revisions as string, using lexicographic order (the one used by java string comparison).
+
+<h1>Child elements</h1>
+<table class="ivy-children">
+<thead>
+    <tr><th class="ivy-chld">Element</th><th class="ivy-chld-desc">Description</th><th class="ivy-chld-card">Cardinality</th></tr>
+</thead>
+<tbody>
+    <tr><td>any latest strategy</td><td>adds a latest strategy to the list of available strategies</td>
+        <td>0..n</td></tr>
+</tbody>
+</table>
+</ul><h1 id="55" name="55" class="book-h3">resolvers</h1><ul><p><b>Tag:</b> resolvers</p>
+<p>Defines a list of dependency resolvers usable in ivy. Each dependency resolver is identified by its name, given as an attribute.</p>
+<p>The child tag used for the dependency resolver must be equal to a name of a dependency resolver type (either built-in or added with the typedef tag).</p>
+<h1>Child elements</h1>
+<table class="ivy-children">
+<thead>
+    <tr><th class="ivy-chld">Element</th><th class="ivy-chld-desc">Description</th><th class="ivy-chld-card">Cardinality</th></tr>
+</thead>
+<tbody><br />
+    <tr><td>any resolver</td><td>adds a resolver to the list of available resolvers</td>
+        <td>1..n</td></tr>
+</tbody><br />
+</table>
+<h1>Built-in Resolvers</h1>
+<p>Ivy comes with a set of built-in dependency resolvers able to answer to the most common needs. </p>
+<p>If you don't find the one you want here, you can also check if some one has not contributed it in the <a href="./ivy/links">links page</a>, or even <a href="./ivy/doc/extend">write your own</a>.</p>
+<ul>
+<li><a href="./ivy/doc/resolver/ivyrep">IvyRep</a></li>
+ Finds ivy files on ivyrep and artifacts on ibiblio.</p>
+<li><a href="./ivy/doc/resolver/ibiblio">IBiblio</a></li>
+ Finds artifacts on ibiblio.</p>
+<li><a href="./ivy/doc/resolver/filesystem">FileSystem</a></li>
+ This very performant resolver finds ivy files and artifacts in your file system.</p>
+<li><a href="./ivy/doc/resolver/url">Url</a></li>
+ Finds ivy files and artifacts in any repository accessible with urls.</p>
+<li><a href="./ivy/doc/resolver/chain">Chain</a></li>
+ Delegates the finding to a chain of sub resolvers.</p>
+<li><a href="./ivy/doc/resolver/dual">Dual</a></li>
+ Delegates the finding of ivy files to one resolver and of artifacts to another.
+</ul>
+</ul><h1 id="87" name="87" class="book-h4">IvyRep Resolver</h1><ul><table class="resolver">
+<tr><td class="title">Tag</td><td class="value">ivyrep</td></tr>
+<tr><td class="title">Handle latest</td><td class="value">yes, at least if the repository server is apache based</td></tr>
+<tr><td class="title">Handle publish</td><td class="value">no</td></tr>
+</table>
+This resolver usually uses <a href="./ivy/ivyrep">ivyrep</a> to find ivy files
+and ibiblio to find artifacts.
+However it can be configured to use other similar repositories.<br/><br/>
+<i>Note that if no ivy file is found on ivyrep, then this resolver behaves like ibiblio resolver. Thus it's always better to
+use this resolver instead of ibiblio one, which is provided mainly for compatibility reasons.</i>
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>name</td><td>the name which identify the resolver</td>
+        <td>Yes</td></tr>
+    <tr><td>validate</td><td>indicates if resolved ivy files should be validated against ivy xsd</td>
+        <td>No, defaults to true</td></tr>
+    <tr><td>checkmodified</td><td>Indicates if this resolver should check lastmodified date to know if an ivy file is up to date.</td>
+        <td>No, defaults to ${ivy.resolver.default.check.modified}</td></tr>
+    <tr><td>ivyroot</td><td>the root of the ivy repository.</td>
+        <td>No, defaults to ${ivy.ivyrep.default.ivy.root}</td></tr>
+    <tr><td>ivypattern</td><td>a pattern describing the layout of the ivy repository.</td>
+        <td>No, defaults to ${ivy.ivyrep.default.ivy.pattern}</td></tr>
+    <tr><td>artroot</td><td>the root of the artifacts repository.</td>
+        <td>No, defaults to ${ivy.ivyrep.default.artifact.root}</td></tr>
+    <tr><td>artpattern</td><td>a pattern describing the layout of the artifacts repository.</td>
+        <td>No, defaults to ${ivy.ivyrep.default.artifact pattern}</td></tr>
+    <tr><td>latest</td><td>The name of the latest strategy to use.</td>
+        <td>No, defaults to 'default'</td></tr>
+</tbody>
+</table>
+</ul><h1 id="88" name="88" class="book-h4">IBiblio Resolver</h1><ul><table class="resolver">
+<tr><td class="title">Tag</td><td class="value">ibiblio</td></tr>
+<tr><td class="title">Handle latest</td><td class="value">yes, at least if the repository server is apache based</td></tr>
+<tr><td class="title">Handle publish</td><td class="value">no</td></tr>
+</table>
+
+This resolver usually uses 
+ibiblio to find artifacts. <br/>
+Prefer the use of ivyrep resolver which
+adds ivy file handling to this resolver.
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>name</td><td>the name which identify the resolver</td>
+        <td>Yes</td></tr>
+    <tr><td>validate</td><td>indicates if resolved ivy files should be validated against ivy xsd</td>
+        <td>No, defaults to call setting</td></tr>
+    <tr><td>root</td><td>the root of the artifacts repository.</td>
+        <td>No, defaults to ${ivy.ibiblio.default.artifact.root}</td></tr>
+    <tr><td>pattern</td><td>a pattern describing the layout of the artifacts repository.</td>
+        <td>No, defaults to ${ivy.ibiblio.default.artifact.pattern}</td></tr>
+    <tr><td>latest</td><td>The name of the latest strategy to use.</td>
+        <td>No, defaults to 'default'</td></tr>
+</tbody>
+</table>
+</ul><h1 id="89" name="89" class="book-h4">File System resolver</h1><ul><table class="resolver">
+<tr><td class="title">Tag</td><td class="value">filesystem</td></tr>
+<tr><td class="title">Handle latest</td><td class="value">yes</td></tr>
+<tr><td class="title">Handle publish</td><td class="value">yes</td></tr>
+</table>
+
+This resolver uses the file system to resolve ivy files and artifacts. It presents the advantage to
+usually have very good performances. Moreover, it is easy to setup using basic OS file sharing mechanism.<br/>
+<br/>
+The configuration of such a resolver is mainly done through ivy and artifact patterns, indicating where ivy files
+and artifacts can be found in the file system. You can indicate a list of pattern which will be checked one after
+the other.
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>name</td><td>the name which identify the resolver</td>
+        <td>Yes</td></tr>
+    <tr><td>validate</td><td>indicates if resolved ivy files should be validated against ivy xsd</td>
+        <td>No, defaults to call setting</td></tr>
+    <tr><td>checkmodified</td><td>Indicates if this resolver should check lastmodified date to know if an ivy file is up to date.</td>
+        <td>No, defaults to ${ivy.resolver.default.check.modified}</td></tr>
+    <tr><td>latest</td><td>The name of the latest strategy to use.</td>
+        <td>No, defaults to 'default'</td></tr>
+</tbody>
+</table>
+<h1>Child elements</h1>
+<table class="ivy-children">
+<thead>
+    <tr><th class="ivy-chld">Element</th><th class="ivy-chld-desc">Description</th><th class="ivy-chld-card">Cardinality</th></tr>
+</thead>
+<tbody>
+    <tr><td>ivy</td><td>defines a pattern for ivy files, using the pattern attribute</td>
+        <td>0..n</td></tr>
+    <tr><td>artifact</td><td>defines a pattern for artifacts, using the pattern attribute</td>
+        <td>1..n</td></tr>
+</tbody>
+</table>
+</ul><h1 id="90" name="90" class="book-h4">Url Resolver</h1><ul><table class="resolver">
+<tr><td class="title">Tag</td><td class="value">url</td></tr>
+<tr><td class="title">Handle latest</td><td class="value">yes with http urls (and apache server) and with file urls, no with other urls</td></tr>
+<tr><td class="title">Handle publish</td><td class="value">no</td></tr>
+</table>
+
+This resolver is one of the most generic, in fact most of the previous resolvers can be obtained by a particular
+configuration of this one. Indeed it uses urls to find ivy files and artifacts. The urls it uses are defined through
+ivy and artifact children, each giving a pattern to find ivy files or artifacts.
+
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>name</td><td>the name which identify the resolver</td>
+        <td>Yes</td></tr>
+    <tr><td>validate</td><td>indicates if resolved ivy files should be validated against ivy xsd</td>
+        <td>No, defaults to call setting</td></tr>
+    <tr><td>checkmodified</td><td>Indicates if this resolver should check lastmodified date to know if an ivy file is up to date.</td>
+        <td>No, defaults to ${ivy.resolver.default.check.modified}</td></tr>
+    <tr><td>latest</td><td>The name of the latest strategy to use.</td>
+        <td>No, defaults to 'default'</td></tr>
+</tbody>
+</table>
+<h1>Child elements</h1>
+<table class="ivy-children">
+<thead>
+    <tr><th class="ivy-chld">Element</th><th class="ivy-chld-desc">Description</th><th class="ivy-chld-card">Cardinality</th></tr>
+</thead>
+<tbody>
+    <tr><td>ivy</td><td>defines a pattern for ivy files, using the pattern attribute</td>
+        <td>0..n</td></tr>
+    <tr><td>artifact</td><td>defines a pattern for artifacts, using the pattern attribute</td>
+        <td>1..n</td></tr>
+</tbody>
+</table>
+</ul><h1 id="91" name="91" class="book-h4">Chain Resolver</h1><ul><table class="resolver">
+<tr><td class="title">Tag</td><td class="value">chain</td></tr>
+<tr><td class="title">Handle latest</td><td class="value">depends on sub resolvers</td></tr>
+<tr><td class="title">Handle publish</td><td class="value">delegates to first sub resolver in chain</td></tr>
+</table>
+
+This resolver is only a container of a chain of other resolvers. The sub resolvers can be any
+resolver, including a chain. An attribute enable to indicate if the chain must be iterated after the first 
+found or not (at least when asking for a latest revision). If the chain is iterated, then it's the latest among the 
+ones found that is returned. If the chain is not iterated, then it's the first found which is returned.
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>name</td><td>the name which identify the resolver</td>
+        <td>Yes</td></tr>
+    <tr><td>validate</td><td>indicates if resolved ivy files should be validated against ivy xsd</td>
+        <td>No, defaults to call setting</td></tr>
+    <tr><td>returnFirst</td><td>true if the first found should be returned.</td>
+        <td>No, defaults to false</td></tr>
+    <tr><td>latest</td><td>The name of the latest strategy to use.</td>
+        <td>No, defaults to 'default'</td></tr>
+</tbody>
+</table>
+<h1>Child elements</h1>
+<table class="ivy-children">
+<thead>
+    <tr><th class="ivy-chld">Element</th><th class="ivy-chld-desc">Description</th><th class="ivy-chld-card">Cardinality</th></tr>
+</thead>
+<tbody>
+    <tr><td>any resolver</td><td>a sub resolver to use</td>
+        <td>1..n</td></tr>
+</tbody>
+</table>
+</ul><h1 id="92" name="92" class="book-h4">Dual resolver</h1><ul><table class="resolver">
+<tr><td class="title">Tag</td><td class="value">dual</td></tr>
+<tr><td class="title">Handle latest</td><td class="value">depends on sub resolvers</td></tr>
+<tr><td class="title">Handle publish</td><td class="value">delegates to ivy sub resolver if artifact to publish is of "ivy" type, to artifact sub resolver otherwise</td></tr>
+</table>
+
+This resolver delegates its job to one resolver for ivy files and another for artifacts.
+
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>name</td><td>the name which identify the resolver</td>
+        <td>Yes</td></tr>
+    <tr><td>validate</td><td>indicates if resolved ivy files should be validated against ivy xsd</td>
+        <td>No, defaults to call setting</td></tr>
+    <tr><td>latest</td><td>The name of the latest strategy to use.</td>
+        <td>No, defaults to 'default'</td></tr>
+</tbody>
+</table>
+<h1>Child elements</h1>
+<table class="ivy-children">
+<thead>
+    <tr><th class="ivy-chld">Element</th><th class="ivy-chld-desc">Description</th><th class="ivy-chld-card">Cardinality</th></tr>
+</thead>
+<tbody>
+    <tr><td>any resolver</td><td>two resolvers, the first being the ivy resolver, the second the artifact resolver</td>
+        <td>2</td></tr>
+</tbody>
+</table>
+</ul><h1 id="56" name="56" class="book-h3">conflict-managers</h1><ul><b>Tag:</b> conflict-managers<br/>
+<br/>
+Defines a list of conflicts managers usable in ivy. Each conflict manager is identified by its name, given as an attribute.
+The child tag used for the conflict manager must be equal to a name of a conflict manager type (either built-in
+or added with the typedef tag). <br/><br/>
+
+Here is a list of predefined conflicts managers (which do not require anything in the configuration file):<br/>
+- all: this conflicts manager resolve conflicts by selecting all revisions. Also 
+called NoConflictManager, it does evict any module.<br/>
+- fixed: this conflict manager always select the same revision<br/>
+- latest-time: this conflict manager selects only the 'latest' revision, 
+latest being defined as the latest in time. Note that latest in time
+is costly to compute, so prefer latest-revision if you can.<br/>
+- latest-revision: this conflict manager selects only the 'latest' revision, 
+latest being defined by a string comparison of revisions.<br/><br/>
+
+<h3>Child elements</h3>
+<table class="ivy-children">
+<thead>
+    <tr><th class="ivy-chld">Element</th><th class="ivy-chld-desc">Description</th><th class="ivy-chld-card">Cardinality</th></tr>
+</thead>
+<tbody>
+    <tr><td>any conflict manager</td><td>adds a conflict manager to the list of available conflict managers</td>
+        <td>0..n</td></tr>
+</tbody>
+</table>
+</ul><h1 id="57" name="57" class="book-h3">modules</h1><ul><b>Tag:</b> modules<br/>
+<br/>
+Defines the rules indicating which resolvers should be used for which modules.
+The rules are given by defining a module set, using regexp for module organisation and name, and giving the name of the corresponding resolver to use.<br/>
+If no rule match a given module, the default resolver will be used.<br/>
+Even if not required, because the use of a default big resolver (chain, for instance) able to resolve all dependencies can answer all the needs, the configuration of smaller resolvers used for different cases can improve performances a lot. For instance, if you have a local repository for your modules and a distant repository for third party libraries, it is a good idea to have two separate resolvers, and configure ivy to use one for all your modules and another for the rest (the default one).
+<h1>Child elements</h1>
+<table class="ivy-children">
+<thead>
+    <tr><th class="ivy-chld">Element</th><th class="ivy-chld-desc">Description</th><th class="ivy-chld-card">Cardinality</th></tr>
+</thead>
+<tbody>
+    <tr><td><a href="./ivy/doc/configuration/module">module</a></td><td>defines a module set rule</td>
+        <td>1..n</td></tr>
+</tbody>
+</table>
+</ul><h1 id="58" name="58" class="book-h4">module</h1><ul><b>Tag:</b> module<br/>
+<br/>
+Define a resolver application rule. The tag defines a module set, by giving a regexp for organisation and name (for instance, you can use
+.* to specify all). It also gives the name of the resolver to use for this module set.
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>organisation</td><td>the name of the organisation to which apply the resolver. May be a regexp.</td>
+        <td>Yes</td></tr>
+    <tr><td>name</td><td>the name of the module to which apply the resolver. May be a regexp.</td>
+        <td>Yes</td></tr>
+    <tr><td>resolver</td><td>the name of the resolver to apply. The resolver must have been defined in the resolvers section of the configuration file.</td>
+        <td>Yes</td></tr>
+</tbody>
+</table>
+</ul><h1 id="43" name="43" class="book-h2">Ivy Files</h1><ul><p>Ivy use is entirely based on what is called ivy files. Ivy files are xml files, usually called ivy.xml, containing the description of the dependencies of a module, its published artifacts and its configurations.</p>
+<p>Here is the simplest ivy file you can write:<br />
+<div class="codeblock"><code><span class="synIdentifier">&lt;ivy-module </span><span class="synType">version</span>=<span class="synConstant">&quot;1.1&quot;</span><span class="synIdentifier">&gt;</span><br />&nbsp; <span class="synIdentifier">&lt;info </span><span class="synType">organisation</span>=<span class="synConstant">&quot;myorg&quot;</span><br /><span class="synIdentifier">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="synType">module</span>=<span class="synConstant">&quot;mymodule&quot;</span><br /><span class="synIdentifier">&nbsp; &nbsp; &nbsp; &nbsp; /&gt;</span><br /><span class="synIdentifier">&lt;/ivy-module&gt;</span><br /></code></div></p>
+<p>Since version 0.8, ivy publishes an xslt which help make ivy files more readable. You just have to add<br />
+a line like this one in your ivy file:</p>
+<pre>
+&lt;?xml-stylesheet type="text/xsl" href="http://www.ivyrep.org/ivy-doc.xsl"?&gt;
+</pre><p>However, all information is not presented with the xslt (dependency configurations, in particular).<br />
+And due to security issues, it only works if the ivy file is in the same domain as the xsl... But they are particularly useful to browse the <a href="http://www.ivyrep.org/">ivy repository</a>.</p>
+<p>If you want to see a sample file using almost all possibilities of ivy files, check this one, <a href="http://www.jayasoft.org/misc/ivy/samples/ivy-sample-xslt.xml">with</a> or <a href="./misc/ivy/samples/ivy-sample.xml">without</a> xslt.</p>
+<p>Before beginning the reference itself, it is required to have in mind the terminology defined in the <a href="./ivy/doc/reference">main page</a> of this reference documentation.</p>
+<p>For those familiar with xml schema, the schema used to validate ivy files can be found <a href="./misc/ivy/samples/ivy.xsd">here</a>.</p>
+<h1>Hierarchical Index</h1>
+<pre>
+ivy-module
+    <a href="./ivy/doc/ivyfile/info">info</a>
+        <a href="./ivy/doc/ivyfile/license">license</a>
+        <a href="./ivy/doc/ivyfile/ivyauthor">ivyauthor</a>
+        <a href="./ivy/doc/ivyfile/repository">repository</a>
+        <a href="./ivy/doc/ivyfile/description">description</a>
+    <a href="./ivy/doc/ivyfile/configurations">configurations</a>
+        <a href="./ivy/doc/ivyfile/conf">conf</a>
+    <a href="./ivy/doc/ivyfile/publications">publications</a>
+        <a href="./ivy/doc/ivyfile/artifact">artifact</a>
+            <a href="./ivy/doc/ivyfile/artifact-conf">conf</a>
+    <a href="./ivy/doc/ivyfile/dependencies">dependencies</a>
+        <a href="./ivy/doc/ivyfile/dependency">dependency</a>
+            <a href="./ivy/doc/ivyfile/dependency-conf">conf</a>
+                <a href="./ivy/doc/ivyfile/mapped">mapped</a>
+            <a href="./ivy/doc/ivyfile/dependency-artifact">artifact</a>
+                <a href="./ivy/doc/ivyfile/dependency-artifact-conf">conf</a>
+            <a href="./ivy/doc/ivyfile/dependency-artifact">include</a>
+                <a href="./ivy/doc/ivyfile/dependency-artifact-conf">conf</a>
+            <a href="./ivy/doc/ivyfile/artifact-exclude">exclude</a>
+                <a href="./ivy/doc/ivyfile/artifact-exclude-conf">conf</a>
+    <a href="./ivy/doc/ivyfile/conflicts">conflicts</a>
+        <a href="./ivy/doc/ivyfile/manager">manager</a>
+</pre><h1>ivy-module</h1>
+<p><b>Tag:</b> ivy-module</p>
+<p>Root tag of any ivy-file.</p>
+<h2>Attributes</h2>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody><br />
+    <tr><td>version</td><td>the version of the ivy file specification - should be '1.1' with current version of ivy</td>
+        <td>Yes</td></tr>
+</tbody><br />
+</table>
+<h2>Child elements</h2>
+<table class="ivy-children">
+<thead>
+    <tr><th class="ivy-chld">Element</th><th class="ivy-chld-desc">Description</th><th class="ivy-chld-card">Cardinality</th></tr>
+</thead>
+<tbody><br />
+    <tr><td>info</td><td>contains information about the described module</td>
+        <td>1</td></tr>
+    <tr><td>configurations</td><td>container for configuration elements</td>
+        <td>0..1</td></tr>
+    <tr><td>publications</td><td>container for published artifact elements</td>
+        <td>0..1</td></tr>
+    <tr><td>dependencies</td><td>container for dependency elements</td>
+        <td>0..1</td></tr>
+    <tr><td>conflicts</td><td>section to configure the conflict managers to use</td>
+        <td>0..1</td></tr>
+</tbody><br />
+</table>
+</ul><h1 id="59" name="59" class="book-h3">info</h1><ul><b>Tag:</b> info <b>Parent:</b> <a href="./ivy/doc/ivyfile">ivy-module</a><br/>
+<br/>
+Gives information about the module this ivy file describe
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>organisation</td><td>the name of the organisation that is the owner of this module.</td>
+        <td>Yes</td></tr>
+    <tr><td>module</td><td>the name of the module described by this ivy file.</td>
+        <td>Yes</td></tr>
+    <tr><td>revision</td><td>the revision of this module.</td>
+        <td>No, but it's a good practice to set it with delivered ivy files</td></tr>
+    <tr><td>status</td><td>the status of this module. See <a href="./ivy/doc/reference">terminology</a> section for details</td>
+        <td>No, default to 'integration'</td></tr>
+    <tr><td>publication</td><td>the date of publication of this module. It should be given in this format: yyyyMMddHHmmss</td>
+        <td>No, but it's a good practice to set it with delivered ivy files</td></tr>
+</tbody>
+</table>
+<h1>Child elements</h1>
+<table class="ivy-children">
+<thead>
+    <tr><th class="ivy-chld">Element</th><th class="ivy-chld-desc">Description</th><th class="ivy-chld-card">Cardinality</th></tr>
+</thead>
+<tbody>
+    <tr><td><a href="./ivy/doc/ivyfile/license">license</a></td><td>contains information about the licenses of the described module</td>
+        <td>0..n</td></tr>
+    <tr><td><a href="./ivy/doc/ivyfile/ivyauthor">ivyauthor</a></td><td>describes who has contributed to write the ivy file</td>
+        <td>0..n</td></tr>
+    <tr><td><a href="./ivy/doc/ivyfile/repository">repository</a></td><td>describes on which public repositories this module can be found</td>
+        <td>0..n</td></tr>
+    <tr><td><a href="./ivy/doc/ivyfile/">description</a></td><td>describes how to use the module</td>
+        <td>0..1</td></tr>
+</tbody>
+</table>
+</ul><h1 id="60" name="60" class="book-h4">license</h1><ul><b>Tag:</b> license <b>Parent:</b> <a href="./ivy/doc/ivyfile/info">info</a><br/>
+<br/>
+Gives information about a license of the described module.
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>name</td><td>the name of the license. Try to respect spelling when using a classical license.</td>
+        <td>Yes</td></tr>
+    <tr><td>url</td><td>an url pointing to the license text.</td>
+        <td>No, but it's a good practice to indicate it</td></tr>
+</tbody>
+</table>
+</ul><h1 id="61" name="61" class="book-h4">ivyauthor</h1><ul><b>Tag:</b> ivyauthor <b>Parent:</b> <a href="./ivy/doc/ivyfile/info">info</a><br/>
+<br/>
+Gives information about who has contributed to write this ivy file. It does NOT indicate who 
+is the author of the module itself.
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>name</td><td>the name of the author, as a person or a company.</td>
+        <td>Yes</td></tr>
+    <tr><td>url</td><td>an url pointing to where the author can bea reached.</td>
+        <td>No, but it's a good practice to indicate it</td></tr>
+</tbody>
+</table>
+</ul><h1 id="62" name="62" class="book-h4">repository</h1><ul><b>Tag:</b> repository <b>Parent:</b> <a href="./ivy/doc/ivyfile/info">info</a><br/>
+<br/>
+Gives information about a public repository where the module can be found. This information
+is given as an indication, repositories being able to be down over time.
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>name</td><td>the name of the repository. Try to respect spelling for common repositories (ibiblio, ivyrep, ...)</td>
+        <td>Yes</td></tr>
+    <tr><td>url</td><td>an url pointing to the repository.</td>
+        <td>Yes</td></tr>
+    <tr><td>pattern</td><td>an ivy pattern to find modules on this repository</td>
+        <td>No, but it's recommended to indicate it.</td></tr>
+    <tr><td>ivys</td><td>true if ivy file can be found on this repository</td>
+        <td>No, defaults to false.</td></tr>
+    <tr><td>artifacts</td><td>true if module artifacts can be found on this repository</td>
+        <td>No, defaults to false.</td></tr>
+</tbody>
+</table>
+</ul><h1 id="63" name="63" class="book-h4">description</h1><ul><b>Tag:</b> description <b>Parent:</b> <a href="./ivy/doc/ivyfile/info">info</a><br/>
+<br/>
+Describes the current module. This tag is the only one which can contain free text,
+including html. It is used to describe the module itself, usually in a single short phrase
+(it is not meant to replace the module description on the corresponding web site), and then
+gives all information necessary to use the module, especially information about
+public configurations, how and when to use them.
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>homepage</td><td>the url of the homepage of the module</td>
+        <td>No, but it's recommended to indicate it.</td></tr>
+</tbody>
+</table>
+</ul><h1 id="64" name="64" class="book-h3">configurations</h1><ul><b>Tag:</b> configurations <b>Parent:</b> <a href="./ivy/doc/ivyfile">ivy-module</a><br/>
+<br/>
+Container for configuration element. If this container is not present, it is assumed that the module
+has one public configuration called 'default'.
+<h2>Child elements</h2>
+<table class="ivy-children">
+<thead>
+    <tr><th class="ivy-chld">Element</th><th class="ivy-chld-desc">Description</th><th class="ivy-chld-card">Cardinality</th></tr>
+</thead>
+<tbody>
+    <tr><td><a href="./ivy/doc/ivyfile/conf">conf</a></td><td>declares a configuration of this module</td>
+        <td>1..n</td></tr>
+</tbody>
+</table>
+</ul><h1 id="65" name="65" class="book-h4">conf</h1><ul><b>Tag:</b> conf <b>Parent:</b> <a href="./ivy/doc/ivyfile/configurations">configurations</a><br/>
+<br/>
+Declares a configuration of this module. As described in the reference page, a 
+configuration is a way to use or construct a module. Some modules may be 
+used in different ways (think about hibernate which can be used inside or outside
+an application server), and this way may alter the artifacts you need (in the case
+of hibernate, jta.jar is needed only if it is used outside an application server).
+Moreover, a module may need some other modules and artifacts only at build time,
+and some others at runtime. All those differents ways to use or build a module
+are called in ivy configurations.<br/><br/>
+The conf element in the configurations section declares one configuration. This 
+declaration gives the name of the configuration declared, its visibility and the 
+other configurations of the module it extends.<br/><br/>
+Visibility is used to indicate whether or not a configuration can be used from
+other modules depending on this one. Thus a private configuration is only used
+for internal purpose (maybe at build time), and other modules cannot declare
+to depend on it.<br/><br/>
+A configuration can also extend one or several other ones of the same module. When 
+a configuration extends another one, then all artifacts required in the extended
+configuration will also be required in the configuration that extends the other one.
+For instance, if configuration B extends configuration A, and if artifacts art1 and art2
+are required in configuration A, then they will be automatically required in configuration B.
+On the other hand, artifacts required in configuration B are not necessarily required in 
+configuration A.<br/>
+This notion is very helpful to define configurations which are similar with some differences.
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>name</td><td>the name of the declared configuration</td>
+        <td>Yes</td></tr>
+    <tr><td>description</td><td>a description for the declared configuration</td>
+        <td>No</td></tr>
+    <tr><td>visibility</td><td>the visibility of the declared configuration. 
+    'public' means that this configuration can be used by other modules, while 'private'
+    means that this configuration is used only in the module itself, and is not exposed
+    to other modules</td>
+        <td>No, defaults to public</td></tr>
+    <tr><td>extends</td><td>a comma separated list of configurations of this module that the 
+    current configuration extends</td>
+        <td>No, defaults to none</td></tr>
+    <tr><td>deprecated</td><td>indicates that this conf has been deprecated by giving the date of the deprecation. 
+    	It should be given in this format: yyyyMMddHHmmss</td>
+        <td>No, by default the conf is not deprecated</td></tr>
+</tbody>
+</table>
+</ul><h1 id="66" name="66" class="book-h3">publications</h1><ul><b>Tag:</b> publications <b>Parent:</b> <a href="./ivy/doc/ivyfile">ivy-module</a><br/><br/>
+
+Container for artifact elements, used to describe the artifacts published by this module. 
+If this container is not present, it is assumed that the module has one artifact, with the same name
+as the module, and published in all module configurations.<br/>
+Thus if you have a module which publishes no artifacts (a sort of virtual module, 
+made only to integrate several other modules as a whole), you have to include
+a publications element with no artifact sub element.
+<h1>Child elements</h1>
+<table class="ivy-children">
+<thead>
+    <tr><th class="ivy-chld">Element</th><th class="ivy-chld-desc">Description</th><th class="ivy-chld-card">Cardinality</th></tr>
+</thead>
+<tbody>
+    <tr><td>artifact</td><td>declares a published artifact for this module</td>
+        <td>0..n</td></tr>
+</tbody>
+</table>
+</ul><h1 id="67" name="67" class="book-h4">artifact</h1><ul><b>Tag:</b> artifact <b>Parent:</b> <a href="./ivy/doc/ivyfile/publications">publications</a><br/><br/>
+
+Declares an artifact published by this module. This is especially useful
+for other modules dependending on this one. They thus get all published artifacts
+belonging to the configurations asked. Indeed, each published artifact declares in which
+public configuration it is published. Thus a module depending on this module
+only get artifacts marked with the asked configurations, taking into account
+configurations extension (see <a href="./ivy/doc/ivyfile/conf">configuration declaration</a>).<br/><br/>
+The configurations in which an artifact is published can be configured in two ways:<br/>
+- conf attribute on artifact element<br/>
+- conf subelement<br/>
+The twos are equivalent, it is only a matter of preference. However, do not mix both
+for one artifact.
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>name</td><td>the name of the published artifact. This name must not include revision.</td>
+        <td>Yes</td></tr>
+    <tr><td>type</td><td>the type of the published artifact. It's usually its extension, but not necessarily. For instance, ivy files are of type 'ivy' but have 'xml' extension</td>
+        <td>Yes</td></tr>
+    <tr><td>ext</td><td>the extension of the published artifact</td>
+        <td>No, defaults to type</td></tr>
+    <tr><td>conf</td><td>comma separated list of public configurations in which this artifact is published.
+    	'*' wildcard can be used to designate all public configurations of this module</td>
+        <td>No, defaults to 'default' if neither conf attribute nor conf children element is given</td></tr>
+</tbody>
+</table>
+<h1>Child elements</h1>
+<table class="ivy-children">
+<thead>
+    <tr><th class="ivy-chld">Element</th><th class="ivy-chld-desc">Description</th><th class="ivy-chld-card">Cardinality</th></tr>
+</thead>
+<tbody>
+    <tr><td><a href="ivy/doc/ivyfile/artifact-conf">conf</a></td><td>indicates a public configuration in which this artifact is published</td>
+        <td>0..n</td></tr>
+</tbody>
+</table>
+</ul><h1 id="68" name="68" class="book-h5">conf</h1><ul><b>Tag:</b> conf <b>Parent:</b> <a href="./ivy/doc/ivyfile/artifact">artifact</a><br/>
+<br/>
+Indicates a public configuration in which enclosing artifact is published.
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>name</td><td>the name of the module public configuration in which this artifact is published. 
+    	'*' wildcard can be used to designate all public configurations of this module</td>
+        <td>Yes</td></tr>
+</tbody>
+</table>
+</ul><h1 id="69" name="69" class="book-h3">dependencies</h1><ul><b>Tag:</b> dependencies <b>Parent:</b> <a href="./ivy/doc/ivyfile/">ivy-module</a><br/><br/>
+
+Container for dependency elements, used to describe the dependencies of this module. 
+If this container is not present, it is assumed that the module has no dependency at all.
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>defaultconf</td><td>the default configuration mapping to use when none is specified in a dependency. <span class="since">since 1.1</span></em></td>
+        <td>No, defaults to *->*</td></tr>
+</tbody>
+</table>
+<h1>Child elements</h1>
+<table class="ivy-children">
+<thead>
+    <tr><th class="ivy-chld">Element</th><th class="ivy-chld-desc">Description</th><th class="ivy-chld-card">Cardinality</th></tr>
+</thead>
+<tbody>
+    <tr><td><a href="./ivy/doc/ivyfile/dependency">dependency</a></td><td>declares a dependency for this module</td>
+        <td>1..n</td></tr>
+</tbody>
+</table>
+</ul><h1 id="70" name="70" class="book-h4">dependency</h1><ul><b>Tag:</b> dependency <b>Parent:</b> <a href="./ivy/doc/ivyfile/dependencies">dependencies</a><br/><br/>
+
+Declares a dependency for this module. A dependency is described by the module on which
+the current module depends (identified by its name, organisation and revision), and a mapping of configurations.<br/><br/>
+
+The revision can be given as a fixed one (1.5.2, for instance) or as a latest one. Two possibilities
+are offered for the moment:<br/>
+- latest.integration, which selects the latest revision of the dependency module.<br/>
+- end the revision with a +, which selects the latest sub-revision of the dependency module. For instance, 
+if the dependency module exists in revision 1.0.3, 1.0.7 and 1.1.2, "1.0+" will select 1.0.7.<br/>
+The way to determine which revision is the "latest" between two is configurable
+through the use of pluggable LatestStrategy. See <a href="./ivy/doc/reference">ivy main concepts</a>
+for details about this.
+<br/<br/>
+
+This mapping indicates which configurations of the dependency are required in which configurations 
+of the current module, also called master configurations.<br/><br/>
+There are several ways to declare this mapping of configurations, choose depending more on
+preference than on possibilities. Try to not mix usage in a single dependency element: do not use
+both nested and inline mapping declaration.<br/><br/>
+The first way to declare this mapping is called the inline mapping. It is maybe the less natural
+at first, but it's powerful and concise. Inline mapping can take several forms.<br/><br/>
+
+- Specify one configuration name. This means that
+in this master configuration the same dependency configuration is needed.
+For instance, if the current module has defined a configuration named 'runtime', and the dependency too,
+then having an inline mapping configuration set to 'runtime' means that in the runtime master configuration
+the runtime dependency configuration is required.<br/><br/>
+
+- Specify a configuration mapping using the '->' operator separating a comma separated list of master
+configurations (left operand) of a comma separated list of dependency configurations (right operand).
+In this case, all specified dependency configurations are required in all specified master configurations.
+For instance, 'A, B, C -> E, F' means that dependency configurations E & F are required in master configurations
+A, B and C.<br/>
+Note that you can use the wildcard '*' as a configuration name, meaning that all configurations 
+(either master or dependency public ones depending on the side) are wanted. For instance,
+'* -> B, C' means that B & C dependency configurations are required in all master configurations<br/><br/>
+
+- Specify a semi-column separated list of any of the previous specs. In this case, it is the union of the mapping 
+which is kept. For instance, 'A -> B; * -> C' means that B conf is needed in A conf and C conf is need in all master conf... 
+so both B & C dep conf are required in A master conf<br/><br/>
+
+If you prefer more verbose mapping declaration, everything is also possible with sub elements mapping declaration. <br/><br/>
+
+Moreover, the dependency element also supports an artifact restriction feature (since 0.6).
+See <a href="#dependency-artifact">dependency artifact restriction</a> for details. <br/><br/>
+
+Finally, the dependency element also supports an a force attribute (since 0.8), which gives an indication
+to conflicts manager to force the revision of a dependency to the one given here.<br/>
+See <a href="./ivy/doc/ivyfile/conflicts">conflicts manager</a> for details. <br/><br/>
+
+
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>org</td><td>the name of the organisation of the dependency.</td>
+        <td>No, defaults to the master module organisation</td></tr>
+    <tr><td>name</td><td>the module name of the dependency</td>
+        <td>Yes</td></tr>
+    <tr><td>rev</td><td>the revision of the dependency. Use 'latest.integration' to get the latest version of the dependency. You can also end the revision asked with a '+' to get the latest matching revision. Both latest works only with some dependency resolvers (see <a href="./ivy/doc/configuration">configuration</a>)</td>
+        <td>Yes</td></tr>
+    <tr><td>force</td><td>a boolean to give an indication to conflict manager that this dependency 
+     should be forced to this revision (see <a href="./ivy/doc/ivyfile/conflicts">conflicts manager</a>)</td>
+        <td>No, defaults to false</td></tr>
+    <tr><td>conf</td><td>an inline mapping configuration spec (see above for details)</td>
+        <td>No, defaults to defaultconf attribute of dependencies element if neither conf attribute nor conf children element is given</td></tr>
+</tbody>
+</table>
+<h1>Child elements</h1>
+<table class="ivy-children">
+<thead>
+    <tr><th class="ivy-chld">Element</th><th class="ivy-chld-desc">Description</th><th class="ivy-chld-card">Cardinality</th></tr>
+</thead>
+<tbody>
+    <tr><td><a href="./ivy/doc/ivyfile/dependency-conf">conf</a></td><td>defines configuration mapping has sub element</td>
+        <td>0..n</td></tr>
+    <tr><td><a href="./ivy/doc/ivyfile/dependency-artifact">artifact / include</a></td><td>defines artifacts inclusion - use only if you do not control dependency ivy file</td>
+        <td>0..n</td></tr>
+    <tr><td><a href="./ivy/doc/ivyfile/artifact-exclude">exclude</a></td><td>defines artifacts exclusion - use only if you do not control dependency ivy file</td>
+        <td>0..n</td></tr>
+</tbody>
+</table>
+</ul><h1 id="71" name="71" class="book-h5">conf</h1><ul><b>Tag:</b> conf <b>Parent:</b> <a href="./ivy/doc/ivyfile/dependency">dependency</a><br/>
+<br/>
+Describes a configuration mapping for a dependency. See also the inline configuration mapping
+in dependency element.
+
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>name</td><td>the name of the master configuration to map. 
+    	'*' wildcard can be used to designate all configurations of this module</td>
+        <td>Yes</td></tr>
+    <tr><td>mapped</td><td>a comma separated list of dependency configurations to which this
+    master configuration should be mapped</td>
+        <td>No, default to the same configuration as master one, unless nested mapped elements are specified</td></tr>
+</tbody>
+</table>
+<h1>Child elements</h1>
+<table class="ivy-children">
+<thead>
+    <tr><th class="ivy-chld">Element</th><th class="ivy-chld-desc">Description</th><th class="ivy-chld-card">Cardinality</th></tr>
+</thead>
+<tbody>
+    <tr><td><a href="./ivy/doc/ivyfile/mapped">mapped</a></td><td>map dependency configurations for this master configuration</td>
+        <td>0..n</td></tr>
+</tbody>
+</table>
+</ul><h1 id="72" name="72" class="book-h6">mapped</h1><ul><b>Tag:</b> mapped <b>Parent:</b> <a href="./ivy/doc/ivyfile/dependency-conf">conf</a><br/>
+<br/>
+Describes a mapped dependency configuration for a master configuration.
+
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>name</td><td>the name of the dependency configuration mapped. 
+    	'*' wildcard can be used to designate all configurations of this module</td>
+        <td>Yes</td></tr>
+</tbody>
+</table>
+</ul><h1 id="73" name="73" class="book-h5">artifact include</h1><ul><b>Tag:</b> artifact <b>Parent:</b> <a href="./ivy/doc/ivyfile/dependency">dependency</a><br/>
+<b>Tag:</b> include <b>Parent:</b> <a href="./ivy/doc/ivyfile/dependency">dependency</a><br/>
+<br/>
+
+This feature gives you more control on a dependency for which you do not control its ivy file. 
+It enables two things:<br/>
+- restrict the artifacts required by including only the artifacts given here, even if configuration does not a good separation of published artifacts<br/>
+- specify the artifacts required, if the dependency has no ivy file. Indeed, when a module has no ivy file, it 
+is assumed that it publishes exactly one artifact having the same name as the module itself. But when this 
+module publishes more artifacts, or simply does not respect the name rule, and if you cannot deliver
+an ivy file for it (because you do not control the repository, for instance - think about maven ibiblio 
+repository, to give no name), then this feature let you specify the artifacts names you want to retrieve.<br/><br/>
+
+This feature is handled by two tags, artifact and include, which are stricly equivalent. However,
+it is a good practive to use the artifact tag to specify the artifact required, and the include tag to specify
+artifact inclusion among dependency published ones.<br/><br/>
+
+Each artifact restriction can be given in the context of particular master configurations. By default, if no 
+configuration is specified, artifacts restriction apply to all master configurations. But you can specify 
+that a restriction applies only to one or several master configurations, using either inline or nested conf
+specification. In this case, do not forget that if you do not specify any restriction for a particular configuration,
+then no restriction will apply for this configuration and it will be resolved not taking into account any restriction.<br/><br/>
+For instance, imagine you have A, B & C master configurations. If you restrict to art1 in A & B and art2 in A,
+then C will not be restricted at all, and will thus get all artifacts of all dependency configurations if you do not
+specify a configuration mapping. To prevent this, you have to specify a configuration mapping for the dependency,
+mapping only A & B to some or all dependency configurations.<br/>
+Example:<br/>
+<pre>
+&lt;dependency org="yourorg" name="yourmodule9" rev="9.1" <b>conf="A,B-&gt;default"</b>&gt;
+	&lt;artifact name="art1" type="jar" conf="A,B"/&gt;
+	&lt;artifact name="art2" type="jar" conf="A"/&gt;
+&lt;/dependency&gt;		
+</pre>
+
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>name</td><td>the name of an artifact of the dependency module to add to the include list, or a regexp matching this name</td>
+        <td>No, defaults to .*</td></tr>
+    <tr><td>type</td><td>the type of the artifact of the dependency module to add to the include list, or a regexp matching this name</td>
+        <td>No, defaults to .*</td></tr>
+    <tr><td>ext</td><td>the extension of the artifact of the dependency module to add to the include list, or a regexp matching this name</td>
+        <td>No, defaults to type</td></tr>
+    <tr><td>conf</td><td>comma separated list of the master configurations in which this artifact should be included.
+    '*' wildcard can be used to designate all configurations of this module</td>
+        <td>No, defaults to '*', unless nested conf are specified</td></tr>
+</tbody>
+</table>
+<h1>Child elements</h1>
+<table class="ivy-children">
+<thead>
+    <tr><th class="ivy-chld">Element</th><th class="ivy-chld-desc">Description</th><th class="ivy-chld-card">Cardinality</th></tr>
+</thead>
+<tbody>
+    <tr><td><a href="./ivy/doc/ivyfile/dependency-artifact-conf">conf</a></td><td>configuration in which the artifact should be included</td>
+        <td>0..n</td></tr>
+</tbody>
+</table>
+</ul><h1 id="74" name="74" class="book-h6">conf</h1><ul><b>Tag:</b> conf <b>Parent:</b> <a href="./ivy/doc/ivyfile/dependency-artifact">artifact</a><br/>
+<br/>
+Specify a configuration in which the enclosing artifact inclusion should be included.
+
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>name</td><td>the name of the master configuration in which the enclosing artifact should be included</td>
+        <td>Yes</td></tr>
+</tbody>
+</table>
+</ul><h1 id="75" name="75" class="book-h5">exclude</h1><ul><b>Tag:</b> exclude <b>Parent:</b> <a href="./ivy/doc/ivyfile/dependency">dependency</a><br/>
+<br/>
+
+This feature gives you more control on a dependency for which you do not control its ivy file. 
+It enables to restrict the artifacts required, by excluding artifacts being published by the dependency, 
+even if configuration does not a good separation of published artifacts<br/><br/>
+
+The same principle concerning configuration as for include applies to this exclude feature (see above the include feature).<br/><br/>
+
+Note that exclusion is always done AFTER inclusion has been done.
+
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>name</td><td>the name of an artifact of the dependency module to add to the exclude list, or a regexp matching this name</td>
+        <td>No, defaults to .*</td></tr>
+    <tr><td>type</td><td>the type of the artifact of the dependency module to add to the exclude list, or a regexp matching this name</td>
+        <td>No, defaults to .*</td></tr>
+    <tr><td>ext</td><td>the extension of the artifact of the dependency module to add to the exclude list, or a regexp matching this name</td>
+        <td>No, defaults to type</td></tr>
+    <tr><td>conf</td><td>comma separated list of the master configurations in which this artifact should be included.
+    '*' wildcard can be used to designate all configurations of this module</td>
+        <td>No, defaults to '*', unless nested conf are specified</td></tr>
+</tbody>
+</table>
+<h1>Child elements</h1>
+<table class="ivy-children">
+<thead>
+    <tr><th class="ivy-chld">Element</th><th class="ivy-chld-desc">Description</th><th class="ivy-chld-card">Cardinality</th></tr>
+</thead>
+<tbody>
+    <tr><td><a href="ivy/doc/ivyfile/artifact-exclude-conf">conf</a></td><td>configuration in which the artifact should be included</td>
+        <td>0..n</td></tr>
+</tbody>
+</table>
+</ul><h1 id="76" name="76" class="book-h6">conf</h1><ul><b>Tag:</b> conf <b>Parent:</b> <a href="./ivy/doc/ivyfile/artifact-exclude">artifact</a><br/>
+<br/>
+Specify a configuration in which the enclosing artifact exclusion should be included.
+
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>name</td><td>the name of the master configuration in which the enclosing artifact should be excluded</td>
+        <td>Yes</td></tr>
+</tbody>
+</table>
+</ul><h1 id="77" name="77" class="book-h3">conflicts</h1><ul><b>Tag:</b> conflicts <b>Parent:</b> <a href="./ivy/doc/ivyfile/ivy-module">ivy-module</a><br/><br/>
+
+Container for conflict manager elements, used to indicate how conflicts should be resolved
+for this module. <br/><br/>
+
+A conflict occurs when two revisions of the same module are required. This can happen in several cases,
+but the more often it is due to transitive dependencies: a module depends on A rev 1.0 and on B rev 2.0, and
+B depends on A rev 1.1. Then we say there is a conflict on A.<br/><br/>
+
+To resolve the conflict, ivy uses conflicts managers. A conflict manager is able
+to select, among a list of module revisions in conflict, a list of revisions to keep.
+Yes, it can selects a list of revision, even if most conflicts manager select only one revision.
+But in some cases you will need to keep several revisions, and load in separate class loaders,
+for example.<br/><br/>
+
+Conflicts manager can be defined in each ivy file.
+Conflicts are thus resolved recursively, each module being responsible to resolve
+conflicts of its dependencies.<br/><br/>
+
+Conflicts manager are declared by module, this means that you can declare a different
+conflict manager for each dependency. Moreover, conflicts manager being in a separate section
+in the ivy file (and not in the dependencies section), you can declare them for a set of modules
+(using regular expression, see <a href="./ivy/doc/ivyfile/manager">manager</a>), and you can declare them
+for non direct dependencies. Imagine a module depends on A and B, A depends on C rev 1.0 and B 
+depends on C rev 2.0. Then there is conflict on C which must be solved by the module, even if
+the module has no direct dependency on C. This is possible with the conflict manager handling of ivy.<br/><br/>
+
+Ivy comes with 4 built-in conflicts manager, but you can also plug your own:<br/>
+- all: this conflicts manager resolve conflicts by selecting all revisions. Also 
+called NoConflictManager, it does evict any module.<br/>
+- fixed: this conflict manager always select the same revision<br/>
+- latest-time: this conflict manager selects only the 'latest' revision, 
+latest being defined as the latest in time. Note that latest in time
+is costly to compute, so prefer latest-revision if you can.<br/>
+- latest-revision: this conflict manager selects only the 'latest' revision, 
+latest being defined by a string comparison of revisions as defined by the latest-revision strategy
+(see <a href="./ivy/doc/reference">Latest Strategies</a> for details).<br/><br/>
+
+The two "latest" conflicts manager also take into account the force attribute of the dependencies.
+Indeed direct dependencies can declare a force attribute (see <a href="./ivy/doc/ivyfile/dependency">dependency</a>), 
+which indicates the the revision given in the direct dependency should be prefered over
+indirect dependencies.<br/><br/>
+
+Conflicts manager are used during the resolve operation, i.e. when ivy analyse the graph of dependencies
+and download corresponding ivy files and artifacts. The fact to manage conflict at resolve time
+enables to minimize downloads: when a module is evicted by a conflict manager, it is not downloaded.<br/><br/>
+
+There are two things optimized during conflict resolution: download of artifacts and download
+of ivy files. The first is always ensured by ivy, i.e. artifacts of a module evicted will never
+be downloaded. The second is not as simple to handle because to know what are the conflicts
+ivy needs to know the dependency graph, and to know the dependency graph, it has to download
+ivy files. But ivy is highly optimized on this too, and it tries to evict modules as soon as possible.<br/>
+That's why the order of dependencies is important for download optimization. Indeed ivy
+traverses the dependency graph in the order in which dependencies are declared in the ivy files, 
+and each time it encounters a dependency on a module, it first check if there is a conflict on this module, 
+and if this is the case, it asks the conflict manager to resolve the conflict. Then if the module is evicted,
+it does not download its ivy file, and the whole branch is not traversed, which can saves
+a lot of time.<br/><br/>
+
+If this container is not present, a default conflict manager is used for all modules. 
+The current default conflict manager is the "latest-revision" conflict manager.
+<h1>Child elements</h1>
+<table class="ivy-children">
+<thead>
+    <tr><th class="ivy-chld">Element</th><th class="ivy-chld-desc">Description</th><th class="ivy-chld-card">Cardinality</th></tr>
+</thead>
+<tbody>
+    <tr><td><a href="./ivy/doc/ivyfile/manager">manager</a></td><td>declares a conflict manager for this module</td>
+        <td>1..n</td></tr>
+</tbody>
+</table>
+</ul><h1 id="78" name="78" class="book-h4">manager</h1><ul><b>Tag:</b> manager <b>Parent:</b> <a href="./ivy/doc/ivyfile/conflicts">conflicts</a><br/>
+<br/>
+Specify a a conflict manager for one or several dependencies.<br/>
+The way to specify a conflict manager is by giving indication to which dependencies
+the conflict manager applies (by giving organisation and module names or name regexp), 
+and then specifying the conflict manager, either by giving its name or by
+specifying a fixed revision list, in which case a fixed conflicts manager is used.<br/><br/>
+
+See <a href="./ivy/doc/ivyfile/conflicts">Conflicts Manager</a> for details on conflicts manager in general.
+
+<h1>Attributes</h1>
+<table class="ivy-attributes">
+<thead>
+    <tr><th class="ivy-att">Attribute</th><th class="ivy-att-desc">Description</th><th class="ivy-att-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>org</td><td>the name, or a regexp matching the name of organisation to which this conflict manager should apply</td>
+        <td>No, defaults to .* (match all)</td></tr>
+    <tr><td>module</td><td>the name, or a regexp matching the name of module to which this conflict manager should apply</td>
+        <td>No, defaults to .* (match all)</td></tr>
+    <tr><td>name</td><td>the name of the conflict manager to use</td>
+        <td rowspan="2">Exactly one of two</td></tr>
+    <tr><td>rev</td><td>a comma separated list of revisions this conflict manager should select</td></tr>
+</tbody>
+</table>
+</ul><h1 id="44" name="44" class="book-h2">Using Ivy</h1><ul>The main and most frequent way to use ivy is from an ant build file. However,
+ivy can also be called as a standalone application.<br/><br/>
+If you use ant version <b>1.6.0</b> or superior, you just have to add ivy namespace to your 
+project (xmlns:ivy="antlib:fr.jayasoft.ivy.ant" attribute of your project tag), and
+you can call ivy tasks.<br/>
+<br/>
+If you use ant <b>1.5.1</b> or superior, you have to define the tasks in your build file:<br/>
+<pre>
+  &lt;taskdef name="ivy-configure" classname="fr.jayasoft.ivy.ant.IvyConfigure"/&gt;
+  &lt;taskdef name="ivy-resolve" classname="fr.jayasoft.ivy.ant.IvyResolve"/&gt;
+  &lt;taskdef name="ivy-retrieve" classname="fr.jayasoft.ivy.ant.IvyRetrieve"/&gt;
+  &lt;taskdef name="ivy-deliver" classname="fr.jayasoft.ivy.ant.IvyDeliver"/&gt; 
+  &lt;taskdef name="ivy-publish" classname="fr.jayasoft.ivy.ant.IvyPublish"/&gt; 
+</pre>
+Then you can use the tasks, but check their name, following samples assume you use the ivy
+namespace (ivy:xxx tasks), whereas with ant 1.5 you cannot use namespace, and should therefore
+use ivy-xxx tasks if you have followed the taskdefs above.<br/>
+<br/>
+If you use an ant version lower than 1.5.1, you can not use the ivy tasks... you should then
+call ivy as any external program.<br/>
+<h1>Calling ivy as a standalone program</h1>
+In the case you want to call ivy as a standalone program (outside from ant), you have to put commons-cli 1.0
+and its dependencies in your classpath.<br/><br/>
+Then here is how to call it:<br/>
+<pre>
+java fr.jayasoft.ivy.Main -?
+</pre>
+It will indicate you what can be given as argument. Here are some examples:<br/>
+<pre>java fr.jayasoft.ivy.Main</pre>
+calls ivy with default configuration using ivy.xml in the current dir<br/><br/>
+
+<pre>java fr.jayasoft.ivy.Main -conffile path/to/myivyconf.xml -ivyfile path/to/myivy.xml</pre>
+calls ivy with given ivyconf file using given ivy file<br/><br/>
+
+
+<br/>
+<h1>Calling ivy from ant: first steps</h1>
+Once your build file is ok to call ivy tasks, the simplest way to use ivy is to call the ivy 
+retrieve task with no parameters:<br/>
+<pre>&lt;ivy:retrieve /&gt;</pre>
+This calls ivy with default values, which might be ok in several projects. In fact,
+it is equivalent to:<br/>
+<!-- converted by xmlverbatim.xsl 1.1, (c) O. Becker -->
+<div class="xmlverb-default">&lt;<span class="xmlverb-element-name">target</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">resolve</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">ivy:configure</span> /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">ivy:resolve</span> <span class="xmlverb-attr-name">file</span>="<span class="xmlverb-attr-content">${ivy.dep.file}</span>" <span class="xmlverb-attr-name">conf</span>="<span class="xmlverb-attr-content">${ivy.configurations}</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">ivy:retrieve</span> <span class="xmlverb-attr-name">pattern</span>="<span class="xmlverb-attr-content">${ivy.retrieve.pattern}</span>" <span class="xmlverb-attr-name">conf</span>="<span class="xmlverb-attr-content">${ivy.configurations}</span>" /&gt;<span class="xmlverb-text"><br>
+</span>&lt;/<span class="xmlverb-element-name">target</span>&gt;<br>
+</div>
+<br/>
+Those 3 tasks follow the 3 main steps of ivy retrieving dependencies process:<br/>
+<ul>
+<li>First the configure task tells it how it can find dependencies giving it a path 
+to an <a href="./ivy/doc/configuration">xml configuration file</a>.</li> 
+<li>Then the resolve task actually resolve dependencies described by an 
+<a href="./ivy/doc/ivyfile">ivy file</a>, and put those dependencies in the ivy cache
+(a directory configured in the configuration file).</li>
+<li>Finally the retrieve task copies dependencies from the cache to anywhere you want
+in your file system. You can then use those dependencies to make your classpath
+with standard ant paths.</li>
+</ul>
+<br/>
+To understand more accurately the behaviour of ivy tasks, one should know that 
+a property file is loaded in ant by ivy at the beginning 
+of the configure call. This property file contains the following properties:<br/>
+<pre>
+ivy.project.dir = ${basedir}
+ivy.lib.dir = ${ivy.project.dir}/lib
+ivy.build.artifacts.dir = ${ivy.project.dir}/build/artifacts
+ivy.distrib.dir = ${ivy.project.dir}/distrib
+	
+ivy.configurations = *
+ivy.resolver.default.check.modified = false
+ivy.status = integration
+ivy.dep.file = ivy.xml
+ivy.conf.file = ivyconf.xml
+ivy.retrieve.pattern = ${ivy.lib.dir}/[artifact]-[revision].[ext]
+ivy.deliver.ivy.pattern = ${ivy.distrib.dir}/[type]s/[artifact]-[revision].[ext]
+ivy.publish.src.artifacts.pattern = ${ivy.distrib.dir}/[type]s/[artifact]-[revision].[ext]
+
+ivy.ivyrep.default.ivy.root = http://www.jayasoft.fr/org/ivyrep/
+ivy.ivyrep.default.ivy.pattern = [organisation]/[module]/ivy-[revision].xml
+ivy.ivyrep.default.artifact.root = http://www.ibiblio.org/maven/
+ivy.ivyrep.default.artifact.pattern = [module]/[type]s/[artifact]-[revision].[ext]
+
+ivy.ibiblio.default.artifact.root = http://www.ibiblio.org/maven/
+ivy.ibiblio.default.artifact.pattern = [module]/[type]s/[artifact]-[revision].[ext]
+
+ivy.report.output.pattern = [organisation]-[module]-[conf].html
+</pre>
+<h1>Example</h1>
+Here is a more complete example of build file using ivy:<br/>
+
+
+<!-- converted by xmlverbatim.xsl 1.1, (c) O. Becker -->
+<div class="xmlverb-default">&lt;<span class="xmlverb-element-name">project</span><span class="xmlverb-ns-name"> xmlns:ivy</span>="<span class="xmlverb-ns-uri">antlib:fr.jayasoft.ivy.ant</span>" <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">sample</span>" <span class="xmlverb-attr-name">default</span>="<span class="xmlverb-attr-content">resolve</span>"&gt;<span class="xmlverb-text"><br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">target</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">resolve</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-nsprefix">ivy</span>:<span class="xmlverb-element-name">configure</span> <span class="xmlverb-attr-name">file</span>="<span class="xmlverb-attr-content">../ivyconf.xml</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-nsprefix">ivy</span>:<span class="xmlverb-element-name">resolve</span> <span class="xmlverb-attr-name">file</span>="<span class="xmlverb-attr-content">my-ivy.xml</span>" <span class="xmlverb-attr-name">conf</span>="<span class="xmlverb-attr-content">default, myconf</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">target</span>&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">target</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">retrieve-default</span>" <span class="xmlverb-attr-name">depends</span>="<span class="xmlverb-attr-content">resolve</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-nsprefix">ivy</span>:<span class="xmlverb-element-name">retrieve</span> <span class="xmlverb-attr-name">pattern</span>="<span class="xmlverb-attr-content">lib/default/[artifact]-[revision].[ext]</span>" <span class="xmlverb-attr-name">conf</span>="<span class="xmlverb-attr-content">default</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">target</span>&gt;<span class="xmlverb-text"><br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">target</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">retrieve-myconf</span>" <span class="xmlverb-attr-name">depends</span>="<span class="xmlverb-attr-content">resolve</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-nsprefix">ivy</span>:<span class="xmlverb-element-name">retrieve</span> <span class="xmlverb-attr-name">pattern</span>="<span class="xmlverb-attr-content">lib/myconf/[artifact]-[revision].[ext]</span>" <span class="xmlverb-attr-name">conf</span>="<span class="xmlverb-attr-content">myconf</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">target</span>&gt;<span class="xmlverb-text"><br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">target</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">retrieve-all</span>" <span class="xmlverb-attr-name">depends</span>="<span class="xmlverb-attr-content">resolve</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-nsprefix">ivy</span>:<span class="xmlverb-element-name">retrieve</span> <span class="xmlverb-attr-name">pattern</span>="<span class="xmlverb-attr-content">lib/[conf]/[artifact]-[revision].[ext]</span>" <span class="xmlverb-attr-name">conf</span>="<span class="xmlverb-attr-content">*</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">target</span>&gt;<span class="xmlverb-text"><br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">target</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">deliver</span>" <span class="xmlverb-attr-name">depends</span>="<span class="xmlverb-attr-content">retrieve-all</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-nsprefix">ivy</span>:<span class="xmlverb-element-name">deliver</span> <span class="xmlverb-attr-name">deliverpattern</span>="<span class="xmlverb-attr-content">distrib/[artifact]-[revision].[ext]</span>" <span class="xmlverb-attr-name">pubrevision</span>="<span class="xmlverb-attr-content">1.1b4</span>" <span class="xmlverb-attr-name">pubdate</span>="<span class="xmlverb-attr-content">20050115123254</span>" <span class="xmlverb-attr-name">status</span>="<span class="xmlverb-attr-content">milestone</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">target</span>&gt;<span class="xmlverb-text"><br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-name">target</span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">publish</span>" <span class="xmlverb-attr-name">depends</span>="<span class="xmlverb-attr-content">deliver</span>"&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span class="xmlverb-element-nsprefix">ivy</span>:<span class="xmlverb-element-name">publish</span> <span class="xmlverb-attr-name">resolver</span>="<span class="xmlverb-attr-content">internal</span>" <span class="xmlverb-attr-name">artifactspattern</span>="<span class="xmlverb-attr-content">distrib/[artifact]-[revision].[ext]</span>" <span class="xmlverb-attr-name">pubrevision</span>="<span class="xmlverb-attr-content">1.1b4</span>" /&gt;<span class="xmlverb-text"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;/<span class="xmlverb-element-name">target</span>&gt;<span class="xmlverb-text"><br>
+</span>&lt;/<span class="xmlverb-element-name">project</span>&gt;<br>
+</div>
+<br/><br/>
+All ivy tasks are documented in the following pages.</ul><h1 id="79" name="79" class="book-h3">configure</h1><ul>The configure task is used to configure ivy with an xml configuration file.<br/><br/>
+See <a href="./ivy/doc/configuration">configuration</a> for details about the configuration
+file itself.<br/><br/>
+<i>Note for developers:<br/>
+After the call to this task, a reference to the configured ivy instance used by all subsequent ant tasks is put in the ant project,
+under the id "ivy.instance".</i>
+<table class="ant">
+<thead>
+    <tr><th class="ant-att">Attribute</th><th class="ant-desc">Description</th><th class="ant-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>file</td><td>path to the configuration file to use</td>
+        <td rowspan="2">No. If a file is provided, url is ignored. If none are 
+        provided, then it attempts to find a file at ${ivy.conf.file}, and if
+        this file does not exist, it uses a <a href="./misc/ivy/samples/ivyconf-default.xml">default configuration file</a></td></tr>
+    <tr><td>url</td><td>url of the configuration file to use</td></tr>
+    <tr><td>host</td><td>http authentication host</td><td rowspan="4">No, unless authentication is required</td></tr>
+    <tr><td>realm</td><td>http authentication realm</td></tr>
+    <tr><td>username</td><td>http authentication user name</td></tr>
+    <tr><td>passwd</td><td>http authentication password</td></tr>
+</tbody>
+</table>
+<h2>HTTP Authentication</h2>
+<i>Note: HTTP Authentication can be used only if <a href="http://jakarta.apache.org/commons/httpclient/">commons-httpclient.jar</a> is in your classpath</i>
+If any of the url you use in ivy (especially in dependency resolvers) need http
+authentication, then you have to provide the host, realm, username and passwd
+attributes of the configure task. These settings will then be used in any
+further call to ivy tasks.
+<h2>Examples</h2>
+<h3>Simplest configuration</h3>
+<pre>&lt;ivy:configure /&gt;</pre>
+Use either ${ivy.conf.file} if it exists, or the <a href="./misc/ivy/samples/ivyconf-default.xml">default configuration file</a>
+<h3>Configure with a file</h3>
+<pre>&lt;ivy:configure file="myconffile.xml" /&gt;</pre>
+<h3>Configure with an url</h3>
+<pre>&lt;ivy:configure url="http://mysite.com/myconffile.xml" /&gt;</pre>
+</ul><h1 id="80" name="80" class="book-h3">resolve</h1><ul>The resolve task actually resolve dependencies described in an <a href="./ivy/doc/ivyfile">ivy file</a>, and
+put the resolved dependencies in the ivy cache.<br />
+If configure has not been called before resolve is called, a default configuration 
+will be used (equivalent to call configure with no attributes).<br/><br/>
+
+After the call to this task, four properties are set in ant:<br/>
+<b>ivy.organisation</b>: set to the organisation name found in the ivyfile which was used for resolve<br/>
+<b>ivy.module</b>: set to the module name found in the ivyfile which was used for resolve<br/>
+<b>ivy.revision</b>: set to the revision name found in the ivyfile which was used for resolve, or a generated revision name if no revision was specified in the file<br/>
+<b>ivy.resolved.configurations</b>: set to the comma separated list of configurations resolved<br/><br/>
+
+<i>Note for developers:<br/>
+After the call to this task, a reference to the module descriptor resolved is put in the ant project 
+under the id "ivy.resolved.descriptor".</i>
+
+<table class="ant">
+<thead>
+    <tr><th class="ant-att">Attribute</th><th class="ant-desc">Description</th><th class="ant-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>file</td><td>path to the ivy file to use for resolution</td>
+        <td>No. Defaults to ${ivy.dep.file}</td></tr>
+    <tr><td>conf</td><td>a comma separated list of the configurations to resolve</td><td>No. Defaults to ${ivy.configurations}</td></tr>
+    <tr><td>haltonfailure</td><td>true to halt the build on ivy failure, false to continue</td><td>No. Defaults to true</td></tr>
+    <tr><td>showprogress</td><td>true to show dots while downloading, false otherwise</td><td>No. Defaults to true</td></tr>
+    <tr><td>validate</td><td>true to force ivy files validation against ivy.xsd, false to force no validation</td><td>No. Defaults to default ivy value (as configured in configuration file)</td></tr>
+</tbody>
+</table>
+</ul><h1 id="81" name="81" class="book-h3">retrieve</h1><ul>The retrieve task copies resolved dependencies anywhere you want in your file system.<br />
+If no resolve has been called before retrieve is called, a default resolve is called 
+(equivalent to a call to resolve with no attributes).
+<table class="ant">
+<thead>
+    <tr><th class="ant-att">Attribute</th><th class="ant-desc">Description</th><th class="ant-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>pattern</td><td>the pattern to use to copy the dependencies</td>
+        <td>No. Defaults to ${ivy.retrieve.pattern}</td></tr>
+    <tr><td>conf</td><td>a comma separated list of the configurations to retrieve</td>
+        <td>No. Defaults to the configurations resolved by the last resolve call, or * if no resolve was explicitly called</td></tr>
+    <tr><td>haltonfailure</td><td>true to halt the build on ivy failure, false to continue</td><td>No. Defaults to true</td></tr>
+    <tr><td>validate</td><td>true to force ivy files validation against ivy.xsd, false to force no validation</td><td>No. Defaults to default ivy value (as configured in configuration file)</td></tr>
+</tbody>
+</table>
+</ul><h1 id="82" name="82" class="book-h3">deliver</h1><ul>Delivers a resolved ivy file of the current module, and possibly do recursive delivery of dependencies. <br />
+This task does two main things:<br/>
+- deliver a resolved ivy file of the current module, based upon the last resolve done. In the resolved
+  ivy file, no latest version of any kind subsist, so the ivy file can be used later safely
+  to obtain the same dependencies (providing that a revision uniquely identifies a module, which should
+  be the case for proper ivy use).
+- do recursive delivery. This is done only if a deliver target is given to the deliver task.<br/>
+  If a deliver target is set, then it is called for each dependency which has not a suffisant status compared to 
+  the deliver status set for this task. This means that if you deliver an integration revision, no recursive delivery will be done.
+  If you deliver a milestione revision, deliver target will be called with each integration dependency. 
+  Finally, if you deliver a release revision, then deliver target will be called with each integration and milestone dependency.<br/><br/>
+  The deliver target is called with the following properties available:<br/>
+  * dependency.name : the name of the dependency to recursively deliver<br/>
+  * dependency.published.status : the status to which the dependency should be delivered<br/>
+  * dependency.published.version : the revision to which the dependency should be delivered<br/>
+  * dependency.version : the revision of the dependency that should be delivered (the one that was retrieved during last resolve)<br/>
+Note that both dependency.published.status and dependency.published.version are in fact asked to the user
+via standard ant input. the delivered ivy file will update its dependency revisions with those given here.  
+  
+<table class="ant">
+<thead>
+    <tr><th class="ant-att">Attribute</th><th class="ant-desc">Description</th><th class="ant-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>deliverpattern</td><td>the pattern to use for ivy file delivery</td>
+        <td>No. Defaults to ${ivy.deliver.ivy.pattern}</td></tr>
+    <tr><td>pubrevision</td><td>the revision to use for the publication</td>
+        <td>No. Defaults to the ${ivy.deliver.revision}</td></tr>
+    <tr><td>pubdate</td><td>the publication date to use for the publication. This date should be either 'now', or a date given with the following pattern: yyyyMMddHHmmss</td>
+        <td>No. Defaults to 'now'</td></tr>
+    <tr><td>status</td><td>the status to use for the publication</td>
+        <td>No. Defaults to ${ivy.status}</td></tr>
+    <tr><td>delivertarget</td><td>the target to call for recursive delivery</td>
+        <td>No. No recursive delivery is done by default</td></tr>
+    <tr><td>validate</td><td>true to force ivy files validation against ivy.xsd, false to force no validation</td>
+        <td>No. Defaults to default ivy value (as configured in configuration file)</td></tr>
+</tbody>
+</table>
+</ul><h1 id="83" name="83" class="book-h3">publish</h1><ul>Publishes the current modules artifacts.<br/><br/>
+This task is meant to publish the declared published artifacts of the current module to a repository.<br/>
+The repository is given through the name of a resolver declared in current ivy configuration. See <a href="./ivy/doc/configuration">configuration</a>
+for details about resolver supporting artifact publishing.<br/>
+It also publishes the delivered ivy file (except if you don't want), and even deliver it if it has not been done with a previous
+deliver call. That's why this task takes some parameters useful only for delivery.
+  
+<table class="ant">
+<thead>
+    <tr><th class="ant-att">Attribute</th><th class="ant-desc">Description</th><th class="ant-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>artifactspattern</td><td>the pattern to use to find artifacts to publish</td>
+        <td>No. Defaults to ${ivy.publish.src.artifacts.pattern}</td></tr>
+    <tr><td>resolver</td><td>the name of the resolver to use for publication</td>
+        <td>Yes</td></tr>
+    <tr><td>pubrevision</td><td>the revision to use for the publication</td>
+        <td>No. Defaults to the ${ivy.deliver.revision}</td></tr>
+    <tr><td>validate</td><td>true to force ivy files validation against ivy.xsd, false to force no validation</td>
+        <td>No. Defaults to default ivy value (as configured in configuration file)</td></tr>
+    <tr><td>publishivy</td><td>True to publish delivered ivy file, false otherwise</td>
+        <td>No. Defaults to true</td></tr>
+    <tr><td>warnonmissing</td><td>True to warn when artifacts to be published are missing</td>
+        <td>No. Defaults to true</td></tr>
+    <tr><td>haltonmissing</td><td>True to halt build when artifacts to be published are missing</td>
+        <td>No. Defaults to true</td></tr>
+    <tr><td>deliverivypattern</td><td>the pattern to use for ivy file delivery, if necessary</td>
+        <td>No. Defaults to the value of artifactspattern</td></tr>
+    <tr><td>pubdate</td><td>the publication date to use for the delivery, if necessary. This date should be either 'now', or a date given with the following pattern: yyyyMMddHHmmss</td>
+        <td>No. Defaults to 'now'</td></tr>
+    <tr><td>status</td><td>the status to use for the delivery, if necessary</td>
+        <td>No. Defaults to ${ivy.status}</td></tr>
+    <tr><td>delivertarget</td><td>the target to call for recursive delivery</td>
+        <td>No. No recursive delivery is done by default</td></tr>
+</tbody>
+</table>
+</ul><h1 id="84" name="84" class="book-h3">cachepath</h1><ul>Constructs an ant path consisting of artifacts in ivy cache for a configuration.<br/><br/>
+This task is usually used after a resolve, and can be used instead of retrieve. Note that this task
+does not rely on retrieve, because built path is made of artifacts direcly in ivy cache.<br/><br/>
+Please prefer the use of retrieve + standard ant path creation, which make your build
+more independent from ivy (once artifacts are properly retrieved, ivy is not required any more).<br/><br/>
+Built path is registered in ant with a given id, and can thus be used like any other ant path using
+refid.
+  
+<table class="ant">
+<thead>
+    <tr><th class="ant-att">Attribute</th><th class="ant-desc">Description</th><th class="ant-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>pathid</td><td>the id to reference the built path</td>
+        <td>Yes</td></tr>
+    <tr><td>conf</td><td>a comma separated list of the configurations to put in the created path</td>
+        <td>No. Defaults to the configurations resolved by the last resolve call, or * if no resolve was explicitly called</td></tr>
+    <tr><td>haltonfailure</td><td>true to halt the build on ivy failure, false to continue</td><td>No. Defaults to true</td></tr>
+    <tr><td>validate</td><td>true to force ivy files validation against ivy.xsd, false to force no validation</td>
+        <td>No. Defaults to default ivy value (as configured in configuration file)</td></tr>
+</tbody>
+</table>
+</ul><h1 id="85" name="85" class="book-h3">report</h1><ul>Generates reports of dependecy resolving. One report per configuration is generated, but
+all reports generated together are hyperlinked one to each other.<br/><br/>
+This task should be used only after a call to resolve, even if the call was not done during the same
+ant build.<br/>In fact, this task uses xml report generated by resolve in cache. So if you call resolve
+on a module for a given configuration, you can call report safely on this module and this configuration
+as long as you do not clean your ivy cache.<br/><br/>
+
+If you want to have an idea of what reports look like, check this very simple <a href="./misc/ivy/samples/jayasoft-ivyrep-example-default.html">example</a>.
+
+The task also generates a graphml file which can be loaded with the free <a href="http://www.yworks.com/en/products_yed_about.htm">yEd</a> graph editor.
+Then following a few <a href="./ivy/doc/yed">simple steps</a> you can obtain a graph like this <a href="./misc/ivy/samples/jayasoft-ivyrep-example-default.jpg">one</a>.
+  
+<table class="ant">
+<thead>
+    <tr><th class="ant-att">Attribute</th><th class="ant-desc">Description</th><th class="ant-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>todir</td><td>the directory to which reports should be generated</td>
+        <td>No, defaults to ${ivy.report.todir}, or execution directory if not defined</td></tr>
+    <tr><td>outputpattern</td><td>the generated report names pattern</td>
+        <td>No, defaults to ${ivy.report.output.pattern}, or [organisation]-[module]-[conf].html if not defined</td></tr>
+    <tr><td>graph</td><td>true top generates graphml files, false otherwise</td>
+        <td>No, defaults to true</td></tr>
+    <tr><td>conf</td><td>a comma separated list of the configurations for which a report should be generated</td>
+        <td>No. Defaults to the configurations resolved by the last resolve call (during same ant build), or ${ivy.resolved.configurations} if no resolve was called</td></tr>
+    <tr><td>organisation</td><td>the name of the organisation of the module for which report should be generated</td>
+        <td>No, unless no resolve was called during the build. Defaults to last resolved module organisation.</td></tr>
+    <tr><td>module</td><td>the name of the module for which report should be generated</td>
+        <td>No, unless no resolve was called during the build. Defaults to last resolved module.</td></tr>
+    <tr><td>validate</td><td>true to force ivy files validation against ivy.xsd, false to force no validation</td>
+        <td>No. Defaults to default ivy value (as configured in configuration file)</td></tr>
+    <tr><td>xslfile</td><td>indicates which xsl file should be used to generate the report</td>
+        <td>No, defaults to ivy provided xsl which generates html report</td></tr>
+</tbody>
+</table>
+</ul><h1 id="45" name="45" class="book-h4">Using yEd to layout report graphs</h1><ul><a href="http://www.yworks.com/en/products_yed_about.htm">yEd</a> is a free graph editor, benefiting from
+all the automatic layouts of yFiles. Ivy is able to generate graphs which are readable by yEd.<br/><br/>
+
+The graphs generated by ivy are not layed out (in fact it's why we use yEd), so you have to follow a simple
+sequence of steps to layout the generated graphs.<br/><br/>
+
+<h2>Preparation</h2>
+First you have to generate a graphml file. Simply call the report task (see <a href="./ivy/doc/use">ivy use documentation</a>)
+for that.
+
+<h2>Step 1: open the graphml file</h2>
+Launch yEd editor, and open the graphml file generated by the report task. You should obtain something like this:<br/>
+<center>
+<img src="./misc/ivy/images/yed-step1.JPG"/>
+</center>
+
+<h2>Step 2: ask yEd to adjust nodes size</h2>
+<center>
+<img src="./misc/ivy/images/yed-step2.JPG"/><br/>
+<img src="./misc/ivy/images/yed-step3.JPG"/><br/>
+<img src="./misc/ivy/images/yed-step3-2.JPG"/>
+</center>
+
+<h2>Step 3: ask yEd to layout nodes</h2>
+<center>
+<img src="./misc/ivy/images/yed-step4.JPG"/><br/>
+<img src="./misc/ivy/images/yed-step5.JPG"/><br/>
+<img src="./misc/ivy/images/yed-step6.JPG"/><br/>
+<br/>
+That's all, you should have obtained something like this:<br/><br/>
+<img src="./misc/ivy/images/yed-step7.JPG"/><br/>
+<br/>
+Note that this is only one possibility, test the available layouts yourself, you could find one better in your case.
+Once you have layed out the graph, you can either save it with in the same file (but be warned that it will be overwritten at next 
+ivy report call), or another file, export it to jpg, gif, svg, etc. (see <a href="http://www.yworks.com/en/products_yed_about.htm">yEd</a> site for details).
+</center>
+
+</ul><h1 id="131" name="131" class="book-h3">artifactproperty</h1><ul><div class="since">since 1.1</div>
+Sets an ant property for each dependency artifacts previously resolved.</p>
+<p>Please prefer the use of retrieve + standard ant path creation, which make your build more independent from ivy (once artifacts are properly retrieved, ivy is not required any more).</p>
+<p>The property name and value are generated using the classical pattern concept, all artifact tokens and ivy variables being available.</p>
+<table class="ant">
+<thead>
+    <tr><th class="ant-att">Attribute</th><th class="ant-desc">Description</th><th class="ant-req">Required</th></tr>
+</thead>
+<tbody><br />
+    <tr><td>name</td><td>a pattern used to generate the name of the properties to set</td>
+        <td>Yes</td></tr>
+    <tr><td>value</td><td>a pattern used to generate the value of the properties to set</td>
+        <td>Yes</td></tr>
+    <tr><td>conf</td><td>a comma separated list of the configurations for which properties should be set</td>
+        <td>No. Defaults to the configurations resolved by the last resolve call, or * if no resolve was explicitly called</td></tr>
+    <tr><td>haltonfailure</td><td>true to halt the build on ivy failure, false to continue</td><td>No. Defaults to true</td></tr>
+    <tr><td>validate</td><td>true to force ivy files validation against ivy.xsd, false to force no validation</td>
+        <td>No. Defaults to default ivy value (as configured in configuration file)</td></tr>
+</tbody><br />
+</table>
+<h1>Example</h1>
+<p>Suppose we have one dependency called <i>mydep</i> in revision 1.0 publishing two artifacts: <i>foo.jar</i> and <i>bar.jar</i>.<br />
+Then:<br />
+<div class="codeblock"><code><span class="synIdentifier">&lt;artifactproperty </span><span class="synType">conf</span>=<span class="synConstant">&quot;build&quot;</span><br /><span class="synIdentifier">&nbsp; &nbsp; &nbsp;  </span><span class="synType">name</span>=<span class="synConstant">&quot;[module].[artifact]-[revision]&quot;</span><br /><span class="synIdentifier">&nbsp; &nbsp; &nbsp;  </span><span class="synType">value</span>=<span class="synConstant">&quot;${cache.dir}/[module]/[artifact]-[revision].[ext]&quot;</span><span class="synIdentifier">/&gt;</span><br /></code></div><br />
+will set two properties:<br />
+<div class="codeblock"><code>mydep.foo-1.0 = my/cache/dir/mydep/foo-1.0.jar<br />mydep.bar-1.0 = my/cache/dir/mydep/bar-1.0.jar<br /></code></div></p>
+</ul><h1 id="86" name="86" class="book-h3">var</h1><ul>Sets a variable (by name and value), or set of variables (from file or url) in ivy. <br/>
+Variables are case sensitive.<br/><br/>
+Contrary to ant properties, ivy variables are mutable. But a problem with this is that you do not control when 
+variables are substituted, and usually it is done as soon as possible. So changing the value of a variable will
+have no effect if it has already been substituted. Consequently, <b>using this task is NOT recommended</b>.
+See <a href="./ivy/doc/reference">reference</a> page for details about ivy variables.
+<br/><br/>
+  
+<table class="ant">
+<thead>
+    <tr><th class="ant-att">Attribute</th><th class="ant-desc">Description</th><th class="ant-req">Required</th></tr>
+</thead>
+<tbody>
+    <tr><td>name</td><td>the name of the variable to set</td>
+        <td>No</td></tr>
+    <tr><td>value</td><td>the value of the variable to set</td>
+        <td>Yes when using the name attribute</td></tr>
+    <tr><td>file</td><td>the filename of the property file to load as ivy variables</td>
+        <td rowspan="2">One of these, when <b>not</b> using the name attribute</td></tr>
+    <tr><td>url</td><td>the url from which to read ivy variables</td></tr>
+    <tr><td>prefix</td><td>Prefix to apply to variables. A "." is appended to the prefix if not specified.</td>
+        <td>No</td></tr>
+</tbody>
+</table>
+</ul><h1 id="110" name="110" class="book-h2">Extend</h1><ul><p>Many things are configurable in ivy, and many things are available with ivy core. But when you want to do<br />
+something not built in ivy core, you can still plug your own code.</p>
+<p>Three things are pluggable in ivy:<br />
+- dependency resolvers<br />
+- latest strategies<br />
+- conflict managers</p>
+<p>Before trying to implement your own, we encourage you to check if the solution to your problem cannot be<br />
+addressed by existing features, or by <a href="./ivy/links">contributed ones</a>. Do not hesitate to ask for help on the forum.</p>
+<p>If you still don't find what you need, there are two solutions:<br />
+- prepare yourself to enter to ivy internals<br />
+- <a href="commercial@jayasoft.org">contact us</a> to ask for specific development or advice. As ivy creators,<br />
+we will always spend less time to implement your features or help you make good developement environment a reality.<br />
+So do not hesitate to contact us and ask for a pricing.</p>
+<p>And what if you still want to develop your own plugins ? Here are the main things to know...</p>
+<p>All ivy plug-ins use the same code patterns as ant specific tasks for parameters. This means that<br />
+if you want to have a "myattribute" of type String, you just have to declare a method called<br />
+setMyattribute(String val) on your plug-in. The same applies to child tags, you just have to follow ant specifications.</p>
+<p>Knowing that, you then have to implement the appropriate interface:<br />
+- fr.jayasoft.ivy.DependencyResolver for dependency resolvers<br />
+- fr.jayasoft.ivy.LatestStrategy for latest strategies<br />
+- fr.jayasoft.ivy.ConflictManager for conflict managers</p>
+<p>To help you understand what is required in each implementation, and what you can use to do it, have a look<br />
+to existing implementations, it's the best advice we can give you !</p>
+</ul><h1 id="105" name="105" class="book-h1">Appendix</h1><ul><p>This section is the home of a bunch of appendixes to ivy main documentation.</p>
+<p>For the moment, you will find here a product comparison giving a rapid overview of several dependency management tools and how they compare to ivy.</p>
+</ul><h1 id="142" name="142" class="book-h2">IvyRep</h1><ul><p>IvyRep is the official  ivy repository. For the moment, it only stores ivy files, artifacts being most of the time found on ibiblio.</p>
+<p>You can find more information on ivyrep on its own home page:<br />
+<a href="http://ivyrep.jayasoft.org/">http://ivyrep.jayasoft.org/</a>.</p>
+</ul><h1 id="49" name="49" class="book-h2">Products Comparison</h1><ul><i>Last updated: 2005-06-01</i><br/><br/>
+We are frequently asked how Ivy can be compared to other dependency management tools. Here is a
+short matrix summing up a comparison of the products handling dependency management that
+we have heard about.<br/>
+<br/>
+Obviously, this comparison can not be objective and may be inacurrate for some
+products, but we have tried to do it with as little subjective judgement as possible.<br/>
+<br/>
+<table class="comparison">
+	<thead>
+		<tr>
+			<th>Product</th>
+			<th>Maven ibiblio <br/>compatibility</th>
+			<th>Ant <br/>integration</th>
+			<th>Continuous <br/>integration</th>
+			<th>Transitive <br/>dependencies</th>
+			<th>Flexibility</th>
+			<th>Maturity</th>
+			<th>License</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><a href="http://ivy.jayasoft.org/">Ivy</a></td>
+			<td>++</td>
+			<td>++</td>
+			<td>++</td>
+			<td>+++</td>
+			<td>++</td>
+			<td>++</td>
+			<td>BSD</td>
+		</tr>
+		<tr>
+			<td><a href="http://maven.apache.org/">Maven</a></td>
+			<td>+++</td>
+			<td>--</td>
+			<td>+</td>
+			<td>--</td>
+			<td>+</td>
+			<td>+++</td>
+			<td>Apache Software License</td>
+		</tr>
+		<tr>
+			<td><a href="http://maven.apache.org/maven2/">Maven2</a></td>
+			<td>++ *</td>
+			<td>-</td>
+			<td>++</td>
+			<td>+</td>
+			<td>+</td>
+			<td>---</td>
+			<td>Apache Software License</td>
+		</tr>
+		<tr>
+			<td><a href="http://www.httpunit.org/doc/dependencies.html">HttpUnit Dependencies</a></td>
+			<td>++</td>
+			<td>++</td>
+			<td>+</td>
+			<td>--</td>
+			<td>+</td>
+			<td>-</td>
+			<td>MIT License</td>
+		</tr>
+		<tr>
+			<td><a href="http://www.inversoft.com/online/savant/savant.html">Savant</a></td>
+			<td>--</td>
+			<td>++</td>
+			<td>--</td>
+			<td>+</td>
+			<td>++</td>
+			<td>++</td>
+			<td>Other</td>
+		</tr>
+	</tbody>
+</table>
+<h1>Some Explanations</h1>
+<h2>Maven ibiblio compatiblity</h2>
+The use of the maven ibiblio repository is interesting because it is already filled with many projects. 
+Benefiting from this repository is thus a plus.<br/><br/>
+On this feature, the best is obviously <b>maven</b> itself, since this repository has been built at the initiative
+of the project. <b>Maven2</b> is a bit special, because it changes the layout of the repository compared to
+maven1, and thus a new repository is available. But everything in the first repository seems to be synced in the second, and how could we say that maven is not 100% compatible with maven repository ;-).<br/>
+The <b>dependencies task of http-unit</b> is also very good, one of the main aim of the project
+being to bring this repository to ant users. <b>Savant</b> does not provide such a compatibility.<br/>
+<b>Ivy</b>, since its version 0.6, can be considered almost as good as the dependencies task. It 
+provides a built-in ibiblio repository compatibility, and the limitation of not being able to say that you depend on a 
+particular jar of a module has been deleted by the 0.6+ feature of <a href="ivyfile.@EXT@#dependency-artifact">artifacts restriction</a>. 
+For sure, the use of ivy files for dependencies is still heavily recommended, the advantage of this technique being 
+that once an ivy file has been written, you can reuse the module easier, and it's the aim of Ivy. 
+
+<h2>Ant integration</h2>
+Ant is the most used build tool in the java community. Being well integrated with it is a real plus.<br/><br/>
+On this feature, <b>maven</b>, which is also a build tool by its own and not only a dependency management tool,
+is the only one to distinguish itself (even if you can call ant tasks from maven, the opposite is not easily
+the case). <b>Maven2</b> will propose ant tasks for its dependency management feature, so a good step is taken in this direction. But for the moment it's not publicly available.
+For the others, integration is at the same level. The <b>dependencies task and Savant</b> could be claimed 
+to be more integrated, since the dependencies are declared in the build file itself and they produce paths or
+filesets of the dependencies. <br/>
+<b>Ivy</b>, for its part, has taken the party to be less intrusive in the build file:<br/>
+- The dependencies are described in a separate file. The advantage of being separated is that
+this dependency file can be reused for dependency of dependency management, and that
+it can have its own life in your source control management, in particular.<br/>
+- It lets you build your filesets and paths by your own. The advantage is that if you already have a build file,
+you can simply ask Ivy to put your dependencies at the place they used to be, and that's all, you have migrated to 
+Ivy. Moreover, you can still benefit of all the power of ant filesets and paths declaration.<br/> 
+- Since 0.8, it is able to build a path for you with the cachepath task.<br/>
+
+<h2>Continuous integration</h2>
+A dependency management tool is the most util when your dependencies change often, and this is especially 
+the case in a continuous integration environment, where your dependencies can change of version very often.<br/><br/>
+On this point, as far as I know, <b>Savant</b> do not allow to automatically change the version you
+use when a new is released. <br/>
+<b>Maven</b> provides a SNAPSHOT feature, which enables continuous integration
+only if the component you depend on publishes SNAPSHOT versions. And you can by no way know which
+was really that version, in order to get that particular version on a later time.<br/>
+I have for the moment very few information on <b>Maven2</b> on this subject, but it will at least
+do what maven did.<br/>
+The <b>dependencies task</b> say you can tell that you depend on the latest version,
+and that it is then the responsibility of the Repository to get it... but I haven't found more information
+on their web site. Maybe it uses the same principle as Maven...<br/>
+<b>Ivy</b> uses pluggable latest strategies to find the latest version, so that the component you depend on
+has nothing special to do.
+Moreover, it produces a report in which it tells which version has been retrieved, so that you can 
+easily know the environment of the component you are building. Finally, it can even produce an ivy file
+with all latest revisions resolved to a fixed one, so that you can use it to reproduce the same environment even later, when new versions of the 
+dependencies will have been built.<br/>
+
+<h2>Transitive dependencies</h2>
+Transitive dependencies management, also known as dependencies of dependencies management,
+let you reuse more easily complex components which have themselves 
+dependencies, and help you manage conflicts between dependencies.<br/>
+<b>Maven</b> and the <b>dependencies task</b> does not provide this feature at all.<br/>
+<b>Maven2</b> will provide this feature, but few doc is avaialble for the moment. It seems that it will
+be handled by declaring a dependency on the pom of another project. I have no information on how
+filter will be applied to the transitive dependencies.<br/> 
+<b>Savant</b> actually manage transitive dependencies, but you automatically
+get all dependencies of your dependencies, not being able to filter them easily.<br/>
+<b>Ivy</b> provides this feature, and, with its concept of configurations, let you choose the set of artifacts
+of your dependencies you really need. You can even use fine graine filters (include/exclude) to adjust what
+you want. Finally, its unique configurable conflict manager let you manage conflicts the way you want,
+even if the default strategy works in most cases so that no special configuration is required.
+
+<h2>Flexibility</h2>
+Is the dependency management tool able to adapt to your environment, or have you to follow
+its rules ? It's a matter of flexibility, and it's hard to evaluate.<br/>
+As far as I know, <b>Maven</b> dependency management is based on a rigid structure of repository
+you have to follow, unless you specify for each jar where it can be found, which does 
+not really let you have a repository structure of your choice. <b>Maven2</b> will certainly follow the same philosophy. 
+The <b>dependencies task</b> has the same
+limitation, unless you create your own implementation of Repository. <b>Savant</b> seems to provide a lot of 
+flexibility, but it also seems quite hard to configure.<br/>
+<b>Ivy</b> is extremely flexible:<br/>
+- comes out of the box with two main ways to find dependencies (filesystem based 
+and url based)<br/>
+- let you configure your repository layout with very simple
+to define patterns<br/>
+- let you use multiple repositories, chaining them or defining which repository to use
+for which modules or group of modules<br/>
+- let you choose where you artifacts are copied in your file system, with or without
+version in the name, and structured the way you want, all with the same simple pattern
+principle<br/>
+- let you define reusable configurations of your component, since a same component
+does not have the dependencies at build time or runtime, or when deployed in a server or as 
+a standalone application, etc.<br/>
+
+<h2>Maturity</h2>
+On this point, two products are now quite old and can be considered mature: <b>Maven</b> and <b>Savant</b>.
+On the other hand, the <b>dependencies task</b> has published its first version (0.1) on september 2004, and, at the time of this writing, no version has been published since their 0.4 in december 2004.<br/>
+<b>Maven2</b> is still in alpha, with no public download and very few documentation.<br/>
+Finally, <b>Ivy</b> as published its first public version (0.5) on january 2005 after several months of use in our company. After several months of user driven development and testing, and after several weeks
+of release candidates cycles, it has reached its first stable release on april 2005: 1.0. 
+<br/><br/><br/>
+Feel free to comment the comparison on this page if you think that we have forgotten some points or missed 
+features of the other products.</ul></body></html>

@@ -1,0 +1,7 @@
+GOMExtensible
+getExtensions
+List
+GOMExtension
+setExtensionFactory
+factory
+GOMExtensionFactory

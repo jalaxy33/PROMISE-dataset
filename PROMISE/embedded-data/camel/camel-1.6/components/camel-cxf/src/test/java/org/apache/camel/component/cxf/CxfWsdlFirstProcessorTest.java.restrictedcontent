@@ -1,0 +1,17 @@
+CxfWsdlFirstProcessorTest
+createApplicationContext
+ClassPathXmlApplicationContext
+return
+ClassPathXmlApplicationContext
+verifyJaxwsHandlers
+fromHandler
+JaxwsTestHandler
+toHandler
+JaxwsTestHandler
+assertEquals
+getFaultCount
+assertEquals
+getMessageCount
+assertEquals
+getGetHeadersCount
+CxfWsdlFirstTest

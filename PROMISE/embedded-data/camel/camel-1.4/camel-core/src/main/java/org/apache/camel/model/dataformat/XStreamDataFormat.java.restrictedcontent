@@ -1,0 +1,15 @@
+XStreamDataFormat
+FIELD
+Boolean
+prettyPrint
+XStreamDataFormat
+getPrettyPrint
+Boolean
+return
+prettyPrint
+setPrettyPrint
+prettyPrint
+Boolean
+prettyPrint
+prettyPrint
+DataFormatType

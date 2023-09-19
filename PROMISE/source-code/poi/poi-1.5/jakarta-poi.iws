@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="2">
+  <component name="IdeDocumentManager">
+    <history>
+      <source_position_entry column="32" horizontal_scroll_position="0.20360631" line="332" url="file://$PROJECT_DIR$/src/java/org/apache/poi/hssf/record/FormulaRecord.java" vertical_scroll_position="0.38325992" />
+      <source_position_entry column="16" horizontal_scroll_position="0.119459055" line="196" url="file://$PROJECT_DIR$/src/java/org/apache/poi/hpsf/Property.java" vertical_scroll_position="0.33267716" />
+      <source_position_entry column="83" horizontal_scroll_position="0.4718257" line="48" url="file://$PROJECT_DIR$/src/documentation/xdocs/branching.xml" vertical_scroll_position="0.48523623" />
+      <source_position_entry column="49" horizontal_scroll_position="0.29301277" line="82" url="file://$PROJECT_DIR$/src/documentation/xdocs/news/logocontest.xml" vertical_scroll_position="0.31231672" />
+      <source_position_entry column="70" horizontal_scroll_position="0.40345606" line="181" url="file://$PROJECT_DIR$/src/java/org/apache/poi/hssf/dev/HSSF.java" vertical_scroll_position="1.0" />
+      <source_position_entry column="16" horizontal_scroll_position="0.119459055" line="116" url="file://$PROJECT_DIR$/src/java/org/apache/poi/hssf/dev/EFHSSF.java" vertical_scroll_position="1.0" />
+      <source_position_entry column="44" horizontal_scroll_position="0.26671675" line="84" url="file://$PROJECT_DIR$/src/testcases/org/apache/poi/hssf/usermodel/TestReadWriteChart.java" vertical_scroll_position="1.0" />
+      <source_position_entry column="0" horizontal_scroll_position="0.035311796" line="740" url="file://$PROJECT_DIR$/src/java/org/apache/poi/hssf/usermodel/HSSFSheet.java" vertical_scroll_position="1.0" />
+      <source_position_entry column="58" horizontal_scroll_position="0.3403456" line="87" url="file://$PROJECT_DIR$/src/java/org/apache/poi/hssf/record/RecordFactory.java" vertical_scroll_position="0.31496063" />
+      <source_position_entry column="58" horizontal_scroll_position="0.3403456" line="198" url="file://$PROJECT_DIR$/src/testcases/org/apache/poi/hssf/usermodel/TestHSSFSheet.java" vertical_scroll_position="1.0" />
+      <source_position_entry column="53" horizontal_scroll_position="0.3140496" line="40" url="file://$PROJECT_DIR$/src/testcases/org/apache/poi/hssf/usermodel/TestHSSFRow.java" vertical_scroll_position="0.13385826" />
+      <source_position_entry column="43" horizontal_scroll_position="0.26145756" line="333" url="file://$PROJECT_DIR$/src/java/org/apache/poi/hssf/usermodel/HSSFRow.java" vertical_scroll_position="0.7687008" />
+      <source_position_entry column="60" horizontal_scroll_position="0.35086402" line="90" url="file://$PROJECT_DIR$/module.xml" vertical_scroll_position="0.48031497" />
+      <source_position_entry column="17" horizontal_scroll_position="0.12997746" line="658" url="file://$PROJECT_DIR$/src/java/org/apache/poi/hssf/model/Sheet.java" vertical_scroll_position="1.0" />
+      <source_position_entry column="3" horizontal_scroll_position="0.051089406" line="655" url="file://$PROJECT_DIR$/src/java/org/apache/poi/hssf/dev/BiffViewer.java" vertical_scroll_position="0.15846457" />
+    </history>
+    <open_files>
+      <source_position_entry column="16" horizontal_scroll_position="0.119459055" line="116" url="file://$PROJECT_DIR$/src/java/org/apache/poi/hssf/dev/EFHSSF.java" vertical_scroll_position="1.0" />
+      <source_position_entry column="44" horizontal_scroll_position="0.26671675" line="84" url="file://$PROJECT_DIR$/src/testcases/org/apache/poi/hssf/usermodel/TestReadWriteChart.java" vertical_scroll_position="1.0" />
+      <source_position_entry column="0" horizontal_scroll_position="0.035311796" line="740" url="file://$PROJECT_DIR$/src/java/org/apache/poi/hssf/usermodel/HSSFSheet.java" vertical_scroll_position="1.0" />
+      <source_position_entry column="58" horizontal_scroll_position="0.3403456" line="87" url="file://$PROJECT_DIR$/src/java/org/apache/poi/hssf/record/RecordFactory.java" vertical_scroll_position="0.31496063" />
+      <source_position_entry column="58" horizontal_scroll_position="0.3403456" line="198" url="file://$PROJECT_DIR$/src/testcases/org/apache/poi/hssf/usermodel/TestHSSFSheet.java" vertical_scroll_position="1.0" />
+      <source_position_entry column="53" horizontal_scroll_position="0.3140496" line="40" url="file://$PROJECT_DIR$/src/testcases/org/apache/poi/hssf/usermodel/TestHSSFRow.java" vertical_scroll_position="0.13385826" />
+      <source_position_entry active="true" column="3" horizontal_scroll_position="0.051089406" line="655" url="file://$PROJECT_DIR$/src/java/org/apache/poi/hssf/dev/BiffViewer.java" vertical_scroll_position="0.15846457" />
+      <source_position_entry column="43" horizontal_scroll_position="0.26145756" line="333" url="file://$PROJECT_DIR$/src/java/org/apache/poi/hssf/usermodel/HSSFRow.java" vertical_scroll_position="0.7687008" />
+      <source_position_entry column="60" horizontal_scroll_position="0.35086402" line="90" url="file://$PROJECT_DIR$/module.xml" vertical_scroll_position="0.48031497" />
+      <source_position_entry column="17" horizontal_scroll_position="0.12997746" line="658" url="file://$PROJECT_DIR$/src/java/org/apache/poi/hssf/model/Sheet.java" vertical_scroll_position="1.0" />
+    </open_files>
+  </component>
+  <component name="UsageViewSettings">
+    <option name="EXPORT_FILE_NAME" value="$PROJECT_DIR$/report.txt" />
+    <option name="IS_EXPANDED" value="true" />
+    <option name="IS_SHOW_PACKAGES" value="true" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="IS_FILTER_DUPLICATED_LINE" value="false" />
+  </component>
+  <component name="Debugger">
+    <line_breakpoints />
+    <exception_breakpoints>
+      <breakpoint_any>
+        <option name="ENABLED" value="false" />
+        <option name="SUSPEND_VM" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CONDITION" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="LOG_MESSAGE" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INVERSE_CLASS_FILLTERS" value="false" />
+        <option name="NOTIFY_CAUGHT" value="false" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+      </breakpoint_any>
+    </exception_breakpoints>
+    <field_breakpoints />
+    <method_breakpoints />
+  </component>
+  <component name="DebuggerSettings">
+    <option name="TRACING_FILTERS_ENABLED" value="true" />
+    <option name="VALUE_LOOKUP_DELAY" value="700" />
+    <option name="DEBUGGER_TRANSPORT" value="0" />
+    <option name="FORCE_CLASSIC_VM" value="true" />
+    <option name="HIDE_DEBUGGER_ON_PROCESS_TERMINATION" value="false" />
+    <option name="SKIP_SYNTHETIC_METHODS" value="true" />
+    <option name="SKIP_CONSTRUCTORS" value="false" />
+    <default_breakpoint_settings>
+      <option name="ENABLED" value="true" />
+      <option name="SUSPEND_VM" value="true" />
+      <option name="COUNT_FILTER_ENABLED" value="false" />
+      <option name="COUNT_FILTER" value="0" />
+      <option name="CONDITION_ENABLED" value="false" />
+      <option name="CONDITION" />
+      <option name="LOG_ENABLED" value="false" />
+      <option name="LOG_EXPRESSION_ENABLED" value="false" />
+      <option name="LOG_MESSAGE" />
+      <option name="CLASS_FILTERS_ENABLED" value="false" />
+      <option name="INVERSE_CLASS_FILLTERS" value="false" />
+      <option name="NOTIFY_CAUGHT" value="true" />
+      <option name="NOTIFY_UNCAUGHT" value="true" />
+      <option name="WATCH_MODIFICATION" value="true" />
+      <option name="WATCH_ACCESS" value="true" />
+      <option name="WATCH_ENTRY" value="true" />
+      <option name="WATCH_EXIT" value="true" />
+    </default_breakpoint_settings>
+    <filter>
+      <option name="PATTERN" value="com.sun.*" />
+      <option name="ENABLED" value="true" />
+    </filter>
+    <filter>
+      <option name="PATTERN" value="java.*" />
+      <option name="ENABLED" value="true" />
+    </filter>
+    <filter>
+      <option name="PATTERN" value="javax.*" />
+      <option name="ENABLED" value="true" />
+    </filter>
+    <filter>
+      <option name="PATTERN" value="org.omg.*" />
+      <option name="ENABLED" value="true" />
+    </filter>
+    <filter>
+      <option name="PATTERN" value="sun.*" />
+      <option name="ENABLED" value="true" />
+    </filter>
+    <filter>
+      <option name="PATTERN" value="junit.*" />
+      <option name="ENABLED" value="true" />
+    </filter>
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="StructureViewFactory">
+    <option name="SORT_MODE" value="0" />
+    <option name="GROUP_OVERRIDINGS" value="true" />
+    <option name="GROUP_IMPLEMENTINGS" value="true" />
+    <option name="AUTOSCROLL_MODE" value="true" />
+    <option name="SHOW_METHODS" value="true" />
+    <option name="SHOW_FIELDS" value="true" />
+    <option name="AUTOSCROLL_FROM_SOURCE" value="false" />
+    <option name="GROUP_GETTERS_AND_SETTERS" value="true" />
+  </component>
+  <component name="ProjectViewSettings">
+    <navigator autoscrollToSource="false" currentView="ProjectPane" flattenPackages="true" showMembers="true" />
+    <view id="ProjectPane">
+      <expanded_node type="directory" url="file://$PROJECT_DIR$/src/testcases" />
+      <expanded_node type="directory" url="file://$PROJECT_DIR$/src/java/org/apache/poi/hssf/util" />
+      <expanded_node type="directory" url="file://$PROJECT_DIR$/src/scratchpad/src" />
+      <expanded_node type="directory" url="file://$PROJECT_DIR$/src/records" />
+      <expanded_node type="directory" url="file://$PROJECT_DIR$/src" />
+      <expanded_node type="directory" url="file://$PROJECT_DIR$/src/examples/src" />
+      <expanded_node type="directory" url="file://$PROJECT_DIR$" />
+      <expanded_node type="directory" url="file://$PROJECT_DIR$/src/java/org/apache/poi/util" />
+      <expanded_node type="directory" url="file://$PROJECT_DIR$/src/records/definitions" />
+      <expanded_node type="directory" url="file://$PROJECT_DIR$/src/examples/src/org/apache/poi/hssf/usermodel/examples" />
+      <expanded_node type="directory" url="file://$PROJECT_DIR$/src/scratchpad" />
+      <expanded_node type="directory" url="file://$PROJECT_DIR$/src/java" />
+      <expanded_node type="directory" url="file://$PROJECT_DIR$/src/examples" />
+      <expanded_node type="directory" url="file://$PROJECT_DIR$/src/java/org/apache/poi/hssf/record" />
+    </view>
+    <view id="SourcepathPane" />
+    <view id="ClasspathPane" />
+  </component>
+  <component name="RunManager">
+    <option name="SHOW_SETTINGS_BEFORE_RUNNING" value="false" />
+    <option name="COMPILE_BEFORE_RUNNING" value="true" />
+    <activeType name="Application" />
+    <configuration default="true" name="&lt;template&gt;" selected="false" type="Application">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" name="&lt;template&gt;" selected="false" type="Applet">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/config/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+    </configuration>
+    <configuration default="true" name="&lt;template&gt;" selected="false" type="JUnit">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" name="&lt;template&gt;" selected="false" type="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5000" />
+    </configuration>
+    <configuration default="false" name="BiffViewer" selected="true" type="Application">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.hssf.dev.BiffViewer" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" value="c:\chart.xls on" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="RecordGenerator" selected="false" type="Application">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.hssf.util.RecordGenerator" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" value="src/records/definitions src/records/styles /temp /temp/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="TestCellStyle" selected="false" type="Application">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.hssf.usermodel.TestCellStyle" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="NewWorkbook" selected="false" type="Application">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.hssf.usermodel.examples.NewWorkbook" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="NewSheet" selected="false" type="Application">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.hssf.usermodel.examples.NewSheet" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="CreateCells" selected="false" type="Application">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.hssf.usermodel.examples.CreateCells" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="CreateDateCells" selected="false" type="Application">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.hssf.usermodel.examples.CreateDateCells" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="Borders" selected="false" type="Application">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.hssf.usermodel.examples.Borders" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="TestBad" selected="false" type="Application">
+      <option name="MAIN_CLASS_NAME" value="TestBad" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" value="workbook.xls" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="TestLittleEndian" selected="false" type="Application">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.util.TestLittleEndian" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="WorkingWithFonts" selected="false" type="Application">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.hssf.usermodel.examples.WorkingWithFonts" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="FrillsAndFills" selected="false" type="Application">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.hssf.usermodel.examples.FrillsAndFills" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="HSSFCellStyle" selected="false" type="Application">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.hssf.usermodel.HSSFCellStyle" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="MergedCells" selected="false" type="Application">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.hssf.usermodel.examples.MergedCells" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="ReadWriteWorkbook" selected="false" type="Application">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.hssf.usermodel.examples.ReadWriteWorkbook" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="CellTypes" selected="false" type="Application">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.hssf.usermodel.examples.CellTypes" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="Alignment" selected="false" type="Application">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.hssf.usermodel.examples.Alignment" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="EventExample" selected="false" type="Application">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.hssf.usermodel.examples.EventExample" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" value="workbook.xls" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="BigExample" selected="false" type="Application">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.hssf.usermodel.examples.BigExample" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="NamedRanges" selected="false" type="Application">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.hssf.usermodel.examples.NamedRanges" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="MuckingAround" selected="false" type="Application">
+      <option name="MAIN_CLASS_NAME" value="MuckingAround" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="TestSheetPropertiesRecord" selected="false" type="JUnit">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.hssf.record.TestSheetPropertiesRecord" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="TestRKUtil" selected="false" type="JUnit">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.hssf.util.TestRKUtil" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="TestHSSFSheet" selected="false" type="JUnit">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.hssf.usermodel.TestHSSFSheet" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="false" name="TestHSSFRow" selected="true" type="JUnit">
+      <option name="MAIN_CLASS_NAME" value="org.apache.poi.hssf.usermodel.TestHSSFRow" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+  </component>
+  <component name="BookmarkManager" />
+  <component name="Commander">
+    <leftPanel active="false" url="file://$PROJECT_DIR$/src/documentation/xdocs" view="Project" />
+    <rightPanel active="true" url="file://$PROJECT_DIR$/src/documentation/xdocs/news" view="Project" />
+    <splitter proportion="0.5" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="last_opened_file_path" value="C:\Projects\jakarta-poi\tools\cents\forrest.cent\resources\skins\avalon-site\css" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+  </component>
+  <component name="SelectInManager">
+    <target name="Project" />
+    <target name="CVS View" />
+    <target name="Source" />
+    <target name="Classpath View" />
+    <target name="File Structure" />
+    <target name="Commander" />
+  </component>
+  <component name="HierarchyBrowserManager">
+    <option name="SHOW_PACKAGES" value="false" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="SORT_ALPHABETICALLY" value="false" />
+  </component>
+  <component name="WebViewSettings">
+    <webview autoscrollToSource="false" flattenPackages="false" showMembers="false" />
+  </component>
+  <component name="EjbViewSettings">
+    <EjbView autoscrollToSource="false" showMembers="false" />
+  </component>
+  <component name="LocalVcsConfiguration">
+    <option name="LOCAL_VCS_ENABLED" value="true" />
+    <option name="LOCAL_VCS_PURGING_PERIOD" value="259200000" />
+    <option name="ADD_LABEL_ON_PROJECT_OPEN" value="true" />
+    <option name="ADD_LABEL_ON_PROJECT_COMPILATION" value="true" />
+    <option name="ADD_LABEL_ON_FILE_PACKAGE_COMPILATION" value="true" />
+    <option name="ADD_LABEL_ON_PROJECT_MAKE" value="true" />
+    <option name="ADD_LABEL_ON_RUNNING" value="true" />
+    <option name="ADD_LABEL_ON_DEBUGGING" value="true" />
+    <option name="ADD_LABEL_ON_UNIT_TEST" value="true" />
+  </component>
+  <component name="ToolWindowManager">
+    <layout>
+      <window_info active="false" anchor="top" auto_hide="true" id="Messages" internal_type="sliding" order="0" type="sliding" visible="false" weight="0.328807" />
+      <window_info active="false" anchor="left" auto_hide="false" id="Inspection" internal_type="sliding" order="11" type="sliding" visible="false" weight="0.5556369" />
+      <window_info active="false" anchor="left" auto_hide="false" id="Commander" internal_type="sliding" order="0" type="sliding" visible="false" weight="0.39970717" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="Run" internal_type="docked" order="0" type="docked" visible="false" weight="0.29675573" />
+      <window_info active="false" anchor="left" auto_hide="false" id="Structure" internal_type="sliding" order="4" type="sliding" visible="false" weight="0.24742931" />
+      <window_info active="false" anchor="left" auto_hide="false" id="Project" internal_type="sliding" order="1" type="sliding" visible="false" weight="0.22943445" />
+      <window_info active="false" anchor="left" auto_hide="true" height="698" id="Cvs" internal_type="sliding" order="9" type="floating" visible="false" weight="0.24963397" width="1142" x="155" y="308" />
+      <window_info active="false" anchor="right" auto_hide="false" id="Ant Build" internal_type="sliding" order="0" type="sliding" visible="false" weight="0.25" />
+      <window_info active="false" anchor="left" auto_hide="false" id="Hierarchy" internal_type="sliding" order="6" type="sliding" visible="false" weight="0.25" />
+      <window_info active="false" anchor="left" auto_hide="false" id="Debug" internal_type="sliding" order="7" type="sliding" visible="false" weight="0.3972468" />
+      <window_info active="false" anchor="left" auto_hide="false" id="Find" internal_type="sliding" order="2" type="sliding" visible="false" weight="0.32869694" />
+      <window_info active="false" anchor="left" auto_hide="false" id="EJB" internal_type="sliding" order="12" type="sliding" visible="false" weight="0.25" />
+      <window_info active="false" anchor="left" auto_hide="false" id="Web" internal_type="sliding" order="8" type="sliding" visible="false" weight="0.25" />
+      <window_info active="false" anchor="left" auto_hide="false" id="Message" internal_type="sliding" order="3" type="sliding" visible="false" weight="0.21823472" />
+      <window_info active="false" anchor="left" auto_hide="false" id="Ejb" internal_type="sliding" order="10" type="sliding" visible="false" weight="0.25" />
+      <window_info active="false" anchor="left" auto_hide="false" id="AntExplorer" internal_type="sliding" order="5" type="sliding" visible="false" weight="0.2494577" />
+    </layout>
+  </component>
+</project>
+

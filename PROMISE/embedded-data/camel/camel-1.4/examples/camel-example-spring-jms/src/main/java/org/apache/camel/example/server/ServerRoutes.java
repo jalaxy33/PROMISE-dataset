@@ -1,0 +1,12 @@
+CompilationUnit
+PackageDeclaration
+Import
+{'public'}ClassDeclaration
+{'public'}MethodDeclaration
+Annotation
+StatementExpression
+MethodInvocation
+MethodInvocation
+Literal
+Literal
+RouteBuilderReferenceType

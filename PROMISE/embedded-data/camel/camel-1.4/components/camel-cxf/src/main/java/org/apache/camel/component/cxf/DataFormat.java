@@ -1,0 +1,20 @@
+CompilationUnit
+PackageDeclaration
+EnumDeclaration
+EnumBody
+EnumConstantDeclaration
+EnumConstantDeclaration
+EnumConstantDeclaration
+EnumConstantDeclaration
+{'static', 'public'}MethodDeclaration
+DataFormatReferenceType
+set()FormalParameter
+StringReferenceType
+TryStatement
+ReturnStatement
+MethodInvocation
+MethodInvocation
+CatchClause
+['Exception']CatchClauseParameter
+ReturnStatement
+MemberReference

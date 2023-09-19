@@ -1,0 +1,14 @@
+LifecycleStrategyInjectionTest
+createApplicationContext
+ClassPathXmlApplicationContext
+setUseRouteBuilder
+return
+ClassPathXmlApplicationContext
+testInjectedStrategy
+CamelContext
+context
+createCamelContext
+assertTrue
+getLifecycleStrategy
+DummyLifecycleStrategy
+SpringTestSupport

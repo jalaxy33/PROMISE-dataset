@@ -1,0 +1,12 @@
+WMLAccessElement
+setDomain
+newValue
+String
+getDomain
+String
+setPath
+newValue
+String
+getPath
+String
+WMLElement

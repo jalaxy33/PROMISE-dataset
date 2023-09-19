@@ -1,0 +1,16 @@
+CompilationUnit
+PackageDeclaration
+InterfaceDeclaration
+set()MethodDeclaration
+EReferenceType
+set()MethodDeclaration
+EReferenceType
+set()MethodDeclaration
+EReferenceType
+set()FormalParameter
+longBasicType
+TypeParameter
+ExchangeReferenceType
+ConsumerReferenceType
+TypeArgument
+EReferenceType

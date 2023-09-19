@@ -1,0 +1,6 @@
+CompilationUnit
+PackageDeclaration
+Import
+InterfaceDeclaration
+{'public'}MethodDeclaration
+byteBasicType

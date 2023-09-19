@@ -1,0 +1,12 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+Import
+InterfaceDeclaration
+{'public'}MethodDeclaration
+SpanQueryReferenceType
+set()FormalParameter
+ElementReferenceType
+QueryBuilderReferenceType

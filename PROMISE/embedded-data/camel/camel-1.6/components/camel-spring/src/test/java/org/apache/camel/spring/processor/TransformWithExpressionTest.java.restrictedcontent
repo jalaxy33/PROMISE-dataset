@@ -1,0 +1,16 @@
+TransformWithExpressionTest
+MockEndpoint
+endEndpoint
+testTransforms
+expectedBodiesReceived
+sendBody
+assertMockEndpointsSatisifed
+setUp
+setUp
+endEndpoint
+getMockEndpoint
+createApplicationContext
+AbstractXmlApplicationContext
+return
+ClassPathXmlApplicationContext
+SpringTestSupport

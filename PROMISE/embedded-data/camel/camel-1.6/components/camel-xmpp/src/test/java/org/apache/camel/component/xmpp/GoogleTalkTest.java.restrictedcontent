@@ -1,0 +1,17 @@
+GoogleTalkTest
+xtestSendToGTalk
+MockEndpoint
+result
+getMockEndpoint
+sendBody
+assertIsSatisfied
+testNothing
+createRouteBuilder
+RouteBuilder
+return
+RouteBuilder
+configure
+from
+to
+to
+ContextTestSupport

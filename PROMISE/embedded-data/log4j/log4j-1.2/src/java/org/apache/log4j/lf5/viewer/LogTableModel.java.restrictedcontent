@@ -1,0 +1,16 @@
+LogTableModel
+LogTableModel
+colNames
+Object
+numRows
+int
+colNames
+numRows
+isCellEditable
+boolean
+row
+int
+column
+int
+return
+DefaultTableModel

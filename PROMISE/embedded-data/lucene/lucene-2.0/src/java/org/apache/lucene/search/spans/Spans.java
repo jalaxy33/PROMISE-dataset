@@ -1,0 +1,16 @@
+CompilationUnit
+PackageDeclaration
+Import
+InterfaceDeclaration
+set()MethodDeclaration
+booleanBasicType
+set()MethodDeclaration
+booleanBasicType
+set()FormalParameter
+intBasicType
+set()MethodDeclaration
+intBasicType
+set()MethodDeclaration
+intBasicType
+set()MethodDeclaration
+intBasicType

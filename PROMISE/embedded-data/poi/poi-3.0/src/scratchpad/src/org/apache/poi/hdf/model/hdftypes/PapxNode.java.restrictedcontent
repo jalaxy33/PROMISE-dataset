@@ -1,0 +1,16 @@
+PapxNode
+PapxNode
+fcStart
+int
+fcEnd
+int
+papx
+byte
+fcStart
+fcEnd
+papx
+getPapx
+byte
+return
+getGrpprl
+PropertyNode

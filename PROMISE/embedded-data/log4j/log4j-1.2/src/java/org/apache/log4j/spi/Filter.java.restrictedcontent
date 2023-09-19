@@ -1,0 +1,15 @@
+Filter
+Filter
+next
+int
+DENY
+int
+NEUTRAL
+int
+ACCEPT
+activateOptions
+decide
+int
+event
+LoggingEvent
+OptionHandler

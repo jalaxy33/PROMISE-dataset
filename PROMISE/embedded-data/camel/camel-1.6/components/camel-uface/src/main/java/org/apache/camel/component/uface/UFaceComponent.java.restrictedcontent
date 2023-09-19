@@ -1,0 +1,13 @@
+UFaceComponent
+createEndpoint
+Endpoint
+uri
+String
+remaining
+String
+parameters
+Map
+return
+UFaceEndpoint
+uri
+DefaultComponent

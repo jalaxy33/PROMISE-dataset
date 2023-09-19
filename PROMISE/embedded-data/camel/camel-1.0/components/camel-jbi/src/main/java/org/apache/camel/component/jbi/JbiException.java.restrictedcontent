@@ -1,0 +1,17 @@
+JbiException
+JbiException
+cause
+Throwable
+cause
+JbiException
+message
+String
+message
+JbiException
+message
+String
+cause
+Throwable
+message
+cause
+RuntimeCamelException

@@ -1,0 +1,17 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+Import
+InterfaceDeclaration
+set()MethodDeclaration
+ExpressionReferenceType
+set()FormalParameter
+CamelContextReferenceType
+set()FormalParameter
+AnnotationReferenceType
+set()FormalParameter
+LanguageAnnotationReferenceType
+set()FormalParameter
+ClassReferenceType

@@ -1,0 +1,14 @@
+ProcessorTypeConfigurationTest
+testProcessorRefMissConfigured
+try
+addRoutes
+RouteBuilder
+configure
+from
+processRef
+fail
+catchClause
+e
+assertEquals
+getMessage
+ContextTestSupport

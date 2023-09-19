@@ -1,0 +1,9 @@
+NamespaceHandler
+startNamespaceDeclScope
+prefix
+String
+uri
+String
+endNamespaceDeclScope
+prefix
+String

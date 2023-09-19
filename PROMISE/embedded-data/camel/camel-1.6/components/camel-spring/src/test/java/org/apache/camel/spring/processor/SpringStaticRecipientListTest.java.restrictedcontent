@@ -1,0 +1,6 @@
+SpringStaticRecipientListTest
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+StaticRecipientListTest

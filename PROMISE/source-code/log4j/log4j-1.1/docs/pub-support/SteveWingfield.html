@@ -1,0 +1,68 @@
+<SPAN class=EUDORAHEADER>Delivered-To: cgu@qos.ch <BR></SPAN><SPAN 
+class=EUDORAHEADER>From: Steve Wingfield &lt;wingfields NOSPAM hotmail.com&gt; 
+<BR></SPAN><SPAN class=EUDORAHEADER>To: "'java-logging-input@eng.sun.com'" 
+&lt;java-logging-input@eng.sun.com&gt; <BR></SPAN><SPAN class=EUDORAHEADER>Cc: 
+"'cgu@qos.ch'" &lt;cgu@qos.ch&gt; <BR></SPAN><SPAN class=EUDORAHEADER>Subject: 
+JSR47 enhancement request <BR></SPAN><SPAN class=EUDORAHEADER>Date: Wed, 13 Jun 
+2001 11:32:54 -0500 <BR></SPAN><SPAN class=EUDORAHEADER>X-Mailer: Internet Mail 
+Service (5.5.2653.19) <BR></SPAN><BR><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<META content="MS Exchange Server version 5.5.2653.12" name=Generator>
+<P><FONT face=Arial size=2>Dear Sun,</FONT> </P>
+<P><FONT face=Arial size=2>I'm very pleased to see that JDK1.4 is going to have 
+a logging API associated with it.&nbsp; And in particular I think the JSR47 
+specification has some good ideas behind it.&nbsp; However, I'm concerned that, 
+in its current form, it contains some shortcomings that will affect its 
+usability and performance.&nbsp; Namely, </FONT></P>
+<P><FONT face=Arial size=2>1.&nbsp; Performance -- It seems that setting the log 
+level of the root logger in JSR47 recursively sets the log level of all 
+descendant loggers.&nbsp; The projects I've worked on tended to have trees with 
+a large depth to them, which would result in a performance hit under this 
+scheme.&nbsp; Allowing descendant loggers to determine their log level as needed 
+would seem to be more performant.</FONT></P><BR>
+<P><FONT face=Arial size=2>2.&nbsp; Usability -- There are a number of areas I'm 
+concerned about in terms of usability.&nbsp; The following lists the major 
+ones:</FONT></P>
+<P><FONT face=Arial size=2>Error Handling -- I believe a logging facility should 
+be as unobtrusive as possible.&nbsp; In its current form, it looks like JSR47 
+requires programmers to explicitly catch potential runtime exceptions to avoid a 
+program crash.&nbsp; In my experience, it's been more useful to have a logging 
+package mostly suppress errors (perhaps, at minimum, reporting an error to a 
+standard location like stdout/stderr), rather than having to code around error 
+handlers.&nbsp; </FONT></P>
+<P><FONT face=Arial size=2>Setting of Log Levels -- I'm a little concerned about 
+the fact that setting a parent logger's log level will overwrite all of its 
+children's log levels.&nbsp; I'm not convinced that it will always be convenient 
+to first set a parent logger's level prior to setting a child's log level.&nbsp; 
+But in the JSR47 scheme, if you don't set the log levels in the correct order, 
+you will unintentionally overwrite a child's log level.&nbsp; I'm afraid that 
+this will at minimum cause confusion, and at worst be intractable in some cases. 
+</FONT></P>
+<P><FONT face=Arial size=2>Inheriting Parent Handlers -- It doesn't seem like 
+this is explicitly possible in JSR47.&nbsp; Global handlers provide some of this 
+functionality, but they are not as flexible as the idea of true handler 
+inheritance.&nbsp; The same limitation exists for resource bundles.</FONT></P>
+<P><FONT face=Arial size=2>Supporting Multiple Concurrent Handlers -- It doesn't 
+seem that you can have a logger write to more than one handler at a time.&nbsp; 
+This capability can be&nbsp; extremely useful at times; for example, in tech 
+support cases, it's nice to be able to add a socket as a log recipient, in 
+addition to the usual log file.</FONT></P><BR>
+<P><FONT face=Arial size=2>There are some other areas where I believe 
+improvements could be made, such as log entry formatting, and a more extensive 
+list of log handlers, but the preceding are the ones that really concern 
+me.&nbsp; </FONT></P><BR>
+<P><FONT face=Arial size=2>Currently there exists another java logging package 
+called log4j, available from <A href="http://jakarta.apache.org" 
+target=_blank>http://jakarta.apache.org</A>, that addresses these items.&nbsp; 
+I've been using it on various projects, and have been extremely impressed with 
+its robustness, flexibility, and ease of use.&nbsp; I'm certainly not your 
+stereotypical die hard fanatic that, once familiar with a software package, will 
+never sway from it or try anything new.&nbsp; In fact, I'm eager to learn and 
+become proficient with any Java standard API's that come out.&nbsp; However, the 
+issues I mentioned above are, I'm afraid, too weighty to allow me to use the 
+current form of the JSR47 specification in place of the package I've been 
+using.&nbsp; I hope that you'll take these comments into consideration and 
+either adopt log4j as the logging API for JDK1.4, or at least revise the current 
+specification to handle the above listed items.</FONT></P><BR><BR>
+<P><FONT face=Arial size=2>Sincerely,</FONT> <BR><FONT face=Arial size=2>Steven 
+Wingfield</FONT> <BR>
+</P>

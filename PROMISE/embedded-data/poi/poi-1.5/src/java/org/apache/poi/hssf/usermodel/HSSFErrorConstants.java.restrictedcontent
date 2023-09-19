@@ -1,0 +1,15 @@
+HSSFErrorConstants
+byte
+ERROR_NULL
+byte
+ERROR_DIV_0
+byte
+ERROR_VALUE
+byte
+ERROR_REF
+byte
+ERROR_NAME
+byte
+ERROR_NUM
+byte
+ERROR_NA

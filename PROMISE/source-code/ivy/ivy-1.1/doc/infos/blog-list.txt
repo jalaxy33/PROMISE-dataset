@@ -1,0 +1,13 @@
+
+!!! This list is now in the links.html of src/doc !!!
+
+http://blog.exis.com/colin/archives/2005/03/10/ivy-is-everything-maven-should-havecould-have-been-25-years-ago/
+http://www.jroller.com/page/CastorLive/20050311#ivy_rocks
+http://blog.arendsen.net/?p=24
+http://www.ruminate.co.uk/archives/2005_01.html#000049
+http://www.testdriven.com/modules/mylinks/topten.php?rate=1
+http://www.jroller.com/page/prane/20050218
+http://www.sherman.ca/archives/2005/02/20/maven-vs-ant-reloaded/
+http://www.mallim.per.sg/archives/2005/02/20/ant-dependency-resolver/
+http://www.stonecottage.com/josh/archives/000836.html
+http://www.almaer.com/blog/archives/000811.html

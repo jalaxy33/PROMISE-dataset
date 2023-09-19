@@ -1,0 +1,7 @@
+CompilationUnit
+PackageDeclaration
+Import
+InterfaceDeclaration
+{'public'}MethodDeclaration
+intBasicType
+NodeReferenceType

@@ -1,0 +1,10 @@
+TermPositionVector
+getTermPositions
+int
+index
+int
+getOffsets
+TermVectorOffsetInfo
+index
+int
+TermFreqVector

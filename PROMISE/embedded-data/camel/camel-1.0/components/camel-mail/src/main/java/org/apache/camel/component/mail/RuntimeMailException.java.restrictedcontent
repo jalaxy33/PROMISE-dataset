@@ -1,0 +1,11 @@
+RuntimeMailException
+long
+serialVersionUID
+RuntimeMailException
+message
+String
+cause
+Throwable
+message
+cause
+RuntimeException

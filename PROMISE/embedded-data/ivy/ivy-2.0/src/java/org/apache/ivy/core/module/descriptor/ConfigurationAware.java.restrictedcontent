@@ -1,0 +1,6 @@
+ConfigurationAware
+getConfigurations
+String
+addConfiguration
+confName
+String

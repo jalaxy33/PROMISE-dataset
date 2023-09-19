@@ -1,0 +1,41 @@
+<SPAN class=EUDORAHEADER>Delivered-To: cgu@qos.ch <BR></SPAN><SPAN 
+class=EUDORAHEADER>Subject: JSR47 vs Log4J <BR></SPAN><SPAN 
+class=EUDORAHEADER>Date: Thu, 14 Jun 2001 11:19:45 +0200 <BR></SPAN><SPAN 
+class=EUDORAHEADER>X-MS-Has-Attach: <BR></SPAN><SPAN 
+class=EUDORAHEADER>X-MS-TNEF-Correlator: <BR></SPAN><SPAN 
+class=EUDORAHEADER>Thread-Topic: JSR47 vs Log4J <BR></SPAN><SPAN 
+class=EUDORAHEADER>Thread-Index: AcD0sycwHCozxHwzSYGk9/mzcglT+w== 
+<BR></SPAN><SPAN class=EUDORAHEADER>From: "Alef Arendsen" 
+&lt;alef@smarthaven.com&gt; <BR></SPAN><SPAN class=EUDORAHEADER>To: 
+&lt;java-logging-input@eng.sun.com&gt; <BR></SPAN><SPAN class=EUDORAHEADER>Cc: 
+&lt;cgu@qos.ch&gt; <BR></SPAN><BR><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<META content="MS Exchange Server version 6.0.4418.33" name=Generator><!-- Converted from text/rtf format -->
+<P><FONT face=Arial size=2>Hi,</FONT> </P>
+<P><FONT face=Arial size=2>after reviewing a lot of logging APIs and doing some 
+own implementations we found out (a couple of months ago) that Log4J was by far 
+the best logging API out there. Not ony because of its perfect extendability, 
+but also because of its high performance (we couldn't do it any better) and the 
+possibility to keeps things very basic if needed.</FONT></P>
+<P><FONT face=Arial size=2>Now that Sun is implementing its own logging API I 
+foresee big problems when people start to use both at the same time. Logging 
+output from software from one vendor and our own will kind of clash. This 
+especially when implementing and integrating component based software in for 
+instance a J2EE environment.</FONT></P>
+<P><FONT face=Arial size=2>What I would greatly appreciate if the future logging 
+API Sun is going to offer at least stays somehow compatible with the Log4J API. 
+Maybe it could be possible to plug in your own logging engine or something like 
+that. This probably won't be possible if the API differ in such fundamental 
+issues like the priorities (JSR47: ALL, SEVER, WARNING, INFO, CONFIG, FINE, 
+FINER, FINEST and OFF, versus Log4J: DEBUG, INFO, WARN, ERROR, FATAL) and the 
+inheritance of categories and other things like that.</FONT></P>
+<P><FONT face=Arial size=2>Furthermore it would be very handy if any logging API 
+stays backward compatible with older Java version (at least 1.2, since lots of 
+enterprise systems simply aren't ready yet for Java 1.4).</FONT></P>
+<P><FONT face=Arial size=2>I would greatly appreciate any kind of reaction on 
+all this.</FONT> </P>
+<P><FONT face=Arial size=2>Alef Arendsen</FONT> <BR><FONT face=Arial 
+size=2>Software Engineer</FONT> <BR><FONT face=Arial size=2>SmartHaven - Every 
+Bit Personal</FONT> <BR><FONT face=Arial size=2>Signature: <A 
+href="http://signature.arendsen.net">http://signature.arendsen.net</A></FONT> 
+<BR><FONT face=Arial size=2>Website: <A 
+href="http://alef.arendsen.net">http://alef.arendsen.net</A></FONT> </P>

@@ -1,0 +1,17 @@
+TextDocumentTest
+TextDocumentTest
+name
+String
+name
+TextDocument
+doc
+setUp
+doc
+TextDocument
+getFile
+testDoc
+assertEquals
+getContents
+tearDown
+doc
+DocumentTestCase

@@ -1,0 +1,14 @@
+PropertySetTest
+PropertySetTest
+name
+String
+name
+setUp
+configureProject
+testReferenceToTwoReferences
+executeTarget
+testNestedMapped
+executeTarget
+testNestedMappedMapped
+executeTarget
+BuildFileTest

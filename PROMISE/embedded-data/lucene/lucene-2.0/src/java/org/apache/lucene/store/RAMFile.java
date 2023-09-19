@@ -1,0 +1,16 @@
+CompilationUnit
+PackageDeclaration
+Import
+set()ClassDeclaration
+FieldDeclaration
+VectorReferenceType
+VariableDeclarator
+ClassCreator
+VectorReferenceType
+FieldDeclaration
+longBasicType
+VariableDeclarator
+FieldDeclaration
+longBasicType
+VariableDeclarator
+MethodInvocation

@@ -1,0 +1,14 @@
+GOMGenerator
+String
+LOCALNAME
+setUri
+uri
+String
+setGeneratorVersion
+version
+String
+getGeneratorVersion
+String
+getUri
+String
+GOMElement

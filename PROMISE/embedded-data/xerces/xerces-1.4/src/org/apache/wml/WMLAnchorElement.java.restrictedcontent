@@ -1,0 +1,12 @@
+WMLAnchorElement
+setTitle
+newValue
+String
+getTitle
+String
+setXmlLang
+newValue
+String
+getXmlLang
+String
+WMLElement

@@ -1,0 +1,6 @@
+SpringSetPropertyTest
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+SetPropertyTest

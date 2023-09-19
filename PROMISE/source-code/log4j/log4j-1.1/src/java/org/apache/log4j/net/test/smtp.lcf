@@ -1,0 +1,13 @@
+
+log4j.rootCategory=DEBUG, A1
+log4j.configDebug=true
+log4j.appender.A1=org.apache.log4j.net.SMTPAppender
+log4j.appender.A1.To=cgu@qos.ch
+log4j.appender.A1.From=cgu@qos.ch
+log4j.appender.A1.SMTPHost=mail.urbanet.ch
+log4j.appender.A1.Subject=testing 
+log4j.appender.A1.LocationInfo=true
+log4j.appender.A1.layout=org.apache.log4j.PatternLayout
+
+
+

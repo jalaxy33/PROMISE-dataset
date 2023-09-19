@@ -1,0 +1,7 @@
+ExtendedSAX
+setEscaping
+boolean
+escape
+boolean
+ContentHandler
+LexicalHandler

@@ -1,0 +1,15 @@
+StartRetrieveEvent
+String
+NAME
+StartRetrieveEvent
+mrid
+ModuleRevisionId
+confs
+String
+options
+RetrieveOptions
+NAME
+mrid
+confs
+options
+RetrieveEvent

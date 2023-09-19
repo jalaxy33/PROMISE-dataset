@@ -1,0 +1,9 @@
+Edge
+int
+stackSize
+Label
+successor
+Edge
+next
+Edge
+poolNext

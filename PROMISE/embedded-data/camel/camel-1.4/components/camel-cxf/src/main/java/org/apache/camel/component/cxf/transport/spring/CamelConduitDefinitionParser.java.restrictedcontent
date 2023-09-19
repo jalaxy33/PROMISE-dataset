@@ -1,0 +1,5 @@
+CamelConduitDefinitionParser
+CamelConduitDefinitionParser
+setBeanClass
+CamelConduit
+AbstractCamelContextBeanDefinitionParser

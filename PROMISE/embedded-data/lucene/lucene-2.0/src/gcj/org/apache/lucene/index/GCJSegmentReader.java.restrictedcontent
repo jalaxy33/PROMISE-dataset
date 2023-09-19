@@ -1,0 +1,13 @@
+GCJSegmentReader
+termDocs
+TermDocs
+if
+freqStream
+GCJIndexInput
+block
+return
+GCJTermDocs
+block
+return
+termDocs
+SegmentReader

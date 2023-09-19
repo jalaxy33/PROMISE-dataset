@@ -1,0 +1,12 @@
+Date
+resourceCompare
+int
+foo
+Resource
+bar
+Resource
+return
+int
+getLastModified
+getLastModified
+ResourceComparator

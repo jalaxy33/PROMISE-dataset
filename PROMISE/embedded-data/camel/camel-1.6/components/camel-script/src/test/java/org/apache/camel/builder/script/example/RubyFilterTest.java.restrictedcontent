@@ -1,0 +1,11 @@
+RubyFilterTest
+createCamelContext
+CamelContext
+return
+springCamelContext
+ClassPathXmlApplicationContext
+createRouteBuilder
+RouteBuilder
+return
+getInstance
+XPathFilterTest

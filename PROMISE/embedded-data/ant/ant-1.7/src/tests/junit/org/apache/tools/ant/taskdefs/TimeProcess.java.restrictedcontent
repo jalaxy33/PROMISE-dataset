@@ -1,0 +1,16 @@
+TimeProcess
+main
+args
+String
+int
+time
+parseInt
+args
+if
+time
+block
+throw
+IllegalArgumentException
+time
+sleep
+time

@@ -1,0 +1,17 @@
+JcrComponent
+String
+NODE_NAME
+createEndpoint
+Endpoint
+DefaultExchange
+uri
+String
+remaining
+String
+properties
+Map
+return
+JcrEndpoint
+uri
+DefaultComponent
+DefaultExchange

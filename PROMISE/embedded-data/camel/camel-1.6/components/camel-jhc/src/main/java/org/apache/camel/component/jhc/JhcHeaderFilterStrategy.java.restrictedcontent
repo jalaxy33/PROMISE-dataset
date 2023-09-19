@@ -1,0 +1,14 @@
+JhcHeaderFilterStrategy
+JhcHeaderFilterStrategy
+initialize
+initialize
+getOutFilter
+add
+getOutFilter
+add
+getOutFilter
+add
+HTTP_RESPONSE_CODE
+setIsLowercase
+setOutFilterPattern
+DefaultHeaderFilterStrategy

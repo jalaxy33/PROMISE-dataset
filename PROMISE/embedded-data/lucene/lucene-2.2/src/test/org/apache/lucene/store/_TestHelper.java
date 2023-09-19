@@ -1,0 +1,47 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+{'public'}ClassDeclaration
+{'public', 'static'}MethodDeclaration
+booleanBasicType
+set()FormalParameter
+IndexInputReferenceType
+ReturnStatement
+BinaryOperation
+MemberReference
+FSIndexInputReferenceType
+{'public', 'static'}MethodDeclaration
+booleanBasicType
+set()FormalParameter
+IndexInputReferenceType
+IfStatement
+MethodInvocation
+MemberReference
+BlockStatement
+ReturnStatement
+Cast
+FSIndexInputReferenceType
+MemberReference
+BlockStatement
+ReturnStatement
+Literal
+{'public', 'static'}MethodDeclaration
+booleanBasicType
+set()FormalParameter
+IndexInputReferenceType
+IfStatement
+MethodInvocation
+MemberReference
+BlockStatement
+LocalVariableDeclaration
+FSIndexInputReferenceType
+VariableDeclarator
+Cast
+FSIndexInputReferenceType
+MemberReference
+ReturnStatement
+MethodInvocation
+BlockStatement
+ReturnStatement
+Literal

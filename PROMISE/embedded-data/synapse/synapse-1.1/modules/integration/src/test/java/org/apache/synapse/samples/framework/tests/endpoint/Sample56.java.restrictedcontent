@@ -1,0 +1,16 @@
+Sample56
+Sample56
+testSmartClientMode
+String
+addUrl
+StockQuoteSampleClient
+client
+getStockQuoteClient
+info
+SampleClientResult
+result
+requestStandardQuote
+addUrl
+assertResponseReceived
+result
+SynapseTestCase

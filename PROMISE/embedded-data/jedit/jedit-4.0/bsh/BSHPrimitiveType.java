@@ -1,0 +1,17 @@
+CompilationUnit
+PackageDeclaration
+set()ClassDeclaration
+FieldDeclaration
+ClassReferenceType
+VariableDeclarator
+set()ConstructorDeclaration
+set()FormalParameter
+intBasicType
+StatementExpression
+SuperConstructorInvocation
+MemberReference
+{'public'}MethodDeclaration
+ClassReferenceType
+ReturnStatement
+MemberReference
+SimpleNodeReferenceType

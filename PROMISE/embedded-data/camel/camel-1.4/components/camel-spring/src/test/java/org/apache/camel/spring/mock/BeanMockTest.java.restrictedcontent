@@ -1,0 +1,12 @@
+BeanMockTest
+testAssertionsUsingBean
+MyAssertions
+bean
+getMandatoryBean
+MyAssertions
+assertEndpointsValid
+createApplicationContext
+ClassPathXmlApplicationContext
+return
+ClassPathXmlApplicationContext
+ApplicationContextTestSupport

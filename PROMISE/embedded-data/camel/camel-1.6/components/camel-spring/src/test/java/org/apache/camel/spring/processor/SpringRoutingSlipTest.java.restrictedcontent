@@ -1,0 +1,6 @@
+SpringRoutingSlipTest
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+RoutingSlipTest

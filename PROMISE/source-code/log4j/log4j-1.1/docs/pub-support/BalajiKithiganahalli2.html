@@ -1,0 +1,125 @@
+<SPAN class=EUDORAHEADER>Delivered-To: cgu@qos.ch <BR></SPAN><SPAN 
+class=EUDORAHEADER>X-Originating-IP: [66.56.56.131] <BR></SPAN><SPAN 
+class=EUDORAHEADER>From: "Balaji Kithiganahalli" &lt;balaji_92@hotmail.com&gt; 
+<BR></SPAN><SPAN class=EUDORAHEADER>To: kgh@eng.sun.com <BR></SPAN><SPAN 
+class=EUDORAHEADER>Cc: cgu@qos.ch <BR></SPAN><SPAN class=EUDORAHEADER>Subject: 
+Re: Log4J as standard logging mechanism <BR></SPAN><SPAN 
+class=EUDORAHEADER>Date: Mon, 18 Jun 2001 09:31:07 -0400 <BR></SPAN><SPAN 
+class=EUDORAHEADER>X-OriginalArrivalTime: 18 Jun 2001 13:31:07.0786 (UTC) 
+FILETIME=[EE468EA0:01C0F7FA] <BR></SPAN><BR>
+<DIV>Mr Graham Hamilton, Thanks for your prompt reply. Also appreciate all the 
+effort and good things your are putting in making java a successful language. 
+But one thing i dont understand is that this logging APIs are depended on JDK 
+1.4. Why isn't this backward compatible. If that is not possible to provide, It 
+make very much sense to support the Log4j which is also widely used by the 
+developers.</DIV>
+<DIV>regards</DIV>
+<DIV>Balaji K Kithiganahalli</DIV>
+<DIV>(Balaji_92@hotmail.com</DIV><BR><BR>
+<BLOCKQUOTE class=CITE cite type="cite">
+<DIV>From: Graham Hamilton &lt;kgh@eng.sun.com&gt;</DIV>
+<DIV>To: Balaji Kithiganahalli &lt;balaji_92@hotmail.com&gt;</DIV>
+<DIV>Subject: Re: Log4J as standard logging mechanism</DIV>
+<DIV>Date: Sun, 17 Jun 2001 12:29:37 -0700</DIV><BR>
+<DIV>Balaji,</DIV><BR>
+<DIV>Thanks for your interest in the logging APIs.</DIV><BR>
+<DIV>In the hope that it may be useful, here's a little history</DIV>
+<DIV>on how we got where we are.</DIV><BR>
+<DIV>As Ceki noted, IBM has been a very active participant in the</DIV>
+<DIV>JSR-047 logging JSR.&nbsp; When the logging JSR was initiated in</DIV>
+<DIV>January 2000, IBM had both the log4j work at IBM research and</DIV>
+<DIV>the JLog work at IBM Tivoli.&nbsp; The Tivoli work built on IBM's</DIV>
+<DIV>earlier product logging experience.&nbsp; IBM's involvement in</DIV>
+<DIV>JSR-047 was focused on their JLog experience which had seen</DIV>
+<DIV>a lot of use in IBM products.</DIV><BR>
+<DIV>However, Ceki also provided useful input from log4j, and that</DIV>
+<DIV>has influenced some parts of the logging APIs.</DIV><BR>
+<DIV>In designing the APIs we've tried to draw from numerous</DIV>
+<DIV>sources and we've tried to support a wide set of requirements.</DIV>
+<DIV>It's inevitable that when there is a new standardization</DIV>
+<DIV>effort it will make some different choices from some of</DIV>
+<DIV>the existing APIs.&nbsp; We went through a similar experience</DIV>
+<DIV>with JDBC.&nbsp; It built on a bunch of earlier work, but it</DIV>
+<DIV>wasn't exactly like any of them.&nbsp; Unfortunately we delayed</DIV>
+<DIV>adding a JDK logging API for too long, and I think it</DIV>
+<DIV>is important that we resolve that in Merlin.</DIV><BR>
+<DIV>Unfortunately we are quite late in the Merlin cycle and</DIV>
+<DIV>we can't really accommodate major API changes at this point.</DIV>
+<DIV>However, I will be studying Ceki's comments carefully.</DIV><BR>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<X-TAB>&nbsp;&nbsp;</X-TAB>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+thanks</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<X-TAB>&nbsp;&nbsp;&nbsp;&nbsp;</X-TAB>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+- Graham</DIV><BR><BR><BR>
+<DIV>Balaji Kithiganahalli wrote:</DIV>
+<DIV>&gt;</DIV>
+<DIV>&gt; Hi</DIV>
+<DIV>&gt;</DIV>
+<DIV>&gt; At the outset I would like to say that this is a personal request and 
+not</DIV>
+<DIV>&gt; one from the company I work for. I don't represent the company at all 
+in</DIV>
+<DIV>&gt; this matter nor the company shares this view.</DIV>
+<DIV>&gt;</DIV>
+<DIV>&gt; Sun seems to behave more and more like Microsoft by putting in more 
+and more</DIV>
+<DIV>&gt; functionality in the java core programming language. On the whole this 
+may</DIV>
+<DIV>&gt; help but most of the times this involves reinventing the wheel.</DIV>
+<DIV>&gt; Sun has been consistent in criticizing Microsoft along with a host of 
+others</DIV>
+<DIV>&gt; on the integration that they keep doing with their Windows OS starting 
+with</DIV>
+<DIV>&gt; browsers and now with media players and personal firewalls in the 
+upcoming</DIV>
+<DIV>&gt; version of Windows XP... One consequence of this integration is that 
+other</DIV>
+<DIV>&gt; third party software companies often find themselves out of business - 
+like</DIV>
+<DIV>&gt; Netscape for instance and a host of other small ones.</DIV>
+<DIV>&gt; I would like Sun to stop reinventing the wheel and instead integrate 
+the</DIV>
+<DIV>&gt; logging API from log4j into jdk 1.4 that will make older software 
+easier to</DIV>
+<DIV>&gt; integrate and show Sun's commitment to Open Source and differentiate 
+Sun</DIV>
+<DIV>&gt; from Microsoft.</DIV>
+<DIV>&gt;</DIV>
+<DIV>&gt; I also believe there are some fundamental flaws in the logging 
+mechanism</DIV>
+<DIV>&gt; currently shipped with JDK 1.4. I believe that these are well 
+summarised in</DIV>
+<DIV>&gt; the document</DIV>
+<DIV>&gt;&nbsp;&nbsp; <A 
+href="http://jakarta.apache.org/log4j/docs/critique.html" 
+EUDORA="AUTOURL">http://jakarta.apache.org/log4j/docs/critique.html</A></DIV>
+<DIV>&gt;</DIV>
+<DIV>&gt; In particular, multiple debugging levels (FINE, FINER, FINEST) are 
+very</DIV>
+<DIV>&gt; difficult to separate in real terms.</DIV>
+<DIV>&gt;</DIV>
+<DIV>&gt; Additionally, having looked through the source code of both Log4J and 
+the</DIV>
+<DIV>&gt; associated JSR 47 specification, I believe that more work and test 
+hours</DIV>
+<DIV>&gt; have gone into the Log4J rather than JSR specifications.</DIV>
+<DIV>&gt;</DIV>
+<DIV>&gt; As such, I believe that you should consider adopting the de-facto 
+standard</DIV>
+<DIV>&gt; of Log4J as the logging utility in Java, rather than settle for second 
+best.</DIV>
+<DIV>&gt;</DIV>
+<DIV>&gt; regards</DIV>
+<DIV>&gt; Balaji K Kithiganahalli</DIV>
+<DIV>&gt; Balaji_92@hotmail.com</DIV>
+<DIV>&gt;</DIV>
+<DIV>&gt; 
+_________________________________________________________________</DIV>
+<DIV>&gt; Get your FREE download of MSN Explorer at <A 
+href="http://explorer.msn.com/" 
+EUDORA="AUTOURL">http://explorer.msn.com</A></DIV></BLOCKQUOTE><BR>
+<DIV>_________________________________________________________________</DIV>
+<DIV>Get your FREE download of MSN Explorer at <A 
+href="http://explorer.msn.com/" 
+EUDORA="AUTOURL">http://explorer.msn.com</A></DIV><BR><BR>

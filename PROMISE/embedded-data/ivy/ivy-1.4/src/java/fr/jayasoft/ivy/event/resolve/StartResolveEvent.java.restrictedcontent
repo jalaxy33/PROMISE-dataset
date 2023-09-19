@@ -1,0 +1,15 @@
+StartResolveEvent
+String
+NAME
+StartResolveEvent
+source
+Ivy
+md
+ModuleDescriptor
+confs
+String
+source
+NAME
+md
+confs
+ResolveEvent

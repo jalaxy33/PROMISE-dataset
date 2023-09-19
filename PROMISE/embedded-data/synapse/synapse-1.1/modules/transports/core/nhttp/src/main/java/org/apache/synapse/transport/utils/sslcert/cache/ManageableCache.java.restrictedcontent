@@ -1,0 +1,6 @@
+ManageableCache
+getNextCacheValue
+ManageableCacheValue
+getCacheSize
+int
+resetIterator

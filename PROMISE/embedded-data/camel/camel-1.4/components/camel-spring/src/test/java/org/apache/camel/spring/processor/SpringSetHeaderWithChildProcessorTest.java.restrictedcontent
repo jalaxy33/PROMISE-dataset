@@ -1,0 +1,14 @@
+SpringSetHeaderWithChildProcessorTest
+testSetHeaderWithExpression
+MockEndpoint
+resultEndpoint
+getMockEndpoint
+expectedBodiesReceived
+expectedHeaderReceived
+sendBody
+assertIsSatisfied
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+ContextTestSupport

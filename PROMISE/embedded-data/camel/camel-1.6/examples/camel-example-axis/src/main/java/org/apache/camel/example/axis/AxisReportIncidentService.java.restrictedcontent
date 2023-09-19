@@ -1,0 +1,17 @@
+AxisReportIncidentService
+ReportIncidentService
+service
+onInit
+service
+ReportIncidentService
+getApplicationContext
+getBean
+reportIncident
+OutputReportIncident
+parameters
+InputReportIncident
+return
+reportIncident
+parameters
+ServletEndpointSupport
+ReportIncidentService_PortType

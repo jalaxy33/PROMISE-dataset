@@ -1,0 +1,11 @@
+SimpleAnalyzer
+tokenStream
+TokenStream
+fieldName
+String
+reader
+Reader
+return
+LowerCaseTokenizer
+reader
+Analyzer

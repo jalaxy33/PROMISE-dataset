@@ -1,0 +1,14 @@
+RegistryInjectionTest
+createApplicationContext
+AbstractXmlApplicationContext
+setUseRouteBuilder
+return
+ClassPathXmlApplicationContext
+testInjectedStrategy
+CamelContext
+context
+createCamelContext
+assertTrue
+getRegistry
+JndiRegistry
+SpringTestSupport

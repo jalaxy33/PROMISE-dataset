@@ -1,0 +1,5 @@
+CategoryFactory
+makeNewCategoryInstance
+Category
+name
+String

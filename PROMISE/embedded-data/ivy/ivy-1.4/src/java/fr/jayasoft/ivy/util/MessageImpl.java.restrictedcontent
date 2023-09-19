@@ -1,0 +1,15 @@
+MessageImpl
+log
+msg
+String
+level
+int
+rawlog
+msg
+String
+level
+int
+progress
+endProgress
+msg
+String

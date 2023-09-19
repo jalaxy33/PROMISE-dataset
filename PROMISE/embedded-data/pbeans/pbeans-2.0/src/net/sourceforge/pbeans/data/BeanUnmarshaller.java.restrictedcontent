@@ -1,0 +1,14 @@
+BeanUnmarshaller
+registerBean
+Object
+id
+Long
+getIDField
+String
+setProperty
+bean
+Object
+normalFieldName
+String
+fieldValue
+Object

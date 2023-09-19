@@ -1,0 +1,16 @@
+XNewRmic
+String
+COMPILER_NAME
+XNewRmic
+setupRmicCommand
+Commandline
+String
+options
+String
+Commandline
+commandline
+setupRmicCommand
+options
+return
+commandline
+ForkingSunRmic

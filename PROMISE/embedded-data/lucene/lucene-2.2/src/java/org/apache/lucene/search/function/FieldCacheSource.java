@@ -1,0 +1,87 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+{'public', 'abstract'}ClassDeclaration
+FieldDeclaration
+StringReferenceType
+VariableDeclarator
+FieldDeclaration
+FieldCacheReferenceType
+VariableDeclarator
+MemberReference
+{'public'}ConstructorDeclaration
+set()FormalParameter
+StringReferenceType
+StatementExpression
+Assignment
+This
+MemberReference
+MemberReference
+{'final', 'public'}MethodDeclaration
+DocValuesReferenceType
+set()FormalParameter
+IndexReaderReferenceType
+ReturnStatement
+MethodInvocation
+MemberReference
+MemberReference
+MemberReference
+{'public'}MethodDeclaration
+StringReferenceType
+ReturnStatement
+MemberReference
+{'public', 'abstract'}MethodDeclaration
+DocValuesReferenceType
+set()FormalParameter
+FieldCacheReferenceType
+set()FormalParameter
+StringReferenceType
+set()FormalParameter
+IndexReaderReferenceType
+{'final', 'public'}MethodDeclaration
+booleanBasicType
+set()FormalParameter
+ObjectReferenceType
+IfStatement
+BinaryOperation
+MemberReference
+FieldCacheSourceReferenceType
+BlockStatement
+ReturnStatement
+Literal
+LocalVariableDeclaration
+FieldCacheSourceReferenceType
+VariableDeclarator
+Cast
+FieldCacheSourceReferenceType
+MemberReference
+ReturnStatement
+BinaryOperation
+BinaryOperation
+BinaryOperation
+This
+MemberReference
+MemberReference
+This
+MemberReference
+MethodInvocation
+MemberReference
+MethodInvocation
+MemberReference
+{'final', 'public'}MethodDeclaration
+intBasicType
+ReturnStatement
+BinaryOperation
+BinaryOperation
+MethodInvocation
+MethodInvocation
+MethodInvocation
+{'public', 'abstract'}MethodDeclaration
+booleanBasicType
+set()FormalParameter
+FieldCacheSourceReferenceType
+{'public', 'abstract'}MethodDeclaration
+intBasicType
+ValueSourceReferenceType

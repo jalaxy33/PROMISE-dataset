@@ -1,0 +1,10 @@
+JspCompilerAdapter
+setJspc
+attributes
+JspC
+execute
+boolean
+createMangler
+JspMangler
+implementsOwnDependencyChecking
+boolean

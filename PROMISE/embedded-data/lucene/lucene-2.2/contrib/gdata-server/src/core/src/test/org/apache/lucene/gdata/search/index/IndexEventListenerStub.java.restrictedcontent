@@ -1,0 +1,17 @@
+IndexEventListenerStub
+AtomicInteger
+count
+IndexEventListenerStub
+count
+AtomicInteger
+commitCallBack
+service
+String
+count
+incrementAndGet
+getCalledCount
+int
+return
+count
+get
+IndexEventListener

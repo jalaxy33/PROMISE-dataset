@@ -1,0 +1,16 @@
+CompilationUnit
+PackageDeclaration
+Import
+EnumDeclaration
+Annotation
+ClassReference
+StringReferenceType
+EnumBody
+EnumConstantDeclaration
+EnumConstantDeclaration
+EnumConstantDeclaration
+EnumConstantDeclaration
+EnumConstantDeclaration
+EnumConstantDeclaration
+EnumConstantDeclaration
+EnumConstantDeclaration

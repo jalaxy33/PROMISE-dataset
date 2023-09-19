@@ -1,0 +1,17 @@
+CompilationUnit
+PackageDeclaration
+InterfaceDeclaration
+ConstantDeclaration
+charBasicType
+VariableDeclarator
+Literal
+set()MethodDeclaration
+charBasicType
+set()FormalParameter
+intBasicType
+set()MethodDeclaration
+booleanBasicType
+set()FormalParameter
+intBasicType
+set()MethodDeclaration
+booleanBasicType

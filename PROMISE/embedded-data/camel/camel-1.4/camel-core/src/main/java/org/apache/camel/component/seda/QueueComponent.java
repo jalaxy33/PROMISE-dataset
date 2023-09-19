@@ -1,0 +1,17 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+{'public'}ClassDeclaration
+FieldDeclaration
+LogReferenceType
+VariableDeclarator
+MethodInvocation
+ClassReference
+QueueComponentReferenceType
+{'public'}ConstructorDeclaration
+StatementExpression
+MethodInvocation
+Literal
+SedaComponentReferenceType

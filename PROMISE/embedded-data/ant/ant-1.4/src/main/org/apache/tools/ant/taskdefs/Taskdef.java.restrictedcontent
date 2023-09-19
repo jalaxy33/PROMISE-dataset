@@ -1,0 +1,10 @@
+Taskdef
+addDefinition
+name
+String
+c
+Class
+addTaskDefinition
+name
+c
+Definer

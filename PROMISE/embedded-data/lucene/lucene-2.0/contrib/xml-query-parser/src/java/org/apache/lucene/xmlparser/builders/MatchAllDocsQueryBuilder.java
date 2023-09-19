@@ -1,0 +1,16 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+Import
+Import
+{'public'}ClassDeclaration
+{'public'}MethodDeclaration
+QueryReferenceType
+set()FormalParameter
+ElementReferenceType
+ReturnStatement
+ClassCreator
+MatchAllDocsQueryReferenceType
+QueryBuilderReferenceType

@@ -1,0 +1,6 @@
+SpringLoadBalanceTest
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+LoadBalanceTest

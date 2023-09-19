@@ -1,0 +1,9 @@
+CompilationUnit
+PackageDeclaration
+{'public'}ClassDeclaration
+{'public'}MethodDeclaration
+ResultHandlerReferenceType
+ReturnStatement
+ClassCreator
+DomResultHandlerReferenceType
+ResultHandlerFactoryReferenceType

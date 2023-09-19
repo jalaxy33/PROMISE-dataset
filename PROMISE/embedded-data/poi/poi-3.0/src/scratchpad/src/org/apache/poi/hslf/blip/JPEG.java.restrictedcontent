@@ -1,0 +1,9 @@
+JPEG
+getType
+int
+return
+JPEG
+getSignature
+int
+return
+Bitmap

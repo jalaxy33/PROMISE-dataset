@@ -1,0 +1,14 @@
+NodeIterator
+getRoot
+Node
+getWhatToShow
+int
+getFilter
+NodeFilter
+getExpandEntityReferences
+boolean
+nextNode
+Node
+previousNode
+Node
+detach

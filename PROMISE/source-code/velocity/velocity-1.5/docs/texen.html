@@ -1,0 +1,538 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.    
+-->
+
+<!-- start the processing -->
+    <!-- ====================================================================== -->
+    <!-- GENERATED FILE, DO NOT EDIT, EDIT THE XML FILE IN xdocs INSTEAD! -->
+    <!-- Main Page Section -->
+    <!-- ====================================================================== -->
+    <html>
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+
+                                                    <meta name="author" value="Velocity Documentation Team">
+            <meta name="email" value="dev@velocity.apache.org">
+            
+           
+                                    
+                        
+            <title>Velocity - Texen</title>
+
+									<link rel="stylesheet" href="./site.css" type="text/css">
+        </head>
+
+        <body>
+
+			
+			<div id="container">
+
+				<div id="header">
+					
+<div id="logo1">
+	<a href="http://velocity.apache.org"><img src="./images/velocity_project_wide.png" border="0"/></a>
+</div>
+
+
+
+<div id="logo2">
+
+<a href="http://velocity.apache.org/"><img src="./images/velocity-logo.png" alt="Velocity" border="0"/></a>
+
+</div>
+
+				</div>
+
+				<div id="menu">
+					
+    <!-- ============================================================ -->
+
+            	<div class="menusection">
+    		<span class="menuheader">Velocity</span>
+			<ul>
+							<li>    <a href="./index.html">General</a>
+</li>
+							<li>    <a href="./overview.html">Overview</a>
+</li>
+							<li>    <a href="./getting-started.html">Getting Started</a>
+</li>
+							<li>    <a href="./webapps.html">Web Applications</a>
+</li>
+							<li>    <a href="http://velocity.apache.org/download.cgi">Download</a>
+</li>
+							<li>    <a href="http://wiki.apache.org/velocity/VelocityFAQ">FAQ (Wiki)</a>
+</li>
+						</ul>
+        </div>
+        	<div class="menusection">
+    		<span class="menuheader">Docs</span>
+			<ul>
+							<li>    <a href="./user-guide.html">User Guide</a>
+</li>
+							<li>    <a href="./developer-guide.html">Developer Guide</a>
+</li>
+							<li>    <a href="./vtl-reference-guide.html">VTL Reference</a>
+</li>
+							<li>    <a href="./anakia.html">Anakia: XML->doc tool</a>
+</li>
+							<li>    <a href="./texen.html">Texen: text generation</a>
+</li>
+						</ul>
+        </div>
+        	<div class="menusection">
+    		<span class="menuheader">Developers</span>
+			<ul>
+							<li>    <a href="./../LICENSE">License</a>
+</li>
+							<li>    <a href="./api/index.html">Javadoc</a>
+</li>
+							<li>    <a href="http://velocity.apache.org/engine/releases/velocity-1.5/changes-report.html">Changes in 1.5</a>
+</li>
+							<li>    <a href="http://velocity.apache.org/engine/releases/velocity-1.5/jira-report.html">Resolved Issues in 1.5</a>
+</li>
+							<li>    <a href="./jar-dependencies.html">Dependencies</a>
+</li>
+							<li>    <a href="http://svn.apache.org/viewvc/velocity/engine/branches/Velocity_1.5_BRANCH/">Source Code Repository</a>
+</li>
+							<li>    <a href="./build.html">Building from Source</a>
+</li>
+						</ul>
+        </div>
+        	<div class="menusection">
+    		<span class="menuheader">Community</span>
+			<ul>
+							<li>    <a href="http://wiki.apache.org/velocity/">Wiki</a>
+</li>
+							<li>    <a href="http://velocity.apache.org/news.html">Recent News</a>
+</li>
+							<li>    <a href="http://wiki.apache.org/velocity/PoweredByVelocity">Powered By Velocity</a>
+</li>
+							<li>    <a href="http://wiki.apache.org/velocity/VelocityEditors">IDE/Editor Plugins</a>
+</li>
+							<li>    <a href="http://wiki.apache.org/velocity/PublishedArticlesAndBooks">Articles and Books</a>
+</li>
+							<li>    <a href="http://wiki.apache.org/velocity/GetInvolved">Get Involved</a>
+</li>
+							<li>    <a href="http://velocity.apache.org/contact.html">Mailing Lists</a>
+</li>
+						</ul>
+        </div>
+        	<div class="menusection">
+    		<span class="menuheader">Velocity Development</span>
+			<ul>
+							<li>    <a href="http://wiki.apache.org/velocity/RoadMap">Road Map</a>
+</li>
+							<li>    <a href="http://wiki.apache.org/velocity/CodeStandards">Coding Standards</a>
+</li>
+							<li>    <a href="http://wiki.apache.org/velocity/DocumentationGuidelines">Documentation Guidelines</a>
+</li>
+							<li>    <a href="https://issues.apache.org/jira/browse/VELOCITY">Issues</a>
+</li>
+							<li>    <a href="http://velocity.apache.org/who-we-are.html">Who we are</a>
+</li>
+						</ul>
+        </div>
+        	<div class="menusection">
+    		<span class="menuheader">Translations</span>
+			<ul>
+							<li>    <a href="http://www.jajakarta.org/velocity/">Site (Japanese)</a>
+</li>
+							<li>    <a href="./translations/user-guide_fi.html">User's Guide (Finnish)</a>
+</li>
+							<li>    <a href="./translations/user-guide_fr.html">User's Guide (French)</a>
+</li>
+							<li>    <a href="./translations/user-guide_es.html">User's Guide (Spanish)</a>
+</li>
+						</ul>
+        </div>
+    				</div>
+
+				<div id="body">
+																	<a name="WhatisTexen?"></a>
+	<h1>What is Texen?</h1>
+
+	<div class="subsection">
+														<p>
+    Texen is a general purpose text generating utility. It is capable of
+    producing almost any sort of text output. Driven by Ant, essentially
+    an <a href="http://ant.apache.org/">Ant</a> Task, Texen uses
+    a control template, an optional set of worker templates, and control
+    context to govern the generated output. Although TexenTask can be
+    used directly, it is usually subclassed to initialize your control
+    context before generating any output.
+</p>
+																			<p>
+    Texen was created to deal with the source generating requirements
+    of the Turbine web application framework. The <a href="http://db.apache.org/torque/">Torque</a> uses a subclass of
+    the TexenTask to generate SQL and the Object-Relational mapping
+    sources for its O/R layer.  This is only one example; you can
+    use Texen to generate almost any sort of text output!
+</p>
+								</div>
+												<a name="TheTexenTask"></a>
+	<h1>The TexenTask</h1>
+
+	<div class="subsection">
+														<p>
+    This trivial example, which shows how to use Texen from an Ant
+    build.xml, is intended to illustrate how the Texen mechanism works.
+</p>
+																			<p>
+<strong>Ant Build File</strong>
+</p>
+																			<div class="source">
+&lt;project name=&quot;HtmlGenerator&quot; default=&quot;main&quot; basedir=&quot;.&quot;&gt;
+
+  &lt;taskdef name=&quot;texen&quot; classname=&quot;org.apache.velocity.texen.ant.TexenTask&quot;/&gt;
+
+  &lt;!-- ============================================================= --&gt;
+  &lt;!-- G E N E R A T E  H T M L  P A G E S                           --&gt;
+  &lt;!-- ============================================================= --&gt;
+  &lt;!-- This target will generate a set of HTML pages based on        --&gt;
+  &lt;!-- the information in our control context.                       --&gt;
+  &lt;!-- ============================================================= --&gt;
+
+  &lt;target name=&quot;main&quot;&gt;
+
+    &lt;echo message=&quot;+------------------------------------------+&quot;/&gt;
+    &lt;echo message=&quot;|                                          |&quot;/&gt;
+    &lt;echo message=&quot;| Generating HTML pages!                   |&quot;/&gt;
+    &lt;echo message=&quot;|                                          |&quot;/&gt;
+    &lt;echo message=&quot;+------------------------------------------+&quot;/&gt;
+
+    &lt;texen
+      controlTemplate=&quot;Control.vm&quot;
+      outputDirectory=&quot;.&quot;
+      templatePath=&quot;.&quot;
+      outputFile=&quot;generation.report&quot;
+    /&gt;
+
+  &lt;/target&gt;
+
+&lt;/project&gt;
+</pre></div>
+																			<p>
+<strong>Control Template</strong>
+</p>
+																			<div class="source">
+#*
+
+file: Control.vm
+
+This is the control template for our HTML
+page generator!
+
+*#
+
+#set ($Planets = [&quot;Earth&quot;, &quot;Mars&quot;, &quot;Venus&quot;])
+
+#foreach ($planet in $Planets)
+
+    #set ($outputFile = $strings.concat([$planet, &quot;.html&quot;]))
+    $generator.parse(&quot;HtmlTemplate.vm&quot;, $outputFile, &quot;planet&quot;, $planet)
+
+#end
+</pre></div>
+																			<p>
+<strong>Worker Template</strong>
+</p>
+																			<div class="source">
+#*
+
+file: HtmlTemplate.vm
+
+This is worker template. It is called by the
+control template to produce useful output (or
+not so useful in this case). :-)
+
+*#
+
+#set ($bgcolor = &quot;#ffffff&quot;)
+
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;
+      Everything you wanted to know about $planet!
+    &lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body bgcolor=&quot;$bgcolor&quot;&gt;
+
+  $planet is a great place to live!
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre></div>
+																			<p>
+    Texen produces three html pages: Earth.html, Mars.html, and
+    Venus.html. To do something more useful, you would subclass the
+    TexenTask, place some objects in the control context, and use the
+    information placed in the control context to generate useful output.
+</p>
+																			<p>
+    See the Torque utility in Turbine for a full working example of
+    Texen. A standalone version of Torque is available <a href="http://db.apache.org/torque/">here</a>.
+</p>
+																			<table>
+                        <tr>
+                        <th colspan="" rowspan="">
+						Name
+			</th>
+                                <th colspan="" rowspan="">
+						Description
+			</th>
+            </tr>
+                                <tr>
+                        <td colspan="" rowspan="">
+						templatePath
+			</td>
+                                <td colspan="" rowspan="">
+											<b>[REQUIRED]</b>
+										
+            Set the path where Velocity will look
+            for templates using the file template
+            loader.
+            
+													<b>This is only required if useClasspath is not turned on.</b>
+					</td>
+            </tr>
+                                <tr>
+                        <td colspan="" rowspan="">
+						useClasspath
+			</td>
+                                <td colspan="" rowspan="">
+											<b>[REQUIRED]</b>
+										
+            Set the use of the classpath in locating templates.
+            true means the classpath will be used.
+            
+													<b>This is only required if templatePath is not set.</b>
+					</td>
+            </tr>
+                                <tr>
+                        <td colspan="" rowspan="">
+						useResourceLoaderCache
+			</td>
+                                <td colspan="" rowspan="">
+						Optional argument used when useClasspath is turned on.
+            See the 
+													<a href="developer-guide.html#ConfiguringResourceLoaders">Developer's Guide</a>
+										
+            for details on resource caching.
+			</td>
+            </tr>
+                                <tr>
+                        <td colspan="" rowspan="">
+						resourceLoaderModificationCheckInterval
+			</td>
+                                <td colspan="" rowspan="">
+						Optional argument used when useClasspath is turned on.
+            See the 
+													<a href="developer-guide.html#ConfiguringResourceLoaders">Developer's Guide</a>
+										
+            for details on resource caching.
+			</td>
+            </tr>
+                                <tr>
+                        <td colspan="" rowspan="">
+						controlTemplate
+			</td>
+                                <td colspan="" rowspan="">
+											<b>[REQUIRED]</b>
+										
+            Set the control template for the
+            generating process.
+			</td>
+            </tr>
+                                <tr>
+                        <td colspan="" rowspan="">
+						outputDirectory
+			</td>
+                                <td colspan="" rowspan="">
+											<b>[REQUIRED]</b>
+										
+            Set the output directory. It will be
+            created if it doesn't exist.
+			</td>
+            </tr>
+                                <tr>
+                        <td colspan="" rowspan="">
+						outputFile
+			</td>
+                                <td colspan="" rowspan="">
+											<b>[REQUIRED]</b>
+										
+            Set the output file for the
+            generation process.
+			</td>
+            </tr>
+                                <tr>
+                        <td colspan="" rowspan="">
+						outputEncoding
+			</td>
+                                <td colspan="" rowspan="">
+						Set the output encoding.
+			</td>
+            </tr>
+                                <tr>
+                        <td colspan="" rowspan="">
+						inputEncoding
+			</td>
+                                <td colspan="" rowspan="">
+						Set the input (template) encoding.
+			</td>
+            </tr>
+                                <tr>
+                        <td colspan="" rowspan="">
+						contextProperties
+			</td>
+                                <td colspan="" rowspan="">
+						Set the context properties that will be
+            fed into the initial context be the
+            generating process starts.
+            
+													<p>
+            We are going to do something special
+            for properties that have a "file.contents"
+            suffix: for these properties will pull
+            in the contents of the file and make
+            them available in the context. So for
+            a line like the following in a properties file:
+            <pre>license.file.contents = license.txt</pre>
+            We will pull in the contents of license.txt
+            and make it available in the context as
+            $license. This should make texen a little
+            more flexible.
+            </p>
+					</td>
+            </tr>
+            </table>
+								</div>
+												<a name="PredefinedContextObjects"></a>
+	<h1>Predefined Context Objects</h1>
+
+	<div class="subsection">
+														<p>
+    The Texen Ant task places several objects into the Context for you.
+</p>
+																			<table>
+                        <tr>
+                        <th colspan="" rowspan="">
+						Name
+			</th>
+                                <th colspan="" rowspan="">
+						Value
+			</th>
+            </tr>
+                                <tr>
+                        <td colspan="" rowspan="">
+						$generator
+			</td>
+                                <td colspan="" rowspan="">
+						
+                This contains the the 
+													<a href="api/org/apache/velocity/texen/Generator.html">Generator</a>
+										
+                instance used to output the text files.
+            
+			</td>
+            </tr>
+                                <tr>
+                        <td colspan="" rowspan="">
+						$outputDirectory
+			</td>
+                                <td colspan="" rowspan="">
+						
+                This contains the the value of the outputDirectory property given to the Texen Ant Task.
+            
+			</td>
+            </tr>
+                                <tr>
+                        <td colspan="" rowspan="">
+						$strings
+			</td>
+                                <td colspan="" rowspan="">
+						
+                This contains the an instance of a 
+													<a href="http://jakarta.apache.org/commons/lang/apidocs/org/apache/commons/lang/StringUtils.html">StringUtils</a>
+										
+                object.
+            
+			</td>
+            </tr>
+                                <tr>
+                        <td colspan="" rowspan="">
+						$files
+			</td>
+                                <td colspan="" rowspan="">
+						
+                This contains the an instance of a 
+													<a href="api/org/apache/velocity/texen/util/FileUtil.html">FileUtil</a>
+										
+                object.
+            
+			</td>
+            </tr>
+                                <tr>
+                        <td colspan="" rowspan="">
+						$properties
+			</td>
+                                <td colspan="" rowspan="">
+						
+                This contains the an instance of a 
+													<a href="api/org/apache/velocity/texen/util/PropertiesUtil.html">PropertiesUtil</a>
+										
+                object.
+            
+			</td>
+            </tr>
+            </table>
+								</div>
+									</div>
+
+				<div id="footer">
+					Copyright &#169; 1999-2007, <a href="http://www.apache.org/">The Apache Software Foundation</a>.
+				</div>
+
+			</div>
+
+        </body>
+    </html>
+<!-- end the processing -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

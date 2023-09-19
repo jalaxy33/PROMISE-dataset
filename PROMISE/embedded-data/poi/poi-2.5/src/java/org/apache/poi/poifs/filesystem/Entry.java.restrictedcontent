@@ -1,0 +1,15 @@
+Entry
+getName
+String
+isDirectoryEntry
+boolean
+isDocumentEntry
+boolean
+getParent
+DirectoryEntry
+delete
+boolean
+renameTo
+boolean
+newName
+String

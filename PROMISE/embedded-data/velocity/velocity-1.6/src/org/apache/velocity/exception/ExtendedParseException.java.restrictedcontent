@@ -1,0 +1,7 @@
+ExtendedParseException
+getTemplateName
+String
+getLineNumber
+int
+getColumnNumber
+int

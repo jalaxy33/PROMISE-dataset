@@ -1,0 +1,12 @@
+WMLSetvarElement
+setValue
+newValue
+String
+getValue
+String
+setName
+newValue
+String
+getName
+String
+WMLElement

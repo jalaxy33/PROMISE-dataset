@@ -1,0 +1,16 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+InterfaceDeclaration
+set()MethodDeclaration
+booleanBasicType
+set()FormalParameter
+AtomEndpointReferenceType
+set()FormalParameter
+DocumentReferenceType
+TypeArgument
+FeedReferenceType
+set()FormalParameter
+EntryReferenceType

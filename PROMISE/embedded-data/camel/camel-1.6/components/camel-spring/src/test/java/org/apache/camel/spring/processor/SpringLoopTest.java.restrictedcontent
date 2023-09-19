@@ -1,0 +1,6 @@
+SpringLoopTest
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+LoopTest

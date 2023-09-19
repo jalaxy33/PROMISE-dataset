@@ -1,0 +1,19 @@
+CompilationUnit
+PackageDeclaration
+{'final', 'public'}ClassDeclaration
+FieldDeclaration
+StringReferenceType
+VariableDeclarator
+Literal
+FieldDeclaration
+StringReferenceType
+VariableDeclarator
+Literal
+FieldDeclaration
+StringReferenceType
+VariableDeclarator
+Literal
+FieldDeclaration
+StringReferenceType
+VariableDeclarator
+Literal

@@ -1,0 +1,13 @@
+StorageControllerStub
+STORAGECONTROLLER
+StorageControllerStub
+destroy
+getStorage
+Storage
+return
+StorageStub
+initialize
+releaseId
+String
+return
+StorageController

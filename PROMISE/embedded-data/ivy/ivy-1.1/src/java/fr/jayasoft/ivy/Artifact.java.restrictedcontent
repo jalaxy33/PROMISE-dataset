@@ -1,0 +1,15 @@
+Artifact
+getModuleRevisionId
+ModuleRevisionId
+getPublicationDate
+Date
+getName
+String
+getType
+String
+getExt
+String
+getConfigurations
+String
+getId
+ArtifactRevisionId

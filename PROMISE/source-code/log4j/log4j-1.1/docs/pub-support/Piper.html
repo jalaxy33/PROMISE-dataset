@@ -1,0 +1,36 @@
+<SPAN class=EUDORAHEADER>Delivered-To: cgu@qos.ch <BR></SPAN><SPAN 
+class=EUDORAHEADER>To: java-logging-input@eng.sun.com <BR></SPAN><SPAN 
+class=EUDORAHEADER>Cc: cgu@qos.ch <BR></SPAN><SPAN class=EUDORAHEADER>Subject: 
+JSR47 <BR></SPAN><SPAN class=EUDORAHEADER>X-Mailer: Lotus Notes Release 
+5.0.6a&nbsp; January 17, 2001 <BR></SPAN><SPAN class=EUDORAHEADER>From: 
+piper@webpas.com <BR></SPAN><SPAN class=EUDORAHEADER>Date: Wed, 13 Jun 2001 
+18:20:16 -0400 <BR></SPAN><SPAN class=EUDORAHEADER>X-MIMETrack: Serialize by 
+Router on Internet/CPAS(Release 5.0.6a |January 17, 2001) at 
+<BR>&nbsp;06/13/2001 05:48:22 PM, 
+<BR><X-TAB>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</X-TAB>Serialize 
+complete at 06/13/2001 05:48:22 PM <BR></SPAN><BR><BR><FONT face=sans-serif 
+size=2>The founder of log4j raises some valid concerns about JSR47 in his open 
+article located at:</FONT> <BR><BR><FONT face=sans-serif size=2>&nbsp; &nbsp; 
+&nbsp; &nbsp; http://jakarta.apache.org/log4j/docs/critique.html</FONT> 
+<BR><BR><FONT face=sans-serif size=2>I do not support log4j becoming a 
+replacement for JSR47 because I think that the log4j API needs to be cleaned up 
+and made more user-friendly for simple logging tasks. I think that JSR47 has 
+made improvements in this area. However, very careful attention should be paid 
+to issues regarding performance, error handling, and interoperability prior to 
+finalizing the proposed API. Specifically:</FONT> <BR><BR><FONT face=sans-serif 
+size=2>1) More effort should be spent optimizing the specification so that it 
+does not become yet another Java performance burden. For example, parameters to 
+the logging methods in JSR47 are always evaluated. Frequently the evaluation of 
+these parameters results in new and expensive object allocations... which is 
+unnecessary when logging is disabled. The typical solution is to wrap wrap every 
+logging method with an if statement that determines whether logging is enabled. 
+This is inconvenient and will therefore be difficult to enforce in practice. I 
+suggest investigating ways to perform conditional evaluation of parameters, 
+perhaps borrowing from work done for the assertion facility in JSR41.</FONT> 
+<BR><BR><FONT face=sans-serif size=2>2) The addition of logging should not 
+affect an application's behavior (i.e. it should not introduce new Errors or 
+Exceptions).</FONT> <BR><BR><FONT face=sans-serif size=2>3) I'd like to see more 
+focused collaboration between JSR47 and the J2EE community. There is an active 
+and unresolved discussion about how to achieve high-performance J2EE-compliant 
+debugging. I'm not sure that JSR47 in its current form addresses this 
+issue.</FONT> <BR><BR><FONT face=sans-serif size=2>Piper</FONT> 

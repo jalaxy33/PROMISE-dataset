@@ -1,0 +1,17 @@
+Sample380
+SampleClientResult
+result
+Sample380
+testCustomMediator
+String
+addUrl
+StockQuoteSampleClient
+client
+getStockQuoteClient
+info
+result
+requestStandardQuote
+addUrl
+assertTrue
+responseReceived
+SynapseTestCase

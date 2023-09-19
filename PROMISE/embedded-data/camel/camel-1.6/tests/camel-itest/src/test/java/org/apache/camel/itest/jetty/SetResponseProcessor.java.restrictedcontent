@@ -1,0 +1,12 @@
+SetResponseProcessor
+process
+exchange
+Exchange
+String
+result
+getIn
+getBody
+String
+getOut
+setBody
+Processor

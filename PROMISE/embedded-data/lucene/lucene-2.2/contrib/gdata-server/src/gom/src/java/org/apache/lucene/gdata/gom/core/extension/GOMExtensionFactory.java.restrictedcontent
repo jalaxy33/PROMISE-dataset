@@ -1,0 +1,8 @@
+GOMExtensionFactory
+getNamespaces
+List
+GOMNamespace
+canHandleExtensionElement
+GOMExtension
+name
+QName

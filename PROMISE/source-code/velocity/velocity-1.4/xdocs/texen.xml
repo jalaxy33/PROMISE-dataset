@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+
+<!--
+   Copyright 2000-2004 The Apache Software Foundation
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+
+<document>
+
+ <properties>
+  <title>Texen</title>
+  <author email="jvanzyl@zenplex.com">Velocity Documentation Team</author>
+ </properties>
+
+<body>
+
+<section name="What is Texen?">
+
+<p>
+    Texen is a general purpose text generating utility. It is capable of
+    producing almost any sort of text output. Driven by Ant, essentially
+    an <a href="http://jakarta.apache.org/ant/">Ant</a> Task, Texen uses
+    a control template, an optional set of worker templates, and control
+    context to govern the generated output. Although TexenTask can be
+    used directly, it is usually subclassed to initialize your control
+    context before generating any output.
+</p>
+
+<p>
+    Texen was created to deal with the source generating requirements of
+    the Turbine web application framework. The <a
+    href="http://jakarta.apache.org/turbine/torque.html">Torque</a> utility
+    in <a href="http://jakarta.apache.org/turbine/">Turbine</a>, which is a
+    subclass of the TexenTask, is responsible for generating the SQL,
+    and the Object-Relational mapping sources for a Turbine project.
+    This is only one example; you can use Texen to generate almost any
+    sort of text output!
+</p>
+
+</section>
+
+<section name="The TexenTask">
+
+<p>
+    This trivial example, which shows how to use Texen from an Ant
+    build.xml, is intended to illustrate how the Texen mechanism works.
+</p>
+
+<p>
+<em>Ant Build File</em>
+</p>
+
+<source><![CDATA[
+<project name="HtmlGenerator" default="main" basedir=".">
+
+  <taskdef name="texen" classname="org.apache.velocity.texen.ant.TexenTask"/>
+
+  <!-- ================================================================ -->
+  <!-- G E N E R A T E  H T M L  P A G E S                              -->
+  <!-- ================================================================ -->
+  <!-- This target will generate a set of HTML pages based on           -->
+  <!-- the information in our control context.                          -->
+  <!-- ================================================================ -->
+
+  <target name="main">
+
+    <echo message="+------------------------------------------+"/>
+    <echo message="|                                          |"/>
+    <echo message="| Generating HTML pages!                   |"/>
+    <echo message="|                                          |"/>
+    <echo message="+------------------------------------------+"/>
+
+    <texen
+      controlTemplate="Control.vm"
+      outputDirectory="."
+      templatePath="."
+      outputFile="generation.report"
+    />
+
+  </target>
+
+</project>
+]]></source>
+
+<p>
+<em>Control Template</em>
+</p>
+
+<source><![CDATA[
+#*
+
+file: Control.vm
+
+This is the control template for our HTML
+page generator!
+
+*#
+
+#set ($Planets = ["Earth", "Mars", "Venus"])
+
+#foreach ($planet in $Planets)
+
+    #set ($outputFile = $stringutils.concat([$planet, ".html"]))
+    $generator.parse("HtmlTemplate.vm", $outputFile, "planet", $planet)
+
+#end
+]]></source>
+
+<p>
+<em>Worker Template</em>
+</p>
+
+<source><![CDATA[
+#*
+
+file: HtmlTemplate.vm
+
+This is worker template. It is called by the
+control template to produce useful output (or
+not so useful in this case). :-)
+
+*#
+
+#set ($bgcolor = "#ffffff")
+
+<html>
+  <head>
+    <title>
+      Everything you wanted to know about $planet!
+    </title>
+  </head>
+  <body bgcolor="$bgcolor">
+
+  $planet is a great place to live!
+
+  </body>
+</html>
+]]></source>
+
+<p>
+    Texen produces three html pages: Earth.html, Mars.html, and
+    Venus.html. To do something more useful, you would subclass the
+    TexenTask, place some objects in the control context, and use the
+    information placed in the control context to generate useful output.
+</p>
+
+<p>
+    See the Torque utility in Turbine for a full working example of
+    Texen. A standalone version of Torque is available <a
+    href="http://jakarta.apache.org/builds/jakarta-turbine/release/">here</a>.
+</p>
+
+</section>
+
+</body>
+</document>

@@ -1,0 +1,17 @@
+JavaResourceTest
+JavaResourceTest
+name
+String
+name
+setUp
+configureProject
+testLoadManifest
+executeTarget
+assertNotNull
+getProject
+getProperty
+assertTrue
+getProject
+getProperty
+startsWith
+BuildFileTest

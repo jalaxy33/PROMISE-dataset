@@ -1,0 +1,28 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+Import
+Import
+{'final', 'public'}ClassDeclaration
+Annotation
+FieldDeclaration
+StringReferenceType
+VariableDeclarator
+Literal
+{'private'}ConstructorDeclaration
+{'static', 'public'}MethodDeclaration
+Annotation
+DateReferenceType
+set()FormalParameter
+StringReferenceType
+LocalVariableDeclaration
+DateFormatReferenceType
+VariableDeclarator
+ClassCreator
+SimpleDateFormatReferenceType
+MemberReference
+ReturnStatement
+MethodInvocation
+MemberReference

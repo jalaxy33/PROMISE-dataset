@@ -1,0 +1,13 @@
+XQueryExampleTest
+testExample
+MockEndpoint
+mock
+getMockEndpoint
+expectedBodiesReceived
+sendBody
+assertMockEndpointsSatisfied
+createApplicationContext
+ClassPathXmlApplicationContext
+return
+ClassPathXmlApplicationContext
+SpringTestSupport

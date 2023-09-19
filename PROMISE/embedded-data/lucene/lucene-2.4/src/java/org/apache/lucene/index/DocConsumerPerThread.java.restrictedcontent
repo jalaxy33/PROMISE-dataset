@@ -1,0 +1,5 @@
+DocConsumerPerThread
+processDocument
+DocumentsWriter
+DocWriter
+abort

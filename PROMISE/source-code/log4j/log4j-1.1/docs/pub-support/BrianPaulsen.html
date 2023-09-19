@@ -1,0 +1,58 @@
+<SPAN class=EUDORAHEADER>Delivered-To: cgu@qos.ch <BR></SPAN><SPAN 
+class=EUDORAHEADER>From: "Brian Paulsen" &lt;javadeveloper@mysun.com&gt; 
+<BR></SPAN><SPAN class=EUDORAHEADER>To: java-logging-input@eng.sun.com 
+<BR></SPAN><SPAN class=EUDORAHEADER>Cc: cgu@qos.ch <BR></SPAN><SPAN 
+class=EUDORAHEADER>Date: Thu, 14 Jun 2001 18:17:19 +0100 <BR></SPAN><SPAN 
+class=EUDORAHEADER>X-Mailer: Netscape Webmail <BR></SPAN><SPAN 
+class=EUDORAHEADER>Subject: Java logging <BR></SPAN><SPAN 
+class=EUDORAHEADER>X-Accept-Language: en <BR></SPAN><BR><BR>
+<DIV>Hi</DIV><BR>
+<DIV>I'm writing as many other concerned developers have to provide input </DIV>
+<DIV>into the new logging API coming in JDK 1.4.&nbsp; I would like to see the 
+</DIV>
+<DIV>JSR/API changed to include more features that are present in 
+Log4J.</DIV><BR>
+<DIV>The company I presently work for just evaluated the new 1.4 beta and </DIV>
+<DIV>Log4J and came to many of the same conclusions as the article by Ceki 
+</DIV>
+<DIV>Gülcü at <A href="http://jakarta.apache.org/log4j/docs/critique.html" 
+EUDORA="AUTOURL">http://jakarta.apache.org/log4j/docs/critique.html</A>.&nbsp; 
+While I </DIV>
+<DIV>don't want to re-iterate them here, I would encourage the panel to </DIV>
+<DIV>review the article.</DIV><BR>
+<DIV>I myself was involved in creating a custom logging solution for a </DIV>
+<DIV>previous employer about 2 years ago and we created a logging API that&nbsp; 
+</DIV>
+<DIV>ended up closely resembling what IBM did in Log4J.&nbsp; My point is that 2 
+</DIV>
+<DIV>different companies with different developers (except for myself) and 
+</DIV>
+<DIV>different logging requirements came to similar solutions where the JSR 
+</DIV>
+<DIV>deviates from this "norm".&nbsp; For example, the logging levels we </DIV>
+<DIV>eventually implemented were almost identical to the ones IBM came up </DIV>
+<DIV>with in Log4J.&nbsp; In practice, we found that levels like fine, finer, 
+</DIV>
+<DIV>finest are too ambibuous.&nbsp; They tended to confuse the developers and 
+as </DIV>
+<DIV>a result, caused unnecessary logging overhead.&nbsp; The developers were 
+</DIV>
+<DIV>unclear about just what level to use.&nbsp; While it can be argued that the 
+</DIV>
+<DIV>user (the company/developers) of the API can define these, this really 
+</DIV>
+<DIV>doesn't solve the problem unless you work in an environment with 5 </DIV>
+<DIV>developers and no turn-over.&nbsp; </DIV><BR>
+<DIV>Please consider following the Log4J model and include more of its </DIV>
+<DIV>features.&nbsp; I don't agree with others that have written in saying to 
+</DIV>
+<DIV>include the whole of Log4J in the release as I don't know it inside and 
+</DIV>
+<DIV>out but I do think that many of it's features should be added and that 
+</DIV>
+<DIV>logging interfaces / pluggable(like the XML parsers) loggers&nbsp; are 
+</DIV>
+<DIV>necessary.</DIV><BR>
+<DIV>Thank you</DIV><BR>
+<DIV>Brian Paulsen</DIV>
+<DIV>javadeveloper@mysun.com</DIV>

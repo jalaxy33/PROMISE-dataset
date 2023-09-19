@@ -1,0 +1,9 @@
+CompilationUnit
+PackageDeclaration
+Import
+InterfaceDeclaration
+{'public'}MethodDeclaration
+HTMLDocumentReferenceType
+set()FormalParameter
+StringReferenceType
+DOMImplementationReferenceType

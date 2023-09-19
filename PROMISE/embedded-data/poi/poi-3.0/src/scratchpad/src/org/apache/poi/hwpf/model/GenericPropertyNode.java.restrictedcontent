@@ -1,0 +1,17 @@
+GenericPropertyNode
+GenericPropertyNode
+start
+int
+end
+int
+buf
+byte
+start
+end
+buf
+getBytes
+byte
+return
+byte
+_buf
+PropertyNode

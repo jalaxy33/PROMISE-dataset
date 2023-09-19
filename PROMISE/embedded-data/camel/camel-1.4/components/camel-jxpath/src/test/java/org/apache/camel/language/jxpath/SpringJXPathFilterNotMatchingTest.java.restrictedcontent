@@ -1,0 +1,7 @@
+SpringJXPathFilterNotMatchingTest
+testFilterWithJXPath
+expectedMessageCount
+sendBody
+PersonBean
+assertIsSatisfied
+SpringJXPathFilterTest

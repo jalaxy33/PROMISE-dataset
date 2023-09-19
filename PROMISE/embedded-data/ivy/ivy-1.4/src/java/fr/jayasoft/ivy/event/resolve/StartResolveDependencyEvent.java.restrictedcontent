@@ -1,0 +1,15 @@
+StartResolveDependencyEvent
+String
+NAME
+StartResolveDependencyEvent
+source
+Ivy
+resolver
+DependencyResolver
+dd
+DependencyDescriptor
+source
+NAME
+resolver
+dd
+ResolveDependencyEvent

@@ -1,0 +1,16 @@
+DrawingRecordForBiffViewer
+short
+sid
+DrawingRecordForBiffViewer
+DrawingRecordForBiffViewer
+in
+RecordInputStream
+in
+getRecordName
+String
+return
+getSid
+short
+return
+sid
+AbstractEscherHolderRecord

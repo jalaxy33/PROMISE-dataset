@@ -1,0 +1,11 @@
+KeywordAnalyzer
+tokenStream
+TokenStream
+fieldName
+String
+reader
+Reader
+return
+KeywordTokenizer
+reader
+Analyzer

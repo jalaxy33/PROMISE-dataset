@@ -1,0 +1,11 @@
+WhitespaceAnalyzer
+tokenStream
+TokenStream
+fieldName
+String
+reader
+Reader
+return
+WhitespaceTokenizer
+reader
+Analyzer

@@ -1,0 +1,15 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+{'public'}ClassDeclaration
+{'public'}ConstructorDeclaration
+set()FormalParameter
+byteBasicType
+set()FormalParameter
+intBasicType
+StatementExpression
+SuperMethodInvocation
+MemberReference
+MemberReference
+DOPAbstractTypeReferenceType

@@ -1,0 +1,16 @@
+ErrorCircularDependencyStrategy
+CircularDependencyStrategy
+INSTANCE
+ErrorCircularDependencyStrategy
+getInstance
+CircularDependencyStrategy
+return
+INSTANCE
+ErrorCircularDependencyStrategy
+handleCircularDependency
+mrids
+ModuleRevisionId
+throw
+CircularDependencyException
+mrids
+AbstractCircularDependencyStrategy

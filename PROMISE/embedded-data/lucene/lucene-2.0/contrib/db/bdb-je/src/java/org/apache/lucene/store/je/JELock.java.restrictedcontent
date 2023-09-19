@@ -1,0 +1,15 @@
+JELock
+boolean
+isLocked
+JELock
+obtain
+boolean
+return
+isLocked
+release
+isLocked
+isLocked
+boolean
+return
+isLocked
+Lock

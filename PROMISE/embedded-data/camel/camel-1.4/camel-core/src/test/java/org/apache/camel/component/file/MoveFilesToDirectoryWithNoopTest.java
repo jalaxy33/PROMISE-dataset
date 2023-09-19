@@ -1,0 +1,11 @@
+CompilationUnit
+PackageDeclaration
+{'public'}ClassDeclaration
+{'protected'}MethodDeclaration
+Annotation
+StringReferenceType
+ReturnStatement
+BinaryOperation
+SuperMethodInvocation
+Literal
+MoveFilesToDirectoryTestReferenceType

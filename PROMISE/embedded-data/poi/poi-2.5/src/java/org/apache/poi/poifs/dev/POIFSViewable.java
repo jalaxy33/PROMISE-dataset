@@ -1,0 +1,12 @@
+CompilationUnit
+PackageDeclaration
+Import
+InterfaceDeclaration
+{'public'}MethodDeclaration
+ObjectReferenceType
+{'public'}MethodDeclaration
+IteratorReferenceType
+{'public'}MethodDeclaration
+booleanBasicType
+{'public'}MethodDeclaration
+StringReferenceType

@@ -1,0 +1,9 @@
+StoreRegistryBean
+getStoreById
+Store
+storeId
+String
+return
+getStoreById
+storeId
+StoreRegistry

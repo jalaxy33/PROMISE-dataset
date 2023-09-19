@@ -1,0 +1,14 @@
+DependencyArtifactDescriptor
+getDependencyDescriptor
+DependencyDescriptor
+getName
+String
+getType
+String
+getExt
+String
+getUrl
+URL
+getConfigurations
+String
+ExtendableItem

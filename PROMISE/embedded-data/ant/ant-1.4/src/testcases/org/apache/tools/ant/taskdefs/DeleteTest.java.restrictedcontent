@@ -1,0 +1,14 @@
+DeleteTest
+DeleteTest
+name
+String
+name
+setUp
+configureProject
+test1
+expectBuildException
+test2
+executeTarget
+test4
+executeTarget
+TaskdefsTest

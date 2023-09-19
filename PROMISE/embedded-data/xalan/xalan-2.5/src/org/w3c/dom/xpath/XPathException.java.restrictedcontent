@@ -1,0 +1,16 @@
+XPathException
+XPathException
+code
+short
+message
+String
+message
+code
+code
+short
+code
+short
+INVALID_EXPRESSION_ERR
+short
+TYPE_ERR
+RuntimeException

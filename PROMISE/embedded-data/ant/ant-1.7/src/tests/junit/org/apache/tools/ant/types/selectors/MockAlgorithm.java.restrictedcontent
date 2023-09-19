@@ -1,0 +1,14 @@
+MockAlgorithm
+isValid
+boolean
+return
+getValue
+String
+file
+File
+return
+toString
+String
+return
+hashCode
+Algorithm

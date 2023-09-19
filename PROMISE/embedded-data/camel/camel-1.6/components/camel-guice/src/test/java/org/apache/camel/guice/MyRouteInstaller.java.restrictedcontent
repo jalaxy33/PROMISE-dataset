@@ -1,0 +1,11 @@
+MyRouteInstaller
+configure
+addRoutes
+MyConfigurableRoute
+endpoint
+endpoint
+addRoutes
+MyConfigurableRoute
+endpoint
+endpoint
+RouteBuilder

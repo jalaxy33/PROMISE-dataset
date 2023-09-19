@@ -1,0 +1,22 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+{'public'}ClassDeclaration
+{'public', 'static'}MethodDeclaration
+set()FormalParameter
+StringReferenceType
+LocalVariableDeclaration
+EnvironmentConfigReferenceType
+VariableDeclarator
+MemberReference
+StatementExpression
+MethodInvocation
+Literal
+LocalVariableDeclaration
+EnvironmentReferenceType
+VariableDeclarator
+ClassCreator
+EnvironmentReferenceType
+Literal
+MemberReference

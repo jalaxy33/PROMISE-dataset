@@ -1,0 +1,11 @@
+CxfHeaderFilterStrategy
+CxfHeaderFilterStrategy
+initialize
+initialize
+getOutFilter
+add
+OPERATION_NAME
+getOutFilter
+add
+OPERATION_NAMESPACE
+DefaultHeaderFilterStrategy

@@ -1,0 +1,13 @@
+Attr
+getName
+String
+getSpecified
+boolean
+getValue
+String
+setValue
+value
+String
+getOwnerElement
+Element
+Node

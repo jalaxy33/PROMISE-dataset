@@ -1,0 +1,15 @@
+JsonDataFormat
+FIELD
+Boolean
+prettyPrint
+JsonDataFormat
+getPrettyPrint
+Boolean
+return
+prettyPrint
+setPrettyPrint
+prettyPrint
+Boolean
+prettyPrint
+prettyPrint
+DataFormatType

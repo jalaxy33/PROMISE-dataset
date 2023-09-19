@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.    
+-->
+
+<!--
+  This file contains all the jar download targets to build Velocity.
+  Its tasks are referenced from the build.xml file and should not be
+  called directly.
+
+  This is here so that the main build file is not cluttered any further.
+-->
+
+<project name="Velocity" basedir="..">
+  <target name="build-download" description="Download all the Velocity dependencies from the central repository">
+   <mkdir dir="${build.lib}" />
+   <antcall target="antlr-download" />
+   <antcall target="avalon-logkit-download" />
+   <antcall target="commons-collections-download" />
+   <antcall target="commons-lang-download" />
+   <antcall target="jdom-download" />
+   <antcall target="log4j-download" />
+   <antcall target="oro-download" />
+   <antcall target="servletapi-download" />
+   <antcall target="werken-xpath-download" />
+
+   <mkdir dir="${build.test.lib}" />
+   <antcall target="hsqldb-download" />
+   <antcall target="junit-download" />
+  </target>
+
+  <target name="http-download">
+    <condition property="skip-download">
+      <or>
+        <istrue value="${skip.jar.loading}"/>
+        <and>
+          <isfalse value="${force.jar.loading}"/>
+          <available file="${build.lib}/${download.jarname}-${download.jarversion}.jar"/>
+        </and>
+      </or>
+    </condition>
+    <antcall target="do-http-download"/>
+  </target>
+
+  <target name="do-http-download" unless="skip-download">
+    <setproxy proxyhost="${proxy.host}" proxyport="${proxy.port}"/>
+    <get src="${repo.url}/${download.jarname}/jars/${download.jarname}-${download.jarversion}.jar"
+         dest="${build.lib}/${download.jarname}-${download.jarversion}.jar"
+         usetimestamp="true"
+         verbose="false"
+         ignoreerrors="false" />
+  </target>
+
+  <target name="http-test-download">
+    <condition property="skip-download">
+      <or>
+        <istrue value="${skip.jar.loading}"/>
+        <and>
+          <isfalse value="${force.jar.loading}"/>
+          <available file="${build.test.lib}/${download.jarname}-${download.jarversion}.jar"/>
+        </and>
+      </or>
+    </condition>
+    <antcall target="do-http-test-download"/>
+  </target>
+
+  <target name="do-http-test-download" unless="skip-download">
+    <setproxy proxyhost="${proxy.host}" proxyport="${proxy.port}"/>
+    <get src="${repo.url}/${download.jarname}/jars/${download.jarname}-${download.jarversion}.jar"
+         dest="${build.test.lib}/${download.jarname}-${download.jarversion}.jar"
+         usetimestamp="true"
+         verbose="false"
+         ignoreerrors="false" />
+  </target>
+
+  <target name="antlr-download">
+   <property name="download.jarname" value="antlr" />
+   <property name="download.jarversion" value="${jar.antlr.version}" />
+   <antcall target="http-download"/>
+  </target>
+
+  <target name="avalon-logkit-download">
+   <property name="download.jarname" value="avalon-logkit" />
+   <property name="download.jarversion" value="${jar.avalon-logkit.version}" />
+   <antcall target="http-download"/>
+  </target>
+
+  <target name="commons-collections-download">
+   <property name="download.jarname" value="${jar.commons-collections.name}" />
+   <property name="download.jarversion" value="${jar.commons-collections.version}" />
+   <antcall target="http-download"/>
+  </target>
+
+  <target name="commons-lang-download">
+   <property name="download.jarname" value="${jar.commons-lang.name}" />
+   <property name="download.jarversion" value="${jar.commons-lang.version}" />
+   <antcall target="http-download"/>
+  </target>
+
+  <target name="jdom-download">
+   <property name="download.jarname" value="jdom" />
+   <property name="download.jarversion" value="${jar.jdom.version}" />
+   <antcall target="http-download"/>
+  </target>
+
+  <target name="log4j-download">
+   <property name="download.jarname" value="log4j" />
+   <property name="download.jarversion" value="${jar.log4j.version}" />
+   <antcall target="http-download"/>
+  </target>
+
+  <target name="oro-download">
+   <property name="download.jarname" value="${jar.oro.name}" />
+   <property name="download.jarversion" value="${jar.oro.version}" />
+   <antcall target="http-download"/>
+  </target>
+
+  <target name="servletapi-download">
+   <property name="download.jarname" value="servletapi" />
+   <property name="download.jarversion" value="${jar.servletapi.version}" />
+   <antcall target="http-download"/>
+  </target>
+
+  <target name="werken-xpath-download">
+   <property name="download.jarname" value="werken-xpath" />
+   <property name="download.jarversion" value="${jar.werken-xpath.version}" />
+   <antcall target="http-download"/>
+  </target>
+
+<!-- Test Dependencies -->
+
+  <target name="junit-download">
+   <property name="download.jarname" value="junit" />
+   <property name="download.jarversion" value="${jar.junit.version}" />
+   <antcall target="http-test-download"/>
+  </target>
+
+  <target name="hsqldb-download">
+   <property name="download.jarname" value="hsqldb" />
+   <property name="download.jarversion" value="${jar.hsqldb.version}" />
+   <antcall target="http-test-download"/>
+  </target>
+
+</project>
+

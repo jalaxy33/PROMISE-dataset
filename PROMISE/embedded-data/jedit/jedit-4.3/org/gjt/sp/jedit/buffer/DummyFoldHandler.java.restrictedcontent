@@ -1,0 +1,12 @@
+DummyFoldHandler
+DummyFoldHandler
+getFoldLevel
+int
+buffer
+JEditBuffer
+lineIndex
+int
+seg
+Segment
+return
+FoldHandler

@@ -1,0 +1,13 @@
+NamespacePrefixTest
+String
+body
+ProducerTemplate
+template
+MockEndpoint
+endpoint
+testAssertThatInjectionWorks
+assertNotNull
+template
+assertNotNull
+endpoint
+AbstractJUnit38SpringContextTests

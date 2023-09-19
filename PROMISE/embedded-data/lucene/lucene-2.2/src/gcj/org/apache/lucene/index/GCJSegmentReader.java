@@ -1,0 +1,20 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+set()ClassDeclaration
+{'final', 'public'}MethodDeclaration
+TermDocsReferenceType
+IfStatement
+BinaryOperation
+MemberReference
+GCJIndexInputReferenceType
+BlockStatement
+ReturnStatement
+ClassCreator
+GCJTermDocsReferenceType
+This
+BlockStatement
+ReturnStatement
+SuperMethodInvocation
+SegmentReaderReferenceType

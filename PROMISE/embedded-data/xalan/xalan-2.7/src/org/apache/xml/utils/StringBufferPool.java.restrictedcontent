@@ -1,0 +1,16 @@
+StringBufferPool
+ObjectPool
+m_stringBufPool
+ObjectPool
+FastStringBuffer
+get
+FastStringBuffer
+return
+FastStringBuffer
+getInstance
+free
+sb
+FastStringBuffer
+setLength
+freeInstance
+sb

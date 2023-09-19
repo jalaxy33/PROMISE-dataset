@@ -1,0 +1,16 @@
+RangeException
+RangeException
+code
+short
+message
+String
+message
+code
+code
+short
+code
+short
+BAD_BOUNDARYPOINTS_ERR
+short
+INVALID_NODE_TYPE_ERR
+RuntimeException

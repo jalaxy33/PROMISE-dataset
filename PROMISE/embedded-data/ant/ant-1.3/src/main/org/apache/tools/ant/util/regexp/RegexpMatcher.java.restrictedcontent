@@ -1,0 +1,14 @@
+RegexpMatcher
+setPattern
+pattern
+String
+getPattern
+String
+matches
+boolean
+argument
+String
+getGroups
+Vector
+argument
+String

@@ -1,0 +1,15 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+InterfaceDeclaration
+set()MethodDeclaration
+MethodReferenceType
+set()MethodDeclaration
+ObjectReferenceType
+set()MethodDeclaration
+ObjectReferenceType
+set()MethodDeclaration
+ObjectReferenceType
+set()MethodDeclaration
+AccessibleObjectReferenceType

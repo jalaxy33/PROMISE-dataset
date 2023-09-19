@@ -1,0 +1,9 @@
+CompilationUnit
+PackageDeclaration
+InterfaceDeclaration
+{'public'}MethodDeclaration
+NodeReferenceType
+set()FormalParameter
+intBasicType
+{'public'}MethodDeclaration
+intBasicType

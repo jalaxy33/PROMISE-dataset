@@ -1,0 +1,12 @@
+XMLQueueToQueueTransactionTest
+Logger
+log
+getLogger
+getClass
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+testRollbackUsingXmlQueueToQueue
+assertResult
+AbstractTransactionTest

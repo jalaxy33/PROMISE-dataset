@@ -1,0 +1,13 @@
+CompilationUnit
+PackageDeclaration
+Import
+{'public'}ClassDeclaration
+{'public'}MethodDeclaration
+intBasicType
+ReturnStatement
+MemberReference
+{'public'}MethodDeclaration
+intBasicType
+ReturnStatement
+Literal
+BitmapReferenceType

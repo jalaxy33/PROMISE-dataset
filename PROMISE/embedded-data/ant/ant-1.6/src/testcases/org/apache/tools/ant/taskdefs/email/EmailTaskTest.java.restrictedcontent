@@ -1,0 +1,12 @@
+EmailTaskTest
+EmailTaskTest
+name
+String
+name
+setUp
+configureProject
+test1
+expectBuildException
+test2
+expectBuildException
+BuildFileTest

@@ -1,0 +1,6 @@
+JmsRouteUsingSpringWithAutoWireTest
+createApplicationContext
+ClassPathXmlApplicationContext
+return
+ClassPathXmlApplicationContext
+JmsRouteUsingSpringAndJmsNameTest

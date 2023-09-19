@@ -1,0 +1,12 @@
+Mediator
+mediate
+boolean
+synCtx
+MessageContext
+getType
+String
+getTraceState
+int
+setTraceState
+traceState
+int

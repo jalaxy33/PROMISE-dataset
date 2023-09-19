@@ -1,0 +1,12 @@
+WMLTimerElement
+setName
+newValue
+String
+getName
+String
+setValue
+newValue
+String
+getValue
+String
+WMLElement

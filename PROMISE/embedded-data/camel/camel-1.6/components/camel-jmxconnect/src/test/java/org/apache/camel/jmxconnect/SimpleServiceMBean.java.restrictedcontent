@@ -1,0 +1,13 @@
+SimpleServiceMBean
+start
+stop
+setSimpleCounter
+simpleCounter
+int
+getSimpleCounter
+int
+getSimpleValue
+int
+setSimpleValue
+simpleValue
+int

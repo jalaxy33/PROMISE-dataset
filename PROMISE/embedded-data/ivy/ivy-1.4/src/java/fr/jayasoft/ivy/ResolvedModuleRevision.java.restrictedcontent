@@ -1,0 +1,17 @@
+ResolvedModuleRevision
+getResolver
+DependencyResolver
+getArtifactResolver
+DependencyResolver
+getId
+ModuleRevisionId
+getPublicationDate
+Date
+getDescriptor
+ModuleDescriptor
+isDownloaded
+boolean
+isSearched
+boolean
+getLocalMDUrl
+URL

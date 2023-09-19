@@ -1,0 +1,12 @@
+HelloServiceImpl
+echo
+String
+text
+String
+return
+text
+ping
+sayHello
+String
+return
+HelloService

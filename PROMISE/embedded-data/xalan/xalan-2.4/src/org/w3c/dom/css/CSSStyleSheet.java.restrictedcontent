@@ -1,0 +1,15 @@
+CSSStyleSheet
+getOwnerRule
+CSSRule
+getCssRules
+CSSRuleList
+insertRule
+int
+rule
+String
+index
+int
+deleteRule
+index
+int
+StyleSheet

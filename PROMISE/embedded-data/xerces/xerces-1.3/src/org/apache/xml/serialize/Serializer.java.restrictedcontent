@@ -1,0 +1,16 @@
+Serializer
+setOutputByteStream
+output
+OutputStream
+setOutputCharStream
+output
+Writer
+setOutputFormat
+format
+OutputFormat
+asDocumentHandler
+DocumentHandler
+asContentHandler
+ContentHandler
+asDOMSerializer
+DOMSerializer

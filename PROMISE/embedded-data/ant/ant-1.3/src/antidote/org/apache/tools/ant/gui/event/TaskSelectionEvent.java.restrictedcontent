@@ -1,0 +1,15 @@
+TaskSelectionEvent
+TaskSelectionEvent
+context
+AppContext
+selected
+ACSElement
+context
+selected
+getSelectedTasks
+ACSTaskElement
+return
+ACSTaskElement
+getFiltered
+ACSTaskElement
+ElementSelectionEvent

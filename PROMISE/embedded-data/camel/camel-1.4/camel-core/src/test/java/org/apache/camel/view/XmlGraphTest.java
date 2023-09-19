@@ -1,0 +1,15 @@
+CompilationUnit
+PackageDeclaration
+{'public'}ClassDeclaration
+{'public'}MethodDeclaration
+Annotation
+LocalVariableDeclaration
+XmlGraphGeneratorReferenceType
+VariableDeclarator
+ClassCreator
+XmlGraphGeneratorReferenceType
+MemberReference
+StatementExpression
+MethodInvocation
+MemberReference
+DotViewTestReferenceType

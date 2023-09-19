@@ -1,0 +1,23 @@
+
+Files in this directory are third-party libraries,
+such as JDBC drivers for MySQL (Connector/J) and
+for SQL Server (JTDS.) They are not linked into
+pbeans.jar and they are only provided for your
+convenience.
+
+Connector/J is under GNU General Public License.
+Per requirements of the license, we can make the
+source code of Connector/J available to you upon
+request. But it's clearly much easier for you to
+download Connector/J from 
+ 
+ http://www.mysql.com/products/connector-j
+
+JTDS is under a BSD License. JTDS is Copyright 1998, 
+1999 CDS Networks, Inc., Medford Oregon. For the list
+of conditions, see 
+ 
+ http://jtds.sourceforge.net/license.html
+
+PostgreSQL JDBC Driver is Copyright (c) 1994-8 Regents 
+of the University of California.

@@ -1,0 +1,45 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+{'public', 'abstract'}ClassDeclaration
+FieldDeclaration
+ServerBaseEntryReferenceType
+VariableDeclarator
+set()ConstructorDeclaration
+set()FormalParameter
+IReferenceType
+StatementExpression
+Assignment
+This
+MemberReference
+MemberReference
+{'public', 'abstract'}MethodDeclaration
+RReferenceType
+set()FormalParameter
+StringReferenceType
+{'public', 'static'}MethodDeclaration
+TypeParameter
+NodeReferenceType
+TypeParameter
+ServerBaseEntryReferenceType
+IndexableReferenceType
+TypeArgument
+RReferenceType
+TypeArgument
+IReferenceType
+set()FormalParameter
+IReferenceType
+ReturnStatement
+ClassCreator
+DomIndexableReferenceType
+TypeArgument
+RReferenceType
+TypeArgument
+IReferenceType
+MemberReference
+TypeParameter
+NodeReferenceType
+TypeParameter
+ServerBaseEntryReferenceType

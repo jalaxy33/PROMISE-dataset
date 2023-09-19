@@ -1,0 +1,10 @@
+CompilationUnit
+PackageDeclaration
+Import
+InterfaceDeclaration
+set()MethodDeclaration
+LanguageReferenceType
+set()FormalParameter
+StringReferenceType
+set()FormalParameter
+CamelContextReferenceType

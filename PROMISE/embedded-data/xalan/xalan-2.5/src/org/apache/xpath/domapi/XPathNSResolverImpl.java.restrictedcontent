@@ -1,0 +1,14 @@
+XPathNSResolverImpl
+XPathNSResolverImpl
+xpathExpressionContext
+Node
+xpathExpressionContext
+lookupNamespaceURI
+String
+prefix
+String
+return
+getNamespaceForPrefix
+prefix
+PrefixResolverDefault
+XPathNSResolver

@@ -1,0 +1,9 @@
+JAXBConverterMessageTypeTest
+CamelContext
+context
+DefaultCamelContext
+TypeConverter
+converter
+getTypeConverter
+testConverter
+TestCase

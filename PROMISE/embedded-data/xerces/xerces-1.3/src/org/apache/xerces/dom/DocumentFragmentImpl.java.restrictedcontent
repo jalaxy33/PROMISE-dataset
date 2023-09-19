@@ -1,0 +1,17 @@
+DocumentFragmentImpl
+long
+serialVersionUID
+DocumentFragmentImpl
+ownerDoc
+DocumentImpl
+ownerDoc
+DocumentFragmentImpl
+getNodeType
+short
+return
+DOCUMENT_FRAGMENT_NODE
+getNodeName
+String
+return
+ParentNode
+DocumentFragment

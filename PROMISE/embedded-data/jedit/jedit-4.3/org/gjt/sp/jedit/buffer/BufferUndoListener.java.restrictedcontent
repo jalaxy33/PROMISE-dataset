@@ -1,0 +1,13 @@
+BufferUndoListener
+beginUndo
+buffer
+JEditBuffer
+endUndo
+buffer
+JEditBuffer
+beginRedo
+buffer
+JEditBuffer
+endRedo
+buffer
+JEditBuffer

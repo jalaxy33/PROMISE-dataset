@@ -1,0 +1,16 @@
+XMLMessageProvider
+setLocale
+locale
+Locale
+getLocale
+Locale
+createMessage
+String
+locale
+Locale
+majorCode
+int
+minorCode
+int
+args
+Object

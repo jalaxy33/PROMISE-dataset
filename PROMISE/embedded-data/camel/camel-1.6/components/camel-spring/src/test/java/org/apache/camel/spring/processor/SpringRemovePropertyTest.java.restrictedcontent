@@ -1,0 +1,6 @@
+SpringRemovePropertyTest
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+RemovePropertyTest

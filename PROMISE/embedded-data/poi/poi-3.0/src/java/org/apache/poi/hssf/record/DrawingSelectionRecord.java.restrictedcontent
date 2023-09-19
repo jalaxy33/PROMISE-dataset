@@ -1,0 +1,16 @@
+DrawingSelectionRecord
+short
+sid
+DrawingSelectionRecord
+DrawingSelectionRecord
+in
+RecordInputStream
+in
+getRecordName
+String
+return
+getSid
+short
+return
+sid
+AbstractEscherHolderRecord

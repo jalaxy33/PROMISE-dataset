@@ -1,0 +1,12 @@
+TestEmptyTokenStream
+test
+TokenStream
+ts
+EmptyTokenStream
+assertNull
+next
+reset
+assertNull
+next
+Token
+TestCase

@@ -1,0 +1,16 @@
+GDataQueryParser
+GDataQueryParser
+field
+String
+analyzer
+Analyzer
+field
+analyzer
+setDefaultOperator
+AND
+GDataQueryParser
+schema
+IndexSchema
+getDefaultSearchField
+getSchemaAnalyzer
+QueryParser

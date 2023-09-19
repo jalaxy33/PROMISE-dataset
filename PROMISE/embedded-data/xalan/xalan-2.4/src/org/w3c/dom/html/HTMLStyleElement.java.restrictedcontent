@@ -1,0 +1,17 @@
+HTMLStyleElement
+getDisabled
+boolean
+setDisabled
+disabled
+boolean
+getMedia
+String
+setMedia
+media
+String
+getType
+String
+setType
+type
+String
+HTMLElement

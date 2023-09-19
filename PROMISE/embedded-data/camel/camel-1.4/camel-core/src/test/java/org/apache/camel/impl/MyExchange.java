@@ -1,0 +1,15 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+{'public'}ClassDeclaration
+{'public'}ConstructorDeclaration
+set()FormalParameter
+CamelContextReferenceType
+set()FormalParameter
+ExchangePatternReferenceType
+StatementExpression
+SuperConstructorInvocation
+MemberReference
+MemberReference
+DefaultExchangeReferenceType

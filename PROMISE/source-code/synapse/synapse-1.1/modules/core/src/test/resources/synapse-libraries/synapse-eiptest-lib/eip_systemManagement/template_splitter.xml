@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+
+<template xmlns="http://ws.apache.org/ns/synapse" name="splitter">
+    <parameter name="iterate_exp"/>
+    <parameter name="endpoint_uri"/>
+    <parameter name="attach_path" default="{{//original}}" optional="true"/>
+    <parameter name="sequence_ref"/>
+    <sequence>
+        <property name="ItrExp" expression="$func:iterate_exp" />
+        <property name="EndPUri" expression="$func:endpoint_uri" />
+        <property name="AttachPath" expression="$func:attach_path" />
+        <property name="SRef" expression="$func:sequence_ref" />
+        <property name="Endpoint_1" expression="get-property('To')" />
+        <header name="To" expression="$func:endpoint_uri"/>
+        <iterate xmlns:ns="http://org.apache.synapse/xsd" continueParent="true" preservePayload="true" attachPath="$func:attach_path" expression="$func:iterate_exp">
+            <target>
+              <sequence key="{$func:sequence_ref}"/>
+            </target>
+        </iterate>
+        <property name="Endpoint_2" expression="get-property('To')" />
+    </sequence>
+</template>

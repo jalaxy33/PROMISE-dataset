@@ -1,0 +1,15 @@
+FruitFilter
+isApple
+boolean
+body
+String
+return
+equalsIgnoreCase
+body
+isOrange
+boolean
+body
+String
+return
+equalsIgnoreCase
+body

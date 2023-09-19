@@ -1,0 +1,10 @@
+XsltTest
+MockEndpoint
+resultEndpoint
+ProducerTemplate
+template
+testXslt
+expectedBodiesReceived
+sendBody
+assertIsSatisfied
+AbstractJUnit38SpringContextTests

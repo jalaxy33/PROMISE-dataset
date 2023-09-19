@@ -1,0 +1,11 @@
+CompilationUnit
+PackageDeclaration
+Import
+{'public'}ClassDeclaration
+{'public'}MethodDeclaration
+ClassPathXmlApplicationContextReferenceType
+ReturnStatement
+ClassCreator
+ClassPathXmlApplicationContextReferenceType
+Literal
+SpringIntegrationOneWayConsumerTestReferenceType

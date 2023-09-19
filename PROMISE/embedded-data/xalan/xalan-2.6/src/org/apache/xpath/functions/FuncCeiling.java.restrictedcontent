@@ -1,0 +1,12 @@
+FuncCeiling
+execute
+XObject
+xctxt
+XPathContext
+return
+XNumber
+ceil
+execute
+num
+xctxt
+FunctionOneArg

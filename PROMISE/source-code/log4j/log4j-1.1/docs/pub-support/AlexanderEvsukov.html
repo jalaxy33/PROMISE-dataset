@@ -1,0 +1,59 @@
+<SPAN class=EUDORAHEADER>Delivered-To: cgu@qos.ch <BR></SPAN><SPAN 
+class=EUDORAHEADER>Subject: JSR47 vs. log4j <BR></SPAN><SPAN 
+class=EUDORAHEADER>Date: Thu, 14 Jun 2001 23:35:46 +0300 <BR></SPAN><SPAN 
+class=EUDORAHEADER>X-MS-Has-Attach: <BR></SPAN><SPAN 
+class=EUDORAHEADER>X-MS-TNEF-Correlator: <BR></SPAN><SPAN 
+class=EUDORAHEADER>Thread-Topic: JSR47 vs. log4j <BR></SPAN><SPAN 
+class=EUDORAHEADER>Thread-Index: AcD1EZGxDlpZJe39RVe6FufiGA73Pw== 
+<BR></SPAN><SPAN class=EUDORAHEADER>From: "Alexander Evsukov" 
+&lt;evsukov@validio.com.ua&gt; <BR></SPAN><SPAN class=EUDORAHEADER>To: 
+&lt;java-logging-input@eng.sun.com&gt; <BR></SPAN><SPAN class=EUDORAHEADER>Cc: 
+&lt;cgu@qos.ch&gt; <BR></SPAN><BR>
+<DIV>Dear Members of JSR47:</DIV><BR>
+<DIV>I'm working in a big group of Java developers. Previously the lack of</DIV>
+<DIV>logging solution forced us to develop a custom logging API for our</DIV>
+<DIV>internal needs. Our logging framework borrowed some ideas from 
+logging</DIV>
+<DIV>facilities from old Borland's C++, there were some of the features 
+that</DIV>
+<DIV>we later found in log4j, and some our own. Nevertheless, close</DIV>
+<DIV>examination of the Log4J made us migrate to it, and we never 
+regretted.</DIV>
+<DIV>The framework is easy to use, provides very good set of features, and</DIV>
+<DIV>fast.</DIV><BR>
+<DIV>I strongly support arguments of the Log4J's founder at</DIV>
+<DIV><A href="http://jakarta.apache.org/log4j/docs/critique.html" 
+EUDORA="AUTOURL">http://jakarta.apache.org/log4j/docs/critique.html</A>. In 
+particular, my</DIV>
+<DIV>experience shows that the long list of log levels introduces only</DIV>
+<DIV>confusion, especially when working in a group . For example, how do 
+you</DIV>
+<DIV>define the difference between FINE, FINER and FINEST, for a new</DIV>
+<DIV>programmer in your project?</DIV><BR>
+<DIV>As you know Log4J is widely used. It is a part of many open source 
+and</DIV>
+<DIV>commercial projects. What would you suggest for all the people 
+working</DIV>
+<DIV>on these projects, assuming the current discrepancies between the new</DIV>
+<DIV>standard suggested in JSR47 and existing de-facto standard in 
+Log4J?</DIV><BR>
+<DIV>Personally I think that introducing Log4J as logging API of new JDK 
+will</DIV>
+<DIV>be beneficial for all the Java community. This would save time for 
+those</DIV>
+<DIV>developers who otherwise would have to migrate their code, and would</DIV>
+<DIV>have positive impact on the quality of Java projects. E.g. in a</DIV>
+<DIV>medium-to-big project that would use several solutions from different</DIV>
+<DIV>vendors or open source projects, developers we may end up having two</DIV>
+<DIV>different logging APIs to work with in the same project (!). </DIV><BR>
+<DIV>Adopting Log4J as the standard logging API would show that Sun does 
+care</DIV>
+<DIV>about the quality of the Java platform and its APIs, and that it does</DIV>
+<DIV>care about developers who selected this platform and support it.</DIV><BR>
+<DIV>I personally know that throwing own work away is difficult. But don't</DIV>
+<DIV>you think that it is TOO LATE to introduce a NEW logging API, when</DIV>
+<DIV>there's EXISTING one, which is widely adopted and proved itself very</DIV>
+<DIV>well?</DIV><BR>
+<DIV>Thank you for your time reading this.</DIV><BR>
+<DIV>Regards</DIV><BR>
+<DIV>Alexander Evsukov</DIV>

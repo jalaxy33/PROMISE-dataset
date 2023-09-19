@@ -1,0 +1,8 @@
+SortComparatorSource
+newComparator
+ScoreDocComparator
+reader
+IndexReader
+fieldname
+String
+Serializable

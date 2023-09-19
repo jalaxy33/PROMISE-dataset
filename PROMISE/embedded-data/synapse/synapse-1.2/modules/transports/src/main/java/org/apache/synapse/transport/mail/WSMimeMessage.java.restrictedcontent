@@ -1,0 +1,14 @@
+WSMimeMessage
+WSMimeMessage
+session
+Session
+session
+updateMessageID
+if
+getHeader
+MAIL_HEADER_MESSAGE_ID
+block
+setHeader
+MAIL_HEADER_MESSAGE_ID
+getUUID
+MimeMessage

@@ -1,0 +1,13 @@
+HeaderFilterStrategy
+applyFilterToCamelHeaders
+boolean
+headerName
+String
+headerValue
+Object
+applyFilterToExternalHeaders
+boolean
+headerName
+String
+headerValue
+Object

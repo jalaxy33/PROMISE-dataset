@@ -1,0 +1,16 @@
+SynapseEnvironment
+injectMessage
+smc
+MessageContext
+send
+endpoint
+EndpointDefinition
+smc
+MessageContext
+createMessageContext
+MessageContext
+getStatisticsCollector
+StatisticsCollector
+setStatisticsCollector
+statisticsCollector
+StatisticsCollector

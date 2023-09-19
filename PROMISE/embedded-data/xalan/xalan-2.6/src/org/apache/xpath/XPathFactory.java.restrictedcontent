@@ -1,0 +1,11 @@
+XPathFactory
+create
+XPath
+exprString
+String
+locator
+SourceLocator
+prefixResolver
+PrefixResolver
+type
+int

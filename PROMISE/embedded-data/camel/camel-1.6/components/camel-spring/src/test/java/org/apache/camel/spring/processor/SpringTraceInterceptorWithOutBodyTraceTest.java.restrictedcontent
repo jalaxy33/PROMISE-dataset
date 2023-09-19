@@ -1,0 +1,6 @@
+SpringTraceInterceptorWithOutBodyTraceTest
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+TraceInterceptorWithOutBodyTraceTest

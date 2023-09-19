@@ -1,0 +1,6 @@
+SpringIntegrationChannelConverterTest
+createApplicationContext
+ClassPathXmlApplicationContext
+return
+ClassPathXmlApplicationContext
+SpringIntegrationOneWayConsumerTest

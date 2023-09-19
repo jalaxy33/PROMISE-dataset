@@ -1,0 +1,8 @@
+Fragmenter
+start
+originalText
+String
+isNewFragment
+boolean
+nextToken
+Token

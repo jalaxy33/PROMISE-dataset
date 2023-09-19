@@ -1,0 +1,6 @@
+SpringRemoveHeaderTest
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+RemoveHeaderTest

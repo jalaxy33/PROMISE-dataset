@@ -1,0 +1,7 @@
+NamespaceHandler
+init
+registerBeanDefinitionParser
+CamelSourceAdpaterParser
+registerBeanDefinitionParser
+CamelTargetAdapterParser
+NamespaceHandlerSupport

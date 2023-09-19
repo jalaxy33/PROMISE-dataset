@@ -1,0 +1,15 @@
+EJBConstants
+String
+BEANSTALK
+String
+METHOD
+String
+SESSION_ID
+String
+JNDI_NAME
+String
+REMOVE
+String
+ARGS
+String
+ARG

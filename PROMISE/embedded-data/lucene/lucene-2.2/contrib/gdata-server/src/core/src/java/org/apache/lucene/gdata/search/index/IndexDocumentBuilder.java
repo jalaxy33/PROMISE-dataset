@@ -1,0 +1,11 @@
+CompilationUnit
+PackageDeclaration
+Import
+InterfaceDeclaration
+{'public'}MethodDeclaration
+TReferenceType
+TypeParameter
+IndexDocumentReferenceType
+CallableReferenceType
+TypeArgument
+TReferenceType

@@ -1,0 +1,10 @@
+DBPoolViewMBean
+getNumActive
+int
+getNumIdle
+int
+getName
+String
+getConnectionUsage
+Map
+reset

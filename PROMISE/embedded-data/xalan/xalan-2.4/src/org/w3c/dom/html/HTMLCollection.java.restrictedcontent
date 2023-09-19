@@ -1,0 +1,11 @@
+HTMLCollection
+getLength
+int
+item
+Node
+index
+int
+namedItem
+Node
+name
+String

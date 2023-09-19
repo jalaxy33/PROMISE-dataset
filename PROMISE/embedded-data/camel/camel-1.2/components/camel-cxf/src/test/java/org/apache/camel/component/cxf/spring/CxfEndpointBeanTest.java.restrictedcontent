@@ -1,0 +1,16 @@
+CxfEndpointBeanTest
+testCxfEndpointBeanDefinitionParser
+ClassPathXmlApplicationContext
+ctx
+ClassPathXmlApplicationContext
+String
+CxfEndpointBean
+routerEndpoint
+CxfEndpointBean
+getBean
+assertEquals
+getAddress
+assertEquals
+getServiceClass
+getCanonicalName
+TestCase

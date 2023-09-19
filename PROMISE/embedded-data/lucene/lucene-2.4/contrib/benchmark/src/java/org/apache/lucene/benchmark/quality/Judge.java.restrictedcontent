@@ -1,0 +1,17 @@
+Judge
+isRelevant
+boolean
+docName
+String
+query
+QualityQuery
+validateData
+boolean
+qq
+QualityQuery
+logger
+PrintWriter
+maxRecall
+int
+query
+QualityQuery

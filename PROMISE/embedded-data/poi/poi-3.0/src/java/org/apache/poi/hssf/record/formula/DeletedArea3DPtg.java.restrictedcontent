@@ -1,0 +1,15 @@
+DeletedArea3DPtg
+byte
+sid
+DeletedArea3DPtg
+arearef
+String
+externIdx
+short
+arearef
+externIdx
+DeletedArea3DPtg
+in
+RecordInputStream
+in
+Area3DPtg

@@ -1,0 +1,12 @@
+AutoRegisteredRouteBuilderTest
+testUsingAutoRegisteredRouteBuilderUsingXml
+ApplicationContext
+applicationContext
+ClassPathXmlApplicationContext
+CamelContext
+context
+CamelContext
+getBean
+assertValidContext
+context
+XmlConfigTestSupport

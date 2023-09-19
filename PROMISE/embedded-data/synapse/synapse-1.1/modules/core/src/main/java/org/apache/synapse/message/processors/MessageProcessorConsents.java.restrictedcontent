@@ -1,0 +1,13 @@
+MessageProcessorConsents
+String
+MESSAGE_STORE
+String
+PARAMETERS
+String
+QUARTZ_CONF
+String
+INTERVAL
+String
+CRON_EXPRESSION
+String
+MAX_DELIVER_ATTEMPTS

@@ -1,0 +1,9 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+InterfaceDeclaration
+set()MethodDeclaration
+QueryReferenceType
+set()FormalParameter
+EntityManagerReferenceType

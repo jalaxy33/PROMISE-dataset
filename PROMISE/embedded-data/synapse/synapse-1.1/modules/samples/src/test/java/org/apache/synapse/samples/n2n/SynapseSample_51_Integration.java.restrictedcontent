@@ -1,0 +1,12 @@
+SynapseSample_51_Integration
+setUp
+setProperty
+SYNAPSE_XML
+SAMPLE_CONFIG_ROOT_PATH
+setUp
+testSample
+setProperty
+OMElement
+response
+sendUsingMTOM
+AbstractAutomationTestCase

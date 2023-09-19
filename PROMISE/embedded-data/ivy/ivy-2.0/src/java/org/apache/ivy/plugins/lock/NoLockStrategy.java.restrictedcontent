@@ -1,0 +1,16 @@
+NoLockStrategy
+NoLockStrategy
+setName
+lockArtifact
+boolean
+artifact
+Artifact
+artifactFileToDownload
+File
+return
+unlockArtifact
+artifact
+Artifact
+artifactFileToDownload
+File
+AbstractLockStrategy

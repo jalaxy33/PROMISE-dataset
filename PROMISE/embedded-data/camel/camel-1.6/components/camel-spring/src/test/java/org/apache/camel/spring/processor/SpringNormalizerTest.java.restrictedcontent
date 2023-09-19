@@ -1,0 +1,6 @@
+SpringNormalizerTest
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+NormalizerTest

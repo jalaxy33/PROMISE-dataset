@@ -1,0 +1,12 @@
+TestAreaErrPtg
+testReading
+HSSFWorkbook
+workbook
+loadWorkbook
+assertEquals
+getSheetAt
+getRow
+getCell
+short
+getCellFormula
+AbstractPtgTestCase

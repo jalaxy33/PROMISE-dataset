@@ -1,0 +1,15 @@
+BlockList
+zap
+index
+int
+remove
+ListManagedBlock
+index
+int
+fetchBlocks
+ListManagedBlock
+startBlock
+int
+setBAT
+bat
+BlockAllocationTableReader

@@ -1,0 +1,5 @@
+CxfEndpointBean
+CxfEndpointBean
+setServiceFactory
+ReflectionServiceFactoryBean
+AbstractEndpointFactory

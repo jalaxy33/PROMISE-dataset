@@ -1,0 +1,13 @@
+CircleFoldPainter
+paintFoldShape
+gfx
+Graphics2D
+top
+int
+bottom
+int
+drawArc
+top
+bottom
+top
+ShapedFoldPainter

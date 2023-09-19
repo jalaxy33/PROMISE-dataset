@@ -1,0 +1,15 @@
+ScriptFilter
+accept
+boolean
+pathname
+File
+if
+getName
+endsWith
+return
+if
+getName
+endsWith
+return
+return
+FileFilter

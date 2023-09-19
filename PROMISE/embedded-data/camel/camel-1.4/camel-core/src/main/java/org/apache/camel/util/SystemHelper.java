@@ -1,0 +1,47 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+{'final', 'public'}ClassDeclaration
+FieldDeclaration
+LogReferenceType
+VariableDeclarator
+MethodInvocation
+ClassReference
+SystemHelperReferenceType
+{'private'}ConstructorDeclaration
+{'static', 'public'}MethodDeclaration
+StringReferenceType
+set()FormalParameter
+StringReferenceType
+TryStatement
+ReturnStatement
+MethodInvocation
+MemberReference
+CatchClause
+['Exception']CatchClauseParameter
+StatementExpression
+MethodInvocation
+BinaryOperation
+BinaryOperation
+BinaryOperation
+Literal
+MemberReference
+Literal
+MemberReference
+MemberReference
+ReturnStatement
+Literal
+{'static', 'public'}MethodDeclaration
+booleanBasicType
+set()FormalParameter
+StringReferenceType
+LocalVariableDeclaration
+StringReferenceType
+VariableDeclarator
+MethodInvocation
+MemberReference
+ReturnStatement
+MethodInvocation
+MemberReference

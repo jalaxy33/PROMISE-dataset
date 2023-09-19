@@ -1,0 +1,9 @@
+PomDependencyMgt
+getGroupId
+String
+getArtifactId
+String
+getVersion
+String
+getScope
+String

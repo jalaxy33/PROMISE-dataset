@@ -1,0 +1,11 @@
+PublishingDependencyRevisionResolver
+resolve
+String
+published
+ModuleDescriptor
+publishedStatus
+String
+depMrid
+ModuleRevisionId
+status
+String

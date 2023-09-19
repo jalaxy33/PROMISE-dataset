@@ -1,0 +1,15 @@
+JAXBConverterMessageTypeTest
+CamelContext
+context
+DefaultCamelContext
+TypeConverter
+converter
+getTypeConverter
+testConverter
+MessageType
+message
+convertTo
+MessageType
+assertNotNull
+message
+TestCase

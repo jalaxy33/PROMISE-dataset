@@ -1,0 +1,10 @@
+DocFieldConsumerPerThread
+startDocument
+finishDocument
+DocumentsWriter
+DocWriter
+addField
+DocFieldConsumerPerField
+fi
+FieldInfo
+abort

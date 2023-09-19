@@ -1,0 +1,9 @@
+LoanBrokerWS
+getLoanQuote
+String
+ssn
+String
+loanAmount
+Double
+loanDuriation
+Integer

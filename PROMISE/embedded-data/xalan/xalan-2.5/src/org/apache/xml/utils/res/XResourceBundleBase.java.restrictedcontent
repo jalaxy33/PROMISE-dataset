@@ -1,0 +1,10 @@
+XResourceBundleBase
+getMessageKey
+String
+errorCode
+int
+getWarningKey
+String
+errorCode
+int
+ListResourceBundle

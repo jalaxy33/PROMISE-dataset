@@ -1,0 +1,10 @@
+CompilationUnit
+PackageDeclaration
+InterfaceDeclaration
+ConstantDeclaration
+StringReferenceType
+VariableDeclarator
+Literal
+{'public', 'abstract'}MethodDeclaration
+ContentTypeReferenceType
+GOMElementReferenceType

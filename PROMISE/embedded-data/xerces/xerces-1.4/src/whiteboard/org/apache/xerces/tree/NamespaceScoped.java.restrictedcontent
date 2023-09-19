@@ -1,0 +1,11 @@
+NamespaceScoped
+getLocalName
+String
+getNamespace
+String
+getPrefix
+String
+setPrefix
+prefix
+String
+NodeEx

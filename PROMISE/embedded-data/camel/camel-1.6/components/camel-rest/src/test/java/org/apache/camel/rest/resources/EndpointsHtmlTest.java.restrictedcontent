@@ -1,0 +1,12 @@
+EndpointsHtmlTest
+testEndpointsAsHtml
+String
+response
+resource
+accept
+get
+String
+assertTrue
+response
+contains
+TestSupport

@@ -1,0 +1,13 @@
+QueryMaker
+makeQuery
+Query
+size
+int
+makeQuery
+Query
+setConfig
+config
+Config
+resetInputs
+printQueries
+String

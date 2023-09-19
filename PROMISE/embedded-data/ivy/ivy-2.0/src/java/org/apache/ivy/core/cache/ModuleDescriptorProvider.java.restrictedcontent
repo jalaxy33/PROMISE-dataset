@@ -1,0 +1,9 @@
+ModuleDescriptorProvider
+provideModule
+ModuleDescriptor
+ivySettings
+ParserSettings
+descriptorFile
+File
+validate
+boolean

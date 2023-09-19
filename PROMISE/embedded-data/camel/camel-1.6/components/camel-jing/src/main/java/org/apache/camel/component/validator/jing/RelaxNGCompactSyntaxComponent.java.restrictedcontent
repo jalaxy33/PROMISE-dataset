@@ -1,0 +1,17 @@
+RelaxNGCompactSyntaxComponent
+configureValidator
+validator
+JingValidator
+uri
+String
+remaining
+String
+parameters
+Map
+setCompactSyntax
+configureValidator
+validator
+uri
+remaining
+parameters
+JingComponent

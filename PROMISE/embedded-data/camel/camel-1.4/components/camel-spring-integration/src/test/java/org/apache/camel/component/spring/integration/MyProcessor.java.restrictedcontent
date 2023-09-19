@@ -1,0 +1,16 @@
+MyProcessor
+process
+exchange
+Exchange
+String
+request
+String
+getIn
+getBody
+String
+result
+request
+getOut
+setBody
+result
+Processor

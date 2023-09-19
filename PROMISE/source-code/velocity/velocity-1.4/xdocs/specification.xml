@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<!--
+   Copyright 2000-2004 The Apache Software Foundation
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+
+<document>
+
+ <properties>
+  <title>Velocity Specification</title>
+  <author email="jon@latchkey.com">Velocity Documentation Team</author>
+ </properties>
+
+<body>
+
+<section name="Velocity Specification">
+
+<p>
+This document will eventually describe the Velocity Specification. 
+For now, we have links to our outdated BNF and AST specifications. 
+They will be updated soon.
+</p>
+
+<ul>
+<li><a href="./specification-bnf.html">BNF Specification</a></li>
+<li><a href="./specification-ast.html">AST Specification</a></li>
+</ul>
+
+</section>
+
+</body>
+</document>

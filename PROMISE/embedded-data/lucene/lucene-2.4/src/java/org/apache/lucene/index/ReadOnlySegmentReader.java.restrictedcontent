@@ -1,0 +1,15 @@
+ReadOnlySegmentReader
+noWrite
+throw
+UnsupportedOperationException
+acquireWriteLock
+noWrite
+isDeleted
+boolean
+n
+int
+return
+deletedDocs
+get
+n
+SegmentReader

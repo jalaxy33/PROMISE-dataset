@@ -1,0 +1,16 @@
+IgnoreCircularDependencyStrategy
+CircularDependencyStrategy
+INSTANCE
+IgnoreCircularDependencyStrategy
+getInstance
+CircularDependencyStrategy
+return
+INSTANCE
+IgnoreCircularDependencyStrategy
+logCircularDependency
+mrids
+ModuleRevisionId
+verbose
+formatMessage
+mrids
+AbstractLogCircularDependencyStrategy

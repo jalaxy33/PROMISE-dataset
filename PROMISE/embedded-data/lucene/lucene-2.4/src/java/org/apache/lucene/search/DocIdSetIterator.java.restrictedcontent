@@ -1,0 +1,9 @@
+DocIdSetIterator
+doc
+int
+next
+boolean
+skipTo
+boolean
+target
+int

@@ -1,0 +1,17 @@
+CompilationUnit
+PackageDeclaration
+Import
+InterfaceDeclaration
+set()MethodDeclaration
+intBasicType
+set()MethodDeclaration
+intBasicType
+set()MethodDeclaration
+byteBasicType
+set()FormalParameter
+byteBasicType
+set()FormalParameter
+intBasicType
+{'public'}MethodDeclaration
+booleanBasicType
+TermDocsReferenceType

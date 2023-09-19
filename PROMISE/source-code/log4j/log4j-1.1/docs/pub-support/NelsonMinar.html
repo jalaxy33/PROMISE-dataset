@@ -1,0 +1,53 @@
+<SPAN class=EUDORAHEADER>Delivered-To: cgu@qos.ch <BR></SPAN><SPAN 
+class=EUDORAHEADER>Date: Tue, 12 Jun 2001 17:36:47 -0700 (PDT) <BR></SPAN><SPAN 
+class=EUDORAHEADER>From: nelson@monkey.org (Nelson Minar) <BR></SPAN><SPAN 
+class=EUDORAHEADER>To: java-logging-input@eng.sun.com <BR></SPAN><SPAN 
+class=EUDORAHEADER>Subject: Logging API comments: line numbers, conditional 
+compilation, log4j <BR></SPAN><BR>
+<DIV>Hello there, and thank you so much for your work on JSR47! I'm 
+looking</DIV>
+<DIV>forward to having a logging facility built in to J2SE. I've been a</DIV>
+<DIV>user of log4j in commerical projects for almost two years now, and</DIV>
+<DIV>have come to depend on the tool. It will be good to have something</DIV>
+<DIV>similar in Java.</DIV><BR><BR>
+<DIV>Three comments on the proposal, based on looking at the 1.4 API:</DIV><BR>
+<DIV>I was disappointed to see no VM level support for logging. I want to</DIV>
+<DIV>be able to print out file and line numbers in my log messages. You 
+can</DIV>
+<DIV>do this with log4j, but it's done via runtime hack of parsing the</DIV>
+<DIV>string representation of a Throwable. The VM could help with this, if</DIV>
+<DIV>it were in the 1.4 standard. The JSR47 alternative (passing in</DIV>
+<DIV>sourceClass and sourceMethod as strings to Logger) is not very</DIV>
+<DIV>helpful, I can't imagine code authors writing and maintaining 
+those.</DIV><BR>
+<DIV>I was also disappointed to see no compiler level support for 
+compiling</DIV>
+<DIV>out logging entirely. Everyone I know has some variant of a static</DIV>
+<DIV>final boolean that they switch on. It's important when shipping</DIV>
+<DIV>proprietary code - it can be dangerous to leave the logging strings</DIV>
+<DIV>in. But Java has a long history of no conditional compilation, so I</DIV>
+<DIV>guess that's why there is no support for it.</DIV><BR>
+<DIV>But my main comment is that I am frankly mystified as to why JSR47</DIV>
+<DIV>does not more closely resemble log4j, or why log4j was not just</DIV>
+<DIV>adopted wholesale. Log4j is the defacto standard logging API, and has</DIV>
+<DIV>had years of development and use. It has several advanced features</DIV>
+<DIV>that are missing from JSR47. Ceki has written up a detailed review</DIV>
+<DIV>that I mostly agree with:</DIV>
+<DIV>&nbsp; <A href="http://jakarta.apache.org/log4j/docs/critique.html" 
+EUDORA="AUTOURL">http://jakarta.apache.org/log4j/docs/critique.html</A></DIV>
+<DIV>For what it's worth, the big omissions in JSR47 to me are some sort 
+of</DIV>
+<DIV>equivalent to PatternLayout, and the limited handler inheritance</DIV>
+<DIV>properties of JSR47.</DIV><BR><BR>
+<DIV>Frankly, at this point I don't see any reason to use JSR47 instead of</DIV>
+<DIV>log4j, except that it will ship in Java 1.4 platforms. I see lots of</DIV>
+<DIV>reasons log4j is better. Is it too late to bring the Java 1.4 API</DIV>
+<DIV>closer to log4j?</DIV><BR>
+<DIV>Thank you</DIV>
+<DIV>&nbsp; Nelson</DIV><BR>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+nelson@monkey.org</DIV>
+<DIV>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+.&nbsp;&nbsp;&nbsp;&nbsp; .&nbsp;&nbsp;&nbsp; .&nbsp;&nbsp; .&nbsp; . . <A 
+href="http://www.media.mit.edu/~nelson/" 
+EUDORA="AUTOURL">http://www.media.mit.edu/~nelson/</A></DIV>

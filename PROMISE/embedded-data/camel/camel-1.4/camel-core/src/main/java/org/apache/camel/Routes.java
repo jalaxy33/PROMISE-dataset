@@ -1,0 +1,13 @@
+CompilationUnit
+PackageDeclaration
+Import
+InterfaceDeclaration
+set()MethodDeclaration
+CamelContextReferenceType
+set()MethodDeclaration
+set()FormalParameter
+CamelContextReferenceType
+set()MethodDeclaration
+ListReferenceType
+TypeArgument
+RouteReferenceType

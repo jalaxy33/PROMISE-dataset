@@ -1,0 +1,13 @@
+GDataSearcher
+search
+List
+T
+query
+Query
+hitcount
+int
+offset
+int
+feedId
+String
+close

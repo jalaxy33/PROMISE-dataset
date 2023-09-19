@@ -1,0 +1,14 @@
+SpringMediatorTest
+testSpringBean
+MessageContext
+msgCtx
+getTestContext
+setConfiguration
+getConfiguration
+Properties
+getMainSequence
+mediate
+msgCtx
+assertEquals
+invokeCount
+TestCase

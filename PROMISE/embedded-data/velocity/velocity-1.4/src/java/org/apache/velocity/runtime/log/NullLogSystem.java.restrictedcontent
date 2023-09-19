@@ -1,0 +1,11 @@
+NullLogSystem
+NullLogSystem
+init
+rs
+RuntimeServices
+logVelocityMessage
+level
+int
+message
+String
+LogSystem

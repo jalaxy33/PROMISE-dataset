@@ -1,0 +1,52 @@
+<SPAN class=EUDORAHEADER>Delivered-To: cgu@qos.ch <BR></SPAN><SPAN 
+class=EUDORAHEADER>From: "Brent Sprecher" &lt;brent@servidium.com&gt; 
+<BR></SPAN><SPAN class=EUDORAHEADER>To: &lt;java-logging-input@eng.sun.com&gt; 
+<BR></SPAN><SPAN class=EUDORAHEADER>Subject: Logging API concerns. 
+<BR></SPAN><SPAN class=EUDORAHEADER>Date: Wed, 13 Jun 2001 10:24:43 -0600 
+<BR></SPAN><SPAN class=EUDORAHEADER>X-Mailer: Microsoft Outlook Express 
+5.50.4133.2400 <BR></SPAN><BR><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<META content="MSHTML 5.50.4522.1801" name=GENERATOR>
+<STYLE></STYLE>
+
+<DIV><FONT face=Arial size=2>Dear sir or madam,</FONT></DIV>
+<DIV><FONT face=Arial size=2></FONT>&nbsp;</DIV>
+<DIV><FONT face=Arial size=2>As a current log4j user and developer, I feel the 
+need to comment on the JRS47 logging API. </FONT></DIV>
+<DIV><FONT face=Arial size=2></FONT>&nbsp;</DIV>
+<DIV><FONT face=Arial size=2>The company I work for has produced a Swing based 
+GUI that leverages the power of log4j and provides developers with a 
+sophisticated logging interface for managing log messages. </FONT></DIV>
+<DIV><FONT face=Arial size=2></FONT>&nbsp;</DIV>
+<DIV><FONT face=Arial size=2>I am currently in the process of extending our 
+application to plug into the JDK 1.4 beta java.util.logging package, and have 
+frankly been quite dissapointed. A number of basic features that I have come to 
+expect from a logging package are missing or poorly implemented.</FONT></DIV>
+<DIV><FONT face=Arial size=2></FONT>&nbsp;</DIV>
+<DIV><FONT face=Arial size=2>In particular, the way that Level inheritance and 
+Handler inheritance are implemented makes using this package awkward at best. At 
+the very least, you should consider implementing Handler inheritance in the same 
+fashion as log4j.</FONT></DIV>
+<DIV><FONT face=Arial size=2></FONT>&nbsp;</DIV>
+<DIV><FONT face=Arial size=2>I also find it annoying that I&nbsp;have to use the 
+log( ) method on a Logger object in order to pass an exception to be logged. Why 
+is there no implementation such as severe(String msg, Throwable 
+exception)?</FONT></DIV>
+<DIV><FONT face=Arial size=2></FONT>&nbsp;</DIV>
+<DIV><FONT face=Arial size=2>The list could go on ... for example, the way 
+properties files are used for configuration is very&nbsp;annoying 
+....</FONT></DIV>
+<DIV><FONT face=Arial size=2></FONT>&nbsp;</DIV>
+<DIV><FONT face=Arial size=2>For a good summary of the issues with the 
+java.util.logging package, I refer you to&nbsp;<A 
+href="http://jakarta.apache.org/log4j/docs/critique.html">http://jakarta.apache.org/log4j/docs/critique.html</A>. 
+I agree with all of the points raised by this article, and would whole heartedly 
+support including the log4j logging implementation in the JDK!</FONT></DIV>
+<DIV><FONT face=Arial size=2></FONT>&nbsp;</DIV>
+<DIV><FONT face=Arial size=2>Sincerely,</FONT></DIV>
+<DIV><FONT face=Arial size=2></FONT>&nbsp;</DIV>
+<DIV><FONT face=Arial size=2>Brent Sprecher</FONT></DIV>
+<DIV><FONT face=Arial size=2>Product Engineer</FONT></DIV>
+<DIV><FONT face=Arial size=2>Servidium Inc. (</FONT><FONT face=Arial size=2><A 
+href="http://www.servidium.com">http://www.servidium.com</A>)</FONT></DIV>
+<DIV><FONT face=Arial size=2>(403) 263-3287</FONT></DIV>
+<DIV><FONT face=Arial size=2></FONT>&nbsp;</DIV>

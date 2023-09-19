@@ -1,0 +1,8 @@
+EndpointFactory
+createEndpoint
+Endpoint
+epConfig
+OMElement
+anonymousEndpoint
+boolean
+XMLToObjectMapper

@@ -1,0 +1,13 @@
+HttpBinding
+writeResponse
+exchange
+HttpExchange
+parseBody
+Object
+httpMessage
+HttpMessage
+HttpServletRequest
+request
+getRequest
+return
+getReader

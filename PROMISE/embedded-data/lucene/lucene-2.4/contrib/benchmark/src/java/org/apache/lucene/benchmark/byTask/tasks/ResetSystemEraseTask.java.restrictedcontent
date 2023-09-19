@@ -1,0 +1,11 @@
+ResetSystemEraseTask
+ResetSystemEraseTask
+runData
+PerfRunData
+runData
+doLogic
+int
+getRunData
+reinit
+return
+ResetSystemSoftTask

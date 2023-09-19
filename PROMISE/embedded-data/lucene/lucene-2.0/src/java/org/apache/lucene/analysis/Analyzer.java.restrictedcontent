@@ -1,0 +1,12 @@
+Analyzer
+tokenStream
+TokenStream
+fieldName
+String
+reader
+Reader
+getPositionIncrementGap
+int
+fieldName
+String
+return

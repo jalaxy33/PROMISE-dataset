@@ -1,0 +1,7 @@
+MouseActionsProvider
+getActionForEvent
+String
+evt
+MouseEvent
+variant
+String

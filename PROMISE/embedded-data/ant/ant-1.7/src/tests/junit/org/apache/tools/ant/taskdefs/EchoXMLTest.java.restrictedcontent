@@ -1,0 +1,16 @@
+EchoXMLTest
+EchoXMLTest
+name
+String
+name
+setUp
+configureProject
+tearDown
+executeTarget
+testPass
+executeTarget
+testFail
+expectBuildExceptionContaining
+testEmpty
+expectBuildExceptionContaining
+BuildFileTest

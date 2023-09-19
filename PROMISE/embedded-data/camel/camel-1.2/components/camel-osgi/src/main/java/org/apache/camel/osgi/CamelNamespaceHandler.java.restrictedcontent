@@ -1,0 +1,17 @@
+CamelNamespaceHandler
+init
+init
+registerParser
+CamelContextBeanDefinitionParser
+CamelContextFactoryBean
+createJaxbContext
+JAXBContext
+return
+newInstance
+JAXB_PACKAGES
+org
+apache
+camel
+spring
+handler
+CamelNamespaceHandler

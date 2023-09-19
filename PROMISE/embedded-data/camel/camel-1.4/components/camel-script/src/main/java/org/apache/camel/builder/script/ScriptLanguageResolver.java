@@ -1,0 +1,17 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+{'public'}ClassDeclaration
+{'public'}MethodDeclaration
+LanguageReferenceType
+set()FormalParameter
+StringReferenceType
+set()FormalParameter
+CamelContextReferenceType
+ReturnStatement
+ClassCreator
+ScriptLanguageReferenceType
+MemberReference
+LanguageResolverReferenceType

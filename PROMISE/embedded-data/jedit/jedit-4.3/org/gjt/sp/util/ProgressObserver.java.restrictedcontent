@@ -1,0 +1,10 @@
+ProgressObserver
+setValue
+value
+long
+setMaximum
+value
+long
+setStatus
+status
+String

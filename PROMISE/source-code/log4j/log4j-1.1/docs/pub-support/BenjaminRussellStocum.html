@@ -1,0 +1,128 @@
+<SPAN class=EUDORAHEADER>Delivered-To: cgu@qos.ch <BR></SPAN><SPAN 
+class=EUDORAHEADER>Date: Thu, 14 Jun 2001 10:06:37 -0400 <BR></SPAN><SPAN 
+class=EUDORAHEADER>From: "Benjamin Russell Stocum" &lt;bstocum@paychex.com&gt; 
+<BR></SPAN><SPAN class=EUDORAHEADER>Reply-To: bstocum@paychex.com 
+<BR></SPAN><SPAN class=EUDORAHEADER>Organization: Paychex, Inc <BR></SPAN><SPAN 
+class=EUDORAHEADER>X-Mailer: Mozilla 4.5 [en] (WinNT; I) <BR></SPAN><SPAN 
+class=EUDORAHEADER>X-Accept-Language: en <BR></SPAN><SPAN class=EUDORAHEADER>To: 
+java-logging-input@eng.sun.com <BR></SPAN><SPAN class=EUDORAHEADER>Cc: 
+cgu@qos.ch <BR></SPAN><SPAN class=EUDORAHEADER>Subject: JSR47 vs. log4j&nbsp; my 
+comments... <BR></SPAN><BR>
+<DIV>To whom it may concern,</DIV><BR>
+<DIV>I feel that the differences between log4j and the JSR47 API outlined 
+at</DIV>
+<DIV>the following URL are significant:</DIV><BR>
+<DIV><A href="http://jakarta.apache.org/log4j/docs/critique.html" 
+EUDORA="AUTOURL">http://jakarta.apache.org/log4j/docs/critique.html</A></DIV><BR>
+<DIV>The company I work for has just recently made large steps to change 
+over</DIV>
+<DIV>to the Java platform for use with new development.&nbsp; As part of 
+this</DIV>
+<DIV>process I have been learning about almost every major JDK/API.&nbsp; 
+Log4j</DIV>
+<DIV>was recommended to the company and will be used in our upcoming code.</DIV>
+<DIV>Noting that we are a rather large business oriented company in 
+America,</DIV>
+<DIV>I would think that there are "many" others that have already adopted</DIV>
+<DIV>this code and have been using it.</DIV><BR>
+<DIV>Now the idea of JSR47 being integrated into Java 1.4 seems almost</DIV>
+<DIV>lacking in foresight.&nbsp; I do understand the value of time spent 
+and</DIV>
+<DIV>development, but I have to question, how hard will it be for the</DIV>
+<DIV>companies who already use log4j to change over to this "new" standard 
+if</DIV>
+<DIV>they wanted to?&nbsp; Are we talking about a simple shell script that 
+looks</DIV>
+<DIV>for XXX line and replaces it with another or actual man hours spent 
+at</DIV>
+<DIV>making sure the new code is integrated properly?&nbsp; If it is the 
+latter,</DIV>
+<DIV>be assured that the log4j files will stay installed on almost all</DIV>
+<DIV>company machines that already use it.&nbsp; And how many companies are 
+we</DIV>
+<DIV>talking about here?&nbsp; From what I understood from what I read in 
+the</DIV>
+<DIV>above document, Log4j has quite a few more features then JSR47.&nbsp; 
+In</DIV>
+<DIV>stating such, even if JSR47 does make it to Java 1.4 how many new</DIV>
+<DIV>companies will actually use it?&nbsp; Looking at the two, I would find 
+that</DIV>
+<DIV>one is rather lacking in usefulness at the time and question why the</DIV>
+<DIV>other was not adopted.</DIV><BR>
+<DIV>But all of this aside I want to make two points that I know have</DIV>
+<DIV>significance.</DIV>
+<DIV>#1 loggers, levels, handlers and formatters VS categories, 
+priorities,</DIV>
+<DIV>appenders and layouts. I would strongly encourage that one be changed 
+to</DIV>
+<DIV>use the others names.&nbsp; Simply put, having to learn two words for 
+every</DIV>
+<DIV>one of the definitions is not something that I see many programmers</DIV>
+<DIV>wanting to do.&nbsp; Though since every company will most likely compare 
+the</DIV>
+<DIV>two, countless hours will be wasted in that decision. Not to mention 
+the</DIV>
+<DIV>amount of people who will be lost in the explanation of the two 
+because</DIV>
+<DIV>of the above difference.</DIV><BR>
+<DIV>#2 Logging levels: from being a independent coder for 8 years (with 6</DIV>
+<DIV>years of formal training) and ~1 year of coding for a business</DIV>
+<DIV>corporation it is more then apparent to me that for what ever reason</DIV>
+<DIV>JSR47 had for the level system, log4j is 100% more comprehensive.&nbsp; 
+FINE,</DIV>
+<DIV>FINER, FINEST ?&nbsp; What are we attempting here? more bad code?&nbsp; In 
+all my</DIV>
+<DIV>years at working on code and dealing with standards this one sticks 
+out</DIV>
+<DIV>immediately as a sore thumb.&nbsp; I am going to say that for what 
+ever</DIV>
+<DIV>technical reason that was given for this, the designer was too into 
+what</DIV>
+<DIV>he is designing...</DIV><BR>
+<DIV>In any event I suggest postponing the release of any logging API 
+until</DIV>
+<DIV>more thought is put into this.&nbsp; Releasing JSR47 with v1.4 will be 
+a</DIV>
+<DIV>mistake.&nbsp; I do not suggest swapping log4j into the next release 
+but</DIV>
+<DIV>perhaps working with its designer with both architectures and coming 
+up</DIV>
+<DIV>with benefits from both API's. I then would suggest adopting a 
+modified</DIV>
+<DIV>version of log4j (not JSR47) since there is already so many companies</DIV>
+<DIV>using this code.&nbsp; This will allow most transition to be painless 
+and</DIV>
+<DIV>would please the whole and not the few.</DIV><BR>
+<DIV>Creating two code sources will only complicate such a simple design 
+and</DIV>
+<DIV>cause the ones who are to benefit from this the most, unnecessary 
+head</DIV>
+<DIV>aches.&nbsp; Rome was not built in a day, the release of JSR47 in 
+v1.4,</DIV>
+<DIV>though perhaps ideal to some, does not have to be.&nbsp; I would 
+strongly</DIV>
+<DIV>suggest that the designers realize this and take a break from their 
+work</DIV>
+<DIV>long enough to see the important decision that they are pushing into</DIV>
+<DIV>being. When one is wise enough to be able to stand back from the</DIV>
+<DIV>madness, it is then that he shall truly see the purpose behind that</DIV>
+<DIV>which is being done.</DIV><BR>
+<DIV>And remember, the only ones who will reply to this note are the ones</DIV>
+<DIV>that: #1 have enough time to actually spend away from their busy 
+jobs,</DIV>
+<DIV>#2 actually are willing to put up with the daily spam of this 
+emailing</DIV>
+<DIV>group, and #3 actually stop to read the message and some of the facts 
+to</DIV>
+<DIV>know what is going on.&nbsp; Be assured that the masses of silent voices 
+far</DIV>
+<DIV>outweigh any reply you will receive.</DIV><BR>
+<DIV>Thank you for you time,</DIV><BR>
+<DIV>Ben Stocum</DIV><BR>
+<DIV><A 
+href="file://c:\program%20files\qualcomm\eudora\imap\dominant\inbox\attach\bstocum.vcf" 
+EUDORA="ATTACHMENT" 
+file="file://c:\program%20files\qualcomm\eudora\imap\dominant\inbox\attach\bstocum.vcf"><IMG 
+alt="c:\program files\qualcomm\eudora\imap\dominant\inbox\attach\bstocum.vcf" 
+src="file://c:\program files\qualcomm\eudora\icons\447f10a.jpg"> bstocum.vcf 
+</A></DIV>

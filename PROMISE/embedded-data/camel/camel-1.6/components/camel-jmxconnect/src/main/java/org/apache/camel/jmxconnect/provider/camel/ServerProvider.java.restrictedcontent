@@ -1,0 +1,15 @@
+ServerProvider
+newJMXConnectorServer
+JMXConnectorServer
+url
+JMXServiceURL
+environment
+Map
+server
+MBeanServer
+return
+CamelJmxConnectorServer
+url
+environment
+server
+JMXConnectorServerProvider

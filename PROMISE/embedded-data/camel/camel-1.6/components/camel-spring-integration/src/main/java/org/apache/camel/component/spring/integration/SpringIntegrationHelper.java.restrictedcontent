@@ -1,0 +1,13 @@
+SpringIntegrationHelper
+SpringIntegrationHelper
+checkSpringBeanInstance
+bean
+Object
+name
+String
+if
+bean
+block
+throw
+IllegalArgumentException
+name

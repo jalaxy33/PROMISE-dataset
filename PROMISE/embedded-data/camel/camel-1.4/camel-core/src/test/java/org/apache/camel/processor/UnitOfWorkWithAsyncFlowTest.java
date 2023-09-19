@@ -1,0 +1,12 @@
+CompilationUnit
+PackageDeclaration
+{'public'}ClassDeclaration
+{'protected'}MethodDeclaration
+Annotation
+StatementExpression
+Assignment
+MemberReference
+Literal
+StatementExpression
+SuperMethodInvocation
+UnitOfWorkTestReferenceType

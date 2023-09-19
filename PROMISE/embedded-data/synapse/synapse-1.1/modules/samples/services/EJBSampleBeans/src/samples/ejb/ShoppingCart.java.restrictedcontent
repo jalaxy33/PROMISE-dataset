@@ -1,0 +1,10 @@
+ShoppingCart
+addItem
+itemId
+String
+count
+int
+getTotal
+float
+getItemCount
+int

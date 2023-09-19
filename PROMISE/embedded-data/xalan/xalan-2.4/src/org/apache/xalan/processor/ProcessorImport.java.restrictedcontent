@@ -1,0 +1,10 @@
+ProcessorImport
+getStylesheetType
+int
+return
+STYPE_IMPORT
+getStylesheetInclErr
+int
+return
+ER_IMPORTING_ITSELF
+ProcessorInclude

@@ -1,0 +1,13 @@
+CompilationUnit
+PackageDeclaration
+InterfaceDeclaration
+{'public'}MethodDeclaration
+ChildReferenceType
+{'public'}MethodDeclaration
+ChildReferenceType
+{'public'}MethodDeclaration
+{'final'}FormalParameter
+ChildReferenceType
+{'public'}MethodDeclaration
+{'final'}FormalParameter
+ChildReferenceType

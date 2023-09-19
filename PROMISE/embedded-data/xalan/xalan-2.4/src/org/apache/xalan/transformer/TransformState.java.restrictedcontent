@@ -1,0 +1,15 @@
+TransformState
+getCurrentElement
+ElemTemplateElement
+getCurrentNode
+Node
+getCurrentTemplate
+ElemTemplate
+getMatchedTemplate
+ElemTemplate
+getMatchedNode
+Node
+getContextNodeList
+NodeIterator
+getTransformer
+Transformer

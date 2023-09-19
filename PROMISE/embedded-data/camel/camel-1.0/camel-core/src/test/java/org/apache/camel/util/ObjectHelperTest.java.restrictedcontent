@@ -1,0 +1,9 @@
+ObjectHelperTest
+testRemoveInitialCharacters
+assertEquals
+removeStartingCharacters
+assertEquals
+removeStartingCharacters
+assertEquals
+removeStartingCharacters
+TestCase

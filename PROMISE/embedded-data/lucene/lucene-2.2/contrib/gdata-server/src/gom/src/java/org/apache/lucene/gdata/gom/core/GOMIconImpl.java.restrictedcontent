@@ -1,0 +1,16 @@
+GOMIconImpl
+GOMIconImpl
+localName
+LOCALNAME
+qname
+QName
+ATOM_NS_URI
+localName
+writeRssOutput
+aStreamWriter
+GOMOutputWriter
+writeSimpleXMLElement
+getXmlNamespaceAttributes
+textValue
+AtomUriElement
+GOMIcon

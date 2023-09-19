@@ -1,0 +1,15 @@
+CacheControllerMBean
+stopCacheManager
+boolean
+wakeUpCacheManager
+boolean
+changeCacheManagerDurationMins
+boolean
+duration
+int
+isCacheManagerRunning
+boolean
+getCacheSize
+int
+getCacheManagerDurationMins
+int

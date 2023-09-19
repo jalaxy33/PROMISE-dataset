@@ -1,0 +1,17 @@
+ProduceTest
+MyListener
+producer
+testInvokeService
+String
+actual
+sayHello
+assertEquals
+actual
+TestModule
+configure
+configure
+bind
+asEagerSingleton
+MyListenerService
+CamelModuleWithMatchingRoutes
+GuiceyTestCase

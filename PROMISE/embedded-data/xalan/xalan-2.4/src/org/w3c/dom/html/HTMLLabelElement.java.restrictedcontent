@@ -1,0 +1,14 @@
+HTMLLabelElement
+getForm
+HTMLFormElement
+getAccessKey
+String
+setAccessKey
+accessKey
+String
+getHtmlFor
+String
+setHtmlFor
+htmlFor
+String
+HTMLElement

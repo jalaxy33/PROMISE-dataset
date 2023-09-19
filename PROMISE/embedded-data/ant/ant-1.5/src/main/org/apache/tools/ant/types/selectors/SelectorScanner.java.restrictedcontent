@@ -1,0 +1,8 @@
+SelectorScanner
+setSelectors
+selectors
+FileSelector
+getDeselectedDirectories
+String
+getDeselectedFiles
+String

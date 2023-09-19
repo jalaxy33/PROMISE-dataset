@@ -1,0 +1,123 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: jeditlauncher - Win32 Release MinDependency--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "midl.exe /tlb ".\jeditlauncher.tlb" /h "jeditlauncher.h" /iid "jeditlauncher_i.c" /Oicf "I:\cvsfiles\jeditshell\jeditlauncher\jeditlauncher.idl""
+Creating command line "rc.exe /l 0x409 /fo"ReleaseMinDependency/jeditlauncher.res" /d "NDEBUG" "I:\cvsfiles\jeditshell\jeditlauncher\jeditlauncher.rc"" 
+Creating temporary file "I:\temp\RSP221.tmp" with contents
+[
+/nologo /MT /W3 /O1 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_ATL_STATIC_REGISTRY" /D "_ATL_MIN_CRT" /FR"ReleaseMinDependency/" /Fp"ReleaseMinDependency/jeditlauncher.pch" /Yu"stdafx.h" /Fo"ReleaseMinDependency/" /Fd"ReleaseMinDependency/" /FD /c 
+"I:\cvsfiles\jeditshell\jeditlauncher\FileList.cpp"
+"I:\cvsfiles\jeditshell\jeditlauncher\jeditlauncher.cpp"
+"I:\cvsfiles\jeditshell\jeditlauncher\JELauncher.cpp"
+"I:\cvsfiles\jeditshell\jeditlauncher\ScriptServer.cpp"
+"I:\cvsfiles\jeditshell\jeditlauncher\ScriptWriter.cpp"
+"I:\cvsfiles\jeditshell\jeditlauncher\ServConn.cpp"
+]
+Creating command line "cl.exe @I:\temp\RSP221.tmp" 
+Creating temporary file "I:\temp\RSP222.tmp" with contents
+[
+/nologo /MT /W3 /O1 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_ATL_STATIC_REGISTRY" /D "_ATL_MIN_CRT" /FR"ReleaseMinDependency/" /Fp"ReleaseMinDependency/jeditlauncher.pch" /Yc"stdafx.h" /Fo"ReleaseMinDependency/" /Fd"ReleaseMinDependency/" /FD /c 
+"I:\cvsfiles\jeditshell\jeditlauncher\StdAfx.cpp"
+]
+Creating command line "cl.exe @I:\temp\RSP222.tmp" 
+Creating temporary file "I:\temp\RSP223.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ws2_32.lib /nologo /subsystem:windows /incremental:no /pdb:"ReleaseMinDependency/jeditsrvr.pdb" /machine:I386 /out:"ReleaseMinDependency/jeditsrvr.exe" 
+.\ReleaseMinDependency\FileList.obj
+.\ReleaseMinDependency\jeditlauncher.obj
+.\ReleaseMinDependency\JELauncher.obj
+.\ReleaseMinDependency\ScriptServer.obj
+.\ReleaseMinDependency\ScriptWriter.obj
+.\ReleaseMinDependency\ServConn.obj
+.\ReleaseMinDependency\StdAfx.obj
+.\ReleaseMinDependency\jeditlauncher.res
+]
+Creating command line "link.exe @I:\temp\RSP223.tmp"
+Creating temporary file "I:\temp\RSP224.bat" with contents
+[
+@echo off
+rem copy ".\ReleaseMinDependency\jeditsrvr.exe" "G:\Program Files\jEdit\jeditsrv.exe"
+G:\Progra~1\jEdit\jeditsrv.exe  /RegServer
+echo regsvr32 exec. time > ".\ReleaseMinDependency\regsvr32.trg"
+echo Server registration done!
+]
+Creating command line "I:\temp\RSP224.bat"
+Creating Type Library...
+Microsoft (R) 32b/64b MIDL Compiler Version 5.03.0280 
+Copyright (c) Microsoft Corp 1991-1999. All rights reserved.
+Processing I:\cvsfiles\jeditshell\jeditlauncher\jeditlauncher.idl
+jeditlauncher.idl
+Processing H:\Program Files\Microsoft Platform SDK\include\oaidl.idl
+oaidl.idl
+Processing H:\Program Files\Microsoft Platform SDK\include\objidl.idl
+objidl.idl
+Processing H:\Program Files\Microsoft Platform SDK\include\unknwn.idl
+unknwn.idl
+Processing H:\Program Files\Microsoft Platform SDK\include\wtypes.idl
+wtypes.idl
+Processing H:\Program Files\Microsoft Platform SDK\include\basetsd.h
+basetsd.h
+Processing H:\Program Files\Microsoft Platform SDK\include\guiddef.h
+guiddef.h
+Processing H:\Program Files\Microsoft Platform SDK\include\ocidl.idl
+ocidl.idl
+Processing H:\Program Files\Microsoft Platform SDK\include\oleidl.idl
+oleidl.idl
+Processing H:\Program Files\Microsoft Platform SDK\include\servprov.idl
+servprov.idl
+Processing H:\Program Files\Microsoft Platform SDK\include\urlmon.idl
+urlmon.idl
+Processing H:\Program Files\Microsoft Platform SDK\include\msxml.idl
+msxml.idl
+64 bit Processing I:\cvsfiles\jeditshell\jeditlauncher\jeditlauncher.idl
+jeditlauncher.idl
+64 bit Processing H:\Program Files\Microsoft Platform SDK\include\oaidl.idl
+oaidl.idl
+64 bit Processing H:\Program Files\Microsoft Platform SDK\include\objidl.idl
+objidl.idl
+64 bit Processing H:\Program Files\Microsoft Platform SDK\include\unknwn.idl
+unknwn.idl
+64 bit Processing H:\Program Files\Microsoft Platform SDK\include\wtypes.idl
+wtypes.idl
+64 bit Processing H:\Program Files\Microsoft Platform SDK\include\basetsd.h
+basetsd.h
+64 bit Processing H:\Program Files\Microsoft Platform SDK\include\guiddef.h
+guiddef.h
+64 bit Processing H:\Program Files\Microsoft Platform SDK\include\ocidl.idl
+ocidl.idl
+64 bit Processing H:\Program Files\Microsoft Platform SDK\include\oleidl.idl
+oleidl.idl
+64 bit Processing H:\Program Files\Microsoft Platform SDK\include\servprov.idl
+servprov.idl
+64 bit Processing H:\Program Files\Microsoft Platform SDK\include\urlmon.idl
+urlmon.idl
+64 bit Processing H:\Program Files\Microsoft Platform SDK\include\msxml.idl
+msxml.idl
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+FileList.cpp
+jeditlauncher.cpp
+JELauncher.cpp
+ScriptServer.cpp
+ScriptWriter.cpp
+ServConn.cpp
+Generating Code...
+Linking...
+<h3>Output Window</h3>
+Performing registration
+Server registration done!
+
+
+
+<h3>Results</h3>
+jeditsrvr.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,15 @@
+VFSFileFilter
+String
+SERVICE_NAME
+getName
+VFSFileFilter
+accept
+boolean
+file
+VFSFile
+accept
+boolean
+url
+String
+getDescription
+String

@@ -1,0 +1,12 @@
+CompilationUnit
+PackageDeclaration
+InterfaceDeclaration
+ConstantDeclaration
+StringReferenceType
+VariableDeclarator
+Literal
+ConstantDeclaration
+StringReferenceType
+VariableDeclarator
+Literal
+GOMTextConstructReferenceType

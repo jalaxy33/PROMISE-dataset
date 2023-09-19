@@ -1,0 +1,6 @@
+SpringFilterTest
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+FilterTest

@@ -1,0 +1,6 @@
+SpringThrottlerTest
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+ThrottlerTest

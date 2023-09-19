@@ -1,0 +1,60 @@
+<SPAN class=EUDORAHEADER>Delivered-To: cgu@qos.ch <BR></SPAN><SPAN 
+class=EUDORAHEADER>From: Stephen.Ashcroft@ubs.com <BR></SPAN><SPAN 
+class=EUDORAHEADER>X-OpenMail-Hops: 1 <BR></SPAN><SPAN class=EUDORAHEADER>Date: 
+Mon, 18 Jun 2001 10:22:41 +0100 <BR></SPAN><SPAN class=EUDORAHEADER>Subject: 
+LOG4J vs. JSR47 <BR></SPAN><SPAN class=EUDORAHEADER>To: 
+java-logging-input@eng.sun.com <BR></SPAN><SPAN class=EUDORAHEADER>Cc: 
+cgu@qos.ch <BR></SPAN><BR><BR>
+<DIV>I got this mail address from the Apache LOG4J web-site and I understand 
+</DIV>
+<DIV>this is a forum where I can express some input regards the logging </DIV>
+<DIV>mechanisms in the standard JDK. </DIV><BR>
+<DIV>We have a large investment in LOG4J, it is the standard API used in all 
+</DIV>
+<DIV>of our java projects and we have been increasing users of it for over 1 
+</DIV>
+<DIV>year. It is simple, reliable and very configurable - key features for 
+</DIV>
+<DIV>us. It was chosen after an extensive review of the other available </DIV>
+<DIV>logging packages, including a fairly complex in-house development. </DIV>
+<DIV>Moving to anything else would be a significant task which we would be 
+</DIV>
+<DIV>reluctant to undertake without a compelling reason. </DIV><BR>
+<DIV>About the only reason that would cause us to change would be the </DIV>
+<DIV>inclusion of a standard logging API in the JDK as we aim to be </DIV>
+<DIV>standards conformant wherever practicable. However, the proposed JSR47 
+</DIV>
+<DIV>logging standard for JDK 1.4 falls far short of our expectations and </DIV>
+<DIV>would be a major step backwards for us. I won't re-hash the issues as 
+</DIV>
+<DIV>these have been extensively documented on the log4j web site.</DIV><BR>
+<DIV>We are unlikely to adopt JSR47 for our use as it stands, and I suspect 
+</DIV>
+<DIV>we are typical of a large number of existing users. LOG4J has evolved 
+</DIV>
+<DIV>tremendously from its first incarnation due to feedback from people who 
+</DIV>
+<DIV>actually use it, to the point where it is now a mature product which </DIV>
+<DIV>*works today*. </DIV><BR>
+<DIV>I once attended a talk by Gosling who stated that one of the </DIV>
+<DIV>fundamental principles that was adopted in developing the Java API was 
+</DIV>
+<DIV>that it was better to leave a feature out than to include one that was 
+</DIV>
+<DIV>only half-ready, as adding features later to fill a gap was much easier 
+</DIV>
+<DIV>than fixing something that was broken but already in use.</DIV><BR>
+<DIV>Logging is probably one of the hardest areas to standardise, as almost 
+</DIV>
+<DIV>everyone can easily develop a simple logging API and there are probably 
+</DIV>
+<DIV>thousands of different home-grown APIs in use. I would urgently suggest 
+</DIV>
+<DIV>to SUN that they either adopt LOG4J as the standard logging package, or 
+</DIV>
+<DIV>pull logging out of the JDK1.4 (merlin) release entirely and work </DIV>
+<DIV>through the concerns that clearly exist before making any decision on 
+</DIV>
+<DIV>standardisation.</DIV><BR>
+<DIV>regards</DIV>
+<DIV>Stephen Ashcroft</DIV>

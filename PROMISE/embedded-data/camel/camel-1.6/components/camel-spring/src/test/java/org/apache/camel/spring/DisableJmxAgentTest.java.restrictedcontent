@@ -1,0 +1,15 @@
+DisableJmxAgentTest
+createApplicationContext
+AbstractXmlApplicationContext
+return
+ClassPathXmlApplicationContext
+testQueryMbeans
+assertEquals
+queryNames
+size
+ObjectName
+assertEquals
+queryNames
+size
+ObjectName
+DefaultJMXAgentTest

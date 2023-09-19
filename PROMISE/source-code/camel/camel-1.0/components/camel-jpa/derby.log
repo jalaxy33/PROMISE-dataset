@@ -1,0 +1,18 @@
+----------------------------------------------------------------
+2007-06-27 16:34:31.453 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.1.3.1 - (417277): instance c013800d-0113-6e08-b645-0000000e2570
+on database directory /Users/chirino/sandbox/camel-1.0.0/components/camel-jpa/target/derby 
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2007-06-27 16:34:34.302 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.1.3.1 - (417277): instance 185e801c-0113-6e08-b645-0000000e2570
+on database directory /Users/chirino/sandbox/camel-1.0.0/components/camel-jpa/target/custom 
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2007-06-27 16:34:38.643 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.1.3.1 - (417277): instance 594b8034-0113-6e08-b645-0000000e2570
+on database directory /Users/chirino/sandbox/camel-1.0.0/components/camel-jpa/target/idempotentTest 
+
+Database Class Loader started - derby.database.classpath=''

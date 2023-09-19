@@ -1,0 +1,17 @@
+SerialMergeScheduler
+merge
+writer
+IndexWriter
+while
+block
+MergePolicy
+OneMerge
+merge
+getNextMerge
+if
+merge
+break
+merge
+merge
+close
+MergeScheduler

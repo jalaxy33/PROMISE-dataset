@@ -1,0 +1,11 @@
+LocalProperty
+LocalProperty
+name
+String
+setName
+name
+preWrite
+isDirectory
+boolean
+return
+Property

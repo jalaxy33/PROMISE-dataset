@@ -1,0 +1,7 @@
+LanguageResolver
+resolveLanguage
+Language
+name
+String
+context
+CamelContext

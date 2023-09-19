@@ -1,0 +1,7 @@
+DockableWindow
+String
+DOCKABLE_WINDOW_LIST
+getName
+String
+getComponent
+Component

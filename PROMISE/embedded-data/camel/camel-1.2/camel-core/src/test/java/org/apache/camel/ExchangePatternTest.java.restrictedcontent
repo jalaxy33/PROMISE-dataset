@@ -1,0 +1,15 @@
+ExchangePatternTest
+testExchangePattern
+ExchangePattern
+mep
+InOut
+assertEquals
+getWsdlUri
+testStringToMEP
+ExchangePattern
+mep
+fromWsdlUri
+assertEquals
+InOnly
+mep
+TestCase

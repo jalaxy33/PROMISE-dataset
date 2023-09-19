@@ -1,0 +1,15 @@
+DbLock
+boolean
+isLocked
+DbLock
+obtain
+boolean
+return
+isLocked
+release
+isLocked
+isLocked
+boolean
+return
+isLocked
+Lock

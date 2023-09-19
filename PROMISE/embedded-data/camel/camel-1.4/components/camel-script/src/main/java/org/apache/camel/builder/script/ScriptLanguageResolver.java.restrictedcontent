@@ -1,0 +1,11 @@
+ScriptLanguageResolver
+resolveLanguage
+Language
+name
+String
+context
+CamelContext
+return
+ScriptLanguage
+name
+LanguageResolver

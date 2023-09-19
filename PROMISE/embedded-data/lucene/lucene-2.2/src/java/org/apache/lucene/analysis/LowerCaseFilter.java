@@ -1,0 +1,29 @@
+CompilationUnit
+PackageDeclaration
+Import
+{'final', 'public'}ClassDeclaration
+{'public'}ConstructorDeclaration
+set()FormalParameter
+TokenStreamReferenceType
+StatementExpression
+SuperConstructorInvocation
+MemberReference
+{'final', 'public'}MethodDeclaration
+TokenReferenceType
+LocalVariableDeclaration
+TokenReferenceType
+VariableDeclarator
+MethodInvocation
+IfStatement
+BinaryOperation
+MemberReference
+Literal
+ReturnStatement
+Literal
+StatementExpression
+Assignment
+MemberReference
+MethodInvocation
+ReturnStatement
+MemberReference
+TokenFilterReferenceType

@@ -1,0 +1,17 @@
+Sample370
+SampleClientResult
+result
+Sample370
+testThrottling
+String
+addUrl
+StockQuoteSampleClient
+client
+getStockQuoteClient
+info
+result
+requestStandardQuote
+addUrl
+assertTrue
+responseReceived
+SynapseTestCase

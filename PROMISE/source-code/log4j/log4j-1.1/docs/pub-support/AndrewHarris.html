@@ -1,0 +1,49 @@
+<SPAN class=EUDORAHEADER>Delivered-To: cgu@qos.ch <BR></SPAN><SPAN 
+class=EUDORAHEADER>From: "Andrew Harris" &lt;andrewsh@netcomuk.co.uk&gt; 
+<BR></SPAN><SPAN class=EUDORAHEADER>To: java-logging-input@eng.sun.com 
+<BR></SPAN><SPAN class=EUDORAHEADER>Date: Sat, 16 Jun 2001 11:05:36 +0100 
+<BR></SPAN><SPAN class=EUDORAHEADER>Subject: JSR47 vs. log4j <BR></SPAN><SPAN 
+class=EUDORAHEADER>Reply-To: andrewsh@netcomuk.co.uk <BR></SPAN><SPAN 
+class=EUDORAHEADER>Cc: cgu@qos.ch, andrew.harris@capgemini.co.uk 
+<BR></SPAN><SPAN class=EUDORAHEADER>Priority: normal <BR></SPAN><SPAN 
+class=EUDORAHEADER>X-mailer: Pegasus Mail for Win32 (v3.12c) <BR></SPAN><BR>
+<DIV>To the JSR 47 Expert Group</DIV><BR>
+<DIV>I would like to support most of the points made by Ceki in his </DIV>
+<DIV>review of the proposed Merlin logging API at </DIV><BR>
+<DIV><X-TAB>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</X-TAB><A 
+href="http://jakarta.apache.org/log4j/docs/critique.html" 
+EUDORA="AUTOURL">http://jakarta.apache.org/log4j/docs/critique.html</A></DIV><BR>
+<DIV>and I would urge the committee to reconsider.</DIV><BR>
+<DIV>In particular:</DIV><BR>
+<DIV>o Logging API should be designed so that configuration order does </DIV>
+<DIV>not matter.</DIV><BR>
+<DIV>o Bogus levels</DIV><BR>
+<DIV>o Limited Functionality - this could be addressed using optional </DIV>
+<DIV>pluggable extensions in javax.logging, some of which could be </DIV>
+<DIV>supplied with J2EE, such as JMS and XML logging support. Better </DIV>
+<DIV>pluggability should be provided.</DIV><BR>
+<DIV>o Error Handling</DIV><BR>
+<DIV>On Parents and Children, I have not investigated the inheritance </DIV>
+<DIV>structure as described, however I would emphasis the need for </DIV>
+<DIV>extensibility in such a fundamental API, with respect to function, </DIV>
+<DIV>internationalisation, customisation and so forth. </DIV><BR>
+<DIV>On the basis of my own brief investigation:</DIV><BR>
+<DIV>o Pluggability does not seem to be well addressed. It seems </DIV>
+<DIV>symptomatic that there is only one interface defined in the API, </DIV>
+<DIV>and no distinction between User and Service Provider classes. I </DIV>
+<DIV>view pluggability as fundamental. </DIV><BR>
+<DIV>o It appears that you can't have multiple (named) instances of </DIV>
+<DIV>handlers such as FileHandler and SocketHandler with different </DIV>
+<DIV>physical destinations.</DIV><BR>
+<DIV>I would emphasise the need for flexible configuration, which goes </DIV>
+<DIV>hand in hand with pluggability. Different frameworks, such as third </DIV>
+<DIV>party APIs, will have their own logging requirements and it should </DIV>
+<DIV>be possible to integrate the logging according to the needs of the </DIV>
+<DIV>integrator.</DIV><BR>
+<DIV>Andrew Harris</DIV><BR>
+<DIV>Java Architect</DIV>
+<DIV>andrew.harris@capgemini.co.uk</DIV><BR>
+<DIV>--</DIV>
+<DIV>Andrew 
+Harris<X-TAB>&nbsp;&nbsp;&nbsp;</X-TAB><X-TAB>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</X-TAB><X-TAB>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</X-TAB></DIV>
+<DIV>andrewsh@netcomuk.co.uk</DIV>

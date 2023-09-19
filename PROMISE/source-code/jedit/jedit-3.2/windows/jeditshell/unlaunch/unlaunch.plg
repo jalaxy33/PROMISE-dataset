@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: unlaunch - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "I:\temp\RSP248.tmp" with contents
+[
+/nologo /ML /W3 /O2 /Ob2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fo"Release/" /Fd"Release/" /FD /c 
+"I:\cvsfiles\jeditshell\unlaunch\unlaunch.c"
+]
+Creating command line "cl.exe @I:\temp\RSP248.tmp" 
+Creating command line "link.exe kernel32.lib user32.lib /nologo /entry:"main" /subsystem:windows /incremental:no /pdb:"Release/unlaunch.pdb" /machine:I386 /out:"Release/unlaunch.exe"  .\Release\unlaunch.obj .\Release\unlaunch.res "
+<h3>Output Window</h3>
+Compiling...
+unlaunch.c
+Linking...
+
+
+
+<h3>Results</h3>
+unlaunch.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,9 @@
+CompilationUnit
+PackageDeclaration
+Import
+InterfaceDeclaration
+{'public'}MethodDeclaration
+set()FormalParameter
+FieldReferenceType
+set()FormalParameter
+StringReferenceType

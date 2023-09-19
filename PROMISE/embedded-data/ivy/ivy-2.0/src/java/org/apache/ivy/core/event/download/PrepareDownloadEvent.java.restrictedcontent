@@ -1,0 +1,16 @@
+PrepareDownloadEvent
+String
+NAME
+Artifact
+artifacts
+PrepareDownloadEvent
+artifacts
+Artifact
+NAME
+artifacts
+artifacts
+getArtifacts
+Artifact
+return
+artifacts
+IvyEvent

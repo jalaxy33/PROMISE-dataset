@@ -1,0 +1,13 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+{'public'}ClassDeclaration
+{'public'}MethodDeclaration
+StatementExpression
+MethodInvocation
+Literal
+Literal
+Literal
+Literal
+TestCaseReferenceType

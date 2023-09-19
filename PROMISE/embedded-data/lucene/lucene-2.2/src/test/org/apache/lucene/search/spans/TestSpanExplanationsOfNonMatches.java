@@ -1,0 +1,17 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+{'public'}ClassDeclaration
+{'public'}MethodDeclaration
+set()FormalParameter
+QueryReferenceType
+set()FormalParameter
+intBasicType
+StatementExpression
+MethodInvocation
+MemberReference
+MemberReference
+MemberReference
+MemberReference
+TestSpanExplanationsReferenceType

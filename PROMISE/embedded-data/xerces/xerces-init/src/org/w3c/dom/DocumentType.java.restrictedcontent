@@ -1,0 +1,8 @@
+DocumentType
+getName
+String
+getEntities
+NamedNodeMap
+getNotations
+NamedNodeMap
+Node

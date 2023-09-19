@@ -1,0 +1,9 @@
+CreditAgencyWS
+getCreditScore
+int
+ssn
+String
+getCreditHistoryLength
+int
+ssn
+String

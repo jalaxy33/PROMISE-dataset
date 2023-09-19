@@ -1,0 +1,40 @@
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=-7 typeName=BIT precision=1
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=-7 typeName=BOOL precision=1
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=-6 typeName=TINYINT precision=3
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=-5 typeName=BIGINT precision=19
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=-4 typeName=LONG VARBINARY precision=16777215
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=-4 typeName=MEDIUMBLOB precision=16777215
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=-4 typeName=LONGBLOB precision=2147483647
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=-4 typeName=BLOB precision=65535
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=-4 typeName=TINYBLOB precision=255
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=-3 typeName=VARBINARY precision=255
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=-2 typeName=BINARY precision=255
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=-1 typeName=LONG VARCHAR precision=16777215
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=-1 typeName=MEDIUMTEXT precision=16777215
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=-1 typeName=LONGTEXT precision=2147483647
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=-1 typeName=TEXT precision=65535
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=-1 typeName=TINYTEXT precision=255
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=1 typeName=CHAR precision=255
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=2 typeName=NUMERIC precision=17
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=3 typeName=DECIMAL precision=17
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=4 typeName=INTEGER precision=10
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=4 typeName=INT precision=10
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=4 typeName=MEDIUMINT precision=7
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=5 typeName=SMALLINT precision=5
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=6 typeName=DOUBLE precision=17
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=7 typeName=FLOAT precision=10
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=8 typeName=DOUBLE precision=17
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=8 typeName=DOUBLE PRECISION precision=17
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=8 typeName=REAL precision=17
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=12 typeName=VARCHAR precision=255
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=12 typeName=ENUM precision=65535
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=12 typeName=SET precision=64
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=91 typeName=DATE precision=0
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=92 typeName=TIME precision=0
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=93 typeName=DATETIME precision=0
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): for type=93 typeName=TIMESTAMP precision=0
+Sat Mar 20 13:14:22 COT 2004: INFO: initTypeInfo(): DONE
+Sat Mar 20 13:14:22 COT 2004: INFO: ensureTableExists(): Getting connection...
+Sat Mar 20 13:14:22 COT 2004: INFO: ensureTableExists(): Querying columns...
+Sat Mar 20 13:14:24 COT 2004: INFO: ensureTableExists(): Getting connection...
+Sat Mar 20 13:14:24 COT 2004: INFO: ensureTableExists(): Querying columns...

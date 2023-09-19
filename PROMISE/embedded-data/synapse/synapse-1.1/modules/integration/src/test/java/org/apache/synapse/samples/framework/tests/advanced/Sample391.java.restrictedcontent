@@ -1,0 +1,17 @@
+Sample391
+SampleClientResult
+result
+Sample391
+testExternalXQuery
+String
+addUrl
+StockQuoteSampleClient
+client
+getStockQuoteClient
+info
+result
+requestStandardQuote
+addUrl
+assertTrue
+responseReceived
+SynapseTestCase

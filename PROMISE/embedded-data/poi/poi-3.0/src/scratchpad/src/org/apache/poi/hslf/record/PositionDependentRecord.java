@@ -1,0 +1,12 @@
+CompilationUnit
+PackageDeclaration
+Import
+InterfaceDeclaration
+{'public'}MethodDeclaration
+intBasicType
+{'public'}MethodDeclaration
+set()FormalParameter
+intBasicType
+{'public'}MethodDeclaration
+set()FormalParameter
+HashtableReferenceType

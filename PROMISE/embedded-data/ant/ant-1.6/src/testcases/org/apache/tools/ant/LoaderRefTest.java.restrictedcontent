@@ -1,0 +1,12 @@
+LoaderRefTest
+LoaderRefTest
+name
+String
+name
+setUp
+configureProject
+tearDown
+executeTarget
+testBadRef
+expectBuildExceptionContaining
+BuildFileTest

@@ -1,0 +1,17 @@
+TextAreaHighlight
+init
+textArea
+JEditTextArea
+next
+TextAreaHighlight
+paintHighlight
+gfx
+Graphics
+line
+int
+y
+int
+getToolTipText
+String
+evt
+MouseEvent

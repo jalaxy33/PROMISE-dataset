@@ -1,0 +1,17 @@
+LoadPropertiesTest
+LoadPropertiesTest
+name
+String
+name
+setUp
+configureProject
+tearDown
+executeTarget
+testPrefixedProperties
+executeTarget
+String
+url
+getProperty
+assertEquals
+url
+BuildFileTest

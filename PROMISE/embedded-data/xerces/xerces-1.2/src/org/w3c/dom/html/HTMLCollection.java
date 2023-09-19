@@ -1,0 +1,14 @@
+CompilationUnit
+PackageDeclaration
+Import
+InterfaceDeclaration
+{'public'}MethodDeclaration
+intBasicType
+{'public'}MethodDeclaration
+NodeReferenceType
+set()FormalParameter
+intBasicType
+{'public'}MethodDeclaration
+NodeReferenceType
+set()FormalParameter
+StringReferenceType

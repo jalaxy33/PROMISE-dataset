@@ -1,0 +1,12 @@
+InvertedDocConsumerPerField
+start
+boolean
+fields
+Fieldable
+count
+int
+add
+token
+Token
+finish
+abort

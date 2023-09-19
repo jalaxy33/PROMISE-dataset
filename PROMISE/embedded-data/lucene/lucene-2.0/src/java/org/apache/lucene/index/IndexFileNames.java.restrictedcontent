@@ -1,0 +1,14 @@
+IndexFileNames
+String
+SEGMENTS
+String
+DELETABLE
+String
+INDEX_EXTENSIONS
+String
+String
+COMPOUND_EXTENSIONS
+String
+String
+VECTOR_EXTENSIONS
+String

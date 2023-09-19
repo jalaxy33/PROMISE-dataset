@@ -1,0 +1,15 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+Import
+AnnotationDeclaration
+Annotation
+ElementArrayValue
+MemberReference
+Annotation
+ElementValuePair
+MemberReference
+AnnotationMethod
+ComponentTypeReferenceType

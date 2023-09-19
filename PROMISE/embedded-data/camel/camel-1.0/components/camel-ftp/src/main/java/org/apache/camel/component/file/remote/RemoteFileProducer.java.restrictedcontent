@@ -1,0 +1,9 @@
+RemoteFileProducer
+RemoteFileProducer
+endpoint
+RemoteFileEndpoint
+T
+endpoint
+RemoteFileExchange
+DefaultProducer
+T

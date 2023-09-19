@@ -1,0 +1,15 @@
+ConsoleProgress
+setMaximum
+max
+int
+advance
+value
+int
+done
+println
+error
+message
+String
+println
+message
+Progress

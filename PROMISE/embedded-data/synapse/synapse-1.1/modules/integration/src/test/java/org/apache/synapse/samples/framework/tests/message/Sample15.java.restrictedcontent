@@ -1,0 +1,16 @@
+Sample15
+Sample15
+testMessageEnrichment
+String
+trpUrl
+StockQuoteSampleClient
+client
+getStockQuoteClient
+info
+SampleClientResult
+result
+requestStandardQuote
+trpUrl
+assertResponseReceived
+result
+SynapseTestCase

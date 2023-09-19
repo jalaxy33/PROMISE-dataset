@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!--
+  Copyright 2002-2004 The Apache Software Foundation or its licensors,
+  as applicable.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!-- ===============================================
+'profiler' pipeline.  Shows how long each pipeline in the Forrest sitemap takes.
+
+To enable this, uncomment the 'profile-caching' pipeline in sitemap.xmap, and set:
+<map:pipes default="profile-caching">
+
+Example URL:  http://localhost:8888/profiler
+Used by    :  Forrest hackers desperate for speed
+Uses       :  Stats collected by the profile-caching pipeline.
+
+$Revision: 1.2 $
+==================================================== -->
+
+
+<map:sitemap xmlns:map="http://apache.org/cocoon/sitemap/1.0">
+  <map:components>
+    <map:generators default="file">
+      <map:generator name="profiler" src="org.apache.cocoon.generation.ProfilerGenerator"/>
+    </map:generators>
+    <map:serializers default="html"/>
+    <map:transformers default="xslt"/>
+    <map:matchers default="wildcard"/>
+  </map:components>
+
+  <map:pipelines>
+    <map:pipeline>
+
+      <map:match pattern="profiler">
+        <map:generate type="profiler"/>
+        <map:transform src="{forrest:stylesheets}/profile2page.xsl">
+          <map:parameter name="use-request-parameters" value="true"/>
+        </map:transform>
+        <map:transform src="{forrest:stylesheets}/page2html.xsl">
+          <map:parameter name="contextPath" value="{request:contextPath}"/>
+        </map:transform>
+
+        <map:serialize/>
+      </map:match>
+
+    </map:pipeline>
+
+  </map:pipelines>
+</map:sitemap>

@@ -1,0 +1,5 @@
+CamelDestinationDefinitionParser
+CamelDestinationDefinitionParser
+setBeanClass
+CamelDestination
+AbstractCamelContextBeanDefinitionParser

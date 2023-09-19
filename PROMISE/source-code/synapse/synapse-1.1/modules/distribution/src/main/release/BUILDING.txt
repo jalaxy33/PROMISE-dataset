@@ -1,0 +1,13 @@
+Building Synapse from Source
+
+The Synapse source code is available at http://svn.apache.org/repos/asf/synapse/trunk/
+
+To build Synapse, you will need JDK 1.6.0_23 or later version, Maven 3.2.x
+
+The Synapse JARs could be built with Maven 3 as follows:
+
+  mvn clean install
+
+To build the site, use:
+
+  mvn site

@@ -1,0 +1,23 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+{'public'}ClassDeclaration
+{'private'}ConstructorDeclaration
+StatementExpression
+SuperConstructorInvocation
+{'public', 'static'}MethodDeclaration
+GOMFactoryReferenceType
+ReturnStatement
+ClassCreator
+GOMFactoryReferenceType
+{'public'}MethodDeclaration
+GOMFeedReferenceType
+ReturnStatement
+ClassCreator
+GOMFeedImplReferenceType
+{'public'}MethodDeclaration
+GOMEntryReferenceType
+ReturnStatement
+ClassCreator
+GOMEntryImplReferenceType

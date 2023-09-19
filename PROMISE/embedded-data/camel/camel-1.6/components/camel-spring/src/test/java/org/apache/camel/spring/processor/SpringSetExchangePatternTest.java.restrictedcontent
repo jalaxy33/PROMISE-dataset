@@ -1,0 +1,6 @@
+SpringSetExchangePatternTest
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+SetExchangePatternTest

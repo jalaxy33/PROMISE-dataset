@@ -1,0 +1,11 @@
+FileNameMapper
+setFrom
+from
+String
+setTo
+to
+String
+mapFileName
+String
+sourceFileName
+String

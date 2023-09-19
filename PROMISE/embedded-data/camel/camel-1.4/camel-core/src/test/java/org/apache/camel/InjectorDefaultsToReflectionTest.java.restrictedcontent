@@ -1,0 +1,17 @@
+InjectorDefaultsToReflectionTest
+Log
+LOG
+getLog
+InjectorDefaultsToReflectionTest
+testInjectorIsReflectionByDefault
+Injector
+injector
+getInjector
+DefaultCamelContext
+assertTrue
+injector
+injector
+ReflectionInjector
+debug
+injector
+TestCase

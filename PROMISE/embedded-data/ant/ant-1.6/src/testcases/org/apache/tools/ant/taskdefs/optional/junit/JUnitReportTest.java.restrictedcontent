@@ -1,0 +1,17 @@
+JUnitReportTest
+JUnitReportTest
+name
+String
+name
+setUp
+configureProject
+tearDown
+executeTarget
+testNoFileJUnitNoFrames
+executeTarget
+if
+exists
+File
+block
+fail
+BuildFileTest

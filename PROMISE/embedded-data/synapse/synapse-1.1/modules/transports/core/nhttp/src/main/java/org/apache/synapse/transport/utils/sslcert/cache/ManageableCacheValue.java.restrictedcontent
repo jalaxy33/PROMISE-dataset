@@ -1,0 +1,7 @@
+ManageableCacheValue
+isValid
+boolean
+getTimeStamp
+long
+removeThisCacheValue
+updateCacheWithNewValue

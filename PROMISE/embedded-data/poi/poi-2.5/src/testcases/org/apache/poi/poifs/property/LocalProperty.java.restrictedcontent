@@ -1,0 +1,13 @@
+LocalProperty
+LocalProperty
+index
+int
+setName
+index
+setIndex
+index
+preWrite
+isDirectory
+boolean
+return
+Property

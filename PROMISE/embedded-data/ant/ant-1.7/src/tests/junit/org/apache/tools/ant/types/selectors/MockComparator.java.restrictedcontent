@@ -1,0 +1,12 @@
+MockComparator
+compare
+int
+o1
+Object
+o2
+Object
+return
+toString
+String
+return
+Comparator

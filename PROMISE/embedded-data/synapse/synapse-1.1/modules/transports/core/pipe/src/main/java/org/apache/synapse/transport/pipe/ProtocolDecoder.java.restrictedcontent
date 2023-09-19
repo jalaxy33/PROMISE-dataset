@@ -1,0 +1,12 @@
+ProtocolDecoder
+inputRequired
+boolean
+decode
+buf
+byte
+offset
+int
+length
+int
+getNext
+byte

@@ -1,0 +1,17 @@
+CompilationUnit
+PackageDeclaration
+InterfaceDeclaration
+{'public'}MethodDeclaration
+StringReferenceType
+{'public'}MethodDeclaration
+booleanBasicType
+{'public'}MethodDeclaration
+booleanBasicType
+{'public'}MethodDeclaration
+DirectoryEntryReferenceType
+{'public'}MethodDeclaration
+booleanBasicType
+{'public'}MethodDeclaration
+booleanBasicType
+{'final'}FormalParameter
+StringReferenceType

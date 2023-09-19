@@ -1,0 +1,5 @@
+SynapseCallbackStoreViewMBean
+getCallbackCount
+int
+getPendingCallbacks
+String

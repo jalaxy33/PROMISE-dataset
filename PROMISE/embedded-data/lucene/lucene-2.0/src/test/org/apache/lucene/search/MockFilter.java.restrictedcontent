@@ -1,0 +1,17 @@
+MockFilter
+boolean
+wasCalled
+bits
+BitSet
+reader
+IndexReader
+wasCalled
+return
+BitSet
+clear
+wasCalled
+wasCalled
+boolean
+return
+wasCalled
+Filter

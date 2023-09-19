@@ -1,0 +1,5 @@
+StoreRegistry
+getStoreById
+Store
+storeId
+String

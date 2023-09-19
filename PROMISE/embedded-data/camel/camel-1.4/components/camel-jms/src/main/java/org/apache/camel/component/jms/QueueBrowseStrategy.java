@@ -1,0 +1,16 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+InterfaceDeclaration
+set()MethodDeclaration
+ListReferenceType
+TypeArgument
+ExchangeReferenceType
+set()FormalParameter
+JmsOperationsReferenceType
+set()FormalParameter
+StringReferenceType
+set()FormalParameter
+JmsQueueEndpointReferenceType

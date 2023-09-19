@@ -1,0 +1,7 @@
+FoldHandlerProvider
+getFoldHandler
+FoldHandler
+name
+String
+getFoldModes
+String

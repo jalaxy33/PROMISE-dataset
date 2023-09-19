@@ -1,0 +1,8 @@
+CamelServiceExporterType
+String
+uri
+String
+serviceRef
+Class
+serviceInterface
+IdentifiedType

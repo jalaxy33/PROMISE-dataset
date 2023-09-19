@@ -1,0 +1,13 @@
+SpringInstrumentationAgent
+Log
+LOG
+getLog
+SpringInstrumentationAgent
+afterPropertiesSet
+debug
+getMBeanServer
+start
+destroy
+InstrumentationAgentImpl
+InitializingBean
+DisposableBean

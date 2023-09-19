@@ -1,0 +1,17 @@
+UIEvent
+getView
+AbstractView
+getDetail
+int
+initUIEvent
+typeArg
+String
+canBubbleArg
+boolean
+cancelableArg
+boolean
+viewArg
+AbstractView
+detailArg
+int
+Event

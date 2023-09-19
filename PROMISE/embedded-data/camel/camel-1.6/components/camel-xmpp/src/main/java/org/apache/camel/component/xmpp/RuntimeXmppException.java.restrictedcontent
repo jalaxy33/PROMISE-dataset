@@ -1,0 +1,15 @@
+RuntimeXmppException
+long
+serialVersionUID
+RuntimeXmppException
+cause
+XMPPException
+cause
+RuntimeXmppException
+message
+String
+cause
+XMPPException
+message
+cause
+RuntimeException

@@ -1,0 +1,15 @@
+LuceneTestCase
+LuceneTestCase
+LuceneTestCase
+name
+String
+name
+setUp
+setTestMode
+tearDown
+if
+anyUnhandledExceptions
+block
+clearUnhandledExceptions
+fail
+TestCase

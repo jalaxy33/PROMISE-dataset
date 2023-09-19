@@ -1,0 +1,17 @@
+WMLTemplateElement
+setOnTimer
+newValue
+String
+getOnTimer
+String
+setOnEnterBackward
+newValue
+String
+getOnEnterBackward
+String
+setOnEnterForward
+newValue
+String
+getOnEnterForward
+String
+WMLElement

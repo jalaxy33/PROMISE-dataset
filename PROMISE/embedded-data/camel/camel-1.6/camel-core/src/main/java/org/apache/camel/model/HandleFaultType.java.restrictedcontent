@@ -1,0 +1,12 @@
+HandleFaultType
+FIELD
+HandleFaultType
+HandleFaultProcessor
+getShortName
+String
+return
+toString
+String
+return
+getLabel
+InterceptorRef

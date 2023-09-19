@@ -1,0 +1,13 @@
+GDataHttpAuthenticator
+authenticateAccount
+boolean
+request
+GDataRequest
+role
+AccountRole
+authenticateAccount
+boolean
+request
+HttpServletRequest
+role
+AccountRole

@@ -1,0 +1,9 @@
+DOMExceptionImpl
+DOMExceptionImpl
+code
+short
+message
+String
+code
+message
+DOMException

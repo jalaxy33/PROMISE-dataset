@@ -1,0 +1,15 @@
+StartResolveDependencyEvent
+String
+NAME
+StartResolveDependencyEvent
+resolver
+DependencyResolver
+dd
+DependencyDescriptor
+requestedRevisionId
+ModuleRevisionId
+NAME
+resolver
+dd
+requestedRevisionId
+ResolveDependencyEvent

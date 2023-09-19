@@ -1,0 +1,98 @@
+pBeans 2.0
+----------
+
+- pBeans now requires J2SE 5+
+
+- Deprecated Peristent and _StoreInfo mechanism
+  in favor of annotations such as @PersistentClass.
+  The old mechanism is still supported, so some
+  backward compatibility remains.
+
+- Transaction support was implemented. Requires
+  JDBC and database transaction support. 
+  Additional methods to help with thread locking
+  (since pBeans objects are often shared across
+  threads) are provided. See methods
+  beginTransaction, endTransaction, requestLock,
+  and relinquishLock.
+
+- Fixed mapping from objects to ObjectInfo's. 
+  There was a flaw in that it assumed identity
+  hash codes (System.identityHashCode) were unique 
+  per object.
+
+- Implemented auto-increment ID fields (MySQL only).
+  See autoIncrement element of @PersistentClass
+  annotation.
+
+- PersistentIDs are no longer global. They
+  are per table. GlobalPersistentID is a
+  globally unique ID for a record.
+  
+- Implemented support for "global references"
+  i.e. properties that refer to persistent
+  objects, but whose compile-time type is not
+  required to match the runtime type of the
+  persistent object. See globalReference
+  element of @PersistentProperty annotation.
+  
+- Changed DefaultDatabaseFactory implementation
+  to look for
+   
+  net.sourceforge.pbeans.data.[database].DatabaseImpl
+
+  The "database" string is obtained from the JDBC
+  URL. This should allow creation of independent
+  plugins for databases not supported by pBeans.
+  See AbstractDatabase class.
+
+- Implemented user-managed mode, which disables
+  automatic alteration of database tables.
+  See userManaged element of @PersistentClass
+  annotation.
+  
+- Implemented select method for arbitrary SQL 
+  queries mapped to beans.
+  
+- Implemented update method for arbitrary SQL
+  statements where parameters can be mapped
+  from beans.
+
+- Implemented facility to find Store instances
+  in servlet engines, as defined via context
+  parameters in web.xml. See ServletAccess
+  class.
+
+- Implemented support for persistence of Java 5 
+  enum types.
+
+- Implemented more consistent marshalling and
+  unmarshalling of arrays of primitive types. 
+  Arrays of persistent object references are
+  also supported.
+
+- Added logging via java.util.logging API. 
+  Table alteration times are now logged.
+  See logging.properties in some of
+  the examples distributed with pBeans.
+
+- Improved retrieval performance and object
+  allocation. Intermediate maps for records 
+  are no longer created.
+
+- Added query for a typical many-to-many
+  relationship involving three classes.
+  See Store.selectParts.
+
+- Fixed automatic field renaming. See
+  renamedFrom element of @PersistentProperty
+  annotation.
+
+- Fixed removal of indexes no longer declared.
+
+- Tested more extensively in MySQL and 
+  PostgreSQL.
+  
+- Tested self-loops more thoroughly and
+  implemented changes required by new
+  insertion architecture.

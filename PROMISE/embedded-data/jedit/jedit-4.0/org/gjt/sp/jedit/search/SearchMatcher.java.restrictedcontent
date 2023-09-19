@@ -1,0 +1,15 @@
+SearchMatcher
+nextMatch
+int
+text
+CharIndexed
+start
+boolean
+end
+boolean
+firstTime
+boolean
+substitute
+String
+text
+String

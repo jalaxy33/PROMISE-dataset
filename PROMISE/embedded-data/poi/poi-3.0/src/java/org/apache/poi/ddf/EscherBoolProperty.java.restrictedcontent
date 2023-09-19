@@ -1,0 +1,17 @@
+EscherBoolProperty
+EscherBoolProperty
+propertyNumber
+short
+value
+int
+propertyNumber
+value
+isTrue
+boolean
+return
+propertyValue
+isFalse
+boolean
+return
+propertyValue
+EscherSimpleProperty

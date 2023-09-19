@@ -1,0 +1,3137 @@
+Apache Ant version 1.5alpha compiled on April 2 2002
+Buildfile: build.xml
+Detected Java version: 1.3 in: c:\products\jdk1.3\jre
+Detected OS: Windows 2000
+ +User task: propertyfile     org.apache.tools.ant.taskdefs.optional.PropertyFile
+ +User task: vsscheckin     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCHECKIN
+ +User task: sql     org.apache.tools.ant.taskdefs.SQLExec
+ +User task: cvspass     org.apache.tools.ant.taskdefs.CVSPass
+ +User task: csc     org.apache.tools.ant.taskdefs.optional.dotnet.CSharp
+ +User task: dirname     org.apache.tools.ant.taskdefs.Dirname
+Could not load class (org.apache.tools.ant.taskdefs.optional.ejb.WLRun) for task wlrun
+Could not load class (org.apache.tools.ant.taskdefs.optional.perforce.P4Label) for task p4label
+ +User task: replaceregexp     org.apache.tools.ant.taskdefs.optional.ReplaceRegExp
+ +User task: get     org.apache.tools.ant.taskdefs.Get
+ +User task: jjtree     org.apache.tools.ant.taskdefs.optional.javacc.JJTree
+ +User task: sleep     org.apache.tools.ant.taskdefs.Sleep
+ +User task: dependset     org.apache.tools.ant.taskdefs.DependSet
+ +User task: zip     org.apache.tools.ant.taskdefs.Zip
+ +User task: patch     org.apache.tools.ant.taskdefs.Patch
+ +User task: jspc     org.apache.tools.ant.taskdefs.optional.jsp.JspC
+ +User task: style     org.apache.tools.ant.taskdefs.XSLTProcess
+ +User task: test     org.apache.tools.ant.taskdefs.optional.Test
+ +User task: tstamp     org.apache.tools.ant.taskdefs.Tstamp
+ +User task: unwar     org.apache.tools.ant.taskdefs.Expand
+ +User task: vsshistory     org.apache.tools.ant.taskdefs.optional.vss.MSVSSHISTORY
+Could not load class (org.apache.tools.ant.taskdefs.optional.IContract) for task icontract
+Could not load class (org.apache.tools.ant.taskdefs.optional.perforce.P4Submit) for task p4submit
+ +User task: ccmcheckin     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckin
+Could not load class (org.apache.tools.ant.taskdefs.optional.perforce.P4Change) for task p4change
+ +User task: bzip2     org.apache.tools.ant.taskdefs.BZip2
+ +User task: vssadd     org.apache.tools.ant.taskdefs.optional.vss.MSVSSADD
+ +User task: javadoc     org.apache.tools.ant.taskdefs.Javadoc
+ +User task: translate     org.apache.tools.ant.taskdefs.optional.i18n.Translate
+ +User task: signjar     org.apache.tools.ant.taskdefs.SignJar
+Could not load class (org.apache.tools.ant.taskdefs.optional.ide.VAJLoadProjects) for task vajload
+ +User task: buildnumber     org.apache.tools.ant.taskdefs.BuildNumber
+ +User task: jpcovmerge     org.apache.tools.ant.taskdefs.optional.sitraka.CovMerge
+ +User task: ejbjar     org.apache.tools.ant.taskdefs.optional.ejb.EjbJar
+ +User task: war     org.apache.tools.ant.taskdefs.War
+Could not load class (org.apache.tools.ant.taskdefs.optional.starteam.StarTeamList) for task stlist
+ +User task: rename     org.apache.tools.ant.taskdefs.Rename
+ +User task: sequential     org.apache.tools.ant.taskdefs.Sequential
+ +User task: serverdeploy     org.apache.tools.ant.taskdefs.optional.j2ee.ServerDeploy
+ +User task: property     org.apache.tools.ant.taskdefs.Property
+ +User task: move     org.apache.tools.ant.taskdefs.Move
+ +User task: copydir     org.apache.tools.ant.taskdefs.Copydir
+ +User task: cccheckin     org.apache.tools.ant.taskdefs.optional.clearcase.CCCheckin
+ +User task: wljspc     org.apache.tools.ant.taskdefs.optional.jsp.WLJspc
+ +User task: changelog     org.apache.tools.ant.taskdefs.cvslib.ChangeLogTask
+ +User task: fixcrlf     org.apache.tools.ant.taskdefs.FixCRLF
+Could not load class (org.apache.tools.ant.taskdefs.optional.net.TelnetTask) for task telnet
+ +User task: sosget     org.apache.tools.ant.taskdefs.optional.sos.SOSGet
+ +User task: pathconvert     org.apache.tools.ant.taskdefs.PathConvert
+ +User task: record     org.apache.tools.ant.taskdefs.Recorder
+Could not load class (org.apache.tools.ant.taskdefs.optional.perforce.P4Sync) for task p4sync
+ +User task: exec     org.apache.tools.ant.taskdefs.ExecTask
+Could not load class (org.apache.tools.ant.taskdefs.optional.perforce.P4Edit) for task p4edit
+ +User task: manifest     org.apache.tools.ant.taskdefs.Manifest
+Could not load class (org.apache.tools.ant.taskdefs.optional.metamata.MAudit) for task maudit
+Could not load class (org.apache.tools.ant.taskdefs.optional.ANTLR) for task antlr
+Could not load class (org.apache.tools.ant.taskdefs.optional.NetRexxC) for task netrexxc
+Could not load class (org.apache.tools.ant.taskdefs.optional.net.FTP) for task ftp
+ +User task: jpcovreport     org.apache.tools.ant.taskdefs.optional.sitraka.CovReport
+ +User task: execon     org.apache.tools.ant.taskdefs.ExecuteOn
+ +User task: ccmcheckout     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckout
+ +User task: ant     org.apache.tools.ant.taskdefs.Ant
+ +User task: xmlvalidate     org.apache.tools.ant.taskdefs.optional.XMLValidateTask
+ +User task: iplanet-ejbc     org.apache.tools.ant.taskdefs.optional.ejb.IPlanetEjbcTask
+ +User task: ccmcheckintask     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckinDefault
+ +User task: gzip     org.apache.tools.ant.taskdefs.GZip
+ +User task: native2ascii     org.apache.tools.ant.taskdefs.optional.Native2Ascii
+Could not load class (org.apache.tools.ant.taskdefs.optional.scm.AntStarTeamCheckOut) for task starteam
+ +User task: ear     org.apache.tools.ant.taskdefs.Ear
+ +User task: input     org.apache.tools.ant.taskdefs.Input
+ +User task: rmic     org.apache.tools.ant.taskdefs.Rmic
+ +User task: checksum     org.apache.tools.ant.taskdefs.Checksum
+ +User task: mail     org.apache.tools.ant.taskdefs.email.EmailTask
+ +User task: loadfile     org.apache.tools.ant.taskdefs.LoadFile
+ +User task: vsscheckout     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCHECKOUT
+Could not load class (org.apache.tools.ant.taskdefs.optional.StyleBook) for task stylebook
+ +User task: soscheckin     org.apache.tools.ant.taskdefs.optional.sos.SOSCheckin
+ +User task: mimemail     org.apache.tools.ant.taskdefs.optional.net.MimeMail
+Could not load class (org.apache.tools.ant.taskdefs.optional.starteam.StarTeamLabel) for task stlabel
+ +User task: gunzip     org.apache.tools.ant.taskdefs.GUnzip
+ +User task: concat     org.apache.tools.ant.taskdefs.Concat
+ +User task: cab     org.apache.tools.ant.taskdefs.optional.Cab
+ +User task: touch     org.apache.tools.ant.taskdefs.Touch
+ +User task: parallel     org.apache.tools.ant.taskdefs.Parallel
+ +User task: splash     org.apache.tools.ant.taskdefs.optional.splash.SplashTask
+ +User task: antcall     org.apache.tools.ant.taskdefs.CallTarget
+ +User task: cccheckout     org.apache.tools.ant.taskdefs.optional.clearcase.CCCheckout
+ +User task: typedef     org.apache.tools.ant.taskdefs.Typedef
+Could not load class (org.apache.tools.ant.taskdefs.optional.perforce.P4Have) for task p4have
+ +User task: filter     org.apache.tools.ant.taskdefs.Filter
+ +User task: copy     org.apache.tools.ant.taskdefs.Copy
+ +User task: antstructure     org.apache.tools.ant.taskdefs.AntStructure
+Could not load class (org.apache.tools.ant.taskdefs.optional.Script) for task script
+ +User task: ccmcreatetask     org.apache.tools.ant.taskdefs.optional.ccm.CCMCreateTask
+ +User task: rpm     org.apache.tools.ant.taskdefs.optional.Rpm
+ +User task: delete     org.apache.tools.ant.taskdefs.Delete
+ +User task: replace     org.apache.tools.ant.taskdefs.Replace
+ +User task: mmetrics     org.apache.tools.ant.taskdefs.optional.metamata.MMetrics
+ +User task: waitfor     org.apache.tools.ant.taskdefs.WaitFor
+ +User task: untar     org.apache.tools.ant.taskdefs.Untar
+ +User task: loadproperties     org.apache.tools.ant.taskdefs.LoadProperties
+ +User task: available     org.apache.tools.ant.taskdefs.Available
+ +User task: echoproperties     org.apache.tools.ant.taskdefs.optional.EchoProperties
+Could not load class (org.apache.tools.ant.taskdefs.optional.starteam.StarTeamCheckin) for task stcheckin
+Could not load class (org.apache.tools.ant.taskdefs.optional.ide.VAJExport) for task vajexport
+Could not load class (org.apache.tools.ant.taskdefs.optional.starteam.StarTeamCheckout) for task stcheckout
+ +User task: bunzip2     org.apache.tools.ant.taskdefs.BUnzip2
+ +User task: copyfile     org.apache.tools.ant.taskdefs.Copyfile
+ +User task: vsscreate     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCREATE
+Could not load class (org.apache.tools.ant.taskdefs.optional.ejb.Ejbc) for task ejbc
+ +User task: unjar     org.apache.tools.ant.taskdefs.Expand
+ +User task: mkdir     org.apache.tools.ant.taskdefs.Mkdir
+ +User task: condition     org.apache.tools.ant.taskdefs.ConditionTask
+ +User task: cvs     org.apache.tools.ant.taskdefs.Cvs
+ +User task: taskdef     org.apache.tools.ant.taskdefs.Taskdef
+ +User task: echo     org.apache.tools.ant.taskdefs.Echo
+ +User task: ccupdate     org.apache.tools.ant.taskdefs.optional.clearcase.CCUpdate
+ +User task: java     org.apache.tools.ant.taskdefs.Java
+ +User task: renameext     org.apache.tools.ant.taskdefs.optional.RenameExtensions
+ +User task: vsslabel     org.apache.tools.ant.taskdefs.optional.vss.MSVSSLABEL
+ +User task: basename     org.apache.tools.ant.taskdefs.Basename
+ +User task: javadoc2     org.apache.tools.ant.taskdefs.Javadoc
+ +User task: vsscp     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCP
+ +User task: tar     org.apache.tools.ant.taskdefs.Tar
+Could not load class (org.apache.tools.ant.taskdefs.optional.ide.VAJImport) for task vajimport
+Could not load class (org.apache.tools.ant.taskdefs.optional.ejb.WLStop) for task wlstop
+Could not load class (org.apache.tools.ant.taskdefs.optional.perforce.P4Counter) for task p4counter
+ +User task: ilasm     org.apache.tools.ant.taskdefs.optional.dotnet.Ilasm
+ +User task: soscheckout     org.apache.tools.ant.taskdefs.optional.sos.SOSCheckout
+ +User task: apply     org.apache.tools.ant.taskdefs.Transform
+ +User task: ccuncheckout     org.apache.tools.ant.taskdefs.optional.clearcase.CCUnCheckout
+ +User task: jlink     org.apache.tools.ant.taskdefs.optional.jlink.JlinkTask
+ +User task: javacc     org.apache.tools.ant.taskdefs.optional.javacc.JavaCC
+ +User task: pvcs     org.apache.tools.ant.taskdefs.optional.pvcs.Pvcs
+ +User task: chmod     org.apache.tools.ant.taskdefs.Chmod
+ +User task: jar     org.apache.tools.ant.taskdefs.Jar
+ +User task: sound     org.apache.tools.ant.taskdefs.optional.sound.SoundTask
+ +User task: mparse     org.apache.tools.ant.taskdefs.optional.metamata.MParse
+ +User task: blgenclient     org.apache.tools.ant.taskdefs.optional.ejb.BorlandGenerateClient
+ +User task: uptodate     org.apache.tools.ant.taskdefs.UpToDate
+ +User task: genkey     org.apache.tools.ant.taskdefs.GenerateKey
+ +User task: javah     org.apache.tools.ant.taskdefs.optional.Javah
+ +User task: ccmreconfigure     org.apache.tools.ant.taskdefs.optional.ccm.CCMReconfigure
+ +User task: fail     org.apache.tools.ant.taskdefs.Exit
+ +User task: unzip     org.apache.tools.ant.taskdefs.Expand
+ +User task: javac     org.apache.tools.ant.taskdefs.Javac
+Could not load class (org.apache.tools.ant.taskdefs.optional.perforce.P4Add) for task p4add
+ +User task: jpcoverage     org.apache.tools.ant.taskdefs.optional.sitraka.Coverage
+ +User task: soslabel     org.apache.tools.ant.taskdefs.optional.sos.SOSLabel
+ +User task: depend     org.apache.tools.ant.taskdefs.optional.depend.Depend
+ +User task: vssget     org.apache.tools.ant.taskdefs.optional.vss.MSVSSGET
+ +User task: deltree     org.apache.tools.ant.taskdefs.Deltree
+Could not load class (org.apache.tools.ant.taskdefs.optional.ejb.DDCreator) for task ddcreator
+ +User datatype: mapper     org.apache.tools.ant.types.Mapper
+ +User datatype: patternset     org.apache.tools.ant.types.PatternSet
+ +User datatype: filelist     org.apache.tools.ant.types.FileList
+ +User datatype: xmlcatalog     org.apache.tools.ant.types.XMLCatalog
+ +User datatype: fileset     org.apache.tools.ant.types.FileSet
+ +User datatype: regexp     org.apache.tools.ant.types.RegularExpression
+ +User datatype: dirset     org.apache.tools.ant.types.DirSet
+ +User datatype: filterset     org.apache.tools.ant.types.FilterSet
+ +User datatype: description     org.apache.tools.ant.types.Description
+ +User datatype: classfileset     org.apache.tools.ant.types.optional.depend.ClassfileSet
+ +User datatype: substitution     org.apache.tools.ant.types.Substitution
+ +User datatype: path     org.apache.tools.ant.types.Path
+Setting ro project property: ant.version -> Apache Ant version 1.5alpha compiled on April 2 2002
+Setting ro project property: ant.file -> C:\temp\jakarta-poi\build.xml
+parsing buildfile build.xml with URI = file:C:/temp/jakarta-poi/build.xml
+Setting ro project property: ant.project.name -> project build file
+Adding reference: project build file -> org.apache.tools.ant.Project@5e5a50
+Project base dir set to: C:\temp\jakarta-poi
+   +DataType: description
+ +Target: interactive
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: property
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: scratchpad
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: property
+   +Task: ant
+ +Target: contrib
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: property
+   +Task: ant
+ +Target: compile
+   +Task: antcall
+   +Task: ant
+ +Target: gui
+   +Task: antcall
+   +Task: ant
+ +Target: jar
+   +Task: antcall
+   +Task: ant
+ +Target: dist
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: quickdist
+   +Task: antcall
+   +Task: ant
+ +Target: clean
+   +Task: antcall
+   +Task: ant
+ +Target: test
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: metrics
+   +Task: antcall
+   +Task: ant
+ +Target: docs
+   +Task: antcall
+   +Task: ant
+ +Target: javadocs
+   +Task: antcall
+   +Task: ant
+ +Target: xjavadocs
+   +Task: antcall
+   +Task: ant
+ +Target: uml
+   +Task: javadoc
+ +Target: generate-records
+   +Task: ant
+ +Target: generate-types
+   +Task: ant
+ +Target: testmodule
+ +Target: testtargets
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: gump
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: all
+ +Target: jar-cent
+   +Task: antcall
+   +Task: ant
+resolving systemId: file:C:/temp/jakarta-poi/tools/antipede/build.xtarget
+ +Target: -init
+   +Task: tstamp
+   +Task: buildnumber
+   +Task: property
+   +Task: available
+   +Task: fail
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: taskdef
+   +Task: delete
+   +Task: mkdir
+   +Task: delete
+ +Target: -cent-unjar
+ +Target: -cent-unjar-check
+   +Task: basename
+   +Task: condition
+ +Target: -cent-unjar-expand
+   +Task: echo
+   +Task: unjar
+   +Task: echo
+ +Target: -cent-unjar-keep
+   +Task: echo
+   +Task: echo
+ +Target: call-cent
+   +Task: ant
+Build sequence for target `interactive' is [-init, interactive]
+Complete build sequence is [-init, interactive, jar-cent, clean, docs, compile, test, jar, metrics, javadocs, testmodule, all, -cent-unjar-check, -cent-unjar-expand, -cent-unjar-keep, -cent-unjar, quickdist, generate-types, uml, gui, generate-records, contrib, dist, call-cent, testtargets, gump, xjavadocs, scratchpad]
+
+-init:
+Setting project property: DSTAMP -> 20020409
+Setting project property: TSTAMP -> 1758
+Setting project property: TODAY -> April 9 2002
+Setting project property: YEAR -> 2002
+Setting project property: build.number -> 6
+Setting project property: tools.jar -> c:\products\jdk1.3\jre/../lib/tools.jar
+Found: c:\products\jdk1.3\jre/../lib/tools.jar
+Setting project property: tools.jar.present -> true
+Setting project property: tools.dir -> tools
+Setting project property: temp.dir -> tools/tmp
+Setting project property: cents.dir -> tools/cents
+Setting project property: installed.cents.dir -> tools/installed
+Setting project property: antipede.dir -> tools/antipede
+Setting project property: antipede.lib.dir -> tools/antipede/lib
+Setting project property: cent.lib.dir.name -> lib
+Setting project property: task.properties.name -> tasks.properties
+Setting project property: cent.jar.suffix -> cent.jar
+Setting project property: cent.dir.suffix -> cent
+Setting project property: cent.installed.suffix -> installed
+FileSet: Setup file scanner in dir C:\temp\jakarta-poi\tools\antipede\lib with patternSet{ includes: [*.jar, *.zip] excludes: [] }
+Loading definitions from file C:\temp\jakarta-poi\tools\antipede\tasks.properties
+Class net.sf.antcontrib.logic.TryCatchTask loaded from parent loader
+ +User task: antipede-trycatch     net.sf.antcontrib.logic.TryCatchTask
+Class net.sf.antcontrib.logic.Switch loaded from parent loader
+ +User task: antipede-switch     net.sf.antcontrib.logic.Switch
+Class net.sf.antcontrib.property.PropertyCopy loaded from parent loader
+ +User task: antipede-propertycopy     net.sf.antcontrib.property.PropertyCopy
+Class net.sf.antcontrib.logic.ForEach loaded from parent loader
+ +User task: antipede-foreach     net.sf.antcontrib.logic.ForEach
+Class net.sf.antcontrib.logic.IfTask loaded from parent loader
+ +User task: antipede-if     net.sf.antcontrib.logic.IfTask
+   +Task: antipede-foreach
+FileSet: Setup file scanner in dir C:\temp\jakarta-poi with patternSet{ includes: [tools/cents/*.cent.jar] excludes: [] }
+   +Task: antcall
+Project base dir set to: C:\temp\jakarta-poi
+   +Task: ant
+ +User task: fail     org.apache.tools.ant.taskdefs.Exit
+ +User task: tar     org.apache.tools.ant.taskdefs.Tar
+ +User task: uptodate     org.apache.tools.ant.taskdefs.UpToDate
+ +User task: jpcoverage     org.apache.tools.ant.taskdefs.optional.sitraka.Coverage
+ +User task: dependset     org.apache.tools.ant.taskdefs.DependSet
+ +User task: vsscheckin     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCHECKIN
+ +User task: java     org.apache.tools.ant.taskdefs.Java
+ +User task: echo     org.apache.tools.ant.taskdefs.Echo
+ +User task: execon     org.apache.tools.ant.taskdefs.ExecuteOn
+ +User task: native2ascii     org.apache.tools.ant.taskdefs.optional.Native2Ascii
+ +User task: changelog     org.apache.tools.ant.taskdefs.cvslib.ChangeLogTask
+ +User task: jjtree     org.apache.tools.ant.taskdefs.optional.javacc.JJTree
+ +User task: chmod     org.apache.tools.ant.taskdefs.Chmod
+ +User task: manifest     org.apache.tools.ant.taskdefs.Manifest
+ +User task: javadoc2     org.apache.tools.ant.taskdefs.Javadoc
+ +User task: deltree     org.apache.tools.ant.taskdefs.Deltree
+ +User task: jlink     org.apache.tools.ant.taskdefs.optional.jlink.JlinkTask
+ +User task: cvs     org.apache.tools.ant.taskdefs.Cvs
+ +User task: ccmcreatetask     org.apache.tools.ant.taskdefs.optional.ccm.CCMCreateTask
+ +User task: tstamp     org.apache.tools.ant.taskdefs.Tstamp
+ +User task: unjar     org.apache.tools.ant.taskdefs.Expand
+ +User task: pathconvert     org.apache.tools.ant.taskdefs.PathConvert
+ +User task: translate     org.apache.tools.ant.taskdefs.optional.i18n.Translate
+ +User task: patch     org.apache.tools.ant.taskdefs.Patch
+ +User task: sound     org.apache.tools.ant.taskdefs.optional.sound.SoundTask
+ +User task: serverdeploy     org.apache.tools.ant.taskdefs.optional.j2ee.ServerDeploy
+ +User task: cccheckout     org.apache.tools.ant.taskdefs.optional.clearcase.CCCheckout
+ +User task: mail     org.apache.tools.ant.taskdefs.email.EmailTask
+ +User task: buildnumber     org.apache.tools.ant.taskdefs.BuildNumber
+ +User task: gzip     org.apache.tools.ant.taskdefs.GZip
+ +User task: loadfile     org.apache.tools.ant.taskdefs.LoadFile
+ +User task: jpcovreport     org.apache.tools.ant.taskdefs.optional.sitraka.CovReport
+ +User task: echoproperties     org.apache.tools.ant.taskdefs.optional.EchoProperties
+ +User task: mimemail     org.apache.tools.ant.taskdefs.optional.net.MimeMail
+ +User task: copy     org.apache.tools.ant.taskdefs.Copy
+ +User task: filter     org.apache.tools.ant.taskdefs.Filter
+ +User task: jar     org.apache.tools.ant.taskdefs.Jar
+ +User task: waitfor     org.apache.tools.ant.taskdefs.WaitFor
+ +User task: antipede-if     net.sf.antcontrib.logic.IfTask
+ +User task: unzip     org.apache.tools.ant.taskdefs.Expand
+ +User task: rename     org.apache.tools.ant.taskdefs.Rename
+ +User task: mmetrics     org.apache.tools.ant.taskdefs.optional.metamata.MMetrics
+ +User task: propertyfile     org.apache.tools.ant.taskdefs.optional.PropertyFile
+ +User task: antipede-propertycopy     net.sf.antcontrib.property.PropertyCopy
+ +User task: checksum     org.apache.tools.ant.taskdefs.Checksum
+ +User task: copyfile     org.apache.tools.ant.taskdefs.Copyfile
+ +User task: splash     org.apache.tools.ant.taskdefs.optional.splash.SplashTask
+ +User task: ccmcheckintask     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckinDefault
+ +User task: gunzip     org.apache.tools.ant.taskdefs.GUnzip
+ +User task: bunzip2     org.apache.tools.ant.taskdefs.BUnzip2
+ +User task: antcall     org.apache.tools.ant.taskdefs.CallTarget
+ +User task: antipede-foreach     net.sf.antcontrib.logic.ForEach
+ +User task: taskdef     org.apache.tools.ant.taskdefs.Taskdef
+ +User task: jspc     org.apache.tools.ant.taskdefs.optional.jsp.JspC
+ +User task: soscheckout     org.apache.tools.ant.taskdefs.optional.sos.SOSCheckout
+ +User task: mkdir     org.apache.tools.ant.taskdefs.Mkdir
+ +User task: sql     org.apache.tools.ant.taskdefs.SQLExec
+ +User task: replace     org.apache.tools.ant.taskdefs.Replace
+ +User task: ear     org.apache.tools.ant.taskdefs.Ear
+ +User task: ant     org.apache.tools.ant.taskdefs.Ant
+ +User task: vsshistory     org.apache.tools.ant.taskdefs.optional.vss.MSVSSHISTORY
+ +User task: vsscp     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCP
+ +User task: style     org.apache.tools.ant.taskdefs.XSLTProcess
+ +User task: vssget     org.apache.tools.ant.taskdefs.optional.vss.MSVSSGET
+ +User task: genkey     org.apache.tools.ant.taskdefs.GenerateKey
+ +User task: sequential     org.apache.tools.ant.taskdefs.Sequential
+ +User task: fixcrlf     org.apache.tools.ant.taskdefs.FixCRLF
+ +User task: zip     org.apache.tools.ant.taskdefs.Zip
+ +User task: replaceregexp     org.apache.tools.ant.taskdefs.optional.ReplaceRegExp
+ +User task: condition     org.apache.tools.ant.taskdefs.ConditionTask
+ +User task: pvcs     org.apache.tools.ant.taskdefs.optional.pvcs.Pvcs
+ +User task: antstructure     org.apache.tools.ant.taskdefs.AntStructure
+ +User task: javah     org.apache.tools.ant.taskdefs.optional.Javah
+ +User task: javac     org.apache.tools.ant.taskdefs.Javac
+ +User task: test     org.apache.tools.ant.taskdefs.optional.Test
+ +User task: ccmreconfigure     org.apache.tools.ant.taskdefs.optional.ccm.CCMReconfigure
+ +User task: xmlvalidate     org.apache.tools.ant.taskdefs.optional.XMLValidateTask
+ +User task: cab     org.apache.tools.ant.taskdefs.optional.Cab
+ +User task: typedef     org.apache.tools.ant.taskdefs.Typedef
+ +User task: mparse     org.apache.tools.ant.taskdefs.optional.metamata.MParse
+ +User task: ccuncheckout     org.apache.tools.ant.taskdefs.optional.clearcase.CCUnCheckout
+ +User task: jpcovmerge     org.apache.tools.ant.taskdefs.optional.sitraka.CovMerge
+ +User task: ejbjar     org.apache.tools.ant.taskdefs.optional.ejb.EjbJar
+ +User task: available     org.apache.tools.ant.taskdefs.Available
+ +User task: rpm     org.apache.tools.ant.taskdefs.optional.Rpm
+ +User task: vsslabel     org.apache.tools.ant.taskdefs.optional.vss.MSVSSLABEL
+ +User task: soscheckin     org.apache.tools.ant.taskdefs.optional.sos.SOSCheckin
+ +User task: cvspass     org.apache.tools.ant.taskdefs.CVSPass
+ +User task: wljspc     org.apache.tools.ant.taskdefs.optional.jsp.WLJspc
+ +User task: move     org.apache.tools.ant.taskdefs.Move
+ +User task: dirname     org.apache.tools.ant.taskdefs.Dirname
+ +User task: vsscreate     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCREATE
+ +User task: javacc     org.apache.tools.ant.taskdefs.optional.javacc.JavaCC
+ +User task: csc     org.apache.tools.ant.taskdefs.optional.dotnet.CSharp
+ +User task: signjar     org.apache.tools.ant.taskdefs.SignJar
+ +User task: cccheckin     org.apache.tools.ant.taskdefs.optional.clearcase.CCCheckin
+ +User task: iplanet-ejbc     org.apache.tools.ant.taskdefs.optional.ejb.IPlanetEjbcTask
+ +User task: unwar     org.apache.tools.ant.taskdefs.Expand
+ +User task: ilasm     org.apache.tools.ant.taskdefs.optional.dotnet.Ilasm
+ +User task: touch     org.apache.tools.ant.taskdefs.Touch
+ +User task: ccmcheckin     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckin
+ +User task: blgenclient     org.apache.tools.ant.taskdefs.optional.ejb.BorlandGenerateClient
+ +User task: get     org.apache.tools.ant.taskdefs.Get
+ +User task: vsscheckout     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCHECKOUT
+ +User task: antipede-switch     net.sf.antcontrib.logic.Switch
+ +User task: sosget     org.apache.tools.ant.taskdefs.optional.sos.SOSGet
+ +User task: javadoc     org.apache.tools.ant.taskdefs.Javadoc
+ +User task: record     org.apache.tools.ant.taskdefs.Recorder
+ +User task: untar     org.apache.tools.ant.taskdefs.Untar
+ +User task: delete     org.apache.tools.ant.taskdefs.Delete
+ +User task: basename     org.apache.tools.ant.taskdefs.Basename
+ +User task: copydir     org.apache.tools.ant.taskdefs.Copydir
+ +User task: loadproperties     org.apache.tools.ant.taskdefs.LoadProperties
+ +User task: war     org.apache.tools.ant.taskdefs.War
+ +User task: ccupdate     org.apache.tools.ant.taskdefs.optional.clearcase.CCUpdate
+ +User task: concat     org.apache.tools.ant.taskdefs.Concat
+ +User task: depend     org.apache.tools.ant.taskdefs.optional.depend.Depend
+ +User task: ccmcheckout     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckout
+ +User task: parallel     org.apache.tools.ant.taskdefs.Parallel
+ +User task: renameext     org.apache.tools.ant.taskdefs.optional.RenameExtensions
+ +User task: vssadd     org.apache.tools.ant.taskdefs.optional.vss.MSVSSADD
+ +User task: antipede-trycatch     net.sf.antcontrib.logic.TryCatchTask
+ +User task: exec     org.apache.tools.ant.taskdefs.ExecTask
+ +User task: apply     org.apache.tools.ant.taskdefs.Transform
+ +User task: input     org.apache.tools.ant.taskdefs.Input
+ +User task: soslabel     org.apache.tools.ant.taskdefs.optional.sos.SOSLabel
+ +User task: bzip2     org.apache.tools.ant.taskdefs.BZip2
+ +User task: rmic     org.apache.tools.ant.taskdefs.Rmic
+ +User task: sleep     org.apache.tools.ant.taskdefs.Sleep
+ +User datatype: mapper     org.apache.tools.ant.types.Mapper
+ +User datatype: patternset     org.apache.tools.ant.types.PatternSet
+ +User datatype: filelist     org.apache.tools.ant.types.FileList
+ +User datatype: xmlcatalog     org.apache.tools.ant.types.XMLCatalog
+ +User datatype: fileset     org.apache.tools.ant.types.FileSet
+ +User datatype: regexp     org.apache.tools.ant.types.RegularExpression
+ +User datatype: dirset     org.apache.tools.ant.types.DirSet
+ +User datatype: filterset     org.apache.tools.ant.types.FilterSet
+ +User datatype: classfileset     org.apache.tools.ant.types.optional.depend.ClassfileSet
+ +User datatype: description     org.apache.tools.ant.types.Description
+ +User datatype: substitution     org.apache.tools.ant.types.Substitution
+ +User datatype: path     org.apache.tools.ant.types.Path
+Setting project property: antipede.lib.dir -> tools/antipede/lib
+Setting project property: java.runtime.name -> Java(TM) 2 Runtime Environment, Standard Edition
+Setting project property: sun.boot.library.path -> c:\products\jdk1.3\jre\bin
+Setting project property: java.vm.version -> 1.3.1_02-b02
+Setting project property: ant.version -> Apache Ant version 1.5alpha compiled on April 2 2002
+Overriding previous definition of property ant.java.version
+Setting project property: ant.java.version -> 1.3
+Setting project property: java.vm.vendor -> Sun Microsystems Inc.
+Setting project property: cent.jar.suffix -> cent.jar
+Setting project property: java.vendor.url -> http://java.sun.com/
+Setting project property: path.separator -> ;
+Setting project property: java.vm.name -> Java HotSpot(TM) Client VM
+Setting project property: file.encoding.pkg -> sun.io
+Setting project property: java.vm.specification.name -> Java Virtual Machine Specification
+Setting project property: user.dir -> C:\temp\jakarta-poi
+Setting project property: java.runtime.version -> 1.3.1_02-b02
+Setting project property: java.awt.graphicsenv -> sun.awt.Win32GraphicsEnvironment
+Setting project property: os.arch -> x86
+Setting project property: java.io.tmpdir -> C:\DOCUME~1\GLENST~1\LOCALS~1\Temp\
+Setting project property: line.separator -> 
+
+Setting project property: cent.dir.suffix -> cent
+Setting project property: java.vm.specification.vendor -> Sun Microsystems Inc.
+Setting project property: java.awt.fonts -> 
+Setting project property: os.name -> Windows 2000
+Setting project property: DSTAMP -> 20020409
+Setting project property: ant.home -> tools\antipede
+Setting project property: ant.project.name -> project build file
+Setting project property: tools.jar -> c:\products\jdk1.3\jre/../lib/tools.jar
+Setting project property: TODAY -> April 9 2002
+Setting project property: java.library.path -> c:\products\jdk1.3\bin;.;C:\WINNT\System32;C:\WINNT;c:\progra~1\gnu\wincvs~1.3;c:\products\ssh;c:\products\ant\bin;C:\WINNT\system32;C:\WINNT;C:\WINNT\System32\Wbem;C:\PROGRA~1\Tcl\bin;c:\products\jdk1.3\bin;c:\progra~1\CVSFOR~1;c:\progra~1\gnu\wincvs~1.2;C:\PROGRA~1\MICROS~4\Office;c:\products\windiff
+Setting project property: YEAR -> 2002
+Setting project property: java.specification.name -> Java Platform API Specification
+Setting project property: tools.dir -> tools
+Setting project property: java.class.version -> 47.0
+Setting project property: task.properties.name -> tasks.properties
+Setting project property: os.version -> 5.0
+Setting project property: user.home -> C:\Documents and Settings\Glen Stampoultzis
+Setting project property: user.timezone -> 
+Setting project property: java.awt.printerjob -> sun.awt.windows.WPrinterJob
+Setting project property: cents.dir -> tools/cents
+Setting project property: java.specification.version -> 1.3
+Setting project property: file.encoding -> Cp1252
+Setting project property: TSTAMP -> 1758
+Setting project property: tools.jar.present -> true
+Setting project property: java.class.path -> c:\products\jdk1.3\lib\tools.jar;tools\antipede\lib\ant-taskdefs-dev-20020402.jar;tools\antipede\lib\ant-optional-1.5-dev-20020402.jar;tools\antipede\lib\ant-contrib-0.1.jar;tools\antipede\lib\ant-1.5-dev-20020402.jar;;.\lib\endorsed\xalan-2.2.0.jar;.\lib\endorsed\xerces-2.0.0.jar;.\lib\endorsed\xml-apis.jar
+Setting project property: user.name -> Glen Stampoultzis
+Setting project property: build.number -> 6
+Setting project property: java.vm.specification.version -> 1.0
+Setting project property: java.home -> c:\products\jdk1.3\jre
+Setting project property: java.specification.vendor -> Sun Microsystems Inc.
+Setting project property: user.language -> en
+Setting project property: awt.toolkit -> sun.awt.windows.WToolkit
+Setting project property: java.vm.info -> mixed mode
+Setting project property: temp.dir -> tools/tmp
+Setting project property: java.version -> 1.3.1_02
+Setting project property: java.ext.dirs -> c:\products\jdk1.3\jre\lib\ext
+Setting project property: sun.boot.class.path -> c:\products\jdk1.3\jre\lib\rt.jar;c:\products\jdk1.3\jre\lib\i18n.jar;c:\products\jdk1.3\jre\lib\sunrsasign.jar;c:\products\jdk1.3\jre\classes
+Setting project property: java.vendor -> Sun Microsystems Inc.
+Setting project property: file.separator -> \
+Setting project property: cent.lib.dir.name -> lib
+Setting project property: cent.installed.suffix -> installed
+Setting project property: java.vendor.url.bug -> http://java.sun.com/cgi-bin/bugreport.cgi
+Setting project property: sun.io.unicode.encoding -> UnicodeLittle
+Setting project property: sun.cpu.endian -> little
+Setting project property: installed.cents.dir -> tools/installed
+Setting project property: antipede.dir -> tools/antipede
+Setting project property: user.region -> US
+Setting project property: sun.cpu.isalist -> pentium i486 i386
+Project base dir set to: C:\temp\jakarta-poi
+Setting ro project property: basedir -> C:\temp\jakarta-poi
+Setting ro project property: current.cent.jar -> C:\temp\jakarta-poi\tools\cents\antidote.cent.jar
+calling target -cent-unjar in build file C:\temp\jakarta-poi\build.xml
+Setting ro project property: ant.file -> C:\temp\jakarta-poi\build.xml
+parsing buildfile C:\temp\jakarta-poi\build.xml with URI = file:C:/temp/jakarta-poi/build.xml
+Setting ro project property: ant.project.name -> project build file
+Adding reference: project build file -> org.apache.tools.ant.Project@5b7df8
+Project base dir set to: C:\temp\jakarta-poi
+   +DataType: description
+ +Target: interactive
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: property
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: scratchpad
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: property
+   +Task: ant
+ +Target: contrib
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: property
+   +Task: ant
+ +Target: compile
+   +Task: antcall
+   +Task: ant
+ +Target: gui
+   +Task: antcall
+   +Task: ant
+ +Target: jar
+   +Task: antcall
+   +Task: ant
+ +Target: dist
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: quickdist
+   +Task: antcall
+   +Task: ant
+ +Target: clean
+   +Task: antcall
+   +Task: ant
+ +Target: test
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: metrics
+   +Task: antcall
+   +Task: ant
+ +Target: docs
+   +Task: antcall
+   +Task: ant
+ +Target: javadocs
+   +Task: antcall
+   +Task: ant
+ +Target: xjavadocs
+   +Task: antcall
+   +Task: ant
+ +Target: uml
+   +Task: javadoc
+ +Target: generate-records
+   +Task: ant
+ +Target: generate-types
+   +Task: ant
+ +Target: testmodule
+ +Target: testtargets
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: gump
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: all
+ +Target: jar-cent
+   +Task: antcall
+   +Task: ant
+resolving systemId: file:C:/temp/jakarta-poi/tools/antipede/build.xtarget
+ +Target: -init
+   +Task: tstamp
+   +Task: buildnumber
+   +Task: property
+   +Task: available
+   +Task: fail
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: taskdef
+   +Task: antipede-foreach
+   +Task: delete
+   +Task: mkdir
+   +Task: delete
+   +Task: antipede-trycatch
+   +Task: concat
+   +Task: taskdef
+   +Task: echo
+ +Target: -cent-unjar
+ +Target: -cent-unjar-check
+   +Task: basename
+   +Task: condition
+ +Target: -cent-unjar-expand
+   +Task: echo
+   +Task: unjar
+   +Task: echo
+ +Target: -cent-unjar-keep
+   +Task: echo
+   +Task: echo
+ +Target: call-cent
+   +Task: ant
+Build sequence for target `-cent-unjar' is [-cent-unjar-check, -cent-unjar-expand, -cent-unjar-keep, -cent-unjar]
+Complete build sequence is [-cent-unjar-check, -cent-unjar-expand, -cent-unjar-keep, -cent-unjar, -init, jar-cent, clean, docs, compile, test, jar, metrics, javadocs, testmodule, all, quickdist, generate-types, uml, gui, generate-records, contrib, dist, call-cent, testtargets, gump, xjavadocs, interactive, scratchpad]
+
+-cent-unjar-check:
+Setting project property: current.cent.jar.name -> antidote
+FileSet: Setup file scanner in dir C:\temp\jakarta-poi with patternSet{ includes: [tools/cents/antidote.cent/tasks.properties] excludes: [] }
+tools\cents\antidote.cent\tasks.properties omitted as C:\temp\jakarta-poi\tools\cents\antidote.cent.jar is up to date.
+Found directory: tools/cents/antidote.cent
+Setting project property: cent-unjar.not.required -> true
+
+-cent-unjar-expand:
+Skipped because property 'cent-unjar.not.required' set.
+
+-cent-unjar-keep:
+C:\temp\jakarta-poi\tools\cents\antidote.cent.jar is uptodate with respect to antidote.
+No need to expand it.
+
+-cent-unjar:
+   +Task: antcall
+Project base dir set to: C:\temp\jakarta-poi
+   +Task: ant
+ +User task: fail     org.apache.tools.ant.taskdefs.Exit
+ +User task: tar     org.apache.tools.ant.taskdefs.Tar
+ +User task: uptodate     org.apache.tools.ant.taskdefs.UpToDate
+ +User task: jpcoverage     org.apache.tools.ant.taskdefs.optional.sitraka.Coverage
+ +User task: dependset     org.apache.tools.ant.taskdefs.DependSet
+ +User task: vsscheckin     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCHECKIN
+ +User task: java     org.apache.tools.ant.taskdefs.Java
+ +User task: echo     org.apache.tools.ant.taskdefs.Echo
+ +User task: execon     org.apache.tools.ant.taskdefs.ExecuteOn
+ +User task: native2ascii     org.apache.tools.ant.taskdefs.optional.Native2Ascii
+ +User task: changelog     org.apache.tools.ant.taskdefs.cvslib.ChangeLogTask
+ +User task: jjtree     org.apache.tools.ant.taskdefs.optional.javacc.JJTree
+ +User task: chmod     org.apache.tools.ant.taskdefs.Chmod
+ +User task: manifest     org.apache.tools.ant.taskdefs.Manifest
+ +User task: javadoc2     org.apache.tools.ant.taskdefs.Javadoc
+ +User task: deltree     org.apache.tools.ant.taskdefs.Deltree
+ +User task: jlink     org.apache.tools.ant.taskdefs.optional.jlink.JlinkTask
+ +User task: cvs     org.apache.tools.ant.taskdefs.Cvs
+ +User task: ccmcreatetask     org.apache.tools.ant.taskdefs.optional.ccm.CCMCreateTask
+ +User task: tstamp     org.apache.tools.ant.taskdefs.Tstamp
+ +User task: unjar     org.apache.tools.ant.taskdefs.Expand
+ +User task: pathconvert     org.apache.tools.ant.taskdefs.PathConvert
+ +User task: translate     org.apache.tools.ant.taskdefs.optional.i18n.Translate
+ +User task: patch     org.apache.tools.ant.taskdefs.Patch
+ +User task: sound     org.apache.tools.ant.taskdefs.optional.sound.SoundTask
+ +User task: serverdeploy     org.apache.tools.ant.taskdefs.optional.j2ee.ServerDeploy
+ +User task: cccheckout     org.apache.tools.ant.taskdefs.optional.clearcase.CCCheckout
+ +User task: mail     org.apache.tools.ant.taskdefs.email.EmailTask
+ +User task: buildnumber     org.apache.tools.ant.taskdefs.BuildNumber
+ +User task: gzip     org.apache.tools.ant.taskdefs.GZip
+ +User task: loadfile     org.apache.tools.ant.taskdefs.LoadFile
+ +User task: jpcovreport     org.apache.tools.ant.taskdefs.optional.sitraka.CovReport
+ +User task: echoproperties     org.apache.tools.ant.taskdefs.optional.EchoProperties
+ +User task: mimemail     org.apache.tools.ant.taskdefs.optional.net.MimeMail
+ +User task: copy     org.apache.tools.ant.taskdefs.Copy
+ +User task: filter     org.apache.tools.ant.taskdefs.Filter
+ +User task: jar     org.apache.tools.ant.taskdefs.Jar
+ +User task: waitfor     org.apache.tools.ant.taskdefs.WaitFor
+ +User task: antipede-if     net.sf.antcontrib.logic.IfTask
+ +User task: unzip     org.apache.tools.ant.taskdefs.Expand
+ +User task: rename     org.apache.tools.ant.taskdefs.Rename
+ +User task: mmetrics     org.apache.tools.ant.taskdefs.optional.metamata.MMetrics
+ +User task: propertyfile     org.apache.tools.ant.taskdefs.optional.PropertyFile
+ +User task: antipede-propertycopy     net.sf.antcontrib.property.PropertyCopy
+ +User task: checksum     org.apache.tools.ant.taskdefs.Checksum
+ +User task: copyfile     org.apache.tools.ant.taskdefs.Copyfile
+ +User task: splash     org.apache.tools.ant.taskdefs.optional.splash.SplashTask
+ +User task: ccmcheckintask     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckinDefault
+ +User task: gunzip     org.apache.tools.ant.taskdefs.GUnzip
+ +User task: bunzip2     org.apache.tools.ant.taskdefs.BUnzip2
+ +User task: antcall     org.apache.tools.ant.taskdefs.CallTarget
+ +User task: antipede-foreach     net.sf.antcontrib.logic.ForEach
+ +User task: taskdef     org.apache.tools.ant.taskdefs.Taskdef
+ +User task: jspc     org.apache.tools.ant.taskdefs.optional.jsp.JspC
+ +User task: soscheckout     org.apache.tools.ant.taskdefs.optional.sos.SOSCheckout
+ +User task: mkdir     org.apache.tools.ant.taskdefs.Mkdir
+ +User task: sql     org.apache.tools.ant.taskdefs.SQLExec
+ +User task: replace     org.apache.tools.ant.taskdefs.Replace
+ +User task: ear     org.apache.tools.ant.taskdefs.Ear
+ +User task: ant     org.apache.tools.ant.taskdefs.Ant
+ +User task: vsshistory     org.apache.tools.ant.taskdefs.optional.vss.MSVSSHISTORY
+ +User task: vsscp     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCP
+ +User task: style     org.apache.tools.ant.taskdefs.XSLTProcess
+ +User task: vssget     org.apache.tools.ant.taskdefs.optional.vss.MSVSSGET
+ +User task: genkey     org.apache.tools.ant.taskdefs.GenerateKey
+ +User task: sequential     org.apache.tools.ant.taskdefs.Sequential
+ +User task: fixcrlf     org.apache.tools.ant.taskdefs.FixCRLF
+ +User task: zip     org.apache.tools.ant.taskdefs.Zip
+ +User task: replaceregexp     org.apache.tools.ant.taskdefs.optional.ReplaceRegExp
+ +User task: condition     org.apache.tools.ant.taskdefs.ConditionTask
+ +User task: pvcs     org.apache.tools.ant.taskdefs.optional.pvcs.Pvcs
+ +User task: antstructure     org.apache.tools.ant.taskdefs.AntStructure
+ +User task: javah     org.apache.tools.ant.taskdefs.optional.Javah
+ +User task: javac     org.apache.tools.ant.taskdefs.Javac
+ +User task: test     org.apache.tools.ant.taskdefs.optional.Test
+ +User task: ccmreconfigure     org.apache.tools.ant.taskdefs.optional.ccm.CCMReconfigure
+ +User task: xmlvalidate     org.apache.tools.ant.taskdefs.optional.XMLValidateTask
+ +User task: cab     org.apache.tools.ant.taskdefs.optional.Cab
+ +User task: typedef     org.apache.tools.ant.taskdefs.Typedef
+ +User task: mparse     org.apache.tools.ant.taskdefs.optional.metamata.MParse
+ +User task: ccuncheckout     org.apache.tools.ant.taskdefs.optional.clearcase.CCUnCheckout
+ +User task: jpcovmerge     org.apache.tools.ant.taskdefs.optional.sitraka.CovMerge
+ +User task: ejbjar     org.apache.tools.ant.taskdefs.optional.ejb.EjbJar
+ +User task: available     org.apache.tools.ant.taskdefs.Available
+ +User task: rpm     org.apache.tools.ant.taskdefs.optional.Rpm
+ +User task: vsslabel     org.apache.tools.ant.taskdefs.optional.vss.MSVSSLABEL
+ +User task: soscheckin     org.apache.tools.ant.taskdefs.optional.sos.SOSCheckin
+ +User task: cvspass     org.apache.tools.ant.taskdefs.CVSPass
+ +User task: wljspc     org.apache.tools.ant.taskdefs.optional.jsp.WLJspc
+ +User task: move     org.apache.tools.ant.taskdefs.Move
+ +User task: dirname     org.apache.tools.ant.taskdefs.Dirname
+ +User task: vsscreate     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCREATE
+ +User task: javacc     org.apache.tools.ant.taskdefs.optional.javacc.JavaCC
+ +User task: csc     org.apache.tools.ant.taskdefs.optional.dotnet.CSharp
+ +User task: signjar     org.apache.tools.ant.taskdefs.SignJar
+ +User task: cccheckin     org.apache.tools.ant.taskdefs.optional.clearcase.CCCheckin
+ +User task: iplanet-ejbc     org.apache.tools.ant.taskdefs.optional.ejb.IPlanetEjbcTask
+ +User task: unwar     org.apache.tools.ant.taskdefs.Expand
+ +User task: ilasm     org.apache.tools.ant.taskdefs.optional.dotnet.Ilasm
+ +User task: touch     org.apache.tools.ant.taskdefs.Touch
+ +User task: ccmcheckin     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckin
+ +User task: blgenclient     org.apache.tools.ant.taskdefs.optional.ejb.BorlandGenerateClient
+ +User task: get     org.apache.tools.ant.taskdefs.Get
+ +User task: vsscheckout     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCHECKOUT
+ +User task: antipede-switch     net.sf.antcontrib.logic.Switch
+ +User task: sosget     org.apache.tools.ant.taskdefs.optional.sos.SOSGet
+ +User task: javadoc     org.apache.tools.ant.taskdefs.Javadoc
+ +User task: record     org.apache.tools.ant.taskdefs.Recorder
+ +User task: untar     org.apache.tools.ant.taskdefs.Untar
+ +User task: delete     org.apache.tools.ant.taskdefs.Delete
+ +User task: basename     org.apache.tools.ant.taskdefs.Basename
+ +User task: copydir     org.apache.tools.ant.taskdefs.Copydir
+ +User task: loadproperties     org.apache.tools.ant.taskdefs.LoadProperties
+ +User task: war     org.apache.tools.ant.taskdefs.War
+ +User task: ccupdate     org.apache.tools.ant.taskdefs.optional.clearcase.CCUpdate
+ +User task: concat     org.apache.tools.ant.taskdefs.Concat
+ +User task: depend     org.apache.tools.ant.taskdefs.optional.depend.Depend
+ +User task: ccmcheckout     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckout
+ +User task: parallel     org.apache.tools.ant.taskdefs.Parallel
+ +User task: renameext     org.apache.tools.ant.taskdefs.optional.RenameExtensions
+ +User task: vssadd     org.apache.tools.ant.taskdefs.optional.vss.MSVSSADD
+ +User task: antipede-trycatch     net.sf.antcontrib.logic.TryCatchTask
+ +User task: exec     org.apache.tools.ant.taskdefs.ExecTask
+ +User task: apply     org.apache.tools.ant.taskdefs.Transform
+ +User task: input     org.apache.tools.ant.taskdefs.Input
+ +User task: soslabel     org.apache.tools.ant.taskdefs.optional.sos.SOSLabel
+ +User task: bzip2     org.apache.tools.ant.taskdefs.BZip2
+ +User task: rmic     org.apache.tools.ant.taskdefs.Rmic
+ +User task: sleep     org.apache.tools.ant.taskdefs.Sleep
+ +User datatype: mapper     org.apache.tools.ant.types.Mapper
+ +User datatype: patternset     org.apache.tools.ant.types.PatternSet
+ +User datatype: filelist     org.apache.tools.ant.types.FileList
+ +User datatype: xmlcatalog     org.apache.tools.ant.types.XMLCatalog
+ +User datatype: fileset     org.apache.tools.ant.types.FileSet
+ +User datatype: regexp     org.apache.tools.ant.types.RegularExpression
+ +User datatype: dirset     org.apache.tools.ant.types.DirSet
+ +User datatype: filterset     org.apache.tools.ant.types.FilterSet
+ +User datatype: classfileset     org.apache.tools.ant.types.optional.depend.ClassfileSet
+ +User datatype: description     org.apache.tools.ant.types.Description
+ +User datatype: substitution     org.apache.tools.ant.types.Substitution
+ +User datatype: path     org.apache.tools.ant.types.Path
+Setting project property: antipede.lib.dir -> tools/antipede/lib
+Setting project property: java.runtime.name -> Java(TM) 2 Runtime Environment, Standard Edition
+Setting project property: sun.boot.library.path -> c:\products\jdk1.3\jre\bin
+Setting project property: java.vm.version -> 1.3.1_02-b02
+Setting project property: ant.version -> Apache Ant version 1.5alpha compiled on April 2 2002
+Overriding previous definition of property ant.java.version
+Setting project property: ant.java.version -> 1.3
+Setting project property: java.vm.vendor -> Sun Microsystems Inc.
+Setting project property: cent.jar.suffix -> cent.jar
+Setting project property: java.vendor.url -> http://java.sun.com/
+Setting project property: path.separator -> ;
+Setting project property: java.vm.name -> Java HotSpot(TM) Client VM
+Setting project property: file.encoding.pkg -> sun.io
+Setting project property: java.vm.specification.name -> Java Virtual Machine Specification
+Setting project property: user.dir -> C:\temp\jakarta-poi
+Setting project property: java.runtime.version -> 1.3.1_02-b02
+Setting project property: java.awt.graphicsenv -> sun.awt.Win32GraphicsEnvironment
+Setting project property: os.arch -> x86
+Setting project property: java.io.tmpdir -> C:\DOCUME~1\GLENST~1\LOCALS~1\Temp\
+Setting project property: line.separator -> 
+
+Setting project property: cent.dir.suffix -> cent
+Setting project property: java.vm.specification.vendor -> Sun Microsystems Inc.
+Setting project property: java.awt.fonts -> 
+Setting project property: os.name -> Windows 2000
+Setting project property: DSTAMP -> 20020409
+Setting project property: ant.home -> tools\antipede
+Setting project property: ant.project.name -> project build file
+Setting project property: tools.jar -> c:\products\jdk1.3\jre/../lib/tools.jar
+Setting project property: TODAY -> April 9 2002
+Setting project property: java.library.path -> c:\products\jdk1.3\bin;.;C:\WINNT\System32;C:\WINNT;c:\progra~1\gnu\wincvs~1.3;c:\products\ssh;c:\products\ant\bin;C:\WINNT\system32;C:\WINNT;C:\WINNT\System32\Wbem;C:\PROGRA~1\Tcl\bin;c:\products\jdk1.3\bin;c:\progra~1\CVSFOR~1;c:\progra~1\gnu\wincvs~1.2;C:\PROGRA~1\MICROS~4\Office;c:\products\windiff
+Setting project property: YEAR -> 2002
+Setting project property: java.specification.name -> Java Platform API Specification
+Setting project property: tools.dir -> tools
+Setting project property: java.class.version -> 47.0
+Setting project property: task.properties.name -> tasks.properties
+Setting project property: os.version -> 5.0
+Setting project property: user.home -> C:\Documents and Settings\Glen Stampoultzis
+Setting project property: user.timezone -> 
+Setting project property: java.awt.printerjob -> sun.awt.windows.WPrinterJob
+Setting project property: cents.dir -> tools/cents
+Setting project property: java.specification.version -> 1.3
+Setting project property: file.encoding -> Cp1252
+Setting project property: TSTAMP -> 1758
+Setting project property: tools.jar.present -> true
+Setting project property: java.class.path -> c:\products\jdk1.3\lib\tools.jar;tools\antipede\lib\ant-taskdefs-dev-20020402.jar;tools\antipede\lib\ant-optional-1.5-dev-20020402.jar;tools\antipede\lib\ant-contrib-0.1.jar;tools\antipede\lib\ant-1.5-dev-20020402.jar;;.\lib\endorsed\xalan-2.2.0.jar;.\lib\endorsed\xerces-2.0.0.jar;.\lib\endorsed\xml-apis.jar
+Setting project property: user.name -> Glen Stampoultzis
+Setting project property: build.number -> 6
+Setting project property: java.vm.specification.version -> 1.0
+Setting project property: java.home -> c:\products\jdk1.3\jre
+Setting project property: java.specification.vendor -> Sun Microsystems Inc.
+Setting project property: user.language -> en
+Setting project property: awt.toolkit -> sun.awt.windows.WToolkit
+Setting project property: java.vm.info -> mixed mode
+Setting project property: temp.dir -> tools/tmp
+Setting project property: java.version -> 1.3.1_02
+Setting project property: java.ext.dirs -> c:\products\jdk1.3\jre\lib\ext
+Setting project property: sun.boot.class.path -> c:\products\jdk1.3\jre\lib\rt.jar;c:\products\jdk1.3\jre\lib\i18n.jar;c:\products\jdk1.3\jre\lib\sunrsasign.jar;c:\products\jdk1.3\jre\classes
+Setting project property: java.vendor -> Sun Microsystems Inc.
+Setting project property: file.separator -> \
+Setting project property: cent.lib.dir.name -> lib
+Setting project property: cent.installed.suffix -> installed
+Setting project property: java.vendor.url.bug -> http://java.sun.com/cgi-bin/bugreport.cgi
+Setting project property: sun.io.unicode.encoding -> UnicodeLittle
+Setting project property: sun.cpu.endian -> little
+Setting project property: installed.cents.dir -> tools/installed
+Setting project property: antipede.dir -> tools/antipede
+Setting project property: user.region -> US
+Setting project property: sun.cpu.isalist -> pentium i486 i386
+Project base dir set to: C:\temp\jakarta-poi
+Setting ro project property: basedir -> C:\temp\jakarta-poi
+Setting ro project property: current.cent.jar -> C:\temp\jakarta-poi\tools\cents\centipede.cent.jar
+calling target -cent-unjar in build file C:\temp\jakarta-poi\build.xml
+Setting ro project property: ant.file -> C:\temp\jakarta-poi\build.xml
+parsing buildfile C:\temp\jakarta-poi\build.xml with URI = file:C:/temp/jakarta-poi/build.xml
+Setting ro project property: ant.project.name -> project build file
+Adding reference: project build file -> org.apache.tools.ant.Project@61d5ea
+Project base dir set to: C:\temp\jakarta-poi
+   +DataType: description
+ +Target: interactive
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: property
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: scratchpad
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: property
+   +Task: ant
+ +Target: contrib
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: property
+   +Task: ant
+ +Target: compile
+   +Task: antcall
+   +Task: ant
+ +Target: gui
+   +Task: antcall
+   +Task: ant
+ +Target: jar
+   +Task: antcall
+   +Task: ant
+ +Target: dist
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: quickdist
+   +Task: antcall
+   +Task: ant
+ +Target: clean
+   +Task: antcall
+   +Task: ant
+ +Target: test
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: metrics
+   +Task: antcall
+   +Task: ant
+ +Target: docs
+   +Task: antcall
+   +Task: ant
+ +Target: javadocs
+   +Task: antcall
+   +Task: ant
+ +Target: xjavadocs
+   +Task: antcall
+   +Task: ant
+ +Target: uml
+   +Task: javadoc
+ +Target: generate-records
+   +Task: ant
+ +Target: generate-types
+   +Task: ant
+ +Target: testmodule
+ +Target: testtargets
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: gump
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: all
+ +Target: jar-cent
+   +Task: antcall
+   +Task: ant
+resolving systemId: file:C:/temp/jakarta-poi/tools/antipede/build.xtarget
+ +Target: -init
+   +Task: tstamp
+   +Task: buildnumber
+   +Task: property
+   +Task: available
+   +Task: fail
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: taskdef
+   +Task: antipede-foreach
+   +Task: delete
+   +Task: mkdir
+   +Task: delete
+   +Task: antipede-trycatch
+   +Task: concat
+   +Task: taskdef
+   +Task: echo
+ +Target: -cent-unjar
+ +Target: -cent-unjar-check
+   +Task: basename
+   +Task: condition
+ +Target: -cent-unjar-expand
+   +Task: echo
+   +Task: unjar
+   +Task: echo
+ +Target: -cent-unjar-keep
+   +Task: echo
+   +Task: echo
+ +Target: call-cent
+   +Task: ant
+Build sequence for target `-cent-unjar' is [-cent-unjar-check, -cent-unjar-expand, -cent-unjar-keep, -cent-unjar]
+Complete build sequence is [-cent-unjar-check, -cent-unjar-expand, -cent-unjar-keep, -cent-unjar, -init, jar-cent, clean, docs, compile, test, jar, metrics, javadocs, testmodule, all, quickdist, generate-types, uml, gui, generate-records, contrib, dist, call-cent, testtargets, gump, xjavadocs, interactive, scratchpad]
+
+-cent-unjar-check:
+Setting project property: current.cent.jar.name -> centipede
+FileSet: Setup file scanner in dir C:\temp\jakarta-poi with patternSet{ includes: [tools/cents/centipede.cent/tasks.properties] excludes: [] }
+Found directory: tools/cents/centipede.cent
+Setting project property: cent-unjar.not.required -> true
+
+-cent-unjar-expand:
+Skipped because property 'cent-unjar.not.required' set.
+
+-cent-unjar-keep:
+C:\temp\jakarta-poi\tools\cents\centipede.cent.jar is uptodate with respect to centipede.
+No need to expand it.
+
+-cent-unjar:
+   +Task: antcall
+Project base dir set to: C:\temp\jakarta-poi
+   +Task: ant
+ +User task: fail     org.apache.tools.ant.taskdefs.Exit
+ +User task: tar     org.apache.tools.ant.taskdefs.Tar
+ +User task: uptodate     org.apache.tools.ant.taskdefs.UpToDate
+ +User task: jpcoverage     org.apache.tools.ant.taskdefs.optional.sitraka.Coverage
+ +User task: dependset     org.apache.tools.ant.taskdefs.DependSet
+ +User task: vsscheckin     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCHECKIN
+ +User task: java     org.apache.tools.ant.taskdefs.Java
+ +User task: echo     org.apache.tools.ant.taskdefs.Echo
+ +User task: execon     org.apache.tools.ant.taskdefs.ExecuteOn
+ +User task: native2ascii     org.apache.tools.ant.taskdefs.optional.Native2Ascii
+ +User task: changelog     org.apache.tools.ant.taskdefs.cvslib.ChangeLogTask
+ +User task: jjtree     org.apache.tools.ant.taskdefs.optional.javacc.JJTree
+ +User task: chmod     org.apache.tools.ant.taskdefs.Chmod
+ +User task: manifest     org.apache.tools.ant.taskdefs.Manifest
+ +User task: javadoc2     org.apache.tools.ant.taskdefs.Javadoc
+ +User task: deltree     org.apache.tools.ant.taskdefs.Deltree
+ +User task: jlink     org.apache.tools.ant.taskdefs.optional.jlink.JlinkTask
+ +User task: cvs     org.apache.tools.ant.taskdefs.Cvs
+ +User task: ccmcreatetask     org.apache.tools.ant.taskdefs.optional.ccm.CCMCreateTask
+ +User task: tstamp     org.apache.tools.ant.taskdefs.Tstamp
+ +User task: unjar     org.apache.tools.ant.taskdefs.Expand
+ +User task: pathconvert     org.apache.tools.ant.taskdefs.PathConvert
+ +User task: translate     org.apache.tools.ant.taskdefs.optional.i18n.Translate
+ +User task: patch     org.apache.tools.ant.taskdefs.Patch
+ +User task: sound     org.apache.tools.ant.taskdefs.optional.sound.SoundTask
+ +User task: serverdeploy     org.apache.tools.ant.taskdefs.optional.j2ee.ServerDeploy
+ +User task: cccheckout     org.apache.tools.ant.taskdefs.optional.clearcase.CCCheckout
+ +User task: mail     org.apache.tools.ant.taskdefs.email.EmailTask
+ +User task: buildnumber     org.apache.tools.ant.taskdefs.BuildNumber
+ +User task: gzip     org.apache.tools.ant.taskdefs.GZip
+ +User task: loadfile     org.apache.tools.ant.taskdefs.LoadFile
+ +User task: jpcovreport     org.apache.tools.ant.taskdefs.optional.sitraka.CovReport
+ +User task: echoproperties     org.apache.tools.ant.taskdefs.optional.EchoProperties
+ +User task: mimemail     org.apache.tools.ant.taskdefs.optional.net.MimeMail
+ +User task: copy     org.apache.tools.ant.taskdefs.Copy
+ +User task: filter     org.apache.tools.ant.taskdefs.Filter
+ +User task: jar     org.apache.tools.ant.taskdefs.Jar
+ +User task: waitfor     org.apache.tools.ant.taskdefs.WaitFor
+ +User task: antipede-if     net.sf.antcontrib.logic.IfTask
+ +User task: unzip     org.apache.tools.ant.taskdefs.Expand
+ +User task: rename     org.apache.tools.ant.taskdefs.Rename
+ +User task: mmetrics     org.apache.tools.ant.taskdefs.optional.metamata.MMetrics
+ +User task: propertyfile     org.apache.tools.ant.taskdefs.optional.PropertyFile
+ +User task: antipede-propertycopy     net.sf.antcontrib.property.PropertyCopy
+ +User task: checksum     org.apache.tools.ant.taskdefs.Checksum
+ +User task: copyfile     org.apache.tools.ant.taskdefs.Copyfile
+ +User task: splash     org.apache.tools.ant.taskdefs.optional.splash.SplashTask
+ +User task: ccmcheckintask     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckinDefault
+ +User task: gunzip     org.apache.tools.ant.taskdefs.GUnzip
+ +User task: bunzip2     org.apache.tools.ant.taskdefs.BUnzip2
+ +User task: antcall     org.apache.tools.ant.taskdefs.CallTarget
+ +User task: antipede-foreach     net.sf.antcontrib.logic.ForEach
+ +User task: taskdef     org.apache.tools.ant.taskdefs.Taskdef
+ +User task: jspc     org.apache.tools.ant.taskdefs.optional.jsp.JspC
+ +User task: soscheckout     org.apache.tools.ant.taskdefs.optional.sos.SOSCheckout
+ +User task: mkdir     org.apache.tools.ant.taskdefs.Mkdir
+ +User task: sql     org.apache.tools.ant.taskdefs.SQLExec
+ +User task: replace     org.apache.tools.ant.taskdefs.Replace
+ +User task: ear     org.apache.tools.ant.taskdefs.Ear
+ +User task: ant     org.apache.tools.ant.taskdefs.Ant
+ +User task: vsshistory     org.apache.tools.ant.taskdefs.optional.vss.MSVSSHISTORY
+ +User task: vsscp     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCP
+ +User task: style     org.apache.tools.ant.taskdefs.XSLTProcess
+ +User task: vssget     org.apache.tools.ant.taskdefs.optional.vss.MSVSSGET
+ +User task: genkey     org.apache.tools.ant.taskdefs.GenerateKey
+ +User task: sequential     org.apache.tools.ant.taskdefs.Sequential
+ +User task: fixcrlf     org.apache.tools.ant.taskdefs.FixCRLF
+ +User task: zip     org.apache.tools.ant.taskdefs.Zip
+ +User task: replaceregexp     org.apache.tools.ant.taskdefs.optional.ReplaceRegExp
+ +User task: condition     org.apache.tools.ant.taskdefs.ConditionTask
+ +User task: pvcs     org.apache.tools.ant.taskdefs.optional.pvcs.Pvcs
+ +User task: antstructure     org.apache.tools.ant.taskdefs.AntStructure
+ +User task: javah     org.apache.tools.ant.taskdefs.optional.Javah
+ +User task: javac     org.apache.tools.ant.taskdefs.Javac
+ +User task: test     org.apache.tools.ant.taskdefs.optional.Test
+ +User task: ccmreconfigure     org.apache.tools.ant.taskdefs.optional.ccm.CCMReconfigure
+ +User task: xmlvalidate     org.apache.tools.ant.taskdefs.optional.XMLValidateTask
+ +User task: cab     org.apache.tools.ant.taskdefs.optional.Cab
+ +User task: typedef     org.apache.tools.ant.taskdefs.Typedef
+ +User task: mparse     org.apache.tools.ant.taskdefs.optional.metamata.MParse
+ +User task: ccuncheckout     org.apache.tools.ant.taskdefs.optional.clearcase.CCUnCheckout
+ +User task: jpcovmerge     org.apache.tools.ant.taskdefs.optional.sitraka.CovMerge
+ +User task: ejbjar     org.apache.tools.ant.taskdefs.optional.ejb.EjbJar
+ +User task: available     org.apache.tools.ant.taskdefs.Available
+ +User task: rpm     org.apache.tools.ant.taskdefs.optional.Rpm
+ +User task: vsslabel     org.apache.tools.ant.taskdefs.optional.vss.MSVSSLABEL
+ +User task: soscheckin     org.apache.tools.ant.taskdefs.optional.sos.SOSCheckin
+ +User task: cvspass     org.apache.tools.ant.taskdefs.CVSPass
+ +User task: wljspc     org.apache.tools.ant.taskdefs.optional.jsp.WLJspc
+ +User task: move     org.apache.tools.ant.taskdefs.Move
+ +User task: dirname     org.apache.tools.ant.taskdefs.Dirname
+ +User task: vsscreate     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCREATE
+ +User task: javacc     org.apache.tools.ant.taskdefs.optional.javacc.JavaCC
+ +User task: csc     org.apache.tools.ant.taskdefs.optional.dotnet.CSharp
+ +User task: signjar     org.apache.tools.ant.taskdefs.SignJar
+ +User task: cccheckin     org.apache.tools.ant.taskdefs.optional.clearcase.CCCheckin
+ +User task: iplanet-ejbc     org.apache.tools.ant.taskdefs.optional.ejb.IPlanetEjbcTask
+ +User task: unwar     org.apache.tools.ant.taskdefs.Expand
+ +User task: ilasm     org.apache.tools.ant.taskdefs.optional.dotnet.Ilasm
+ +User task: touch     org.apache.tools.ant.taskdefs.Touch
+ +User task: ccmcheckin     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckin
+ +User task: blgenclient     org.apache.tools.ant.taskdefs.optional.ejb.BorlandGenerateClient
+ +User task: get     org.apache.tools.ant.taskdefs.Get
+ +User task: vsscheckout     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCHECKOUT
+ +User task: antipede-switch     net.sf.antcontrib.logic.Switch
+ +User task: sosget     org.apache.tools.ant.taskdefs.optional.sos.SOSGet
+ +User task: javadoc     org.apache.tools.ant.taskdefs.Javadoc
+ +User task: record     org.apache.tools.ant.taskdefs.Recorder
+ +User task: untar     org.apache.tools.ant.taskdefs.Untar
+ +User task: delete     org.apache.tools.ant.taskdefs.Delete
+ +User task: basename     org.apache.tools.ant.taskdefs.Basename
+ +User task: copydir     org.apache.tools.ant.taskdefs.Copydir
+ +User task: loadproperties     org.apache.tools.ant.taskdefs.LoadProperties
+ +User task: war     org.apache.tools.ant.taskdefs.War
+ +User task: ccupdate     org.apache.tools.ant.taskdefs.optional.clearcase.CCUpdate
+ +User task: concat     org.apache.tools.ant.taskdefs.Concat
+ +User task: depend     org.apache.tools.ant.taskdefs.optional.depend.Depend
+ +User task: ccmcheckout     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckout
+ +User task: parallel     org.apache.tools.ant.taskdefs.Parallel
+ +User task: renameext     org.apache.tools.ant.taskdefs.optional.RenameExtensions
+ +User task: vssadd     org.apache.tools.ant.taskdefs.optional.vss.MSVSSADD
+ +User task: antipede-trycatch     net.sf.antcontrib.logic.TryCatchTask
+ +User task: exec     org.apache.tools.ant.taskdefs.ExecTask
+ +User task: apply     org.apache.tools.ant.taskdefs.Transform
+ +User task: input     org.apache.tools.ant.taskdefs.Input
+ +User task: soslabel     org.apache.tools.ant.taskdefs.optional.sos.SOSLabel
+ +User task: bzip2     org.apache.tools.ant.taskdefs.BZip2
+ +User task: rmic     org.apache.tools.ant.taskdefs.Rmic
+ +User task: sleep     org.apache.tools.ant.taskdefs.Sleep
+ +User datatype: mapper     org.apache.tools.ant.types.Mapper
+ +User datatype: patternset     org.apache.tools.ant.types.PatternSet
+ +User datatype: filelist     org.apache.tools.ant.types.FileList
+ +User datatype: xmlcatalog     org.apache.tools.ant.types.XMLCatalog
+ +User datatype: fileset     org.apache.tools.ant.types.FileSet
+ +User datatype: regexp     org.apache.tools.ant.types.RegularExpression
+ +User datatype: dirset     org.apache.tools.ant.types.DirSet
+ +User datatype: filterset     org.apache.tools.ant.types.FilterSet
+ +User datatype: classfileset     org.apache.tools.ant.types.optional.depend.ClassfileSet
+ +User datatype: description     org.apache.tools.ant.types.Description
+ +User datatype: substitution     org.apache.tools.ant.types.Substitution
+ +User datatype: path     org.apache.tools.ant.types.Path
+Setting project property: antipede.lib.dir -> tools/antipede/lib
+Setting project property: java.runtime.name -> Java(TM) 2 Runtime Environment, Standard Edition
+Setting project property: sun.boot.library.path -> c:\products\jdk1.3\jre\bin
+Setting project property: java.vm.version -> 1.3.1_02-b02
+Setting project property: ant.version -> Apache Ant version 1.5alpha compiled on April 2 2002
+Overriding previous definition of property ant.java.version
+Setting project property: ant.java.version -> 1.3
+Setting project property: java.vm.vendor -> Sun Microsystems Inc.
+Setting project property: cent.jar.suffix -> cent.jar
+Setting project property: java.vendor.url -> http://java.sun.com/
+Setting project property: path.separator -> ;
+Setting project property: java.vm.name -> Java HotSpot(TM) Client VM
+Setting project property: file.encoding.pkg -> sun.io
+Setting project property: java.vm.specification.name -> Java Virtual Machine Specification
+Setting project property: user.dir -> C:\temp\jakarta-poi
+Setting project property: java.runtime.version -> 1.3.1_02-b02
+Setting project property: java.awt.graphicsenv -> sun.awt.Win32GraphicsEnvironment
+Setting project property: os.arch -> x86
+Setting project property: java.io.tmpdir -> C:\DOCUME~1\GLENST~1\LOCALS~1\Temp\
+Setting project property: line.separator -> 
+
+Setting project property: cent.dir.suffix -> cent
+Setting project property: java.vm.specification.vendor -> Sun Microsystems Inc.
+Setting project property: java.awt.fonts -> 
+Setting project property: os.name -> Windows 2000
+Setting project property: DSTAMP -> 20020409
+Setting project property: ant.home -> tools\antipede
+Setting project property: ant.project.name -> project build file
+Setting project property: tools.jar -> c:\products\jdk1.3\jre/../lib/tools.jar
+Setting project property: TODAY -> April 9 2002
+Setting project property: java.library.path -> c:\products\jdk1.3\bin;.;C:\WINNT\System32;C:\WINNT;c:\progra~1\gnu\wincvs~1.3;c:\products\ssh;c:\products\ant\bin;C:\WINNT\system32;C:\WINNT;C:\WINNT\System32\Wbem;C:\PROGRA~1\Tcl\bin;c:\products\jdk1.3\bin;c:\progra~1\CVSFOR~1;c:\progra~1\gnu\wincvs~1.2;C:\PROGRA~1\MICROS~4\Office;c:\products\windiff
+Setting project property: YEAR -> 2002
+Setting project property: java.specification.name -> Java Platform API Specification
+Setting project property: tools.dir -> tools
+Setting project property: java.class.version -> 47.0
+Setting project property: task.properties.name -> tasks.properties
+Setting project property: os.version -> 5.0
+Setting project property: user.home -> C:\Documents and Settings\Glen Stampoultzis
+Setting project property: user.timezone -> 
+Setting project property: java.awt.printerjob -> sun.awt.windows.WPrinterJob
+Setting project property: cents.dir -> tools/cents
+Setting project property: java.specification.version -> 1.3
+Setting project property: file.encoding -> Cp1252
+Setting project property: TSTAMP -> 1758
+Setting project property: tools.jar.present -> true
+Setting project property: java.class.path -> c:\products\jdk1.3\lib\tools.jar;tools\antipede\lib\ant-taskdefs-dev-20020402.jar;tools\antipede\lib\ant-optional-1.5-dev-20020402.jar;tools\antipede\lib\ant-contrib-0.1.jar;tools\antipede\lib\ant-1.5-dev-20020402.jar;;.\lib\endorsed\xalan-2.2.0.jar;.\lib\endorsed\xerces-2.0.0.jar;.\lib\endorsed\xml-apis.jar
+Setting project property: user.name -> Glen Stampoultzis
+Setting project property: build.number -> 6
+Setting project property: java.vm.specification.version -> 1.0
+Setting project property: java.home -> c:\products\jdk1.3\jre
+Setting project property: java.specification.vendor -> Sun Microsystems Inc.
+Setting project property: user.language -> en
+Setting project property: awt.toolkit -> sun.awt.windows.WToolkit
+Setting project property: java.vm.info -> mixed mode
+Setting project property: temp.dir -> tools/tmp
+Setting project property: java.version -> 1.3.1_02
+Setting project property: java.ext.dirs -> c:\products\jdk1.3\jre\lib\ext
+Setting project property: sun.boot.class.path -> c:\products\jdk1.3\jre\lib\rt.jar;c:\products\jdk1.3\jre\lib\i18n.jar;c:\products\jdk1.3\jre\lib\sunrsasign.jar;c:\products\jdk1.3\jre\classes
+Setting project property: java.vendor -> Sun Microsystems Inc.
+Setting project property: file.separator -> \
+Setting project property: cent.lib.dir.name -> lib
+Setting project property: cent.installed.suffix -> installed
+Setting project property: java.vendor.url.bug -> http://java.sun.com/cgi-bin/bugreport.cgi
+Setting project property: sun.io.unicode.encoding -> UnicodeLittle
+Setting project property: sun.cpu.endian -> little
+Setting project property: installed.cents.dir -> tools/installed
+Setting project property: antipede.dir -> tools/antipede
+Setting project property: user.region -> US
+Setting project property: sun.cpu.isalist -> pentium i486 i386
+Project base dir set to: C:\temp\jakarta-poi
+Setting ro project property: basedir -> C:\temp\jakarta-poi
+Setting ro project property: current.cent.jar -> C:\temp\jakarta-poi\tools\cents\forrest.cent.jar
+calling target -cent-unjar in build file C:\temp\jakarta-poi\build.xml
+Setting ro project property: ant.file -> C:\temp\jakarta-poi\build.xml
+parsing buildfile C:\temp\jakarta-poi\build.xml with URI = file:C:/temp/jakarta-poi/build.xml
+Setting ro project property: ant.project.name -> project build file
+Adding reference: project build file -> org.apache.tools.ant.Project@148bd3
+Project base dir set to: C:\temp\jakarta-poi
+   +DataType: description
+ +Target: interactive
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: property
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: scratchpad
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: property
+   +Task: ant
+ +Target: contrib
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: property
+   +Task: ant
+ +Target: compile
+   +Task: antcall
+   +Task: ant
+ +Target: gui
+   +Task: antcall
+   +Task: ant
+ +Target: jar
+   +Task: antcall
+   +Task: ant
+ +Target: dist
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: quickdist
+   +Task: antcall
+   +Task: ant
+ +Target: clean
+   +Task: antcall
+   +Task: ant
+ +Target: test
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: metrics
+   +Task: antcall
+   +Task: ant
+ +Target: docs
+   +Task: antcall
+   +Task: ant
+ +Target: javadocs
+   +Task: antcall
+   +Task: ant
+ +Target: xjavadocs
+   +Task: antcall
+   +Task: ant
+ +Target: uml
+   +Task: javadoc
+ +Target: generate-records
+   +Task: ant
+ +Target: generate-types
+   +Task: ant
+ +Target: testmodule
+ +Target: testtargets
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: gump
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: all
+ +Target: jar-cent
+   +Task: antcall
+   +Task: ant
+resolving systemId: file:C:/temp/jakarta-poi/tools/antipede/build.xtarget
+ +Target: -init
+   +Task: tstamp
+   +Task: buildnumber
+   +Task: property
+   +Task: available
+   +Task: fail
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: taskdef
+   +Task: antipede-foreach
+   +Task: delete
+   +Task: mkdir
+   +Task: delete
+   +Task: antipede-trycatch
+   +Task: concat
+   +Task: taskdef
+   +Task: echo
+ +Target: -cent-unjar
+ +Target: -cent-unjar-check
+   +Task: basename
+   +Task: condition
+ +Target: -cent-unjar-expand
+   +Task: echo
+   +Task: unjar
+   +Task: echo
+ +Target: -cent-unjar-keep
+   +Task: echo
+   +Task: echo
+ +Target: call-cent
+   +Task: ant
+Build sequence for target `-cent-unjar' is [-cent-unjar-check, -cent-unjar-expand, -cent-unjar-keep, -cent-unjar]
+Complete build sequence is [-cent-unjar-check, -cent-unjar-expand, -cent-unjar-keep, -cent-unjar, -init, jar-cent, clean, docs, compile, test, jar, metrics, javadocs, testmodule, all, quickdist, generate-types, uml, gui, generate-records, contrib, dist, call-cent, testtargets, gump, xjavadocs, interactive, scratchpad]
+
+-cent-unjar-check:
+Setting project property: current.cent.jar.name -> forrest
+FileSet: Setup file scanner in dir C:\temp\jakarta-poi with patternSet{ includes: [tools/cents/forrest.cent/tasks.properties] excludes: [] }
+Found directory: tools/cents/forrest.cent
+Setting project property: cent-unjar.not.required -> true
+
+-cent-unjar-expand:
+Skipped because property 'cent-unjar.not.required' set.
+
+-cent-unjar-keep:
+C:\temp\jakarta-poi\tools\cents\forrest.cent.jar is uptodate with respect to forrest.
+No need to expand it.
+
+-cent-unjar:
+   +Task: antcall
+Project base dir set to: C:\temp\jakarta-poi
+   +Task: ant
+ +User task: fail     org.apache.tools.ant.taskdefs.Exit
+ +User task: tar     org.apache.tools.ant.taskdefs.Tar
+ +User task: uptodate     org.apache.tools.ant.taskdefs.UpToDate
+ +User task: jpcoverage     org.apache.tools.ant.taskdefs.optional.sitraka.Coverage
+ +User task: dependset     org.apache.tools.ant.taskdefs.DependSet
+ +User task: vsscheckin     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCHECKIN
+ +User task: java     org.apache.tools.ant.taskdefs.Java
+ +User task: echo     org.apache.tools.ant.taskdefs.Echo
+ +User task: execon     org.apache.tools.ant.taskdefs.ExecuteOn
+ +User task: native2ascii     org.apache.tools.ant.taskdefs.optional.Native2Ascii
+ +User task: changelog     org.apache.tools.ant.taskdefs.cvslib.ChangeLogTask
+ +User task: jjtree     org.apache.tools.ant.taskdefs.optional.javacc.JJTree
+ +User task: chmod     org.apache.tools.ant.taskdefs.Chmod
+ +User task: manifest     org.apache.tools.ant.taskdefs.Manifest
+ +User task: javadoc2     org.apache.tools.ant.taskdefs.Javadoc
+ +User task: deltree     org.apache.tools.ant.taskdefs.Deltree
+ +User task: jlink     org.apache.tools.ant.taskdefs.optional.jlink.JlinkTask
+ +User task: cvs     org.apache.tools.ant.taskdefs.Cvs
+ +User task: ccmcreatetask     org.apache.tools.ant.taskdefs.optional.ccm.CCMCreateTask
+ +User task: tstamp     org.apache.tools.ant.taskdefs.Tstamp
+ +User task: unjar     org.apache.tools.ant.taskdefs.Expand
+ +User task: pathconvert     org.apache.tools.ant.taskdefs.PathConvert
+ +User task: translate     org.apache.tools.ant.taskdefs.optional.i18n.Translate
+ +User task: patch     org.apache.tools.ant.taskdefs.Patch
+ +User task: sound     org.apache.tools.ant.taskdefs.optional.sound.SoundTask
+ +User task: serverdeploy     org.apache.tools.ant.taskdefs.optional.j2ee.ServerDeploy
+ +User task: cccheckout     org.apache.tools.ant.taskdefs.optional.clearcase.CCCheckout
+ +User task: mail     org.apache.tools.ant.taskdefs.email.EmailTask
+ +User task: buildnumber     org.apache.tools.ant.taskdefs.BuildNumber
+ +User task: gzip     org.apache.tools.ant.taskdefs.GZip
+ +User task: loadfile     org.apache.tools.ant.taskdefs.LoadFile
+ +User task: jpcovreport     org.apache.tools.ant.taskdefs.optional.sitraka.CovReport
+ +User task: echoproperties     org.apache.tools.ant.taskdefs.optional.EchoProperties
+ +User task: mimemail     org.apache.tools.ant.taskdefs.optional.net.MimeMail
+ +User task: copy     org.apache.tools.ant.taskdefs.Copy
+ +User task: filter     org.apache.tools.ant.taskdefs.Filter
+ +User task: jar     org.apache.tools.ant.taskdefs.Jar
+ +User task: waitfor     org.apache.tools.ant.taskdefs.WaitFor
+ +User task: antipede-if     net.sf.antcontrib.logic.IfTask
+ +User task: unzip     org.apache.tools.ant.taskdefs.Expand
+ +User task: rename     org.apache.tools.ant.taskdefs.Rename
+ +User task: mmetrics     org.apache.tools.ant.taskdefs.optional.metamata.MMetrics
+ +User task: propertyfile     org.apache.tools.ant.taskdefs.optional.PropertyFile
+ +User task: antipede-propertycopy     net.sf.antcontrib.property.PropertyCopy
+ +User task: checksum     org.apache.tools.ant.taskdefs.Checksum
+ +User task: copyfile     org.apache.tools.ant.taskdefs.Copyfile
+ +User task: splash     org.apache.tools.ant.taskdefs.optional.splash.SplashTask
+ +User task: ccmcheckintask     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckinDefault
+ +User task: gunzip     org.apache.tools.ant.taskdefs.GUnzip
+ +User task: bunzip2     org.apache.tools.ant.taskdefs.BUnzip2
+ +User task: antcall     org.apache.tools.ant.taskdefs.CallTarget
+ +User task: antipede-foreach     net.sf.antcontrib.logic.ForEach
+ +User task: taskdef     org.apache.tools.ant.taskdefs.Taskdef
+ +User task: jspc     org.apache.tools.ant.taskdefs.optional.jsp.JspC
+ +User task: soscheckout     org.apache.tools.ant.taskdefs.optional.sos.SOSCheckout
+ +User task: mkdir     org.apache.tools.ant.taskdefs.Mkdir
+ +User task: sql     org.apache.tools.ant.taskdefs.SQLExec
+ +User task: replace     org.apache.tools.ant.taskdefs.Replace
+ +User task: ear     org.apache.tools.ant.taskdefs.Ear
+ +User task: ant     org.apache.tools.ant.taskdefs.Ant
+ +User task: vsshistory     org.apache.tools.ant.taskdefs.optional.vss.MSVSSHISTORY
+ +User task: vsscp     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCP
+ +User task: style     org.apache.tools.ant.taskdefs.XSLTProcess
+ +User task: vssget     org.apache.tools.ant.taskdefs.optional.vss.MSVSSGET
+ +User task: genkey     org.apache.tools.ant.taskdefs.GenerateKey
+ +User task: sequential     org.apache.tools.ant.taskdefs.Sequential
+ +User task: fixcrlf     org.apache.tools.ant.taskdefs.FixCRLF
+ +User task: zip     org.apache.tools.ant.taskdefs.Zip
+ +User task: replaceregexp     org.apache.tools.ant.taskdefs.optional.ReplaceRegExp
+ +User task: condition     org.apache.tools.ant.taskdefs.ConditionTask
+ +User task: pvcs     org.apache.tools.ant.taskdefs.optional.pvcs.Pvcs
+ +User task: antstructure     org.apache.tools.ant.taskdefs.AntStructure
+ +User task: javah     org.apache.tools.ant.taskdefs.optional.Javah
+ +User task: javac     org.apache.tools.ant.taskdefs.Javac
+ +User task: test     org.apache.tools.ant.taskdefs.optional.Test
+ +User task: ccmreconfigure     org.apache.tools.ant.taskdefs.optional.ccm.CCMReconfigure
+ +User task: xmlvalidate     org.apache.tools.ant.taskdefs.optional.XMLValidateTask
+ +User task: cab     org.apache.tools.ant.taskdefs.optional.Cab
+ +User task: typedef     org.apache.tools.ant.taskdefs.Typedef
+ +User task: mparse     org.apache.tools.ant.taskdefs.optional.metamata.MParse
+ +User task: ccuncheckout     org.apache.tools.ant.taskdefs.optional.clearcase.CCUnCheckout
+ +User task: jpcovmerge     org.apache.tools.ant.taskdefs.optional.sitraka.CovMerge
+ +User task: ejbjar     org.apache.tools.ant.taskdefs.optional.ejb.EjbJar
+ +User task: available     org.apache.tools.ant.taskdefs.Available
+ +User task: rpm     org.apache.tools.ant.taskdefs.optional.Rpm
+ +User task: vsslabel     org.apache.tools.ant.taskdefs.optional.vss.MSVSSLABEL
+ +User task: soscheckin     org.apache.tools.ant.taskdefs.optional.sos.SOSCheckin
+ +User task: cvspass     org.apache.tools.ant.taskdefs.CVSPass
+ +User task: wljspc     org.apache.tools.ant.taskdefs.optional.jsp.WLJspc
+ +User task: move     org.apache.tools.ant.taskdefs.Move
+ +User task: dirname     org.apache.tools.ant.taskdefs.Dirname
+ +User task: vsscreate     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCREATE
+ +User task: javacc     org.apache.tools.ant.taskdefs.optional.javacc.JavaCC
+ +User task: csc     org.apache.tools.ant.taskdefs.optional.dotnet.CSharp
+ +User task: signjar     org.apache.tools.ant.taskdefs.SignJar
+ +User task: cccheckin     org.apache.tools.ant.taskdefs.optional.clearcase.CCCheckin
+ +User task: iplanet-ejbc     org.apache.tools.ant.taskdefs.optional.ejb.IPlanetEjbcTask
+ +User task: unwar     org.apache.tools.ant.taskdefs.Expand
+ +User task: ilasm     org.apache.tools.ant.taskdefs.optional.dotnet.Ilasm
+ +User task: touch     org.apache.tools.ant.taskdefs.Touch
+ +User task: ccmcheckin     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckin
+ +User task: blgenclient     org.apache.tools.ant.taskdefs.optional.ejb.BorlandGenerateClient
+ +User task: get     org.apache.tools.ant.taskdefs.Get
+ +User task: vsscheckout     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCHECKOUT
+ +User task: antipede-switch     net.sf.antcontrib.logic.Switch
+ +User task: sosget     org.apache.tools.ant.taskdefs.optional.sos.SOSGet
+ +User task: javadoc     org.apache.tools.ant.taskdefs.Javadoc
+ +User task: record     org.apache.tools.ant.taskdefs.Recorder
+ +User task: untar     org.apache.tools.ant.taskdefs.Untar
+ +User task: delete     org.apache.tools.ant.taskdefs.Delete
+ +User task: basename     org.apache.tools.ant.taskdefs.Basename
+ +User task: copydir     org.apache.tools.ant.taskdefs.Copydir
+ +User task: loadproperties     org.apache.tools.ant.taskdefs.LoadProperties
+ +User task: war     org.apache.tools.ant.taskdefs.War
+ +User task: ccupdate     org.apache.tools.ant.taskdefs.optional.clearcase.CCUpdate
+ +User task: concat     org.apache.tools.ant.taskdefs.Concat
+ +User task: depend     org.apache.tools.ant.taskdefs.optional.depend.Depend
+ +User task: ccmcheckout     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckout
+ +User task: parallel     org.apache.tools.ant.taskdefs.Parallel
+ +User task: renameext     org.apache.tools.ant.taskdefs.optional.RenameExtensions
+ +User task: vssadd     org.apache.tools.ant.taskdefs.optional.vss.MSVSSADD
+ +User task: antipede-trycatch     net.sf.antcontrib.logic.TryCatchTask
+ +User task: exec     org.apache.tools.ant.taskdefs.ExecTask
+ +User task: apply     org.apache.tools.ant.taskdefs.Transform
+ +User task: input     org.apache.tools.ant.taskdefs.Input
+ +User task: soslabel     org.apache.tools.ant.taskdefs.optional.sos.SOSLabel
+ +User task: bzip2     org.apache.tools.ant.taskdefs.BZip2
+ +User task: rmic     org.apache.tools.ant.taskdefs.Rmic
+ +User task: sleep     org.apache.tools.ant.taskdefs.Sleep
+ +User datatype: mapper     org.apache.tools.ant.types.Mapper
+ +User datatype: patternset     org.apache.tools.ant.types.PatternSet
+ +User datatype: filelist     org.apache.tools.ant.types.FileList
+ +User datatype: xmlcatalog     org.apache.tools.ant.types.XMLCatalog
+ +User datatype: fileset     org.apache.tools.ant.types.FileSet
+ +User datatype: regexp     org.apache.tools.ant.types.RegularExpression
+ +User datatype: dirset     org.apache.tools.ant.types.DirSet
+ +User datatype: filterset     org.apache.tools.ant.types.FilterSet
+ +User datatype: classfileset     org.apache.tools.ant.types.optional.depend.ClassfileSet
+ +User datatype: description     org.apache.tools.ant.types.Description
+ +User datatype: substitution     org.apache.tools.ant.types.Substitution
+ +User datatype: path     org.apache.tools.ant.types.Path
+Setting project property: antipede.lib.dir -> tools/antipede/lib
+Setting project property: java.runtime.name -> Java(TM) 2 Runtime Environment, Standard Edition
+Setting project property: sun.boot.library.path -> c:\products\jdk1.3\jre\bin
+Setting project property: java.vm.version -> 1.3.1_02-b02
+Setting project property: ant.version -> Apache Ant version 1.5alpha compiled on April 2 2002
+Overriding previous definition of property ant.java.version
+Setting project property: ant.java.version -> 1.3
+Setting project property: java.vm.vendor -> Sun Microsystems Inc.
+Setting project property: cent.jar.suffix -> cent.jar
+Setting project property: java.vendor.url -> http://java.sun.com/
+Setting project property: path.separator -> ;
+Setting project property: java.vm.name -> Java HotSpot(TM) Client VM
+Setting project property: file.encoding.pkg -> sun.io
+Setting project property: java.vm.specification.name -> Java Virtual Machine Specification
+Setting project property: user.dir -> C:\temp\jakarta-poi
+Setting project property: java.runtime.version -> 1.3.1_02-b02
+Setting project property: java.awt.graphicsenv -> sun.awt.Win32GraphicsEnvironment
+Setting project property: os.arch -> x86
+Setting project property: java.io.tmpdir -> C:\DOCUME~1\GLENST~1\LOCALS~1\Temp\
+Setting project property: line.separator -> 
+
+Setting project property: cent.dir.suffix -> cent
+Setting project property: java.vm.specification.vendor -> Sun Microsystems Inc.
+Setting project property: java.awt.fonts -> 
+Setting project property: os.name -> Windows 2000
+Setting project property: DSTAMP -> 20020409
+Setting project property: ant.home -> tools\antipede
+Setting project property: ant.project.name -> project build file
+Setting project property: tools.jar -> c:\products\jdk1.3\jre/../lib/tools.jar
+Setting project property: TODAY -> April 9 2002
+Setting project property: java.library.path -> c:\products\jdk1.3\bin;.;C:\WINNT\System32;C:\WINNT;c:\progra~1\gnu\wincvs~1.3;c:\products\ssh;c:\products\ant\bin;C:\WINNT\system32;C:\WINNT;C:\WINNT\System32\Wbem;C:\PROGRA~1\Tcl\bin;c:\products\jdk1.3\bin;c:\progra~1\CVSFOR~1;c:\progra~1\gnu\wincvs~1.2;C:\PROGRA~1\MICROS~4\Office;c:\products\windiff
+Setting project property: YEAR -> 2002
+Setting project property: java.specification.name -> Java Platform API Specification
+Setting project property: tools.dir -> tools
+Setting project property: java.class.version -> 47.0
+Setting project property: task.properties.name -> tasks.properties
+Setting project property: os.version -> 5.0
+Setting project property: user.home -> C:\Documents and Settings\Glen Stampoultzis
+Setting project property: user.timezone -> 
+Setting project property: java.awt.printerjob -> sun.awt.windows.WPrinterJob
+Setting project property: cents.dir -> tools/cents
+Setting project property: java.specification.version -> 1.3
+Setting project property: file.encoding -> Cp1252
+Setting project property: TSTAMP -> 1758
+Setting project property: tools.jar.present -> true
+Setting project property: java.class.path -> c:\products\jdk1.3\lib\tools.jar;tools\antipede\lib\ant-taskdefs-dev-20020402.jar;tools\antipede\lib\ant-optional-1.5-dev-20020402.jar;tools\antipede\lib\ant-contrib-0.1.jar;tools\antipede\lib\ant-1.5-dev-20020402.jar;;.\lib\endorsed\xalan-2.2.0.jar;.\lib\endorsed\xerces-2.0.0.jar;.\lib\endorsed\xml-apis.jar
+Setting project property: user.name -> Glen Stampoultzis
+Setting project property: build.number -> 6
+Setting project property: java.vm.specification.version -> 1.0
+Setting project property: java.home -> c:\products\jdk1.3\jre
+Setting project property: java.specification.vendor -> Sun Microsystems Inc.
+Setting project property: user.language -> en
+Setting project property: awt.toolkit -> sun.awt.windows.WToolkit
+Setting project property: java.vm.info -> mixed mode
+Setting project property: temp.dir -> tools/tmp
+Setting project property: java.version -> 1.3.1_02
+Setting project property: java.ext.dirs -> c:\products\jdk1.3\jre\lib\ext
+Setting project property: sun.boot.class.path -> c:\products\jdk1.3\jre\lib\rt.jar;c:\products\jdk1.3\jre\lib\i18n.jar;c:\products\jdk1.3\jre\lib\sunrsasign.jar;c:\products\jdk1.3\jre\classes
+Setting project property: java.vendor -> Sun Microsystems Inc.
+Setting project property: file.separator -> \
+Setting project property: cent.lib.dir.name -> lib
+Setting project property: cent.installed.suffix -> installed
+Setting project property: java.vendor.url.bug -> http://java.sun.com/cgi-bin/bugreport.cgi
+Setting project property: sun.io.unicode.encoding -> UnicodeLittle
+Setting project property: sun.cpu.endian -> little
+Setting project property: installed.cents.dir -> tools/installed
+Setting project property: antipede.dir -> tools/antipede
+Setting project property: user.region -> US
+Setting project property: sun.cpu.isalist -> pentium i486 i386
+Project base dir set to: C:\temp\jakarta-poi
+Setting ro project property: basedir -> C:\temp\jakarta-poi
+Setting ro project property: current.cent.jar -> C:\temp\jakarta-poi\tools\cents\jdepend.cent.jar
+calling target -cent-unjar in build file C:\temp\jakarta-poi\build.xml
+Setting ro project property: ant.file -> C:\temp\jakarta-poi\build.xml
+parsing buildfile C:\temp\jakarta-poi\build.xml with URI = file:C:/temp/jakarta-poi/build.xml
+Setting ro project property: ant.project.name -> project build file
+Adding reference: project build file -> org.apache.tools.ant.Project@6fe0f4
+Project base dir set to: C:\temp\jakarta-poi
+   +DataType: description
+ +Target: interactive
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: property
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: scratchpad
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: property
+   +Task: ant
+ +Target: contrib
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: property
+   +Task: ant
+ +Target: compile
+   +Task: antcall
+   +Task: ant
+ +Target: gui
+   +Task: antcall
+   +Task: ant
+ +Target: jar
+   +Task: antcall
+   +Task: ant
+ +Target: dist
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: quickdist
+   +Task: antcall
+   +Task: ant
+ +Target: clean
+   +Task: antcall
+   +Task: ant
+ +Target: test
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: metrics
+   +Task: antcall
+   +Task: ant
+ +Target: docs
+   +Task: antcall
+   +Task: ant
+ +Target: javadocs
+   +Task: antcall
+   +Task: ant
+ +Target: xjavadocs
+   +Task: antcall
+   +Task: ant
+ +Target: uml
+   +Task: javadoc
+ +Target: generate-records
+   +Task: ant
+ +Target: generate-types
+   +Task: ant
+ +Target: testmodule
+ +Target: testtargets
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: gump
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: all
+ +Target: jar-cent
+   +Task: antcall
+   +Task: ant
+resolving systemId: file:C:/temp/jakarta-poi/tools/antipede/build.xtarget
+ +Target: -init
+   +Task: tstamp
+   +Task: buildnumber
+   +Task: property
+   +Task: available
+   +Task: fail
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: taskdef
+   +Task: antipede-foreach
+   +Task: delete
+   +Task: mkdir
+   +Task: delete
+   +Task: antipede-trycatch
+   +Task: concat
+   +Task: taskdef
+   +Task: echo
+ +Target: -cent-unjar
+ +Target: -cent-unjar-check
+   +Task: basename
+   +Task: condition
+ +Target: -cent-unjar-expand
+   +Task: echo
+   +Task: unjar
+   +Task: echo
+ +Target: -cent-unjar-keep
+   +Task: echo
+   +Task: echo
+ +Target: call-cent
+   +Task: ant
+Build sequence for target `-cent-unjar' is [-cent-unjar-check, -cent-unjar-expand, -cent-unjar-keep, -cent-unjar]
+Complete build sequence is [-cent-unjar-check, -cent-unjar-expand, -cent-unjar-keep, -cent-unjar, -init, jar-cent, clean, docs, compile, test, jar, metrics, javadocs, testmodule, all, quickdist, generate-types, uml, gui, generate-records, contrib, dist, call-cent, testtargets, gump, xjavadocs, interactive, scratchpad]
+
+-cent-unjar-check:
+Setting project property: current.cent.jar.name -> jdepend
+FileSet: Setup file scanner in dir C:\temp\jakarta-poi with patternSet{ includes: [tools/cents/jdepend.cent/tasks.properties] excludes: [] }
+tools\cents\jdepend.cent\tasks.properties omitted as C:\temp\jakarta-poi\tools\cents\jdepend.cent.jar is up to date.
+Found directory: tools/cents/jdepend.cent
+Setting project property: cent-unjar.not.required -> true
+
+-cent-unjar-expand:
+Skipped because property 'cent-unjar.not.required' set.
+
+-cent-unjar-keep:
+C:\temp\jakarta-poi\tools\cents\jdepend.cent.jar is uptodate with respect to jdepend.
+No need to expand it.
+
+-cent-unjar:
+   +Task: antcall
+Project base dir set to: C:\temp\jakarta-poi
+   +Task: ant
+ +User task: fail     org.apache.tools.ant.taskdefs.Exit
+ +User task: tar     org.apache.tools.ant.taskdefs.Tar
+ +User task: uptodate     org.apache.tools.ant.taskdefs.UpToDate
+ +User task: jpcoverage     org.apache.tools.ant.taskdefs.optional.sitraka.Coverage
+ +User task: dependset     org.apache.tools.ant.taskdefs.DependSet
+ +User task: vsscheckin     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCHECKIN
+ +User task: java     org.apache.tools.ant.taskdefs.Java
+ +User task: echo     org.apache.tools.ant.taskdefs.Echo
+ +User task: execon     org.apache.tools.ant.taskdefs.ExecuteOn
+ +User task: native2ascii     org.apache.tools.ant.taskdefs.optional.Native2Ascii
+ +User task: changelog     org.apache.tools.ant.taskdefs.cvslib.ChangeLogTask
+ +User task: jjtree     org.apache.tools.ant.taskdefs.optional.javacc.JJTree
+ +User task: chmod     org.apache.tools.ant.taskdefs.Chmod
+ +User task: manifest     org.apache.tools.ant.taskdefs.Manifest
+ +User task: javadoc2     org.apache.tools.ant.taskdefs.Javadoc
+ +User task: deltree     org.apache.tools.ant.taskdefs.Deltree
+ +User task: jlink     org.apache.tools.ant.taskdefs.optional.jlink.JlinkTask
+ +User task: cvs     org.apache.tools.ant.taskdefs.Cvs
+ +User task: ccmcreatetask     org.apache.tools.ant.taskdefs.optional.ccm.CCMCreateTask
+ +User task: tstamp     org.apache.tools.ant.taskdefs.Tstamp
+ +User task: unjar     org.apache.tools.ant.taskdefs.Expand
+ +User task: pathconvert     org.apache.tools.ant.taskdefs.PathConvert
+ +User task: translate     org.apache.tools.ant.taskdefs.optional.i18n.Translate
+ +User task: patch     org.apache.tools.ant.taskdefs.Patch
+ +User task: sound     org.apache.tools.ant.taskdefs.optional.sound.SoundTask
+ +User task: serverdeploy     org.apache.tools.ant.taskdefs.optional.j2ee.ServerDeploy
+ +User task: cccheckout     org.apache.tools.ant.taskdefs.optional.clearcase.CCCheckout
+ +User task: mail     org.apache.tools.ant.taskdefs.email.EmailTask
+ +User task: buildnumber     org.apache.tools.ant.taskdefs.BuildNumber
+ +User task: gzip     org.apache.tools.ant.taskdefs.GZip
+ +User task: loadfile     org.apache.tools.ant.taskdefs.LoadFile
+ +User task: jpcovreport     org.apache.tools.ant.taskdefs.optional.sitraka.CovReport
+ +User task: echoproperties     org.apache.tools.ant.taskdefs.optional.EchoProperties
+ +User task: mimemail     org.apache.tools.ant.taskdefs.optional.net.MimeMail
+ +User task: copy     org.apache.tools.ant.taskdefs.Copy
+ +User task: filter     org.apache.tools.ant.taskdefs.Filter
+ +User task: jar     org.apache.tools.ant.taskdefs.Jar
+ +User task: waitfor     org.apache.tools.ant.taskdefs.WaitFor
+ +User task: antipede-if     net.sf.antcontrib.logic.IfTask
+ +User task: unzip     org.apache.tools.ant.taskdefs.Expand
+ +User task: rename     org.apache.tools.ant.taskdefs.Rename
+ +User task: mmetrics     org.apache.tools.ant.taskdefs.optional.metamata.MMetrics
+ +User task: propertyfile     org.apache.tools.ant.taskdefs.optional.PropertyFile
+ +User task: antipede-propertycopy     net.sf.antcontrib.property.PropertyCopy
+ +User task: checksum     org.apache.tools.ant.taskdefs.Checksum
+ +User task: copyfile     org.apache.tools.ant.taskdefs.Copyfile
+ +User task: splash     org.apache.tools.ant.taskdefs.optional.splash.SplashTask
+ +User task: ccmcheckintask     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckinDefault
+ +User task: gunzip     org.apache.tools.ant.taskdefs.GUnzip
+ +User task: bunzip2     org.apache.tools.ant.taskdefs.BUnzip2
+ +User task: antcall     org.apache.tools.ant.taskdefs.CallTarget
+ +User task: antipede-foreach     net.sf.antcontrib.logic.ForEach
+ +User task: taskdef     org.apache.tools.ant.taskdefs.Taskdef
+ +User task: jspc     org.apache.tools.ant.taskdefs.optional.jsp.JspC
+ +User task: soscheckout     org.apache.tools.ant.taskdefs.optional.sos.SOSCheckout
+ +User task: mkdir     org.apache.tools.ant.taskdefs.Mkdir
+ +User task: sql     org.apache.tools.ant.taskdefs.SQLExec
+ +User task: replace     org.apache.tools.ant.taskdefs.Replace
+ +User task: ear     org.apache.tools.ant.taskdefs.Ear
+ +User task: ant     org.apache.tools.ant.taskdefs.Ant
+ +User task: vsshistory     org.apache.tools.ant.taskdefs.optional.vss.MSVSSHISTORY
+ +User task: vsscp     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCP
+ +User task: style     org.apache.tools.ant.taskdefs.XSLTProcess
+ +User task: vssget     org.apache.tools.ant.taskdefs.optional.vss.MSVSSGET
+ +User task: genkey     org.apache.tools.ant.taskdefs.GenerateKey
+ +User task: sequential     org.apache.tools.ant.taskdefs.Sequential
+ +User task: fixcrlf     org.apache.tools.ant.taskdefs.FixCRLF
+ +User task: zip     org.apache.tools.ant.taskdefs.Zip
+ +User task: replaceregexp     org.apache.tools.ant.taskdefs.optional.ReplaceRegExp
+ +User task: condition     org.apache.tools.ant.taskdefs.ConditionTask
+ +User task: pvcs     org.apache.tools.ant.taskdefs.optional.pvcs.Pvcs
+ +User task: antstructure     org.apache.tools.ant.taskdefs.AntStructure
+ +User task: javah     org.apache.tools.ant.taskdefs.optional.Javah
+ +User task: javac     org.apache.tools.ant.taskdefs.Javac
+ +User task: test     org.apache.tools.ant.taskdefs.optional.Test
+ +User task: ccmreconfigure     org.apache.tools.ant.taskdefs.optional.ccm.CCMReconfigure
+ +User task: xmlvalidate     org.apache.tools.ant.taskdefs.optional.XMLValidateTask
+ +User task: cab     org.apache.tools.ant.taskdefs.optional.Cab
+ +User task: typedef     org.apache.tools.ant.taskdefs.Typedef
+ +User task: mparse     org.apache.tools.ant.taskdefs.optional.metamata.MParse
+ +User task: ccuncheckout     org.apache.tools.ant.taskdefs.optional.clearcase.CCUnCheckout
+ +User task: jpcovmerge     org.apache.tools.ant.taskdefs.optional.sitraka.CovMerge
+ +User task: ejbjar     org.apache.tools.ant.taskdefs.optional.ejb.EjbJar
+ +User task: available     org.apache.tools.ant.taskdefs.Available
+ +User task: rpm     org.apache.tools.ant.taskdefs.optional.Rpm
+ +User task: vsslabel     org.apache.tools.ant.taskdefs.optional.vss.MSVSSLABEL
+ +User task: soscheckin     org.apache.tools.ant.taskdefs.optional.sos.SOSCheckin
+ +User task: cvspass     org.apache.tools.ant.taskdefs.CVSPass
+ +User task: wljspc     org.apache.tools.ant.taskdefs.optional.jsp.WLJspc
+ +User task: move     org.apache.tools.ant.taskdefs.Move
+ +User task: dirname     org.apache.tools.ant.taskdefs.Dirname
+ +User task: vsscreate     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCREATE
+ +User task: javacc     org.apache.tools.ant.taskdefs.optional.javacc.JavaCC
+ +User task: csc     org.apache.tools.ant.taskdefs.optional.dotnet.CSharp
+ +User task: signjar     org.apache.tools.ant.taskdefs.SignJar
+ +User task: cccheckin     org.apache.tools.ant.taskdefs.optional.clearcase.CCCheckin
+ +User task: iplanet-ejbc     org.apache.tools.ant.taskdefs.optional.ejb.IPlanetEjbcTask
+ +User task: unwar     org.apache.tools.ant.taskdefs.Expand
+ +User task: ilasm     org.apache.tools.ant.taskdefs.optional.dotnet.Ilasm
+ +User task: touch     org.apache.tools.ant.taskdefs.Touch
+ +User task: ccmcheckin     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckin
+ +User task: blgenclient     org.apache.tools.ant.taskdefs.optional.ejb.BorlandGenerateClient
+ +User task: get     org.apache.tools.ant.taskdefs.Get
+ +User task: vsscheckout     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCHECKOUT
+ +User task: antipede-switch     net.sf.antcontrib.logic.Switch
+ +User task: sosget     org.apache.tools.ant.taskdefs.optional.sos.SOSGet
+ +User task: javadoc     org.apache.tools.ant.taskdefs.Javadoc
+ +User task: record     org.apache.tools.ant.taskdefs.Recorder
+ +User task: untar     org.apache.tools.ant.taskdefs.Untar
+ +User task: delete     org.apache.tools.ant.taskdefs.Delete
+ +User task: basename     org.apache.tools.ant.taskdefs.Basename
+ +User task: copydir     org.apache.tools.ant.taskdefs.Copydir
+ +User task: loadproperties     org.apache.tools.ant.taskdefs.LoadProperties
+ +User task: war     org.apache.tools.ant.taskdefs.War
+ +User task: ccupdate     org.apache.tools.ant.taskdefs.optional.clearcase.CCUpdate
+ +User task: concat     org.apache.tools.ant.taskdefs.Concat
+ +User task: depend     org.apache.tools.ant.taskdefs.optional.depend.Depend
+ +User task: ccmcheckout     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckout
+ +User task: parallel     org.apache.tools.ant.taskdefs.Parallel
+ +User task: renameext     org.apache.tools.ant.taskdefs.optional.RenameExtensions
+ +User task: vssadd     org.apache.tools.ant.taskdefs.optional.vss.MSVSSADD
+ +User task: antipede-trycatch     net.sf.antcontrib.logic.TryCatchTask
+ +User task: exec     org.apache.tools.ant.taskdefs.ExecTask
+ +User task: apply     org.apache.tools.ant.taskdefs.Transform
+ +User task: input     org.apache.tools.ant.taskdefs.Input
+ +User task: soslabel     org.apache.tools.ant.taskdefs.optional.sos.SOSLabel
+ +User task: bzip2     org.apache.tools.ant.taskdefs.BZip2
+ +User task: rmic     org.apache.tools.ant.taskdefs.Rmic
+ +User task: sleep     org.apache.tools.ant.taskdefs.Sleep
+ +User datatype: mapper     org.apache.tools.ant.types.Mapper
+ +User datatype: patternset     org.apache.tools.ant.types.PatternSet
+ +User datatype: filelist     org.apache.tools.ant.types.FileList
+ +User datatype: xmlcatalog     org.apache.tools.ant.types.XMLCatalog
+ +User datatype: fileset     org.apache.tools.ant.types.FileSet
+ +User datatype: regexp     org.apache.tools.ant.types.RegularExpression
+ +User datatype: dirset     org.apache.tools.ant.types.DirSet
+ +User datatype: filterset     org.apache.tools.ant.types.FilterSet
+ +User datatype: classfileset     org.apache.tools.ant.types.optional.depend.ClassfileSet
+ +User datatype: description     org.apache.tools.ant.types.Description
+ +User datatype: substitution     org.apache.tools.ant.types.Substitution
+ +User datatype: path     org.apache.tools.ant.types.Path
+Setting project property: antipede.lib.dir -> tools/antipede/lib
+Setting project property: java.runtime.name -> Java(TM) 2 Runtime Environment, Standard Edition
+Setting project property: sun.boot.library.path -> c:\products\jdk1.3\jre\bin
+Setting project property: java.vm.version -> 1.3.1_02-b02
+Setting project property: ant.version -> Apache Ant version 1.5alpha compiled on April 2 2002
+Overriding previous definition of property ant.java.version
+Setting project property: ant.java.version -> 1.3
+Setting project property: java.vm.vendor -> Sun Microsystems Inc.
+Setting project property: cent.jar.suffix -> cent.jar
+Setting project property: java.vendor.url -> http://java.sun.com/
+Setting project property: path.separator -> ;
+Setting project property: java.vm.name -> Java HotSpot(TM) Client VM
+Setting project property: file.encoding.pkg -> sun.io
+Setting project property: java.vm.specification.name -> Java Virtual Machine Specification
+Setting project property: user.dir -> C:\temp\jakarta-poi
+Setting project property: java.runtime.version -> 1.3.1_02-b02
+Setting project property: java.awt.graphicsenv -> sun.awt.Win32GraphicsEnvironment
+Setting project property: os.arch -> x86
+Setting project property: java.io.tmpdir -> C:\DOCUME~1\GLENST~1\LOCALS~1\Temp\
+Setting project property: line.separator -> 
+
+Setting project property: cent.dir.suffix -> cent
+Setting project property: java.vm.specification.vendor -> Sun Microsystems Inc.
+Setting project property: java.awt.fonts -> 
+Setting project property: os.name -> Windows 2000
+Setting project property: DSTAMP -> 20020409
+Setting project property: ant.home -> tools\antipede
+Setting project property: ant.project.name -> project build file
+Setting project property: tools.jar -> c:\products\jdk1.3\jre/../lib/tools.jar
+Setting project property: TODAY -> April 9 2002
+Setting project property: java.library.path -> c:\products\jdk1.3\bin;.;C:\WINNT\System32;C:\WINNT;c:\progra~1\gnu\wincvs~1.3;c:\products\ssh;c:\products\ant\bin;C:\WINNT\system32;C:\WINNT;C:\WINNT\System32\Wbem;C:\PROGRA~1\Tcl\bin;c:\products\jdk1.3\bin;c:\progra~1\CVSFOR~1;c:\progra~1\gnu\wincvs~1.2;C:\PROGRA~1\MICROS~4\Office;c:\products\windiff
+Setting project property: YEAR -> 2002
+Setting project property: java.specification.name -> Java Platform API Specification
+Setting project property: tools.dir -> tools
+Setting project property: java.class.version -> 47.0
+Setting project property: task.properties.name -> tasks.properties
+Setting project property: os.version -> 5.0
+Setting project property: user.home -> C:\Documents and Settings\Glen Stampoultzis
+Setting project property: user.timezone -> 
+Setting project property: java.awt.printerjob -> sun.awt.windows.WPrinterJob
+Setting project property: cents.dir -> tools/cents
+Setting project property: java.specification.version -> 1.3
+Setting project property: file.encoding -> Cp1252
+Setting project property: TSTAMP -> 1758
+Setting project property: tools.jar.present -> true
+Setting project property: java.class.path -> c:\products\jdk1.3\lib\tools.jar;tools\antipede\lib\ant-taskdefs-dev-20020402.jar;tools\antipede\lib\ant-optional-1.5-dev-20020402.jar;tools\antipede\lib\ant-contrib-0.1.jar;tools\antipede\lib\ant-1.5-dev-20020402.jar;;.\lib\endorsed\xalan-2.2.0.jar;.\lib\endorsed\xerces-2.0.0.jar;.\lib\endorsed\xml-apis.jar
+Setting project property: user.name -> Glen Stampoultzis
+Setting project property: build.number -> 6
+Setting project property: java.vm.specification.version -> 1.0
+Setting project property: java.home -> c:\products\jdk1.3\jre
+Setting project property: java.specification.vendor -> Sun Microsystems Inc.
+Setting project property: user.language -> en
+Setting project property: awt.toolkit -> sun.awt.windows.WToolkit
+Setting project property: java.vm.info -> mixed mode
+Setting project property: temp.dir -> tools/tmp
+Setting project property: java.version -> 1.3.1_02
+Setting project property: java.ext.dirs -> c:\products\jdk1.3\jre\lib\ext
+Setting project property: sun.boot.class.path -> c:\products\jdk1.3\jre\lib\rt.jar;c:\products\jdk1.3\jre\lib\i18n.jar;c:\products\jdk1.3\jre\lib\sunrsasign.jar;c:\products\jdk1.3\jre\classes
+Setting project property: java.vendor -> Sun Microsystems Inc.
+Setting project property: file.separator -> \
+Setting project property: cent.lib.dir.name -> lib
+Setting project property: cent.installed.suffix -> installed
+Setting project property: java.vendor.url.bug -> http://java.sun.com/cgi-bin/bugreport.cgi
+Setting project property: sun.io.unicode.encoding -> UnicodeLittle
+Setting project property: sun.cpu.endian -> little
+Setting project property: installed.cents.dir -> tools/installed
+Setting project property: antipede.dir -> tools/antipede
+Setting project property: user.region -> US
+Setting project property: sun.cpu.isalist -> pentium i486 i386
+Project base dir set to: C:\temp\jakarta-poi
+Setting ro project property: basedir -> C:\temp\jakarta-poi
+Setting ro project property: current.cent.jar -> C:\temp\jakarta-poi\tools\cents\junit.cent.jar
+calling target -cent-unjar in build file C:\temp\jakarta-poi\build.xml
+Setting ro project property: ant.file -> C:\temp\jakarta-poi\build.xml
+parsing buildfile C:\temp\jakarta-poi\build.xml with URI = file:C:/temp/jakarta-poi/build.xml
+Setting ro project property: ant.project.name -> project build file
+Adding reference: project build file -> org.apache.tools.ant.Project@4247a0
+Project base dir set to: C:\temp\jakarta-poi
+   +DataType: description
+ +Target: interactive
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: property
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: scratchpad
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: property
+   +Task: ant
+ +Target: contrib
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: property
+   +Task: ant
+ +Target: compile
+   +Task: antcall
+   +Task: ant
+ +Target: gui
+   +Task: antcall
+   +Task: ant
+ +Target: jar
+   +Task: antcall
+   +Task: ant
+ +Target: dist
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: quickdist
+   +Task: antcall
+   +Task: ant
+ +Target: clean
+   +Task: antcall
+   +Task: ant
+ +Target: test
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: metrics
+   +Task: antcall
+   +Task: ant
+ +Target: docs
+   +Task: antcall
+   +Task: ant
+ +Target: javadocs
+   +Task: antcall
+   +Task: ant
+ +Target: xjavadocs
+   +Task: antcall
+   +Task: ant
+ +Target: uml
+   +Task: javadoc
+ +Target: generate-records
+   +Task: ant
+ +Target: generate-types
+   +Task: ant
+ +Target: testmodule
+ +Target: testtargets
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: gump
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: all
+ +Target: jar-cent
+   +Task: antcall
+   +Task: ant
+resolving systemId: file:C:/temp/jakarta-poi/tools/antipede/build.xtarget
+ +Target: -init
+   +Task: tstamp
+   +Task: buildnumber
+   +Task: property
+   +Task: available
+   +Task: fail
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: taskdef
+   +Task: antipede-foreach
+   +Task: delete
+   +Task: mkdir
+   +Task: delete
+   +Task: antipede-trycatch
+   +Task: concat
+   +Task: taskdef
+   +Task: echo
+ +Target: -cent-unjar
+ +Target: -cent-unjar-check
+   +Task: basename
+   +Task: condition
+ +Target: -cent-unjar-expand
+   +Task: echo
+   +Task: unjar
+   +Task: echo
+ +Target: -cent-unjar-keep
+   +Task: echo
+   +Task: echo
+ +Target: call-cent
+   +Task: ant
+Build sequence for target `-cent-unjar' is [-cent-unjar-check, -cent-unjar-expand, -cent-unjar-keep, -cent-unjar]
+Complete build sequence is [-cent-unjar-check, -cent-unjar-expand, -cent-unjar-keep, -cent-unjar, -init, jar-cent, clean, docs, compile, test, jar, metrics, javadocs, testmodule, all, quickdist, generate-types, uml, gui, generate-records, contrib, dist, call-cent, testtargets, gump, xjavadocs, interactive, scratchpad]
+
+-cent-unjar-check:
+Setting project property: current.cent.jar.name -> junit
+FileSet: Setup file scanner in dir C:\temp\jakarta-poi with patternSet{ includes: [tools/cents/junit.cent/tasks.properties] excludes: [] }
+Found directory: tools/cents/junit.cent
+Setting project property: cent-unjar.not.required -> true
+
+-cent-unjar-expand:
+Skipped because property 'cent-unjar.not.required' set.
+
+-cent-unjar-keep:
+C:\temp\jakarta-poi\tools\cents\junit.cent.jar is uptodate with respect to junit.
+No need to expand it.
+
+-cent-unjar:
+   +Task: antcall
+Project base dir set to: C:\temp\jakarta-poi
+   +Task: ant
+ +User task: fail     org.apache.tools.ant.taskdefs.Exit
+ +User task: tar     org.apache.tools.ant.taskdefs.Tar
+ +User task: uptodate     org.apache.tools.ant.taskdefs.UpToDate
+ +User task: jpcoverage     org.apache.tools.ant.taskdefs.optional.sitraka.Coverage
+ +User task: dependset     org.apache.tools.ant.taskdefs.DependSet
+ +User task: vsscheckin     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCHECKIN
+ +User task: java     org.apache.tools.ant.taskdefs.Java
+ +User task: echo     org.apache.tools.ant.taskdefs.Echo
+ +User task: execon     org.apache.tools.ant.taskdefs.ExecuteOn
+ +User task: native2ascii     org.apache.tools.ant.taskdefs.optional.Native2Ascii
+ +User task: changelog     org.apache.tools.ant.taskdefs.cvslib.ChangeLogTask
+ +User task: jjtree     org.apache.tools.ant.taskdefs.optional.javacc.JJTree
+ +User task: chmod     org.apache.tools.ant.taskdefs.Chmod
+ +User task: manifest     org.apache.tools.ant.taskdefs.Manifest
+ +User task: javadoc2     org.apache.tools.ant.taskdefs.Javadoc
+ +User task: deltree     org.apache.tools.ant.taskdefs.Deltree
+ +User task: jlink     org.apache.tools.ant.taskdefs.optional.jlink.JlinkTask
+ +User task: cvs     org.apache.tools.ant.taskdefs.Cvs
+ +User task: ccmcreatetask     org.apache.tools.ant.taskdefs.optional.ccm.CCMCreateTask
+ +User task: tstamp     org.apache.tools.ant.taskdefs.Tstamp
+ +User task: unjar     org.apache.tools.ant.taskdefs.Expand
+ +User task: pathconvert     org.apache.tools.ant.taskdefs.PathConvert
+ +User task: translate     org.apache.tools.ant.taskdefs.optional.i18n.Translate
+ +User task: patch     org.apache.tools.ant.taskdefs.Patch
+ +User task: sound     org.apache.tools.ant.taskdefs.optional.sound.SoundTask
+ +User task: serverdeploy     org.apache.tools.ant.taskdefs.optional.j2ee.ServerDeploy
+ +User task: cccheckout     org.apache.tools.ant.taskdefs.optional.clearcase.CCCheckout
+ +User task: mail     org.apache.tools.ant.taskdefs.email.EmailTask
+ +User task: buildnumber     org.apache.tools.ant.taskdefs.BuildNumber
+ +User task: gzip     org.apache.tools.ant.taskdefs.GZip
+ +User task: loadfile     org.apache.tools.ant.taskdefs.LoadFile
+ +User task: jpcovreport     org.apache.tools.ant.taskdefs.optional.sitraka.CovReport
+ +User task: echoproperties     org.apache.tools.ant.taskdefs.optional.EchoProperties
+ +User task: mimemail     org.apache.tools.ant.taskdefs.optional.net.MimeMail
+ +User task: copy     org.apache.tools.ant.taskdefs.Copy
+ +User task: filter     org.apache.tools.ant.taskdefs.Filter
+ +User task: jar     org.apache.tools.ant.taskdefs.Jar
+ +User task: waitfor     org.apache.tools.ant.taskdefs.WaitFor
+ +User task: antipede-if     net.sf.antcontrib.logic.IfTask
+ +User task: unzip     org.apache.tools.ant.taskdefs.Expand
+ +User task: rename     org.apache.tools.ant.taskdefs.Rename
+ +User task: mmetrics     org.apache.tools.ant.taskdefs.optional.metamata.MMetrics
+ +User task: propertyfile     org.apache.tools.ant.taskdefs.optional.PropertyFile
+ +User task: antipede-propertycopy     net.sf.antcontrib.property.PropertyCopy
+ +User task: checksum     org.apache.tools.ant.taskdefs.Checksum
+ +User task: copyfile     org.apache.tools.ant.taskdefs.Copyfile
+ +User task: splash     org.apache.tools.ant.taskdefs.optional.splash.SplashTask
+ +User task: ccmcheckintask     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckinDefault
+ +User task: gunzip     org.apache.tools.ant.taskdefs.GUnzip
+ +User task: bunzip2     org.apache.tools.ant.taskdefs.BUnzip2
+ +User task: antcall     org.apache.tools.ant.taskdefs.CallTarget
+ +User task: antipede-foreach     net.sf.antcontrib.logic.ForEach
+ +User task: taskdef     org.apache.tools.ant.taskdefs.Taskdef
+ +User task: jspc     org.apache.tools.ant.taskdefs.optional.jsp.JspC
+ +User task: soscheckout     org.apache.tools.ant.taskdefs.optional.sos.SOSCheckout
+ +User task: mkdir     org.apache.tools.ant.taskdefs.Mkdir
+ +User task: sql     org.apache.tools.ant.taskdefs.SQLExec
+ +User task: replace     org.apache.tools.ant.taskdefs.Replace
+ +User task: ear     org.apache.tools.ant.taskdefs.Ear
+ +User task: ant     org.apache.tools.ant.taskdefs.Ant
+ +User task: vsshistory     org.apache.tools.ant.taskdefs.optional.vss.MSVSSHISTORY
+ +User task: vsscp     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCP
+ +User task: style     org.apache.tools.ant.taskdefs.XSLTProcess
+ +User task: vssget     org.apache.tools.ant.taskdefs.optional.vss.MSVSSGET
+ +User task: genkey     org.apache.tools.ant.taskdefs.GenerateKey
+ +User task: sequential     org.apache.tools.ant.taskdefs.Sequential
+ +User task: fixcrlf     org.apache.tools.ant.taskdefs.FixCRLF
+ +User task: zip     org.apache.tools.ant.taskdefs.Zip
+ +User task: replaceregexp     org.apache.tools.ant.taskdefs.optional.ReplaceRegExp
+ +User task: condition     org.apache.tools.ant.taskdefs.ConditionTask
+ +User task: pvcs     org.apache.tools.ant.taskdefs.optional.pvcs.Pvcs
+ +User task: antstructure     org.apache.tools.ant.taskdefs.AntStructure
+ +User task: javah     org.apache.tools.ant.taskdefs.optional.Javah
+ +User task: javac     org.apache.tools.ant.taskdefs.Javac
+ +User task: test     org.apache.tools.ant.taskdefs.optional.Test
+ +User task: ccmreconfigure     org.apache.tools.ant.taskdefs.optional.ccm.CCMReconfigure
+ +User task: xmlvalidate     org.apache.tools.ant.taskdefs.optional.XMLValidateTask
+ +User task: cab     org.apache.tools.ant.taskdefs.optional.Cab
+ +User task: typedef     org.apache.tools.ant.taskdefs.Typedef
+ +User task: mparse     org.apache.tools.ant.taskdefs.optional.metamata.MParse
+ +User task: ccuncheckout     org.apache.tools.ant.taskdefs.optional.clearcase.CCUnCheckout
+ +User task: jpcovmerge     org.apache.tools.ant.taskdefs.optional.sitraka.CovMerge
+ +User task: ejbjar     org.apache.tools.ant.taskdefs.optional.ejb.EjbJar
+ +User task: available     org.apache.tools.ant.taskdefs.Available
+ +User task: rpm     org.apache.tools.ant.taskdefs.optional.Rpm
+ +User task: vsslabel     org.apache.tools.ant.taskdefs.optional.vss.MSVSSLABEL
+ +User task: soscheckin     org.apache.tools.ant.taskdefs.optional.sos.SOSCheckin
+ +User task: cvspass     org.apache.tools.ant.taskdefs.CVSPass
+ +User task: wljspc     org.apache.tools.ant.taskdefs.optional.jsp.WLJspc
+ +User task: move     org.apache.tools.ant.taskdefs.Move
+ +User task: dirname     org.apache.tools.ant.taskdefs.Dirname
+ +User task: vsscreate     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCREATE
+ +User task: javacc     org.apache.tools.ant.taskdefs.optional.javacc.JavaCC
+ +User task: csc     org.apache.tools.ant.taskdefs.optional.dotnet.CSharp
+ +User task: signjar     org.apache.tools.ant.taskdefs.SignJar
+ +User task: cccheckin     org.apache.tools.ant.taskdefs.optional.clearcase.CCCheckin
+ +User task: iplanet-ejbc     org.apache.tools.ant.taskdefs.optional.ejb.IPlanetEjbcTask
+ +User task: unwar     org.apache.tools.ant.taskdefs.Expand
+ +User task: ilasm     org.apache.tools.ant.taskdefs.optional.dotnet.Ilasm
+ +User task: touch     org.apache.tools.ant.taskdefs.Touch
+ +User task: ccmcheckin     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckin
+ +User task: blgenclient     org.apache.tools.ant.taskdefs.optional.ejb.BorlandGenerateClient
+ +User task: get     org.apache.tools.ant.taskdefs.Get
+ +User task: vsscheckout     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCHECKOUT
+ +User task: antipede-switch     net.sf.antcontrib.logic.Switch
+ +User task: sosget     org.apache.tools.ant.taskdefs.optional.sos.SOSGet
+ +User task: javadoc     org.apache.tools.ant.taskdefs.Javadoc
+ +User task: record     org.apache.tools.ant.taskdefs.Recorder
+ +User task: untar     org.apache.tools.ant.taskdefs.Untar
+ +User task: delete     org.apache.tools.ant.taskdefs.Delete
+ +User task: basename     org.apache.tools.ant.taskdefs.Basename
+ +User task: copydir     org.apache.tools.ant.taskdefs.Copydir
+ +User task: loadproperties     org.apache.tools.ant.taskdefs.LoadProperties
+ +User task: war     org.apache.tools.ant.taskdefs.War
+ +User task: ccupdate     org.apache.tools.ant.taskdefs.optional.clearcase.CCUpdate
+ +User task: concat     org.apache.tools.ant.taskdefs.Concat
+ +User task: depend     org.apache.tools.ant.taskdefs.optional.depend.Depend
+ +User task: ccmcheckout     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckout
+ +User task: parallel     org.apache.tools.ant.taskdefs.Parallel
+ +User task: renameext     org.apache.tools.ant.taskdefs.optional.RenameExtensions
+ +User task: vssadd     org.apache.tools.ant.taskdefs.optional.vss.MSVSSADD
+ +User task: antipede-trycatch     net.sf.antcontrib.logic.TryCatchTask
+ +User task: exec     org.apache.tools.ant.taskdefs.ExecTask
+ +User task: apply     org.apache.tools.ant.taskdefs.Transform
+ +User task: input     org.apache.tools.ant.taskdefs.Input
+ +User task: soslabel     org.apache.tools.ant.taskdefs.optional.sos.SOSLabel
+ +User task: bzip2     org.apache.tools.ant.taskdefs.BZip2
+ +User task: rmic     org.apache.tools.ant.taskdefs.Rmic
+ +User task: sleep     org.apache.tools.ant.taskdefs.Sleep
+ +User datatype: mapper     org.apache.tools.ant.types.Mapper
+ +User datatype: patternset     org.apache.tools.ant.types.PatternSet
+ +User datatype: filelist     org.apache.tools.ant.types.FileList
+ +User datatype: xmlcatalog     org.apache.tools.ant.types.XMLCatalog
+ +User datatype: fileset     org.apache.tools.ant.types.FileSet
+ +User datatype: regexp     org.apache.tools.ant.types.RegularExpression
+ +User datatype: dirset     org.apache.tools.ant.types.DirSet
+ +User datatype: filterset     org.apache.tools.ant.types.FilterSet
+ +User datatype: classfileset     org.apache.tools.ant.types.optional.depend.ClassfileSet
+ +User datatype: description     org.apache.tools.ant.types.Description
+ +User datatype: substitution     org.apache.tools.ant.types.Substitution
+ +User datatype: path     org.apache.tools.ant.types.Path
+Setting project property: antipede.lib.dir -> tools/antipede/lib
+Setting project property: java.runtime.name -> Java(TM) 2 Runtime Environment, Standard Edition
+Setting project property: sun.boot.library.path -> c:\products\jdk1.3\jre\bin
+Setting project property: java.vm.version -> 1.3.1_02-b02
+Setting project property: ant.version -> Apache Ant version 1.5alpha compiled on April 2 2002
+Overriding previous definition of property ant.java.version
+Setting project property: ant.java.version -> 1.3
+Setting project property: java.vm.vendor -> Sun Microsystems Inc.
+Setting project property: cent.jar.suffix -> cent.jar
+Setting project property: java.vendor.url -> http://java.sun.com/
+Setting project property: path.separator -> ;
+Setting project property: java.vm.name -> Java HotSpot(TM) Client VM
+Setting project property: file.encoding.pkg -> sun.io
+Setting project property: java.vm.specification.name -> Java Virtual Machine Specification
+Setting project property: user.dir -> C:\temp\jakarta-poi
+Setting project property: java.runtime.version -> 1.3.1_02-b02
+Setting project property: java.awt.graphicsenv -> sun.awt.Win32GraphicsEnvironment
+Setting project property: os.arch -> x86
+Setting project property: java.io.tmpdir -> C:\DOCUME~1\GLENST~1\LOCALS~1\Temp\
+Setting project property: line.separator -> 
+
+Setting project property: cent.dir.suffix -> cent
+Setting project property: java.vm.specification.vendor -> Sun Microsystems Inc.
+Setting project property: java.awt.fonts -> 
+Setting project property: os.name -> Windows 2000
+Setting project property: DSTAMP -> 20020409
+Setting project property: ant.home -> tools\antipede
+Setting project property: ant.project.name -> project build file
+Setting project property: tools.jar -> c:\products\jdk1.3\jre/../lib/tools.jar
+Setting project property: TODAY -> April 9 2002
+Setting project property: java.library.path -> c:\products\jdk1.3\bin;.;C:\WINNT\System32;C:\WINNT;c:\progra~1\gnu\wincvs~1.3;c:\products\ssh;c:\products\ant\bin;C:\WINNT\system32;C:\WINNT;C:\WINNT\System32\Wbem;C:\PROGRA~1\Tcl\bin;c:\products\jdk1.3\bin;c:\progra~1\CVSFOR~1;c:\progra~1\gnu\wincvs~1.2;C:\PROGRA~1\MICROS~4\Office;c:\products\windiff
+Setting project property: YEAR -> 2002
+Setting project property: java.specification.name -> Java Platform API Specification
+Setting project property: tools.dir -> tools
+Setting project property: java.class.version -> 47.0
+Setting project property: task.properties.name -> tasks.properties
+Setting project property: os.version -> 5.0
+Setting project property: user.home -> C:\Documents and Settings\Glen Stampoultzis
+Setting project property: user.timezone -> 
+Setting project property: java.awt.printerjob -> sun.awt.windows.WPrinterJob
+Setting project property: cents.dir -> tools/cents
+Setting project property: java.specification.version -> 1.3
+Setting project property: file.encoding -> Cp1252
+Setting project property: TSTAMP -> 1758
+Setting project property: tools.jar.present -> true
+Setting project property: java.class.path -> c:\products\jdk1.3\lib\tools.jar;tools\antipede\lib\ant-taskdefs-dev-20020402.jar;tools\antipede\lib\ant-optional-1.5-dev-20020402.jar;tools\antipede\lib\ant-contrib-0.1.jar;tools\antipede\lib\ant-1.5-dev-20020402.jar;;.\lib\endorsed\xalan-2.2.0.jar;.\lib\endorsed\xerces-2.0.0.jar;.\lib\endorsed\xml-apis.jar
+Setting project property: user.name -> Glen Stampoultzis
+Setting project property: build.number -> 6
+Setting project property: java.vm.specification.version -> 1.0
+Setting project property: java.home -> c:\products\jdk1.3\jre
+Setting project property: java.specification.vendor -> Sun Microsystems Inc.
+Setting project property: user.language -> en
+Setting project property: awt.toolkit -> sun.awt.windows.WToolkit
+Setting project property: java.vm.info -> mixed mode
+Setting project property: temp.dir -> tools/tmp
+Setting project property: java.version -> 1.3.1_02
+Setting project property: java.ext.dirs -> c:\products\jdk1.3\jre\lib\ext
+Setting project property: sun.boot.class.path -> c:\products\jdk1.3\jre\lib\rt.jar;c:\products\jdk1.3\jre\lib\i18n.jar;c:\products\jdk1.3\jre\lib\sunrsasign.jar;c:\products\jdk1.3\jre\classes
+Setting project property: java.vendor -> Sun Microsystems Inc.
+Setting project property: file.separator -> \
+Setting project property: cent.lib.dir.name -> lib
+Setting project property: cent.installed.suffix -> installed
+Setting project property: java.vendor.url.bug -> http://java.sun.com/cgi-bin/bugreport.cgi
+Setting project property: sun.io.unicode.encoding -> UnicodeLittle
+Setting project property: sun.cpu.endian -> little
+Setting project property: installed.cents.dir -> tools/installed
+Setting project property: antipede.dir -> tools/antipede
+Setting project property: user.region -> US
+Setting project property: sun.cpu.isalist -> pentium i486 i386
+Project base dir set to: C:\temp\jakarta-poi
+Setting ro project property: basedir -> C:\temp\jakarta-poi
+Setting ro project property: current.cent.jar -> C:\temp\jakarta-poi\tools\cents\xmldoclet.cent.jar
+calling target -cent-unjar in build file C:\temp\jakarta-poi\build.xml
+Setting ro project property: ant.file -> C:\temp\jakarta-poi\build.xml
+parsing buildfile C:\temp\jakarta-poi\build.xml with URI = file:C:/temp/jakarta-poi/build.xml
+Setting ro project property: ant.project.name -> project build file
+Adding reference: project build file -> org.apache.tools.ant.Project@6c6696
+Project base dir set to: C:\temp\jakarta-poi
+   +DataType: description
+ +Target: interactive
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: property
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: scratchpad
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: property
+   +Task: ant
+ +Target: contrib
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: property
+   +Task: ant
+ +Target: compile
+   +Task: antcall
+   +Task: ant
+ +Target: gui
+   +Task: antcall
+   +Task: ant
+ +Target: jar
+   +Task: antcall
+   +Task: ant
+ +Target: dist
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: echo
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: quickdist
+   +Task: antcall
+   +Task: ant
+ +Target: clean
+   +Task: antcall
+   +Task: ant
+ +Target: test
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: metrics
+   +Task: antcall
+   +Task: ant
+ +Target: docs
+   +Task: antcall
+   +Task: ant
+ +Target: javadocs
+   +Task: antcall
+   +Task: ant
+ +Target: xjavadocs
+   +Task: antcall
+   +Task: ant
+ +Target: uml
+   +Task: javadoc
+ +Target: generate-records
+   +Task: ant
+ +Target: generate-types
+   +Task: ant
+ +Target: testmodule
+ +Target: testtargets
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: gump
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+   +Task: antcall
+   +Task: ant
+ +Target: all
+ +Target: jar-cent
+   +Task: antcall
+   +Task: ant
+resolving systemId: file:C:/temp/jakarta-poi/tools/antipede/build.xtarget
+ +Target: -init
+   +Task: tstamp
+   +Task: buildnumber
+   +Task: property
+   +Task: available
+   +Task: fail
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: property
+   +Task: taskdef
+   +Task: antipede-foreach
+   +Task: delete
+   +Task: mkdir
+   +Task: delete
+   +Task: antipede-trycatch
+   +Task: concat
+   +Task: taskdef
+   +Task: echo
+ +Target: -cent-unjar
+ +Target: -cent-unjar-check
+   +Task: basename
+   +Task: condition
+ +Target: -cent-unjar-expand
+   +Task: echo
+   +Task: unjar
+   +Task: echo
+ +Target: -cent-unjar-keep
+   +Task: echo
+   +Task: echo
+ +Target: call-cent
+   +Task: ant
+Build sequence for target `-cent-unjar' is [-cent-unjar-check, -cent-unjar-expand, -cent-unjar-keep, -cent-unjar]
+Complete build sequence is [-cent-unjar-check, -cent-unjar-expand, -cent-unjar-keep, -cent-unjar, -init, jar-cent, clean, docs, compile, test, jar, metrics, javadocs, testmodule, all, quickdist, generate-types, uml, gui, generate-records, contrib, dist, call-cent, testtargets, gump, xjavadocs, interactive, scratchpad]
+
+-cent-unjar-check:
+Setting project property: current.cent.jar.name -> xmldoclet
+FileSet: Setup file scanner in dir C:\temp\jakarta-poi with patternSet{ includes: [tools/cents/xmldoclet.cent/tasks.properties] excludes: [] }
+tools\cents\xmldoclet.cent\tasks.properties omitted as C:\temp\jakarta-poi\tools\cents\xmldoclet.cent.jar is up to date.
+Found directory: tools/cents/xmldoclet.cent
+Setting project property: cent-unjar.not.required -> true
+
+-cent-unjar-expand:
+Skipped because property 'cent-unjar.not.required' set.
+
+-cent-unjar-keep:
+C:\temp\jakarta-poi\tools\cents\xmldoclet.cent.jar is uptodate with respect to xmldoclet.
+No need to expand it.
+
+-cent-unjar:
+Deleting: C:\temp\jakarta-poi\tools\tmp\tasks.properties
+   +Task: antipede-trycatch
+   +Task: concat
+   +Task: taskdef
+   +Task: echo
+FileSet: Setup file scanner in dir C:\temp\jakarta-poi with patternSet{ includes: [tools/cents/*.cent/tasks.properties] excludes: [] }
+FileSet: Setup file scanner in dir C:\temp\jakarta-poi\tools with patternSet{ includes: [**/*.jar] excludes: [] }
+Loading definitions from file C:\temp\jakarta-poi\tools\tmp\tasks.properties
+Finding class org.apache.tools.ant.taskdefs.optional.jdepend.JDependTask
+Class org.apache.tools.ant.Task loaded from parent loader
+Class org.apache.tools.ant.taskdefs.optional.jdepend.JDependTask loaded from ant loader
+Class java.lang.Throwable loaded from parent loader
+Class java.io.IOException loaded from parent loader
+Class org.apache.tools.ant.taskdefs.ExecuteStreamHandler loaded from parent loader
+Class org.apache.tools.ant.BuildException loaded from parent loader
+Finding class jdepend.xmlui.JDepend
+Finding class jdepend.textui.JDepend
+Class java.lang.Object loaded from parent loader
+Class jdepend.textui.JDepend loaded from ant loader
+Class jdepend.xmlui.JDepend loaded from ant loader
+Class java.io.Writer loaded from parent loader
+Class java.io.FileWriter loaded from parent loader
+ +User task: jdepend2     org.apache.tools.ant.taskdefs.optional.jdepend.JDependTask

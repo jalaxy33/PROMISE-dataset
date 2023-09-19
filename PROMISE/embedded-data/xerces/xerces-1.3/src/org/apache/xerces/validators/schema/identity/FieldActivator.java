@@ -1,0 +1,14 @@
+CompilationUnit
+PackageDeclaration
+Import
+InterfaceDeclaration
+{'public'}MethodDeclaration
+set()FormalParameter
+IdentityConstraintReferenceType
+{'public'}MethodDeclaration
+XPathMatcherReferenceType
+set()FormalParameter
+FieldReferenceType
+{'public'}MethodDeclaration
+set()FormalParameter
+IdentityConstraintReferenceType

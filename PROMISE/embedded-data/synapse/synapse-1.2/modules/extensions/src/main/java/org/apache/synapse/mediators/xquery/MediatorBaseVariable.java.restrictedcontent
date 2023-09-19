@@ -1,0 +1,11 @@
+MediatorBaseVariable
+MediatorBaseVariable
+name
+QName
+name
+evaluateValue
+boolean
+synCtx
+MessageContext
+return
+MediatorVariable

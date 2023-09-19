@@ -1,0 +1,17 @@
+CompilationUnit
+PackageDeclaration
+Import
+Import
+Import
+Import
+{'public'}ClassDeclaration
+Annotation
+ElementValuePair
+Literal
+Annotation
+MemberReference
+{'public'}ConstructorDeclaration
+StatementExpression
+SuperConstructorInvocation
+Literal
+DataFormatTypeReferenceType

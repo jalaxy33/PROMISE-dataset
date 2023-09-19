@@ -1,0 +1,6 @@
+SpringMulticastAggregatorTest
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+MultiCastAggregatorTest

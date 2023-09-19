@@ -1,0 +1,13 @@
+Sample10003
+Sample10003
+testOptionsMethod
+BasicHttpClient
+client
+BasicHttpClient
+HttpResponse
+response
+doOptions
+assertEquals
+SC_NO_CONTENT
+getStatus
+SynapseTestCase

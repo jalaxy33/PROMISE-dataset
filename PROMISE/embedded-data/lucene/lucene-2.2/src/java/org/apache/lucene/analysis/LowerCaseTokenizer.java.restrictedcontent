@@ -1,0 +1,13 @@
+LowerCaseTokenizer
+LowerCaseTokenizer
+in
+Reader
+in
+normalize
+char
+c
+char
+return
+toLowerCase
+c
+LetterTokenizer

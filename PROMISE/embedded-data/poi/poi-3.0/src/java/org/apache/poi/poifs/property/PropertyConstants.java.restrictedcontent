@@ -1,0 +1,9 @@
+PropertyConstants
+int
+PROPERTY_TYPE_OFFSET
+byte
+DIRECTORY_TYPE
+byte
+DOCUMENT_TYPE
+byte
+ROOT_TYPE

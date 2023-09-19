@@ -1,0 +1,9 @@
+CSSPageRule
+getSelectorText
+String
+setSelectorText
+selectorText
+String
+getStyle
+CSSStyleDeclaration
+CSSRule

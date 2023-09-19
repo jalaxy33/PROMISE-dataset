@@ -1,0 +1,14 @@
+CompilationUnit
+PackageDeclaration
+Import
+InterfaceDeclaration
+{'public'}MethodDeclaration
+StringReferenceType
+{'public'}MethodDeclaration
+set()FormalParameter
+NameSourceReferenceType
+ListenerReferenceType
+InterfaceDeclaration
+{'public'}MethodDeclaration
+set()FormalParameter
+NameSourceReferenceType

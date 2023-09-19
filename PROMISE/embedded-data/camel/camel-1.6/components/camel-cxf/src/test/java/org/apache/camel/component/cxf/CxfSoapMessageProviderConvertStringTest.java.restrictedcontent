@@ -1,0 +1,6 @@
+CxfSoapMessageProviderConvertStringTest
+createCamelContext
+CamelContext
+return
+createSpringCamelContext
+CxfSoapMessageProviderTest

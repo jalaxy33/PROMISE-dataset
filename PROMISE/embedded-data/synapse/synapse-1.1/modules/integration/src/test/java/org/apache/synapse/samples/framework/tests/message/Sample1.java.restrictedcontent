@@ -1,0 +1,16 @@
+Sample1
+Sample1
+testDumbClientMode
+String
+trpUrl
+StockQuoteSampleClient
+client
+getStockQuoteClient
+info
+SampleClientResult
+result
+requestStandardQuote
+trpUrl
+assertResponseReceived
+result
+SynapseTestCase

@@ -1,0 +1,13 @@
+JhcExchange
+JhcExchange
+context
+CamelContext
+context
+JhcExchange
+context
+CamelContext
+pattern
+ExchangePattern
+context
+pattern
+DefaultExchange

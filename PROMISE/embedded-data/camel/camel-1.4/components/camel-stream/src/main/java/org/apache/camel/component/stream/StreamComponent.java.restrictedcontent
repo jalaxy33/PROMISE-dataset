@@ -1,0 +1,15 @@
+StreamComponent
+createEndpoint
+Endpoint
+Exchange
+uri
+String
+remaining
+String
+parameters
+Map
+return
+StreamEndpoint
+uri
+DefaultComponent
+Exchange

@@ -1,0 +1,16 @@
+JuelLanguageTest
+testElExpressions
+assertExpression
+exchange
+assertExpression
+assertExpression
+testElPredicates
+assertPredicate
+assertPredicate
+assertPredicateFails
+assertPredicate
+assertPredicateFails
+getLanguageName
+String
+return
+LanguageTestSupport

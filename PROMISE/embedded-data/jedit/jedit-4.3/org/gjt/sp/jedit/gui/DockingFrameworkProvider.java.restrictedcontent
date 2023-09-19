@@ -1,0 +1,11 @@
+DockingFrameworkProvider
+create
+DockableWindowManager
+view
+View
+instance
+DockableWindowFactory
+config
+ViewConfig
+createDockingLayout
+DockingLayout

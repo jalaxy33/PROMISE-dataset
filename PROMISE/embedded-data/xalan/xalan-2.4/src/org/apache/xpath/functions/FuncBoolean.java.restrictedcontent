@@ -1,0 +1,12 @@
+FuncBoolean
+execute
+XObject
+xctxt
+XPathContext
+return
+execute
+bool
+xctxt
+S_TRUE
+S_FALSE
+FunctionOneArg

@@ -1,0 +1,7 @@
+RevocationVerifier
+checkRevocationStatus
+RevocationStatus
+peerCert
+X509Certificate
+issuerCert
+X509Certificate

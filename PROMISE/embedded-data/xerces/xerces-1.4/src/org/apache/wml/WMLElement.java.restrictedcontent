@@ -1,0 +1,12 @@
+WMLElement
+setId
+newValue
+String
+getId
+String
+setClassName
+newValue
+String
+getClassName
+String
+Element
