@@ -1,11 +1,13 @@
 # All-in-one PROMISE software defect dataset
 
-We merge the source code and the labels of each version into one csv file, so you can load the data and labels in once. 
+We transfer the PROMISE dataset into Huggingface format, merging the source code and the labels of each version into one csv file, so you can load the data and labels in once. 
 We divide the data by two rules: versions and train-test splits (placed in `projects/` and `splits/` respectively).
 
 ## data usage
 
 The data files are essentially compressed csv files. You can load the data simply by something like `pd.read_csv(xxx.csv.gz)`.
+
+The data of each source file is in the `data` column.
 
 
 ## Lists of data
