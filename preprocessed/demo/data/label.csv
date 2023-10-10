@@ -1,0 +1,4 @@
+name,version,name1,wmc,dit,noc,cbo,rfc,lcom,ca,ce,npm,lcom3,loc,dam,moa,mfa,cam,ic,cbm,amc,max_cc,avg_cc,bug
+ant,1.3,org.apache.tools.ant.taskdefs.ExecuteOn,11,4,2,14,42,29,2,12,5,0.725,395,1,1,0.885057471,0.232323232,3,4,34.54545455,3,1.2727,0
+ant,1.3,org.apache.tools.ant.DefaultLogger,14,1,1,8,32,49,4,4,12,0.835164835,257,1,0,0,0.307692308,0,0,16.85714286,6,1.6429,2
+ant,1.3,org.apache.tools.ant.taskdefs.TaskOutputStream,3,2,0,1,9,0,0,1,1,0,58,1,1,0.714285714,0.666666667,1,1,17.33333333,1,0.6667,0

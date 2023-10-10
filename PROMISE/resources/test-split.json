@@ -1,0 +1,14 @@
+{
+    "ant": "ant-1.7",
+    "camel": "camel-1.6",
+    "ivy": "ivy-2.0",
+    "jedit": "jedit-4.3",
+    "log4j": "log4j-1.2",
+    "lucene": "lucene-2.4",
+    "pbeans": "pbeans-2.0",
+    "poi": "poi-3.0",
+    "synapse": "synapse-1.2",
+    "velocity": "velocity-1.6",
+    "xalan": "xalan-2.6",
+    "xerces": "xerces-1.3"
+}
